@@ -1,0 +1,25 @@
+:root {
+  /* Colors */
+  --accent: #39a33c;
+  --background-base: #efefef;
+  --background-page: #fff;
+  --border: #dbdbdb;
+  --button-base: #d0cfcf;
+  --button-hover: #9b9b9b;
+  --code: #000;
+  --focus: #0096bfab;
+  --highlight: #ff0;
+  --label: #1d1d1d;
+  --links: #0076d1;
+  --placeholder: #949494;
+  --selection: #9e9e9e;
+  --text-base: #363636;
+  --text-bright: #000;
+  --text-muted: #70777f;
+
+  /* Dimensions */
+  --font-size: 18px;
+
+  /* Durations */
+  --animation-duration: 0.1s;
+}
