@@ -1,25 +1,52 @@
 :root {
   /* Colors */
-  --accent: #39a33c;
+  --accent: #e5aa70;
   --background-base: #efefef;
-  --background-page: #fff;
+  --background-page: #ffffff;
   --border: #dbdbdb;
   --button-base: #d0cfcf;
   --button-hover: #9b9b9b;
-  --code: #000;
+  --code: #000000;
   --focus: #0096bfab;
-  --highlight: #ff0;
+  --highlight: #ffff00;
   --label: #1d1d1d;
   --links: #0076d1;
   --placeholder: #949494;
   --selection: #9e9e9e;
-  --text-base: #363636;
-  --text-bright: #000;
+  --text-base: #464646;
+  --text-emphasized: #151515;
   --text-muted: #70777f;
 
   /* Dimensions */
-  --font-size: 18px;
+  --font-size: 16px;
 
   /* Durations */
   --animation-duration: 0.1s;
+
+  /* Fonts */
+  --font-sans:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    'Segoe UI Emoji',
+    'Apple Color Emoji',
+    'Noto Color Emoji',
+    sans-serif;
+  --font-mono:
+    "SF Mono",
+    "Segoe UI Mono",
+    "Fira Code",
+    "Fira Mono",
+    "Roboto Mono",
+    Menlo,
+    Courier,
+    monospace;
 }

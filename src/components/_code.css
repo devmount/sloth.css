@@ -1,0 +1,7 @@
+code {
+  background: var(--border);
+  border-radius: .25rem;
+  font-family: var(--font-mono);
+  font-weight: 400;
+  padding: .125rem .5rem;
+}

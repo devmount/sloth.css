@@ -3,24 +3,9 @@ html {
 }
 
 body {
-  background: var(--background-body);
-  color: var(--text-main);
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    'Segoe UI Emoji',
-    'Apple Color Emoji',
-    'Noto Color Emoji',
-    sans-serif;
+  background: var(--background-page);
+  color: var(--text-base);
+  font-family: var(--font-sans);
   font-size: var(--font-size);
   line-height: 1.4;
   margin: 1.5rem auto;

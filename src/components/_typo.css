@@ -1,6 +1,7 @@
+/* <h1>, ..., <h6> */
 h1 {
   font-size: 2.75rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 h2 {
   font-size: 2.25rem;
@@ -16,15 +17,57 @@ h4 {
 }
 h5 {
   font-size: 1.25rem;
+  font-weight: 600;
 }
 h6 {
   font-size: 1rem;
+  font-weight: 600;
 }
-
 h1, h2, h3, h4, h5, h6 {
-  margin: .5rem 0 1.25rem 0;
+  margin: 1.25rem 0;
+  color: var(--text-emphasized);
 }
 
-h1, h2, h3, h4, h5, h6, strong {
-  color: var(--text-bright);
+/* <blockquote>, <cite>, <q> */
+blockquote, q {
+  font-style: italic;
+}
+blockquote {
+  border-left: 6px solid var(--border);
+  margin: 1rem 0;
+  padding: .75rem 1.5rem .5rem 1.5rem;
+  
+  p:first-child {
+    margin-top: 0;
+  }
+
+  & > cite, & > footer {
+    border: 0;
+    font-style: normal;
+
+    &::before {
+      content: '—';
+      display: inline-block;
+      margin-right: .25rem;
+    }
+  }
+}
+
+/* <dl>, <dt>, <dd> */
+dl dt {
+  font-weight: 600;
+}
+dl dd {
+  margin-left: 0;
+}
+
+/* <ul>, <ol> */
+ul, ol {
+  padding-left: 2rem;
+}
+
+/* Selected text */
+::selection {
+  background-color: var(--selection);
+  color: var(--text-emphasized);
 }

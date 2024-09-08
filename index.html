@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sloth CSS</title>
+    <title>Sloth.css</title>
     <link rel="stylesheet" href="src/sloth.css">
     <style type="text/css">
       body {
@@ -19,34 +19,62 @@
       </header>
       <nav role="navigation">
         <ul>
-          <li><a href="#text">Text</a>: <a href="#text__headings">Headings</a> · <a href="#text__paragraphs">Paragraphs</a> · <a href="#text__blockquotes">Blockquotes</a> · <a href="#text__lists">Lists</a> · <a href="#text__hr">Horizontal rules</a> · <a href="#text__tables">Tabular data</a> · <a href="#text__code">Code</a> · <a href="#text__inline">Inline elements</a></li>
-          <li><a href="#embedded">Embedded content</a>: <a href="#embedded__images">Images</a> · <a href="#embedded__audio">Audio</a> · <a href="#embedded__video">Video</a> · <a href="#embedded__canvas">Canvas</a> · <a href="#embedded__meter">Meter</a> · <a href="#embedded__progress">Progress</a> · <a href="#embedded__svg">Inline SVG</a> · <a href="#embedded__iframe">IFrames</a></li>
-          <li><a href="#forms">Form elements</a>: <a href="#forms__input">Input fields</a> · <a href="#forms__select">Select menus</a> · <a href="#forms__checkbox">Checkboxes</a> · <a href="#forms__radio">Radio buttons</a> · <a href="#forms__textareas">Textareas</a> · <a href="#forms__html5">HTML5 inputs</a> · <a href="#forms__action">Action buttons</a></li>
+          <li>
+            <a href="#typo">Typography</a>:
+            <a href="#typo_headings">Headings</a> ·
+            <a href="#typo_paragraphs">Paragraphs</a> ·
+            <a href="#typo_blockquotes">Blockquotes</a> ·
+            <a href="#typo_lists">Lists</a> ·
+            <a href="#typo_hr">Horizontal rule</a> ·
+            <a href="#typo_tables">Table</a> ·
+            <a href="#typo_code">Code</a> ·
+            <a href="#typo_inline">Inline elements</a>
+          </li>
+          <li>
+            <a href="#embedded">Embeds</a>:
+            <a href="#embedded_images">Images</a> ·
+            <a href="#embedded_audio">Audio</a> ·
+            <a href="#embedded_video">Video</a> ·
+            <a href="#embedded_canvas">Canvas</a> ·
+            <a href="#embedded_meter">Meter</a> ·
+            <a href="#embedded_progress">Progress</a> ·
+            <a href="#embedded_svg">Inline SVG</a> ·
+            <a href="#embedded_iframe">IFrames</a>
+          </li>
+          <li>
+            <a href="#forms">Form</a>:
+            <a href="#forms_input">Input fields</a> ·
+            <a href="#forms_select">Select menus</a> ·
+            <a href="#forms_checkbox">Checkboxes</a> ·
+            <a href="#forms_radio">Radio buttons</a> ·
+            <a href="#forms_textareas">Textareas</a> ·
+            <a href="#forms_html5">HTML5 inputs</a> ·
+            <a href="#forms_action">Action buttons</a>
+          </li>
         </ul>
       </nav>
       <main role="main">
-        <section id="text">
+        <section id="typo">
           <h2>Text</h2>
-          <article id="text__headings">
+          <article id="typo_headings">
             <h3>Headings</h3>
             <div>
-              <h1>Heading 1</h1>
-              <h2>Heading 2</h2>
-              <h3>Heading 3</h3>
-              <h4>Heading 4</h4>
-              <h5>Heading 5</h5>
-              <h6>Heading 6</h6>
+              <h1>Level 1 heading <small><code>42px</code></small></h1>
+              <h2>Level 2 heading <small><code>36px</code></small></h2>
+              <h3>Level 3 heading <small><code>32px</code></small></h3>
+              <h4>Level 4 heading <small><code>26px</code></small></h4>
+              <h5>Level 5 heading <small><code>20px</code></small></h5>
+              <h6>Level 6 heading <small><code>16px</code></small></h6>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
-          <article id="text__paragraphs">
+          <article id="typo_paragraphs">
             <h3>Paragraphs</h3>
             <div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra viverra nisl, vel maximus turpis ornare a. Ut scelerisque lectus sed odio dictum scelerisque vitae quis nisi. Nulla facilisi. Phasellus vehicula convallis nisl, id suscipit dui semper at. In eu iaculis lorem. In vehicula sed mauris et suscipit. Vivamus pellentesque non massa sit amet ornare. Integer placerat est vitae nisl molestie, eget rhoncus erat vulputate. Proin ornare massa eget bibendum faucibus.</p>
+              <p>Nunc viverra viverra nisl, vel maximus turpis ornare a. Ut scelerisque lectus sed odio dictum scelerisque vitae quis nisi. Nulla facilisi. Phasellus vehicula convallis nisl, id suscipit dui semper at. In eu iaculis lorem. In vehicula sed mauris et suscipit. Vivamus pellentesque non massa sit amet ornare. Integer placerat est vitae nisl molestie, eget rhoncus erat vulputate. Proin ornare massa eget bibendum faucibus.</p>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
-          <article id="text__blockquotes">
+          <article id="typo_blockquotes">
             <h3>Blockquotes</h3>
             <div>
               <blockquote>
@@ -55,14 +83,13 @@
                 <cite>Said no one, ever.</cite>
               </blockquote>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
-          <article id="text__lists">
+          <article id="typo_lists">
             <h3>Lists</h3>
             <div>
               <h4>Definition list</h4>
               <dl>
-                <dt>Definition List Title</dt>
+                <dt>Definition List Term</dt>
                 <dd>This is a definition list division.</dd>
               </dl>
               <h4>Ordered List</h4>
@@ -104,17 +131,13 @@
                 </li>
               </ul>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
-          <article id="text__hr">
-            <h3>Horizontal rules</h3>
-            <div>
-              <hr>
-            </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
+          <article id="typo_hr">
+            <h3>Horizontal rule</h3>
+            <hr>
           </article>
-          <article id="text__tables">
-            <h3>Tabular data</h3>
+          <article id="typo_tables">
+            <h3>Table</h3>
             <table>
               <caption>Table Caption</caption>
               <thead>
@@ -166,9 +189,8 @@
                 </tr>
               </tbody>
             </table>
-            <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
-          <article id="text__code">
+          <article id="typo_code">
             <h3>Code</h3>
             <div>
               <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
@@ -183,9 +205,8 @@
   ` a b c d e f g h i j k l m n o
   p q r s t u v w x y z { | } ~ </pre>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
-          <article id="text__inline">
+          <article id="typo_inline">
             <h3>Inline elements</h3>
             <div>
               <a href="#!">This is a text link</a>.<br>
@@ -207,13 +228,12 @@
               The <var>variable element</var>, such as <var>x</var> = <var>y</var>.<br>
               The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time><br>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
         </section>
 
         <section id="embedded">
-          <h2>Embedded content</h2>
-          <article id="embedded__images">
+          <h2>Embeds</h2>
+          <article id="embedded_images">
             <h3>Images</h3>
             <div>
               <h4>No <code>&lt;figure&gt;</code> element</h4>
@@ -226,18 +246,16 @@
                 <figcaption>Here is a caption for this image.</figcaption>
               </figure>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
-          <article id="embedded__audio">
+          <article id="embedded_audio">
             <h3>Audio</h3>
             <div>
               <audio controls>
                 <source src="https://raw.githubusercontent.com/dohliam/html5-sample-media/master/Broke For Free - Night Owl.mp3">
               </audio>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
-          <article id="embedded__video">
+          <article id="embedded_video">
             <h3>Video</h3>
             <div>
               <!-- <video controls>
@@ -245,78 +263,72 @@
                 <source src="https://github.com/benhosmer/HTML5-Test-Videos/blob/master/big_buck_bunny.ogv?raw=true" type="video/ogg">
               </video> -->
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
-          <article id="embedded__canvas">
+          <article id="embedded_canvas">
             <h3>Canvas</h3>
             <div><canvas>canvas</canvas></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
-          <article id="embedded__meter">
+          <article id="embedded_meter">
             <h3>Meter</h3>
             <div><meter value="2" min="0" max="10">2 out of 10</meter></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
-          <article id="embedded__progress">
+          <article id="embedded_progress">
             <h3>Progress</h3>
             <div><progress>progress</progress></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
-          <article id="embedded__svg">
+          <article id="embedded_svg">
             <h3>Inline SVG</h3>
             <div><svg width="100px" height="100px"><circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle></svg></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
-          <article id="embedded__iframe">
+          <article id="embedded_iframe">
             <h3>IFrame</h3>
             <div><iframe src="index.html" height="300"></iframe></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
         </section>
         <section id="forms">
-          <h2>Form elements</h2>
+          <h2>Form</h2>
           <form>
-            <fieldset id="forms__input">
+            <fieldset id="forms_input">
               <legend>Input fields</legend>
               <p>
-                <label for="input__text">Text Input</label>
-                <input id="input__text" type="text" placeholder="Text Input">
+                <label for="input_text">Text Input</label>
+                <input id="input_text" type="text" placeholder="Text Input">
               </p>
               <p>
-                <label for="input__password">Password</label>
-                <input id="input__password" type="password" placeholder="Type your Password">
+                <label for="input_password">Password</label>
+                <input id="input_password" type="password" placeholder="Type your Password">
               </p>
               <p>
-                <label for="input__webaddress">Web Address</label>
-                <input id="input__webaddress" type="url" placeholder="http://yoursite.com">
+                <label for="input_webaddress">Web Address</label>
+                <input id="input_webaddress" type="url" placeholder="http://yoursite.com">
               </p>
               <p>
-                <label for="input__emailaddress">Email Address</label>
-                <input id="input__emailaddress" type="email" placeholder="name@email.com">
+                <label for="input_emailaddress">Email Address</label>
+                <input id="input_emailaddress" type="email" placeholder="name@email.com">
               </p>
               <p>
-                <label for="input__phone">Phone Number</label>
-                <input id="input__phone" type="tel" placeholder="(999) 999-9999">
+                <label for="input_phone">Phone Number</label>
+                <input id="input_phone" type="tel" placeholder="(999) 999-9999">
               </p>
               <p>
-                <label for="input__search">Search</label>
-                <input id="input__search" type="search" placeholder="Enter Search Term">
+                <label for="input_search">Search</label>
+                <input id="input_search" type="search" placeholder="Enter Search Term">
               </p>
               <p>
-                <label for="input__text2">Number Input</label>
-                <input id="input__text2" type="number" placeholder="Enter a Number">
+                <label for="input_text2">Number Input</label>
+                <input id="input_text2" type="number" placeholder="Enter a Number">
               </p>
               <p>
-                <label for="input__text3" class="error">Error</label>
-                <input id="input__text3" class="is-error" type="text" placeholder="Text Input">
+                <label for="input_text3" class="error">Error</label>
+                <input id="input_text3" class="is-error" type="text" placeholder="Text Input">
               </p>
               <p>
-                <label for="input__text4" class="valid">Valid</label>
-                <input id="input__text4" class="is-valid" type="text" placeholder="Text Input">
+                <label for="input_text4" class="valid">Valid</label>
+                <input id="input_text4" class="is-valid" type="text" placeholder="Text Input">
               </p>
             </fieldset>
             <p><a href="#top">[Top]</a></p>
-            <fieldset id="forms__select">
+            <fieldset id="forms_select">
               <legend>Select menus</legend>
               <p>
                 <label for="select">Select</label>
@@ -330,7 +342,7 @@
               </p>
             </fieldset>
             <p><a href="#top">[Top]</a></p>
-            <fieldset id="forms__checkbox">
+            <fieldset id="forms_checkbox">
               <legend>Checkboxes</legend>
               <ul class="list list--bare">
                 <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
@@ -339,7 +351,7 @@
               </ul>
             </fieldset>
             <p><a href="#top">[Top]</a></p>
-            <fieldset id="forms__radio">
+            <fieldset id="forms_radio">
               <legend>Radio buttons</legend>
               <ul class="list list--bare">
                 <li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"> Option 1</label></li>
@@ -348,7 +360,7 @@
               </ul>
             </fieldset>
             <p><a href="#top">[Top]</a></p>
-            <fieldset id="forms__textareas">
+            <fieldset id="forms_textareas">
               <legend>Textareas</legend>
               <p>
                 <label for="textarea">Textarea</label>
@@ -356,7 +368,7 @@
               </p>
             </fieldset>
             <p><a href="#top">[Top]</a></p>
-            <fieldset id="forms__html5">
+            <fieldset id="forms_html5">
               <legend>HTML5 inputs</legend>
               <p>
                 <label for="ic">Color input</label>
@@ -392,7 +404,7 @@
               </p>
             </fieldset>
             <p><a href="#top">[Top]</a></p>
-            <fieldset id="forms__action">
+            <fieldset id="forms_action">
               <legend>Action buttons</legend>
               <p>
                 <input type="submit" value="<input type=submit>">

@@ -1,6 +1,6 @@
 # sloth.css
 
-The drop-in CSS library for lazy ones like me.
+Another opinionated drop-in CSS library for lazy ones like me.
 
 ## Installation
 
