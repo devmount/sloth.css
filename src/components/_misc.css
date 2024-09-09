@@ -1,7 +1,8 @@
 /* <hr> */
 hr {
   border: none;
-  border-top: 1px solid var(--border);
+  height: 2px;
+  background-color: var(--border);
 }
 
 /* <table> */

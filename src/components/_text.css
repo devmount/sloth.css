@@ -28,6 +28,20 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-emphasized);
 }
 
+/* <a> */
+a {
+  text-decoration: none;
+  color: color-mix(in hsl, var(--accent) 75%, black);
+  text-underline-offset: 0;
+  transition: var(--transition-color), var(--transition-underline);
+
+  &:hover {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 10%;
+  }
+}
+
 /* <blockquote>, <cite>, <q> */
 blockquote, q {
   font-style: italic;
@@ -58,7 +72,7 @@ dl dt {
   font-weight: 600;
 }
 dl dd {
-  margin-left: 0;
+  margin: 0 0 .5rem 0;
 }
 
 /* <ul>, <ol> */
@@ -122,8 +136,8 @@ code {
   border-radius: .25rem;
   font-family: var(--font-mono);
   font-weight: 400;
-  font-size: .875rem;
-  padding: .125rem .25rem;
+  font-size: .875em;
+  padding: .125em .25em;
 }
 
 /* <samp> */

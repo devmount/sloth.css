@@ -24,8 +24,12 @@
   /* Dimensions */
   --font-size: 16px;
 
-  /* Durations */
-  --animation-duration: 0.1s;
+  /* Transitions */
+  --transition-color:
+    color .1s ease-in-out,
+    border-color .1s ease-in-out,
+    background-color .1s ease-in-out;
+  --transition-underline: text-underline-offset .1s ease-in-out;
 
   /* Fonts */
   --font-sans:
