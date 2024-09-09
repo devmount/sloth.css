@@ -31,12 +31,12 @@ h1, h2, h3, h4, h5, h6 {
 /* <a> */
 a {
   text-decoration: none;
-  color: color-mix(in hsl, var(--accent) 75%, black);
+  color: color-mix(in hsl, var(--accent) 70%, black);
   text-underline-offset: 0;
   transition: var(--transition-color), var(--transition-underline);
 
   &:hover {
-    color: var(--accent);
+    color: color-mix(in hsl, var(--accent) 90%, black);
     text-decoration: underline;
     text-underline-offset: 10%;
   }
