@@ -66,6 +66,29 @@ ul, ol {
   padding-left: 2rem;
 }
 
+/* <strong> */
+u {
+  color: var(--text-emphasized);
+}
+
+/* <u> */
+u {
+  text-underline-offset: 25%;
+}
+
+/* <ins>, <del> */
+ins {
+  color: var(--text-positive);
+  background-color: var(--text-positive-background);
+  text-decoration: none;
+  padding: .125rem .25rem;
+}
+del {
+  color: var(--text-negative);
+  background-color: var(--text-negative-background);
+  padding: .125rem .25rem;
+}
+
 /* Selected text */
 ::selection {
   background-color: var(--selection);

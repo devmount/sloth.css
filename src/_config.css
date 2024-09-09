@@ -16,6 +16,10 @@
   --text-base: #464646;
   --text-emphasized: #151515;
   --text-muted: #70777f;
+  --text-positive: #238636;
+  --text-negative: #da3633;
+  --text-positive-background: color-mix(in srgb, var(--text-positive) 15%, transparent);
+  --text-negative-background: color-mix(in srgb, var(--text-negative) 15%, transparent);
 
   /* Dimensions */
   --font-size: 16px;
