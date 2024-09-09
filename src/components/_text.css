@@ -67,13 +67,20 @@ ul, ol {
 }
 
 /* <strong> */
-u {
+strong {
   color: var(--text-emphasized);
+}
+
+/* <em> */
+em {
+  font-weight: 500;
 }
 
 /* <u> */
 u {
-  text-underline-offset: 25%;
+  text-decoration: color-mix(in srgb, var(--text-negative) 85%, transparent) wavy underline;
+  text-underline-offset: 5%;
+  text-decoration-skip-ink: none;
 }
 
 /* <ins>, <del> */
@@ -82,11 +89,49 @@ ins {
   background-color: var(--text-positive-background);
   text-decoration: none;
   padding: .125rem .25rem;
+  border-radius: .125rem;
 }
 del {
+  text-decoration: line-through;
   color: var(--text-negative);
   background-color: var(--text-negative-background);
   padding: .125rem .25rem;
+  border-radius: .125rem;
+}
+
+/* <abbr> */
+abbr {
+  text-underline-offset: 15%;
+}
+
+/* <mark> */
+mark {
+  background-color: color-mix(in srgb, var(--accent) 85%, transparent);
+  padding: 0 .125rem .125rem .125rem;
+  border-radius: .125rem;
+}
+
+/* <var> */
+var {
+  font-weight: 500;
+}
+
+/* <code> */
+code {
+  background: var(--border);
+  border-radius: .25rem;
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: .875rem;
+  padding: .125rem .25rem;
+}
+
+/* <samp> */
+samp {
+  font-size: .875rem;
+  font-family: var(--font-mono);
+  font-weight: 400;
+  padding: .125rem .5rem;
 }
 
 /* Selected text */

@@ -20,15 +20,15 @@
       <nav role="navigation">
         <ul>
           <li>
-            <a href="#typo">Typography</a>:
-            <a href="#typo_headings">Headings</a> ·
-            <a href="#typo_paragraphs">Paragraphs</a> ·
-            <a href="#typo_blockquotes">Blockquotes</a> ·
-            <a href="#typo_lists">Lists</a> ·
-            <a href="#typo_hr">Horizontal rule</a> ·
-            <a href="#typo_tables">Table</a> ·
-            <a href="#typo_code">Code</a> ·
-            <a href="#typo_inline">Inline elements</a>
+            <a href="#text">Text</a>:
+            <a href="#text_headings">Headings</a> ·
+            <a href="#text_paragraphs">Paragraphs</a> ·
+            <a href="#text_blockquotes">Blockquotes</a> ·
+            <a href="#text_lists">Lists</a> ·
+            <a href="#text_hr">Horizontal rule</a> ·
+            <a href="#text_tables">Table</a> ·
+            <a href="#text_code">Code</a> ·
+            <a href="#text_inline">Inline elements</a>
           </li>
           <li>
             <a href="#embedded">Embeds</a>:
@@ -54,9 +54,9 @@
         </ul>
       </nav>
       <main role="main">
-        <section id="typo">
+        <section id="text">
           <h2>Text</h2>
-          <article id="typo_headings">
+          <article id="text_headings">
             <h3>Headings</h3>
             <h1>Level 1 heading <small><code>42px</code></small></h1>
             <h2>Level 2 heading <small><code>36px</code></small></h2>
@@ -65,12 +65,12 @@
             <h5>Level 5 heading <small><code>20px</code></small></h5>
             <h6>Level 6 heading <small><code>16px</code></small></h6>
           </article>
-          <article id="typo_paragraphs">
+          <article id="text_paragraphs">
             <h3>Paragraphs</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra viverra nisl, vel maximus turpis ornare a. Ut scelerisque lectus sed odio dictum scelerisque vitae quis nisi. Nulla facilisi. Phasellus vehicula convallis nisl, id suscipit dui semper at. In eu iaculis lorem. In vehicula sed mauris et suscipit. Vivamus pellentesque non massa sit amet ornare. Integer placerat est vitae nisl molestie, eget rhoncus erat vulputate. Proin ornare massa eget bibendum faucibus.</p>
             <p>Nunc viverra viverra nisl, vel maximus turpis ornare a. Ut scelerisque lectus sed odio dictum scelerisque vitae quis nisi. Nulla facilisi. Phasellus vehicula convallis nisl, id suscipit dui semper at. In eu iaculis lorem. In vehicula sed mauris et suscipit. Vivamus pellentesque non massa sit amet ornare. Integer placerat est vitae nisl molestie, eget rhoncus erat vulputate. Proin ornare massa eget bibendum faucibus.</p>
           </article>
-          <article id="typo_blockquotes">
+          <article id="text_blockquotes">
             <h3>Blockquotes</h3>
             <blockquote>
               <p>Etiam porttitor egestas elit, at venenatis neque accumsan eu. Nulla viverra odio nisi, quis commodo tellus tristique non. Proin ac ante at orci euismod eleifend. Quisque nisi sapien, dapibus in venenatis sit amet, posuere non purus. In sit amet metus erat. Pellentesque nec neque eleifend, luctus ipsum at, ullamcorper nunc. Pellentesque sagittis, dolor eu bibendum lacinia, orci ex bibendum risus, at tincidunt augue lacus eleifend diam. Nulla facilisis velit ut est auctor sollicitudin. Morbi eget lectus a lacus maximus molestie in ut lorem.</p>
@@ -78,7 +78,7 @@
               <cite>Said no one, ever.</cite>
             </blockquote>
           </article>
-          <article id="typo_lists">
+          <article id="text_lists">
             <h3>Lists</h3>
             <h4>Definition list</h4>
             <dl>
@@ -124,11 +124,11 @@
               </li>
             </ul>
           </article>
-          <article id="typo_hr">
+          <article id="text_hr">
             <h3>Horizontal rule</h3>
             <hr />
           </article>
-          <article id="typo_tables">
+          <article id="text_tables">
             <h3>Table</h3>
             <table>
               <caption>Table Caption</caption>
@@ -182,7 +182,7 @@
               </tbody>
             </table>
           </article>
-          <article id="typo_code">
+          <article id="text_code">
             <h3>Code</h3>
             <p>Pressing <kbd>F5</kbd> reloads the page, while running <code>await navigator.clipboard.writeText('Sample text');</code> copies <samp>Sample text</samp> to your clipboard.</code></p>
             <h3>Pre-formatted text</h3>
@@ -193,29 +193,98 @@
 P Q R S T U V W X Y Z [ \ ] ^ _
 ` a b c d e f g h i j k l m n o
 p q r s t u v w x y z { | } ~ </pre>
-          </div>
-        </article>
-        <article id="typo_inline">
-          <h3>Inline elements</h3>
-          <div>
-            Please visit <a href="https://github.com/devmount/sloth.css">sloth.css on GithHub</a>.<br />
-            It is <strong>strongly</strong> adviced to do so.<br />
-            It surely can't be <em>emphasized</em> enough.<br />
-            The <b>b element</b> is stylistically different text from normal text.<br>
-            The <i>i element</i> is text that is offset from the normal text.<br>
-            The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.<br>
-            <del>This text is deleted</del> and <ins>This text is inserted</ins>.<br>
-            <s>This text has a strikethrough</s>.<br>
-            Superscript<sup>®</sup>.<br>
-            Subscript for things like H<sub>2</sub>O.<br>
-            <small>This small text is small for for fine print, etc.</small><br>
-            Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr><br>
-            <q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q><br>
-            <cite>This is a citation.</cite><br>
-            The <dfn>dfn element</dfn> indicates a definition.<br>
-            The <mark>mark element</mark> indicates a highlight.<br>
-            The <var>variable element</var>, such as <var>x</var> = <var>y</var>.<br>
-            The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time><br>
+          </article>
+          <article id="text_inline">
+            <h3>Inline elements</h3>
+            <p>
+              <code>&lt;a&gt;</code>:
+              Please visit <a href="https://github.com/devmount/sloth.css">sloth.css on GithHub</a>.
+            </p>
+            <p>
+              <code>&lt;strong&gt;</code>:
+              It is <strong>strongly</strong> adviced to do so.
+            </p>
+            <p>
+              <code>&lt;em&gt;</code>:
+              It surely can't be <em>emphasized</em> enough.
+            </p>
+            <p>
+              <code>&lt;b&gt;</code>:
+              The two most popular science courses offered by the school are <b>chemistry</b> (the study of chemicals
+              and the composition of substances) and <b>physics</b> (the study of the nature and properties of matter
+              and energy).
+            </p>
+            <p>
+              <code>&lt;i&gt;</code>:
+              <i>Musa</i> is one of two or three genera in the family <i>Musaceae</i>;
+              it includes bananas and plantains.
+            </p>
+            <p>
+              <code>&lt;u&gt;</code>:
+              You could use this element to highlight <u>speling</u> mistakes, so the writer can <u>corect</u> them.
+            </p>
+            <p>
+              <code>&lt;del&gt;</code>/<code>&lt;ins&gt;</code>:
+              There is <del>nothing</del> <ins>no code</ins> either good or bad,
+              but <del>thinking</del> <ins>running it</ins> makes it so..
+            </p>
+            <p>
+              <code>&lt;s&gt;</code>:
+              <s>There will be a few tickets available at the box office tonight.</s> SOLD OUT!
+            </p>
+            <p>
+              <code>&lt;sup&gt;</code>:
+              The <em>Pythagorean theorem</em> is often expressed as the following equation:
+              <var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var>
+            </p>
+            <p>
+              <code>&lt;sub&gt;</code>:
+              Almost every developer's favorite molecule is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>,
+              also known as "caffeine."
+            </p>
+            <p>
+              <code>&lt;small&gt;</code>:
+              Start contributing to sloth.css now!<br >
+              <small>The project is licensed under MIT License.</small>
+            </p>
+            <p>
+              <code>&lt;abbr&gt;</code>:
+              Pog's joke made me <abbr title="Laugh Out Loud">LOL</abbr> big time.
+            </p>
+            <p>
+              <code>&lt;q&gt;</code>:
+              When Dave asks HAL to open the pod bay door, HAL answers:
+              <q cite="https://www.imdb.com/title/tt0062622/quotes/?item=qt0396921&ref_=ext_shr_lnk">
+                I'm sorry, Dave. I'm afraid I can't do that.
+              </q>
+            </p>
+            <p>
+              <code>&lt;cite&gt;</code>:
+              More information can be found in <cite>[ISO-0000]</cite>.
+            </p>
+            <p>
+              <code>&lt;dfn&gt;</code>:
+              A <dfn>validator</dfn> is a program that checks for syntax errors in code or documents.
+            </p>
+            <p>
+              <code>&lt;mark&gt;</code>:
+              It is a period of civil war. Rebel spaceships, striking from a hidden base,
+              have won their first victory against the evil Galactic Empire. During the
+              battle, <mark>Rebel spies managed to steal secret plans</mark> to the Empire's
+              ultimate weapon, the DEATH STAR, an armored space station with enough power to
+              destroy an entire planet.
+            </p>
+            <p>
+              <code>&lt;var&gt;</code>:
+              The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>,
+              where <var>l</var> represents the length, <var>w</var> the width and <var>h</var> the height of the box.
+            </p>
+            <p>
+              <code>&lt;time&gt;</code>:
+              The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in
+              London's Hyde Park. The concert starts at <time datetime="20:00">20:00</time> and you'll be able to enjoy
+              the band for at least <time datetime="PT2H30M">2h 30m</time>.
+            </p>
           </article>
         </section>
 
