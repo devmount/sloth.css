@@ -1,0 +1,12 @@
+/* border */
+.rounded-full {
+  border-radius: 9999px;
+}
+
+/* dimensions */
+.w-32 {
+  width: 8rem;
+}
+.h-32 {
+  height: 8rem;
+}

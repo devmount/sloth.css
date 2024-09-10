@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sloth.css</title>
     <link rel="stylesheet" href="src/sloth.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/png">
     <style type="text/css">
       body {
         padding-left: 24px;
@@ -14,9 +15,10 @@
   <body>
     <div id="top" class="page" role="document">
       <header role="banner">
+        <img src="./assets/logo.svg" alt="Logo showing a sloth" class="w-32 h-32 rounded-full">
         <h1>Sloth.css</h1>
         <p>
-          A drop-in CSS library for lazy mammals like me.
+          A drop-in utility CSS library for lazy mammals like me.
           <a href="https://github.com/devmount/sloth-css">GitHub</a>.
         </p>
       </header>
@@ -205,7 +207,7 @@ p q r s t u v w x y z { | } ~ </pre>
             <h3>Inline elements</h3>
             <p>
               <code>&lt;a&gt;</code>:
-              Please visit <a href="https://github.com/devmount/sloth.css">sloth.css on GithHub</a>.
+              Please visit <a href="https://github.com/devmount/sloth.css">sloth.css on GitHub</a>.
             </p>
             <p>
               <code>&lt;strong&gt;</code>:
@@ -298,18 +300,19 @@ p q r s t u v w x y z { | } ~ </pre>
         <section id="embedded">
           <h2>Embeds</h2>
           <article id="embedded_images">
-            <h3>Images</h3>
-            <div>
-              <h4>No <code>&lt;figure&gt;</code> element</h4>
-              <p><a href="https://commons.wikimedia.org/wiki/File:Colouring_pencils.jpg"><img src="https://raw.githubusercontent.com/dohliam/html5-sample-media/master/Colouring_pencils.jpg" alt="Colouring pencils by MichaelMaggs"></a></p>
-              <h4>Wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code></h4>
-              <figure><a href="https://commons.wikimedia.org/wiki/File:Coloured,_textured_craft_card_edit.jpg"><img src="https://raw.githubusercontent.com/dohliam/html5-sample-media/master/Coloured%2C_textured_craft_card_edit.jpg" alt="Coloured, textured craft card by MichaelMaggs"></a></figure>
-              <h4>Wrapped in a <code>&lt;figure&gt;</code> element, with a <code>&lt;figcaption&gt;</code></h4>
-              <figure>
-                <a href="https://commons.wikimedia.org/wiki/File:Opening_chess_position_from_black_side.jpg"><img src="https://raw.githubusercontent.com/dohliam/html5-sample-media/master/Opening_chess_position_from_black_side.jpg" alt="Opening chess position from black side by MichaelMaggs"></a>
-                <figcaption>Here is a caption for this image.</figcaption>
-              </figure>
-            </div>
+            <h3>Image</h3>
+            <p>
+              <a href="https://commons.wikimedia.org/wiki/File:Colouring_pencils.jpg">
+                <img src="https://raw.githubusercontent.com/dohliam/html5-sample-media/master/Colouring_pencils.jpg" alt="Colouring pencils by MichaelMaggs">
+              </a>
+            </p>
+            <h3>Figure with caption</h3>
+            <figure>
+              <a href="https://commons.wikimedia.org/wiki/File:Opening_chess_position_from_black_side.jpg">
+                <img src="https://raw.githubusercontent.com/dohliam/html5-sample-media/master/Opening_chess_position_from_black_side.jpg" alt="Opening chess position from black side by MichaelMaggs">
+              </a>
+              <figcaption>Here is a caption for this image.</figcaption>
+            </figure>
           </article>
           <article id="embedded_audio">
             <h3>Audio</h3>
