@@ -42,11 +42,13 @@ figure {
 /* <meter> */
 meter {
   appearance: none;
-  background: var(--border);
+  background: var(--background-base);
   border-radius: .25rem;
   border: 0;
+  box-shadow: var(--shadow-inset);
   display: block;
   height: 1rem;
+  padding: 1px 0;
   width: 100%;
 
   &::-webkit-meter-inner-element {
@@ -56,17 +58,32 @@ meter {
   &::-moz-meter-bar {
     background: var(--accent);
     border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.30) 0 1px 1px 0;
+  }
+  &::-webkit-meter-optimum-value,
+  &:-moz-meter-optimum::-moz-meter-bar {
+    background: var(--text-positive);
+  }
+  &::-webkit-meter-suboptimum-value,
+  &:-moz-meter-sub-optimum::-moz-meter-bar {
+    background: var(--accent);
+  }
+  &::-webkit-meter-even-less-good-value,
+  &:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+    background: var(--text-negative);
   }
 }
 
 /* <progress> */
 progress {
   appearance: none;
-  background: var(--border);
+  background: var(--background-base);
   border-radius: .5rem;
   border: 0;
+  box-shadow: var(--shadow-inset);
   color: var(--accent);
   height: .5rem;
+  padding: 1px 0;
   width: 100%;
 
   &::-webkit-progress-bar {
@@ -82,7 +99,7 @@ progress {
 
   &:indeterminate {
     animation: background-slide-x 1.75s linear infinite;
-    background: var(--border) linear-gradient(to right, var(--accent) 20%, var(--border) 20%) top left / 150% 150% no-repeat;
+    background: var(--background-base) linear-gradient(to right, var(--accent) 20%, var(--background-base) 20%) top left / 150% 150% no-repeat;
 
     &::-moz-progress-bar {
       background: transparent;
@@ -90,11 +107,7 @@ progress {
   }
 }
 
-@keyframes background-slide-x {
-  from {
-    background-position: 200% 0;
-  }
-  to {
-    background-position: -200% 0;
-  }
+/* <iframe> */
+iframe {
+  border: 1px solid var(--border);
 }

@@ -314,8 +314,9 @@ p q r s t u v w x y z { | } ~ </pre>
           <article id="embedded_meter">
             <h3>Meter</h3>
             <div class="flex gap-8">
-              <meter value="3" min="0" max="10">3 out of 10</meter>
-              <meter value="9" min="0" max="10">9 out of 10</meter>
+              <meter value="2" min="0" max="10" low="3" high="8" optimum="2">2 out of 10</meter>
+              <meter value="6" min="0" max="10" low="3" high="8" optimum="2">6 out of 10</meter>
+              <meter value="9" min="0" max="10" low="3" high="8" optimum="2">9 out of 10</meter>
             </div>
           </article>
           <article id="embedded_progress">
@@ -342,44 +343,43 @@ p q r s t u v w x y z { | } ~ </pre>
             <fieldset id="forms_input">
               <legend>Input fields</legend>
               <p>
-                <label for="input_text">Text Input</label>
-                <input id="input_text" type="text" placeholder="Text Input">
+                <label for="input_text">Single line text</label><br>
+                <input id="input_text" type="text" placeholder="Song title">
               </p>
               <p>
-                <label for="input_password">Password</label>
-                <input id="input_password" type="password" placeholder="Type your Password">
+                <label for="input_password">Secret</label><br>
+                <input id="input_password" type="password" placeholder="Vault code">
               </p>
               <p>
-                <label for="input_webaddress">Web Address</label>
-                <input id="input_webaddress" type="url" placeholder="http://yoursite.com">
+                <label for="input_webaddress">Web Address</label><br>
+                <input id="input_webaddress" type="url" placeholder="https://devmount.com">
               </p>
               <p>
-                <label for="input_emailaddress">Email Address</label>
-                <input id="input_emailaddress" type="email" placeholder="name@email.com">
+                <label for="input_emailaddress">Email Address</label><br>
+                <input id="input_emailaddress" type="email" placeholder="hello@devmount.com">
               </p>
               <p>
-                <label for="input_phone">Phone Number</label>
+                <label for="input_phone">Phone Number</label><br>
                 <input id="input_phone" type="tel" placeholder="(999) 999-9999">
               </p>
               <p>
-                <label for="input_search">Search</label>
+                <label for="input_search">Search</label><br>
                 <input id="input_search" type="search" placeholder="Enter Search Term">
               </p>
               <p>
-                <label for="input_text2">Number Input</label>
+                <label for="input_text2">Number Input</label><br>
                 <input id="input_text2" type="number" placeholder="Enter a Number">
               </p>
               <p>
-                <label for="input_text3" class="error">Error</label>
+                <label for="input_text3" class="error">Error</label><br>
                 <input id="input_text3" class="is-error" type="text" placeholder="Text Input">
               </p>
               <p>
-                <label for="input_text4" class="valid">Valid</label>
+                <label for="input_text4" class="valid">Valid</label><br>
                 <input id="input_text4" class="is-valid" type="text" placeholder="Text Input">
               </p>
             </fieldset>
-            <p><a href="#top">[Top]</a></p>
-            <fieldset id="forms_select">
+            <fieldset id="forms_choices">
               <legend>Select menus</legend>
               <p>
                 <label for="select">Select</label>
@@ -391,26 +391,17 @@ p q r s t u v w x y z { | } ~ </pre>
                   </optgroup>
                 </select>
               </p>
-            </fieldset>
-            <p><a href="#top">[Top]</a></p>
-            <fieldset id="forms_checkbox">
-              <legend>Checkboxes</legend>
               <ul class="list list--bare">
                 <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
                 <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
                 <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
               </ul>
-            </fieldset>
-            <p><a href="#top">[Top]</a></p>
-            <fieldset id="forms_radio">
-              <legend>Radio buttons</legend>
               <ul class="list list--bare">
                 <li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"> Option 1</label></li>
                 <li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio"> Option 2</label></li>
                 <li><label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option 3</label></li>
               </ul>
             </fieldset>
-            <p><a href="#top">[Top]</a></p>
             <fieldset id="forms_textareas">
               <legend>Textareas</legend>
               <p>
@@ -418,7 +409,6 @@ p q r s t u v w x y z { | } ~ </pre>
                 <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
               </p>
             </fieldset>
-            <p><a href="#top">[Top]</a></p>
             <fieldset id="forms_html5">
               <legend>HTML5 inputs</legend>
               <p>
@@ -454,7 +444,6 @@ p q r s t u v w x y z { | } ~ </pre>
                 <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
               </p>
             </fieldset>
-            <p><a href="#top">[Top]</a></p>
             <fieldset id="forms_action">
               <legend>Action buttons</legend>
               <p>
@@ -470,7 +459,6 @@ p q r s t u v w x y z { | } ~ </pre>
                 <button type="button" disabled>&lt;button disabled&gt;</button>
               </p>
             </fieldset>
-            <p><a href="#top">[Top]</a></p>
           </form>
         </section>
       </main>

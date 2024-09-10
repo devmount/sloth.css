@@ -26,35 +26,44 @@
 
   /* Transitions */
   --transition-color:
-    color .1s ease-in-out,
-    border-color .1s ease-in-out,
-    background-color .1s ease-in-out;
+      color .1s ease-in-out,
+      border-color .1s ease-in-out,
+      background-color .1s ease-in-out;
   --transition-underline: text-underline-offset .1s ease-in-out;
 
   /* Fonts */
   --font-sans:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    'Segoe UI Emoji',
-    'Apple Color Emoji',
-    'Noto Color Emoji',
-    sans-serif;
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      'Roboto',
+      'Oxygen',
+      'Ubuntu',
+      'Cantarell',
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
+      'Segoe UI Emoji',
+      'Apple Color Emoji',
+      'Noto Color Emoji',
+      sans-serif;
   --font-mono:
-    "SF Mono",
-    "Segoe UI Mono",
-    "Fira Code",
-    "Fira Mono",
-    "Roboto Mono",
-    Menlo,
-    Courier,
-    monospace;
+      "SF Mono",
+      "Segoe UI Mono",
+      "Fira Code",
+      "Fira Mono",
+      "Roboto Mono",
+      Menlo,
+      Courier,
+      monospace;
+
+  /* Misc */
+  --shadow-inset: rgba(0, 0, 0, 0.15) 2px 2px .125rem 0 inset;
+}
+
+/* Animations */
+@keyframes background-slide-x {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
 }

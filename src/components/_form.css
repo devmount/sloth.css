@@ -1,0 +1,38 @@
+/* <fieldset>, <legend> */
+fieldset {
+  border-radius: .25rem;
+  border: 1px solid var(--border);
+
+  legend {
+    padding: 0 .25rem;
+  }
+}
+
+/* <label> */
+label {
+  display: inline-block;
+  padding-bottom: 0.25rem;
+
+  &:has(input), &[for] {
+    cursor: pointer;
+  }
+}
+
+/* <input> */
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="number"] {
+  background: var(--background-base);
+  border: 0;
+  border-radius: .25rem;
+  box-shadow: var(--shadow-inset);
+  padding: .5rem .75rem;
+  font-size: .875rem;
+}
+input[type="number"] {
+  padding-right: .5rem;
+}
