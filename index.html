@@ -38,9 +38,6 @@
           <li>
             <a href="#embedded">Embeds</a>:
             <a href="#embedded_images">Images</a> ·
-            <a href="#embedded_audio">Audio</a> ·
-            <a href="#embedded_video">Video</a> ·
-            <a href="#embedded_canvas">Canvas</a> ·
             <a href="#embedded_meter">Meter</a> ·
             <a href="#embedded_progress">Progress</a> ·
             <a href="#embedded_svg">Inline SVG</a> ·
@@ -302,50 +299,37 @@ p q r s t u v w x y z { | } ~ </pre>
           <article id="embedded_images">
             <h3>Image</h3>
             <p>
-              <a href="https://commons.wikimedia.org/wiki/File:Colouring_pencils.jpg">
-                <img src="https://raw.githubusercontent.com/dohliam/html5-sample-media/master/Colouring_pencils.jpg" alt="Colouring pencils by MichaelMaggs">
+              <a href="https://unsplash.com/de/fotos/verschiedenes-planetendekor-zpUsOQzByFg">
+                <img src="https://images.unsplash.com/photo-1506272517965-ec6133efee7a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=640" alt="Several models of planets">
               </a>
             </p>
             <h3>Figure with caption</h3>
             <figure>
-              <a href="https://commons.wikimedia.org/wiki/File:Opening_chess_position_from_black_side.jpg">
-                <img src="https://raw.githubusercontent.com/dohliam/html5-sample-media/master/Opening_chess_position_from_black_side.jpg" alt="Opening chess position from black side by MichaelMaggs">
+              <a href="https://unsplash.com/de/fotos/schwarze-und-braune-galaxie-1vKTnwLMdqs">
+                <img src="https://unsplash.com/photos/1vKTnwLMdqs/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MjN8fHBsYW5ldHN8ZGV8MHx8fHwxNzI1OTkyNTM1fDA&w=640" alt="Stars in the black sky">
               </a>
-              <figcaption>Here is a caption for this image.</figcaption>
+              <figcaption>A galaxy by Brett Ritchie.</figcaption>
             </figure>
-          </article>
-          <article id="embedded_audio">
-            <h3>Audio</h3>
-            <div>
-              <audio controls>
-                <source src="https://raw.githubusercontent.com/dohliam/html5-sample-media/master/Broke For Free - Night Owl.mp3">
-              </audio>
-            </div>
-          </article>
-          <article id="embedded_video">
-            <h3>Video</h3>
-            <div>
-              <!-- <video controls>
-                <source src="https://github.com/benhosmer/HTML5-Test-Videos/blob/master/big_buck_bunny.mp4?raw=true" type="video/mp4">
-                <source src="https://github.com/benhosmer/HTML5-Test-Videos/blob/master/big_buck_bunny.ogv?raw=true" type="video/ogg">
-              </video> -->
-            </div>
-          </article>
-          <article id="embedded_canvas">
-            <h3>Canvas</h3>
-            <div><canvas>canvas</canvas></div>
           </article>
           <article id="embedded_meter">
             <h3>Meter</h3>
-            <div><meter value="2" min="0" max="10">2 out of 10</meter></div>
+            <div class="flex gap-8">
+              <meter value="3" min="0" max="10">3 out of 10</meter>
+              <meter value="9" min="0" max="10">9 out of 10</meter>
+            </div>
           </article>
           <article id="embedded_progress">
             <h3>Progress</h3>
-            <div><progress>progress</progress></div>
+            <div class="flex gap-8">
+              <progress value="4" max="10"></progress>
+              <progress>progress</progress>
+            </div>
           </article>
           <article id="embedded_svg">
             <h3>Inline SVG</h3>
-            <div><svg width="100px" height="100px"><circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle></svg></div>
+            <svg class="w-32 h-32">
+              <circle cx="128" cy="128" r="128" fill="var(--accent)"></circle>
+            </svg>
           </article>
           <article id="embedded_iframe">
             <h3>IFrame</h3>

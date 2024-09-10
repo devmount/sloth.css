@@ -33,3 +33,68 @@ thead th, tfoot th {
 tbody tr:nth-child(even) {
   background-color: var(--background-base);
 }
+
+/* <figure> */
+figure {
+  margin: 0;
+}
+
+/* <meter> */
+meter {
+  appearance: none;
+  background: var(--border);
+  border-radius: .25rem;
+  border: 0;
+  display: block;
+  height: 1rem;
+  width: 100%;
+
+  &::-webkit-meter-inner-element {
+    display: block;
+  }
+  &::-webkit-meter-bar,
+  &::-moz-meter-bar {
+    background: var(--accent);
+    border-radius: .25rem;
+  }
+}
+
+/* <progress> */
+progress {
+  appearance: none;
+  background: var(--border);
+  border-radius: .5rem;
+  border: 0;
+  color: var(--accent);
+  height: .5rem;
+  width: 100%;
+
+  &::-webkit-progress-bar {
+    background: transparent;
+    border-radius: inherit;
+  }
+
+  &::-webkit-progress-value,
+  &::-moz-progress-bar {
+    background: var(--accent);
+    border-radius: inherit;
+  }
+
+  &:indeterminate {
+    animation: background-slide-x 1.75s linear infinite;
+    background: var(--border) linear-gradient(to right, var(--accent) 20%, var(--border) 20%) top left / 150% 150% no-repeat;
+
+    &::-moz-progress-bar {
+      background: transparent;
+    }
+  }
+}
+
+@keyframes background-slide-x {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}

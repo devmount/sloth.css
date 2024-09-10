@@ -1,12 +1,22 @@
-/* border */
+/* Border */
 .rounded-full {
   border-radius: 9999px;
 }
 
-/* dimensions */
+/* Dimensions */
 .w-32 {
   width: 8rem;
 }
 .h-32 {
   height: 8rem;
+}
+
+/* Display */
+.flex {
+  display: flex;
+}
+
+/* Spacing */
+.gap-8 {
+  gap: 2rem;
 }
