@@ -17,6 +17,17 @@
 }
 
 /* Spacing */
+.gap-2 {
+  gap: .5rem;
+}
+.gap-4 {
+  gap: 1rem;
+}
 .gap-8 {
   gap: 2rem;
+}
+
+/* Alignment */
+.items-center {
+  align-items: center;
 }
