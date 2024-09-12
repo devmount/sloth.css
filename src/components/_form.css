@@ -18,21 +18,60 @@ label {
   }
 }
 
-/* <input> */
+/* <input>, <textarea>, <select> */
+input, textarea, select {
+  background: var(--background-base);
+  box-shadow: var(--shadow-inset);
+  font-family: inherit;
+  transition: var(--transition-outline);
+  border: 1px solid var(--background-page);
+
+  &:hover {
+    border-color: var(--accent);
+  }
+  &:focus, &:focus-within {
+    border-color: var(--accent);
+    outline: 3px solid var(--outline);
+    box-shadow: none;
+  }
+}
 input[type="text"],
 input[type="password"],
 input[type="url"],
 input[type="email"],
 input[type="tel"],
 input[type="search"],
-input[type="number"] {
-  background: var(--background-base);
-  border: 0;
+input[type="number"],
+input[type="color"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="datetime"],
+input[type="datetime-local"],
+textarea,
+select {
   border-radius: .25rem;
-  box-shadow: var(--shadow-inset);
   padding: .5rem .75rem;
   font-size: .875rem;
 }
-input[type="number"] {
+input[type="number"],
+input[type="date"],
+input[type="datetime-local"] {
   padding-right: .5rem;
+}
+input[type="color"] {
+  padding: .25rem;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  border-radius: .25rem;
+}
+input[type="radio"] {
+  border-radius: 9999px;
 }

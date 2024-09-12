@@ -1,9 +1,9 @@
 :root {
   /* Colors */
   --accent: #e5aa70;
-  --background-base: #efefef;
+  --background-base: #f4f4f4;
   --background-page: #ffffff;
-  --border: #dbdbdb;
+  --border: #d5d5d5;
   --button-base: #d0cfcf;
   --button-hover: #9b9b9b;
   --code: #000000;
@@ -18,6 +18,8 @@
   --text-muted: #70777f;
   --text-positive: #238636;
   --text-negative: #da3633;
+
+  --outline: color-mix(in srgb, var(--accent) 25%, transparent);
   --text-positive-background: color-mix(in srgb, var(--text-positive) 15%, transparent);
   --text-negative-background: color-mix(in srgb, var(--text-negative) 15%, transparent);
 
@@ -26,10 +28,12 @@
 
   /* Transitions */
   --transition-color:
-      color .1s ease-in-out,
-      border-color .1s ease-in-out,
-      background-color .1s ease-in-out;
-  --transition-underline: text-underline-offset .1s ease-in-out;
+      color .1s ease,
+      border-color .1s ease,
+      outline-color .1s ease,
+      background-color .1s ease;
+  --transition-outline: outline-width .1s ease;
+  --transition-underline: text-underline-offset .1s ease;
 
   /* Fonts */
   --font-sans:
@@ -59,7 +63,7 @@
       monospace;
 
   /* Misc */
-  --shadow-inset: rgba(0, 0, 0, 0.15) 2px 2px .125rem 0 inset;
+  --shadow-inset: var(--border) 2px 2px .125rem 0 inset;
 }
 
 /* Animations */
