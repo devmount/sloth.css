@@ -15,6 +15,9 @@
 .flex {
   display: flex;
 }
+.flex-col {
+  flex-direction: column;
+}
 
 /* Spacing */
 .gap-2 {

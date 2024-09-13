@@ -19,7 +19,7 @@
   --text-positive: #238636;
   --text-negative: #da3633;
 
-  --outline: color-mix(in srgb, var(--accent) 25%, transparent);
+  --outline: color-mix(in srgb, var(--accent) 35%, transparent);
   --text-positive-background: color-mix(in srgb, var(--text-positive) 15%, transparent);
   --text-negative-background: color-mix(in srgb, var(--text-negative) 15%, transparent);
 

@@ -23,16 +23,15 @@ input, textarea, select {
   background-color: var(--background-base);
   box-shadow: var(--shadow-inset);
   font-family: inherit;
-  transition: var(--transition-outline);
-  border: 1px solid var(--background-page);
+  transition: var(--transition-outline), var(--transition-color);
+  border: 0;
 
   &:hover {
-    border-color: var(--accent);
+    box-shadow: var(--accent) 0 0 0 1px;
   }
   &:focus, &:focus-within {
-    border-color: var(--accent);
-    outline: 3px solid var(--outline);
-    box-shadow: none;
+    outline: 4px solid var(--outline);
+    box-shadow: var(--accent) 0 0 0 1px;
   }
 }
 input[type="text"],
@@ -61,35 +60,64 @@ input[type="datetime-local"] {
 }
 input[type="color"] {
   padding: .25rem;
+  height: 2.25rem;
 }
 input[type="checkbox"],
 input[type="radio"] {
   appearance: none;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
   cursor: pointer;
 }
 input[type="checkbox"] {
   border-radius: .25rem;
   position: relative;
+  &::after {
+    border: 2px solid var(--background-page);
+    border-left: none;
+    border-top: none;
+    border-bottom-right-radius: 1px;
+    content: '';
+    position: absolute;
+    height: .6em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%) scale(0);
+    width: .3em;
+    transition: .15s transform ease;
+  }
   &:checked {
-    color: var(--accent);
+    background-color: var(--accent);
+    color: var(--background-base);
+    box-shadow: none;
+
     &::after {
-      border: 3px solid var(--accent);
-      border-left: none;
-      border-top: none;
-      border-bottom-right-radius: 2px;
-      box-shadow: var(--border) 1px 1px .125rem;
-      content: '';
-      height: .875rem;
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -60%) rotate(45deg);
-      width: .375rem;
+      transform: translate(-50%, -60%) scale(1) rotate(35deg);
     }
   }
 }
 input[type="radio"] {
   border-radius: 9999px;
+  position: relative;
+  &::after {
+    background-color: var(--background-page);
+    border-radius: inherit;
+    content: '';
+    position: absolute;
+    height: .5rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: .5rem;
+    transition: .15s transform ease;
+  }
+  &:checked {
+    background-color: var(--accent);
+    color: var(--background-base);
+    box-shadow: none;
+
+    &::after {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
 }
