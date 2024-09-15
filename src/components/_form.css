@@ -13,7 +13,7 @@ label {
   display: inline-block;
   padding-bottom: 0.25rem;
 
-  &:has(input), &[for] {
+  &:has(input), &:has(textarea), &:has(select), &[for] {
     cursor: pointer;
   }
 }
@@ -25,13 +25,15 @@ input, textarea, select {
   font-family: inherit;
   transition: var(--transition-outline), var(--transition-color);
   border: 0;
+  width: 100%;
+  box-sizing: border-box;
 
   &:hover {
-    box-shadow: var(--accent) 0 0 0 1px;
+    box-shadow: var(--shadow-border-accent);
   }
   &:focus, &:focus-within {
     outline: 4px solid var(--outline);
-    box-shadow: var(--accent) 0 0 0 1px;
+    box-shadow: var(--shadow-border-accent);
   }
 }
 input[type="text"],
@@ -68,6 +70,7 @@ input[type="radio"] {
   width: 1.25rem;
   height: 1.25rem;
   cursor: pointer;
+  margin: 0;
 }
 input[type="checkbox"] {
   border-radius: .25rem;
@@ -123,10 +126,11 @@ input[type="radio"] {
 }
 input[type="range"] {
   height: 1.25rem;
-  padding: .125rem 0;
+  padding: 0;
   appearance: none;
   background: transparent;
   box-shadow: none;
+  margin: .25rem 0;
 
   &::-webkit-slider-thumb,
   &::-moz-range-thumb {
@@ -149,13 +153,19 @@ input[type="range"] {
     transition: var(--transition-outline);
   }
 
+  &:hover {
+    &::-webkit-slider-runnable-track,
+    &::-moz-range-track {
+      box-shadow: var(--shadow-border-accent);
+    }
+  }
   &:focus, &:focus-within {
     outline: none;
 
     &::-webkit-slider-runnable-track,
     &::-moz-range-track {
       outline: 4px solid var(--outline);
-      box-shadow: var(--accent) 0 0 0 1px, var(--outline) 0 0 0 4px;
+      box-shadow: var(--shadow-border-accent), var(--outline) 0 0 0 4px;
     }
   }
   &:active {
@@ -170,5 +180,44 @@ input[type="range"] {
       background: gray; /*TODO*/
       transform: scale(1);
     }
+  }
+}
+
+/* <input[type=submit|reset|button]>, <button> */
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+button {
+  appearance: none;
+  background-color: color-mix(in hsl, var(--accent) 80%, black);
+  border: 0;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  height: 2.25rem;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  white-space: nowrap;
+  border-radius: .25rem;
+  padding: .5rem .75rem;
+  font-size: .875rem;
+  box-shadow: var(--shadow-float);
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: var(--transition-outline), var(--transition-color), var(--transition-transform);
+
+  &:focus, &:focus-within, &:hover {
+    background-color: var(--accent);
+    box-shadow: color-mix(in hsl, var(--accent) 90%, black) 0 0 0 1px, var(--shadow-float);
+  }
+  &:focus, &:focus-within {
+    outline: 4px solid var(--outline);
+  }
+  &:active {
+    outline: 0;
+    box-shadow:
+      color-mix(in hsl, var(--accent) 80%, black) 0 0 0 1px,
+      color-mix(in hsl, var(--accent) 80%, black) 2px 2px .125rem 0 inset;
   }
 }

@@ -41,7 +41,9 @@
   --font-mono: "SF Mono", "Segoe UI Mono", "Fira Code", "Fira Mono", "Roboto Mono", Menlo, Courier, monospace;
 
   /* Misc */
+  --shadow-border-accent: var(--accent) 0 0 0 1px;
   --shadow-inset: var(--border) 2px 2px .125rem 0 inset;
+  --shadow-float: color-mix(in hsl, var(--border) 80%, black) 2px 2px .25rem 0;
 }
 
 /* Animations */
