@@ -41,7 +41,7 @@ figure {
 
 /* <meter> */
 meter {
-  appearance: none;
+  appearance: meter;
   background: var(--background-base);
   border-radius: .25rem;
   border: 0;
@@ -51,6 +51,10 @@ meter {
   padding: 1px 0;
   width: 100%;
 
+  &:has(::-webkit-meter-bar) {
+    /* TODO */
+    border-radius: 9999px;
+  }
   &::-webkit-meter-inner-element {
     display: block;
   }

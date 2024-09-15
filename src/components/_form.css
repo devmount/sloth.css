@@ -207,8 +207,10 @@ button {
   box-sizing: border-box;
   transition: var(--transition-outline), var(--transition-color), var(--transition-transform);
 
-  &:focus, &:focus-within, &:hover {
+  &:hover {
     background-color: var(--accent);
+  }
+  &:focus, &:focus-within, &:hover {
     box-shadow: color-mix(in hsl, var(--accent) 90%, black) 0 0 0 1px, var(--shadow-float);
   }
   &:focus, &:focus-within {
