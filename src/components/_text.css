@@ -34,11 +34,15 @@ a {
   color: color-mix(in hsl, var(--accent) 70%, black);
   text-underline-offset: 0;
   transition: var(--transition-color), var(--transition-underline);
+  border-radius: .25rem;
 
-  &:hover {
+  &:hover, &:focus, &:focus-within {
     color: color-mix(in hsl, var(--accent) 90%, black);
     text-decoration: underline;
     text-underline-offset: 10%;
+  }
+  &:focus, &:focus-within {
+    outline: 4px solid var(--outline);
   }
 }
 
