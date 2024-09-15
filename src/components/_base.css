@@ -7,7 +7,7 @@ body {
   color: var(--text-base);
   font-family: var(--font-sans);
   font-size: var(--font-size);
-  line-height: 1.4;
+  line-height: var(--line-height);
   margin: 1.5rem auto;
   max-width: 960px;
   padding: 0 1rem;
