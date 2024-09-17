@@ -51,9 +51,9 @@ meter {
   padding: 1px 0;
   width: 100%;
 
-  &:has(::-webkit-meter-bar) {
+  &:where(::-webkit-meter-bar) {
     /* TODO */
-    border-radius: 9999px;
+    border-radius: 0;
   }
   &::-webkit-meter-inner-element {
     display: block;
