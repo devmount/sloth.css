@@ -16,6 +16,7 @@
   display: flex;
 }
 .flex-col {
+  display: flex;
   flex-direction: column;
 }
 
@@ -33,4 +34,47 @@
 /* Alignment */
 .items-center {
   align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+
+/* Colors */
+.text-accent {
+  color: var(--accent);
+}
+.text-muted {
+  color: var(--text-muted);
+}
+.text-positive {
+  color: var(--text-positive);
+}
+.text-negative {
+  color: var(--text-negative);
+}
+.bg-accent {
+  background-color: var(--accent);
+}
+.bg-muted {
+  background-color: var(--text-muted);
+}
+.bg-positive {
+  background-color: var(--text-positive);
+}
+.bg-negative {
+  background-color: var(--text-negative);
+}
+
+/* Cursors */
+.cursor-default {
+  cursor: default;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-help {
+  cursor: help;
+}
+.cursor-not-allowed {
+  cursor: not-allowed;
 }

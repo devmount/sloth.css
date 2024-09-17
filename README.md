@@ -37,7 +37,7 @@ This is the smalles variant and the core of Sloth.css. It provides styles for al
 
 ### Variant 2: Utility classes CSS library
 
-If you want more, you can use Sloth.css with utility classes included. Just take a look at the docs to see, which ones are available. Those utility classes are a curated subset of Tailwind.css classes and are meant to be extended and adapted by you for your project. I had several projects, where using Tailwind was not necessary (or not possible or not wanted), so instead I used a little set of utility classes and found, that those were mostly the same. So here they are. This variant includes the drop-in styles:
+If you want more, you can use Sloth.css with utility classes included. Just take a look at the docs to see, which ones are available. Those utility classes are a curated subset of Tailwind.css classes (with a few exceptions) and are meant to be extended and adapted by you for your project. I had several projects, where Tailwind was not necessary (or not possible or not wanted), so instead I used a convenient set of utility classes I curated on my own and found, that those were mostly the same across those projects. So here they are. This variant includes the drop-in styles too:
 
 ```html
 <!-- Sloth.css drop-in core styles and utility classes, 4kB -->
