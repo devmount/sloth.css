@@ -3,23 +3,30 @@
 <p align="center">A drop-in utility component CSS library for lazy mammals like me.<br />Created by <a href="https://github.com/devmount" target="_blank">devmount</a>.</p>
 </p>
 
+<p align="center">
+<a href="https://github.com/devmount/sloth.css/releases" target="_blank"><img src="https://img.shields.io/github/v/tag/devmount/sloth.css.svg?label=version&colorB=e5aa70&style=flat-square" alt="release" /></a>
+<a href="https://github.com/devmount/sloth.css/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/devmount/sloth.css?label=updated&color=e5aa70&style=flat-square" alt="last commit" /></a>
+<a href="./LICENSE" target="_blank"><img src="https://img.shields.io/github/license/devmount/sloth.css.svg?colorB=e5aa70&style=flat-square" alt="license" /></a>
+<a href="./.github/CONTRIBUTING.md" target="_blank"><img src="https://img.shields.io/badge/contributions-welcome-e5aa70.svg?style=flat-square" alt="contributions welcome" /></a>
+</p>
+
 ## Installation
 
 Include one of the following minified CSS file in your HTML head:
 
 ```html
 <!-- Sloth.css drop-in core styles, 1kB -->
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css/dist/sloth.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.min.css" />
 ```
 
 ```html
 <!-- Sloth.css drop-in core styles and utility classes, 4kB -->
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css/dist/sloth.utils.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.utils.min.css" />
 ```
 
 ```html
 <!-- Sloth.css drop-in core styles, utility classes and componentns, 10kB -->
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css/dist/sloth.components.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.components.min.css" />
 ```
 
 Read on below to find out exactly what they include.
