@@ -18,7 +18,7 @@ Include the following CSS file in your HTML head to get the complete package:
 
 ```html
 <!-- Sloth.css drop-in core styles, utility classes and components, 10kB -->
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.min.css" />
+<link rel="stylesheet" href="{{ cdnUrl }}/sloth.min.css" />
 ```
 
 Read on below to find out about all available variants. Maybe one of them is more suitbale for your use case.
@@ -33,9 +33,9 @@ This is the smalles variant and the core of Sloth.css. It provides styles for al
 
 ```html
 <!-- Sloth.css drop-in core styles, 1.5kB -->
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.core.css" />
+<link rel="stylesheet" href="{{ cdnUrl }}/sloth.core.css" />
 <!-- Or the minified version, 1kB -->
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.core.min.css" />
+<link rel="stylesheet" href="{{ cdnUrl }}/sloth.core.min.css" />
 ```
 
 ### Variant 2: Utility classes CSS library
@@ -44,9 +44,9 @@ If you want more, you can use Sloth.css with utility classes included. Just take
 
 ```html
 <!-- Sloth.css drop-in core styles and utility classes, 4kB -->
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.util.css" />
+<link rel="stylesheet" href="{{ cdnUrl }}/sloth.util.css" />
 <!-- Or the minified version, 3kB -->
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.util.min.css" />
+<link rel="stylesheet" href="{{ cdnUrl }}/sloth.util.min.css" />
 ```
 
 ### Variant 3: CSS components
@@ -55,15 +55,15 @@ If you still haven't had enough and need some more advanced elements on your pag
 
 ```html
 <!-- Sloth.css drop-in core styles, utility classes and components, 10kB -->
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.css" />
+<link rel="stylesheet" href="{{ cdnUrl }}/sloth.css" />
 <!-- Or the minified version, 7kB -->
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.min.css" />
+<link rel="stylesheet" href="{{ cdnUrl }}/sloth.min.css" />
 ```
 
 ## License
 
-This project is licensed under the [MIT License](./LICENSE).
+This project is licensed under the [MIT License]({{ repoUrl }}/blob/main/LICENSE).
 
 ## Support
 
-Sloth.css is completely free to use. If it's useful for you and you enjoy it, please consider [contributing](./.github/CONTRIBUTING.md), [sponsoring me](https://github.com/sponsors/devmount) or [donating via Paypal](https://paypal.me/devmount) to support further development. 🧡
+Sloth.css is completely free to use. If it's useful for you and you enjoy it, please consider [contributing]({{ repoUrl }}/blob/main/.github/CONTRIBUTING.md), [sponsoring me](https://github.com/sponsors/devmount) or [donating via Paypal](https://paypal.me/devmount) to support further development. 🧡
