@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "A drop-in utility component CSS library for lazy mammals like me.",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy"
+    "docs:serve": "npx @11ty/eleventy --serve",
+    "docs:build": "npx @11ty/eleventy"
   },
   "keywords": [
     "css",

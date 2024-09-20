@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {# Meta #}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{ meta.description }}" />
+    <title>{{ meta.title }}</title>
+
+    {# Opt out of Turbo caching #}
+    <meta name="turbo-cache-control">
+
+    {# Stylesheets #}
+    <link rel="stylesheet" href="assets/sloth.css" />
+
+    {# Favicons #}
+    <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
+
+    {# Twitter Cards #}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="devmount" />
+
+    {# OpenGraph #}
+    <meta property="og:title" content="{{ meta.title }}" />
+    <meta property="og:description" content="{{ meta.description }}" />
+
+  </head>
+  <body>
+    {# TODO: Nav #}
+
+    {# Content #}
+    <main>
+      <article id="content" class="content{% if toc %} content--with-toc{% endif %}">
+        {% if toc %}
+          <div class="content__toc">
+            <ul>
+              <li class="top"><a href="#">{{ meta.title }}</a></li>
+            </ul>
+          </div>
+        {% endif %}
+
+        <div class="content__body">
+          {% block content %}
+            {{ content | safe }}
+          {% endblock %}
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
