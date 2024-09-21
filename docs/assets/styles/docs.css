@@ -1,0 +1,110 @@
+body {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  &>.menu-trigger {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: .5rem;
+    transition: none;
+    z-index: 1;
+  }
+
+  &>aside {
+    background: var(--background-base);
+    position: fixed;
+    min-width: 14rem;
+    overflow-y: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    transition: var(--transition-transform);
+    z-index: 20;
+    transform: translateX(-100%);
+
+    &:target,
+    &.active {
+      transform: translateX(0);
+    }
+
+    &:target ~ .menu-overlay,
+    &.active ~ .menu-overlay {
+      display: block;
+      z-index: 10;
+    }
+
+    header {
+      position: fixed;
+      width: 11rem;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    
+    nav {
+      position: fixed;
+      padding: 1.5rem;
+      top: 3.5rem;
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+        
+        ul {
+          padding: 0 0 .5rem 1rem;
+          li {
+            margin-bottom: .5rem;
+          }
+        }
+      }
+    } 
+  }
+
+  &>main {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &>.menu-overlay {
+    position: fixed;
+    background: #00000055;
+    border: none;
+    bottom: 0;
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    &>.menu-trigger {
+      display: none;
+    }
+
+    &>aside {
+      flex: 0 0 auto;
+      position: relative;
+      transform: none;
+    }
+
+    &>main {
+      padding-left: 4rem;
+    }
+
+    &>.menu-overlay {
+      display: none !important;
+    }
+  }
+}

@@ -1,16 +1,16 @@
 ---
-meta:
-  title: 'Sloth.css: A drop-in utility component CSS library for lazy mammals like me.'
-  description: Hand-crafted core styles, utility classes and components for dropping in.
-toc: false
+title: 'Sloth.css: A drop-in utility component CSS library for lazy mammals.'
+description: Hand-crafted core styles, utility classes and components for dropping in.
 ---
 
-<img src="/assets/images/logo.svg" alt="Logo showing a sloth" class="w-32 h-32 rounded-full">
-
-# Sloth.css
-
-A drop-in utility component CSS library for lazy mammals like me.
-Created by [devmount](https://github.com/devmount).
+<header role="banner" class="text-center">
+  <img src="/assets/images/logo.svg" alt="Logo showing a sloth" class="w-32 h-32 rounded-full">
+  <h1 class="m-2">Sloth.css</h1>
+  <p>
+    A drop-in utility CSS library for lazy mammals like me.<br />
+    Created by <a href="https://github.com/devmount">devmount</a>.
+  </p>
+</header>
 
 ## Installation
 

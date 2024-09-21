@@ -12,7 +12,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addGlobalData('toc', true); // enable the table of contents
   eleventyConfig.addGlobalData('meta', {
     title: 'Sloth.css',
-    description: 'A drop-in utility component CSS library for lazy mammals like me.',
+    description: 'A drop-in utility component CSS library for lazy mammals.',
     utilitySections: [],
     components: [],
   });

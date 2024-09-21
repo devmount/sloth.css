@@ -4,15 +4,16 @@
     {# Meta #}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="{{ meta.description }}" />
-    <title>{{ meta.title }}</title>
+    <meta name="description" content="{{ description }}" />
+    <title>{{ title }}</title>
 
     {# Opt out of Turbo caching #}
     <meta name="turbo-cache-control">
 
     {# Stylesheets #}
-    <link rel="stylesheet" href="assets/styles/sloth.css" />
     <link rel="stylesheet" href="assets/styles/prism-one-dark.css" />
+    <link rel="stylesheet" href="assets/styles/sloth.css" />
+    <link rel="stylesheet" href="assets/styles/docs.css" />
 
     {# Favicons #}
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
@@ -22,17 +23,38 @@
     <meta name="twitter:creator" content="devmount" />
 
     {# OpenGraph #}
-    <meta property="og:title" content="{{ meta.title }}" />
-    <meta property="og:description" content="{{ meta.description }}" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ description }}" />
 
   </head>
   <body>
+    {# Menu trigger #}
+    <a class="menu-trigger text-muted" href="#navigation">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M4 6l16 0" />
+        <path d="M4 12l16 0" />
+        <path d="M4 18l16 0" />
+      </svg>
+    </a>
+
     {# Global navigation #}
     <aside id="navigation">
       <header>
         <a href="/">
-          <img src="/assets/images/logo.svg" alt="Sloth.css" class="w-16 h-16 rounded-full" />
+          <img src="/assets/images/logo.svg" alt="Sloth.css" class="w-12 h-12 rounded-full" />
         </a>
+        <div class="text-xl font-semibold">Sloth.css</div>
+        <pre class="text-sm">DOCS</pre>
       </header>
 
       <nav>
@@ -40,17 +62,12 @@
       </nav>
     </aside>
 
+    {# Menu overlay #}
+    <a class="menu-overlay" href="#"></a>
+
     {# Page content #}
     <main>
       <article id="content">
-        {% if toc %}
-          <div class="toc sticky">
-            <ul>
-              <li class="top"><a href="#">{{ meta.title }}</a></li>
-            </ul>
-          </div>
-        {% endif %}
-
         <div>
           {% block content %}
             {{ content | safe }}
