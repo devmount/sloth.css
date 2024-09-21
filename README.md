@@ -18,7 +18,7 @@ Include the following CSS file in your HTML head to get the complete package:
 <link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.min.css" />
 ```
 
-Read on below to find out about all available variants. Maybe one of them is more suitbale for your use case.
+Read on below to find out about all available variants. Maybe one of them is more suitable for your use case.
 
 ## Features
 

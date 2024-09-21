@@ -13,6 +13,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addGlobalData('meta', {
     title: 'Sloth.css',
     description: 'A drop-in utility component CSS library for lazy mammals like me.',
+    utilitySections: [],
+    components: [],
   });
 
   // Layout aliases

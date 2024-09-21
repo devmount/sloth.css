@@ -1,0 +1,36 @@
+<ul>
+  <li>
+    <h2>Getting Started</h2>
+    <ul>
+      <li><a href="/getting-started/installation">Installation</a></li>
+      <li><a href="/getting-started/usage">Usage</a></li>
+      <li><a href="/getting-started/customizing">Customizing</a></li>
+      <li><a href="/getting-started/customizing">Contributing</a></li>
+      <li><a href="/getting-started/customizing">Changelog</a></li>
+    </ul>
+  </li>
+  <li>
+    <h2>Utilities</h2>
+    <ul>
+      {% for section in meta.utilitySections %}
+        <li>
+          <a href="/utilities/{{ section.name }}">
+            {{ section.name | capitalize }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </li>
+  <li>
+    <h2>Components</h2>
+    <ul>
+      {% for component in meta.components %}
+        <li>
+          <a href="/components/{{ component.name }}">
+            {{ component.name | capitalize }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </li>
+</ul>

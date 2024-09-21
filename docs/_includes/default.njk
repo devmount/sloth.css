@@ -27,20 +27,31 @@
 
   </head>
   <body>
-    {# TODO: Nav #}
+    {# Global navigation #}
+    <aside id="navigation">
+      <header>
+        <a href="/">
+          <img src="/assets/images/logo.svg" alt="Sloth.css" class="w-16 h-16 rounded-full" />
+        </a>
+      </header>
 
-    {# Content #}
+      <nav>
+        {% include 'menu.njk' %}
+      </nav>
+    </aside>
+
+    {# Page content #}
     <main>
-      <article id="content" class="content{% if toc %} content--with-toc{% endif %}">
+      <article id="content">
         {% if toc %}
-          <div class="content__toc">
+          <div class="toc sticky">
             <ul>
               <li class="top"><a href="#">{{ meta.title }}</a></li>
             </ul>
           </div>
         {% endif %}
 
-        <div class="content__body">
+        <div>
           {% block content %}
             {{ content | safe }}
           {% endblock %}
