@@ -37,7 +37,7 @@ This is the smalles variant and the core of Sloth.css. It provides styles for al
 
 ### Variant 2: Utility classes CSS library
 
-If you want more, you can use Sloth.css with utility classes included. Just take a look at the docs to see, which ones are available. Those utility classes are a curated subset of Tailwind CSS classes (with a few exceptions) and are meant to be extended and adapted by you for your project. I had several projects, where Tailwind was not necessary (or not possible or not wanted), so instead I used a convenient set of utility classes I curated myself and found, that those were mostly sufficient for those projects. So here they are. This variant includes the drop-in styles too:
+If you want more, you can use Sloth.css with utility classes included. Just take a look at the docs to see, which ones are available. Those utility classes are a curated subset of Tailwind CSS classes (with a few exceptions) and are meant to be extended and adapted by you for your project. I had several projects, where Tailwind was not necessary (or not possible or not wanted), so instead I used a convenient set of utility classes I curated myself and found, that those were mostly sufficient for those projects. So here they are:
 
 ```html
 <!-- Sloth.css drop-in core styles and utility classes, 4kB -->
@@ -48,7 +48,7 @@ If you want more, you can use Sloth.css with utility classes included. Just take
 
 ### Variant 3: CSS components
 
-If you still haven't had enough and need some more advanced elements on your page, you can use Sloth.css with prestyled components included. Badges, Cards, Modals, Tooltips and more - take a look at the complete list in the docs. This is the whole packages, it contains the drop-in styles and the utility classes too:
+If you still haven't had enough and need some more advanced elements on your page, you can use Sloth.css with prestyled components included. Badges, Cards, Modals, Tooltips and more - take a look at the complete list in the docs. This is the whole packages:
 
 ```html
 <!-- Sloth.css drop-in core styles, utility classes and components, 10kB -->
