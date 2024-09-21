@@ -5,11 +5,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
 
   // Global data
-  eleventyConfig.addGlobalData('baseUrl', 'https://devmount.github.com/sloth.css'); // the production URL
-  eleventyConfig.addGlobalData('repoUrl', 'https://github.com/devmount/sloth.css'); // the repository URL
-  eleventyConfig.addGlobalData('cdnUrl', 'https://unpkg.com/@devmount/sloth.css@1'); // the repository URL
-  eleventyConfig.addGlobalData('layout', 'default'); // make 'default' the default layout
-  eleventyConfig.addGlobalData('toc', true); // enable the table of contents
+  eleventyConfig.addGlobalData('baseUrl', 'https://devmount.github.com/sloth.css');
+  eleventyConfig.addGlobalData('repoUrl', 'https://github.com/devmount/sloth.css');
+  eleventyConfig.addGlobalData('cdnUrl', 'https://unpkg.com/@devmount/sloth.css@1');
+  eleventyConfig.addGlobalData('layout', 'default');
+  eleventyConfig.addGlobalData('toc', true);
   eleventyConfig.addGlobalData('meta', {
     title: 'Sloth.css',
     description: 'A drop-in utility component CSS library for lazy mammals.',
