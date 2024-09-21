@@ -3,6 +3,7 @@ body {
   position: relative;
   height: 100%;
   width: 100%;
+  max-width: 100%;
   margin: 0;
   padding: 0;
 
@@ -69,6 +70,7 @@ body {
 
   &>main {
     padding: 1rem;
+    max-width: 780px;
     width: 100%;
     box-sizing: border-box;
   }
