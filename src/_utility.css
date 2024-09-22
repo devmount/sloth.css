@@ -225,6 +225,12 @@
 .font-bold {
   font-weight: 700;
 }
+.font-mono {
+  font-family: var(--font-mono);
+}
+.font-sans {
+  font-family: var(--font-sans);
+}
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;

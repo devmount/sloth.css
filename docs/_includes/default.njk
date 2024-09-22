@@ -22,7 +22,7 @@
   </head>
   <body>
     {# Menu trigger #}
-    <a class="menu-trigger text-muted" href="#navigation">
+    <a class="menu-trigger text-muted" href="#nav">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -41,13 +41,15 @@
     </a>
 
     {# Global navigation #}
-    <aside id="navigation">
+    <aside id="nav">
       <header>
-        <a href="/">
+        <a href="/" class="flex">
           <img src="/assets/images/logo.svg" alt="Sloth.css" class="w-12 h-12 rounded-full" />
         </a>
-        <div class="text-xl font-semibold">Sloth.css</div>
-        <pre class="text-sm">DOCS</pre>
+        <div>
+          <div class="text-xl font-semibold">Sloth.css</div>
+          <div class="text-sm text-muted font-sans flex gap-2">v{{ meta.version }}</div>
+        </div>
       </header>
 
       <nav>

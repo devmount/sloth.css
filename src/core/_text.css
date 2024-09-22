@@ -32,13 +32,13 @@ h1, h2, h3, h4, h5, h6 {
 /* <a> */
 a {
   text-decoration: none;
-  color: color-mix(in hsl, var(--accent) 70%, black);
+  color: var(--text-link);
   text-underline-offset: 0;
   transition: var(--transition-color), var(--transition-underline);
   border-radius: .25rem;
 
   &:hover, &:focus, &:focus-within {
-    color: color-mix(in hsl, var(--accent) 90%, black);
+    color: var(--text-link-hover);
     text-decoration: underline;
     text-underline-offset: 10%;
   }

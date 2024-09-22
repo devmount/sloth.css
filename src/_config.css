@@ -1,24 +1,28 @@
 :root {
+  /* Enable color schemes */
+  color-scheme: light dark;
+
   /* Colors */
   --accent: #e5aa70;
-  --background-base: #f4f4f4;
-  --background-page: #ffffff;
-  --border: #d5d5d5;
+  --background-base: light-dark(#f4f4f4, #20232a);
+  --background-page: light-dark(#ffffff, #181a1b);
+  --border: light-dark(#d5d5d5, #30333a);
   --button-base: #d0cfcf;
   --button-hover: #9b9b9b;
   --code: #000000;
   --focus: #0096bfab;
   --highlight: #ffff00;
   --label: #1d1d1d;
-  --links: #0076d1;
   --placeholder: #949494;
   --selection: #9e9e9e;
-  --text-base: #464646;
-  --text-emphasized: #151515;
+  --text-base: light-dark(#464646, #e8e8ec);
+  --text-emphasized: light-dark(#151515, #ffffff);
   --text-muted: #70777f;
   --text-positive: #238636;
   --text-negative: #da3633;
-
+  
+  --text-link: light-dark(color-mix(in hsl, var(--accent) 70%, black), var(--accent));
+  --text-link-hover: light-dark(color-mix(in hsl, var(--accent) 90%, black), color-mix(in hsl, var(--accent) 70%, white));
   --outline: color-mix(in srgb, var(--accent) 35%, transparent);
   --text-positive-background: color-mix(in srgb, var(--text-positive) 15%, transparent);
   --text-negative-background: color-mix(in srgb, var(--text-negative) 15%, transparent);
