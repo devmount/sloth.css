@@ -24,13 +24,13 @@
   --text-negative-background: color-mix(in srgb, var(--text-negative) 15%, transparent);
 
   /* Dimensions */
+  --size-sm: 640px;
+  --size-md: 768px;
+  --size-lg: 1024px;
+  --size-xl: 1280px;
 
   /* Transitions */
-  --transition-color:
-      color .1s ease,
-      border-color .1s ease,
-      outline-color .1s ease,
-      background-color .1s ease;
+  --transition-color: color .1s ease, border-color .1s ease, outline-color .1s ease, background-color .1s ease;
   --transition-outline: outline-width .1s ease;
   --transition-underline: text-underline-offset .1s ease;
   --transition-transform: .15s transform ease;
@@ -46,11 +46,6 @@
   --shadow-inset: var(--border) 2px 2px .125rem 0 inset;
   --shadow-float: color-mix(in hsl, var(--border) 80%, black) 2px 2px .25rem 0;
 
-  /* Responsiveness */
-  --bp-sm: 640px;
-  --bp-md: 768px;
-  --bp-lg: 1024px;
-  --bp-xl: 1280px;
 }
 
 /* Animations */

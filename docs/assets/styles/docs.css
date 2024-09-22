@@ -115,7 +115,8 @@ body {
 
 /* Code examples */
 .demo {
-  padding: 1rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
   border: 1px solid var(--border);
   border-bottom: none;
   border-radius: .5rem;
@@ -140,6 +141,7 @@ body {
 
   & + pre {
     margin-top: 0;
+    margin-bottom: 2rem;
     border-radius: .5rem;
     border-top-left-radius: 0;
     border-top-right-radius: 0;

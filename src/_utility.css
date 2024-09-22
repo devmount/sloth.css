@@ -19,6 +19,12 @@
 .w-32 {
   width: 8rem;
 }
+.w-1\/2 {
+  width: 50%;
+}
+.w-full {
+  width: 100%;
+}
 .h-8 {
   height: 2rem;
 }
@@ -30,6 +36,12 @@
 }
 .h-32 {
   height: 8rem;
+}
+.h-1\/2 {
+  height: 50%;
+}
+.h-full {
+  height: 100%;
 }
 
 /* Display */
@@ -237,4 +249,12 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+/* Effects */
+.shadow-inset {
+  box-shadow: var(--shadow-inset);
+}
+.shadow-float {
+  box-shadow: var(--shadow-float);
 }
