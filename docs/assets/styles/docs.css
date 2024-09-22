@@ -1,3 +1,4 @@
+/* Page layout with collapsible sidebar menu (CSS only) */
 body {
   display: flex;
   position: relative;
@@ -108,6 +109,54 @@ body {
 
     &>.menu-overlay {
       display: none !important;
+    }
+  }
+}
+
+/* Code examples */
+.demo {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-bottom: none;
+  border-radius: .5rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  position: relative;
+
+  &::before,
+  & + pre::before {
+    position: absolute;
+    right: .5rem;
+    text-transform: uppercase;
+    font-size: .75rem;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+  }
+
+  &::before {
+    content: 'demo';
+    top: .25rem;
+  }
+
+  & + pre {
+    margin-top: 0;
+    border-radius: .5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    position: relative;
+
+    &::before {
+      content: 'code';
+      top: .5rem;
+    }
+    &[class*='html']::before {
+      content: 'html';
+    }
+    &[class*='css']::before {
+      content: 'css';
+    }
+    &[class*='js']::before {
+      content: 'js';
     }
   }
 }
