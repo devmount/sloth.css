@@ -3,6 +3,7 @@ hr {
   border: none;
   height: 2px;
   background-color: var(--border);
+  margin: 1rem 0;
 }
 
 /* <table> */

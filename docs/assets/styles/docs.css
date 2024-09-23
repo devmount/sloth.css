@@ -76,6 +76,10 @@ body {
     width: 100%;
     box-sizing: border-box;
     transition: var(--transition-spacing);
+
+    footer {
+      margin: 4rem 0;
+    }
   }
 
   &>.menu-overlay {

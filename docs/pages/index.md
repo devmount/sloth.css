@@ -62,7 +62,7 @@ If you still haven't had enough and need some more advanced elements on your pag
 
 ## License
 
-This project is licensed under the [MIT License]({{ repoUrl }}/blob/main/LICENSE).
+This project is provided under the terms of the [MIT License]({{ repoUrl }}/blob/main/LICENSE).
 
 ## Support
 

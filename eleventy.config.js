@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addGlobalData('baseUrl', 'https://devmount.github.com/sloth.css');
   eleventyConfig.addGlobalData('repoUrl', 'https://github.com/devmount/sloth.css');
   eleventyConfig.addGlobalData('cdnUrl', 'https://unpkg.com/@devmount/sloth.css@1');
+  eleventyConfig.addGlobalData('creatorUrl', 'https://devmount.com');
   eleventyConfig.addGlobalData('layout', 'default');
   eleventyConfig.addGlobalData('toc', true);
   eleventyConfig.addGlobalData('meta', {
@@ -32,9 +33,8 @@ module.exports = function(eleventyConfig) {
       output: "docs/public",
       includes: "../_includes",
     },
-    // use Nunjucks instead of Liquid for markdown files
+    // Nunjucks instead of Liquid for markdown
     markdownTemplateEngine: 'njk',
-    // just Nunjucks and then markdown
     templateEngineOverride: ['njk'],
   }
 };

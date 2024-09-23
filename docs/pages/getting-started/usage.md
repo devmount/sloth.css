@@ -30,7 +30,7 @@ If you like classes though &mdash; utility classes in particluar, Sloth.css got 
 This is what a possible card component built with utility classes and no additional CSS looks like:
 
 <div class="demo flex-center">
-  <section class="flex-col items-center gap-2 m-4 p-4 w-1/2 shadow-float">
+  <section class="flex-col items-center gap-2 m-4 p-4 w-1/2 shadow-float rounded">
     <figure class="w-12 h-12 bg-accent rounded-full flex-center font-bold m-2">BW</figure>
     <h5 class="uppercase m-0">Black Widow</h5>
     <div class="text-muted">Natasha Romanoff</div>
