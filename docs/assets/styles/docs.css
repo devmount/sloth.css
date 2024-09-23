@@ -1,14 +1,14 @@
 /* Page layout with collapsible sidebar menu (CSS only) */
 body {
-  display: flex;
   position: relative;
   height: 100%;
+  min-height: 100vh;
   width: 100%;
   max-width: 100%;
   margin: 0;
   padding: 0;
 
-  &>.menu-trigger {
+  & > .menu-trigger {
     display: flex;
     position: absolute;
     top: 1rem;
@@ -18,14 +18,15 @@ body {
     z-index: 1;
   }
 
-  &>aside {
+  & > aside {
     background: var(--background-base);
     position: fixed;
-    min-width: 14rem;
+    width: 14rem;
     overflow-y: auto;
     bottom: 0;
     top: 0;
     left: 0;
+    height: 100vh;
     transition: var(--transition-transform);
     z-index: 20;
     transform: translateX(-100%);
@@ -70,10 +71,11 @@ body {
   }
 
   &>main {
-    padding: 3rem 1rem;
-    max-width: 780px;
+    padding: 2rem 1rem 1rem 1rem;
+    max-width: 1260px;
     width: 100%;
     box-sizing: border-box;
+    transition: var(--transition-spacing);
   }
 
   &>.menu-overlay {
@@ -97,14 +99,12 @@ body {
     }
 
     &>aside {
-      flex: 0 0 auto;
-      position: relative;
       transform: none;
     }
 
     &>main {
-      padding-top: 2rem;
-      padding-left: 4rem;
+      padding-top: 1rem;
+      padding-left: 18rem;
     }
 
     &>.menu-overlay {

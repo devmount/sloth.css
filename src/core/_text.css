@@ -143,6 +143,10 @@ code {
   font-weight: 400;
   font-size: .875em;
   padding: .125em .25em;
+
+  pre > & {
+    padding: 0;
+  }
 }
 
 /* <samp> */
