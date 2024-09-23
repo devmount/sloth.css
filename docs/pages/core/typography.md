@@ -5,7 +5,8 @@ description: Drop-in styles of Sloth.css for all typography related HTML tags.
 
 ## Typography
 
-The presentation of text is the most basic and at the same time important task. Here is how Sloth.css maintains a consisten representation of text in differet forms.
+The presentation of text is the most basic and at the same time important task.
+Here is how Sloth.css maintains a consistent representation of text in different forms.
 
 ### Headings
 
