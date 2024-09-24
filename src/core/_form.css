@@ -55,6 +55,9 @@ select {
   padding: .5rem .75rem;
   font-size: .875rem;
 }
+textarea {
+  width: 100%;
+}
 input[type="number"],
 input[type="date"],
 input[type="datetime-local"] {
