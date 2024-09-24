@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: .75em 0 .5em 0;
   color: var(--text-emphasized);
   line-height: 1.4;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 /* <a> */
