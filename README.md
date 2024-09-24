@@ -6,7 +6,7 @@
 <a href="./LICENSE" target="_blank"><img src="https://img.shields.io/badge/license-MIT-e5aa70.svg?style=flat-square" alt="License MIT" /></a>
 <a href="./.github/CONTRIBUTING.md" target="_blank"><img src="https://img.shields.io/badge/contributions-welcome-e5aa70.svg?style=flat-square" alt="contributions welcome" /></a>
 </p>
-<p align="center">A drop-in utility component CSS library for lazy mammals like me.<br />Created by <a href="https://github.com/devmount" target="_blank">devmount</a>.</p>
+<p align="center">A drop-in utility component CSS library for lazy mammals.<br />Created by <a href="https://github.com/devmount" target="_blank">devmount</a>.</p>
 </p>
 
 ## Installation

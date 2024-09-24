@@ -7,7 +7,7 @@ description: Hand-crafted core styles, utility classes and components for droppi
   <img src="/assets/images/logo.svg" alt="Logo showing a sloth" class="w-32 h-32 rounded-full">
   <h1 class="m-2">Sloth.css</h1>
   <p>
-    A drop-in utility CSS library for lazy mammals like me.<br />
+    A drop-in utility component CSS library for lazy mammals.<br />
     Created by <a href="https://github.com/devmount">devmount</a>.
   </p>
 </header>

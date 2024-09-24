@@ -15,9 +15,10 @@ table {
 }
 table caption {
   text-align: left;
+  color: var(--text-muted);
 }
 td, th {
-  padding: .5rem;
+  padding: .75rem;
   text-align: left;
   vertical-align: top;
   word-wrap: break-word;
@@ -33,6 +34,14 @@ thead th, tfoot th {
 }
 tbody tr:nth-child(even) {
   background-color: var(--background-base);
+}
+tbody tr:hover td {
+  background-color: var(--border);
+}
+
+/* <img> */
+img {
+  max-width: 100%;
 }
 
 /* <figure> */

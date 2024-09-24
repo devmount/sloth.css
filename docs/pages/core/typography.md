@@ -5,7 +5,7 @@ description: Drop-in styles of Sloth.css for all typography related HTML tags.
 
 ## Typography
 
-The presentation of text is the most basic and at the same time important task.
+The presentation of text is one of the most basic and most important tasks.
 Here is how Sloth.css maintains a consistent representation of text in different forms.
 
 ### Headings
@@ -62,7 +62,7 @@ Here is how Sloth.css maintains a consistent representation of text in different
 
 ### Lists
 
-<div class="demo flex gap-2">
+<div class="demo flex flex-wrap gap-2">
   <div>
     <h5>Definition list</h5>
     <dl>
@@ -173,6 +173,43 @@ Here is how Sloth.css maintains a consistent representation of text in different
         <th>Table Heading 5</th>
       </tr>
     </thead>
+    <tbody>
+      <tr>
+        <td>Table Cell 1&times;1</td>
+        <td>Table Cell 1&times;2</td>
+        <td>Table Cell 1&times;3</td>
+        <td>Table Cell 1&times;4</td>
+        <td>Table Cell 1&times;5</td>
+      </tr>
+      <tr>
+        <td>Table Cell 2&times;1</td>
+        <td>Table Cell 2&times;2</td>
+        <td>Table Cell 2&times;3</td>
+        <td>Table Cell 2&times;4</td>
+        <td>Table Cell 2&times;5</td>
+      </tr>
+      <tr>
+        <td>Table Cell 3&times;1</td>
+        <td>Table Cell 3&times;2</td>
+        <td>Table Cell 3&times;3</td>
+        <td>Table Cell 3&times;4</td>
+        <td>Table Cell 3&times;5</td>
+      </tr>
+      <tr>
+        <td>Table Cell 4&times;1</td>
+        <td>Table Cell 4&times;2</td>
+        <td>Table Cell 4&times;3</td>
+        <td>Table Cell 4&times;4</td>
+        <td>Table Cell 4&times;5</td>
+      </tr>
+      <tr>
+        <td>Table Cell 5&times;1</td>
+        <td>Table Cell 5&times;2</td>
+        <td>Table Cell 5&times;3</td>
+        <td>Table Cell 5&times;4</td>
+        <td>Table Cell 5&times;5</td>
+      </tr>
+    </tbody>
     <tfoot>
       <tr>
         <th>Table Footer 1</th>
@@ -182,43 +219,6 @@ Here is how Sloth.css maintains a consistent representation of text in different
         <th>Table Footer 5</th>
       </tr>
     </tfoot>
-    <tbody>
-      <tr>
-        <td>Table Cell 1</td>
-        <td>Table Cell 2</td>
-        <td>Table Cell 3</td>
-        <td>Table Cell 4</td>
-        <td>Table Cell 5</td>
-      </tr>
-      <tr>
-        <td>Table Cell 1</td>
-        <td>Table Cell 2</td>
-        <td>Table Cell 3</td>
-        <td>Table Cell 4</td>
-        <td>Table Cell 5</td>
-      </tr>
-      <tr>
-        <td>Table Cell 1</td>
-        <td>Table Cell 2</td>
-        <td>Table Cell 3</td>
-        <td>Table Cell 4</td>
-        <td>Table Cell 5</td>
-      </tr>
-      <tr>
-        <td>Table Cell 1</td>
-        <td>Table Cell 2</td>
-        <td>Table Cell 3</td>
-        <td>Table Cell 4</td>
-        <td>Table Cell 5</td>
-      </tr>
-      <tr>
-        <td>Table Cell 1</td>
-        <td>Table Cell 2</td>
-        <td>Table Cell 3</td>
-        <td>Table Cell 4</td>
-        <td>Table Cell 5</td>
-      </tr>
-    </tbody>
   </table>
 </div>
 
@@ -231,20 +231,20 @@ Here is how Sloth.css maintains a consistent representation of text in different
       ...
     </tr>
   </thead>
+  <tbody>
+    <tr>
+      <td>Table Cell 1&times;1</td>
+      <td>Table Cell 1&times;2</td>
+      ...
+    </tr>
+    ...
+  </tbody>
   <tfoot>
     <tr>
       <th>Table Footer 1</th>
       ...
     </tr>
   </tfoot>
-  <tbody>
-    <tr>
-      <td>Table Cell 1</td>
-      <td>Table Cell 2</td>
-      ...
-    </tr>
-    ...
-  </tbody>
 </table>
 
 ```

@@ -17,7 +17,7 @@
   --selection: #9e9e9e;
   --text-base: light-dark(#464646, #e8e8ec);
   --text-emphasized: light-dark(#151515, #ffffff);
-  --text-muted: #70777f;
+  --text-muted: light-dark(#70777f, #90979f);
   --text-positive: #238636;
   --text-negative: #da3633;
   

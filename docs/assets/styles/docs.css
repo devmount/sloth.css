@@ -71,7 +71,7 @@ body {
   }
 
   &>main {
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 4rem 1rem 1rem 1rem;
     max-width: 1260px;
     width: 100%;
     box-sizing: border-box;
@@ -107,7 +107,7 @@ body {
     }
 
     &>main {
-      padding-top: 1rem;
+      padding-top: 2rem;
       padding-left: 18rem;
     }
 
