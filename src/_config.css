@@ -20,6 +20,7 @@
   --text-muted: light-dark(#70777f, #90979f);
   --text-positive: #238636;
   --text-negative: #da3633;
+  --shadow: light-dark(var(--border), #000000aa);
   
   --text-link: light-dark(color-mix(in hsl, var(--accent) 70%, black), var(--accent));
   --text-link-hover: light-dark(color-mix(in hsl, var(--accent) 90%, black), color-mix(in hsl, var(--accent) 70%, white));
@@ -48,8 +49,8 @@
 
   /* Misc */
   --shadow-border-accent: var(--accent) 0 0 0 1px;
-  --shadow-inset: var(--border) 2px 2px .125rem 0 inset;
-  --shadow-float: color-mix(in hsl, var(--border) 80%, black) 2px 2px .25rem 0;
+  --shadow-inset: var(--shadow) 0 2px .25rem 0 inset;
+  --shadow-float: black 0 .24rem 1rem -.4rem;
 
 }
 

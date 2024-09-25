@@ -156,13 +156,13 @@ body {
       content: 'code';
       top: .5rem;
     }
-    &[class*='html']::before {
+    &[class*='-html']::before {
       content: 'html';
     }
-    &[class*='css']::before {
+    &[class*='-css']::before {
       content: 'css';
     }
-    &[class*='js']::before {
+    &[class*='-js']::before {
       content: 'js';
     }
   }
