@@ -259,17 +259,15 @@ Input fields can be disabled or their value can be valid or invalid on form subm
 </div>
 
 ```html
-<fieldset>
-  <label>Error
-    <input type="text" placeholder="Wrong Input">
-  </label>
-  <label>Valid
-    <input type="text" placeholder="Valid Input">
-  </label>
-  <label>Disabled
-    <input type="text" placeholder="Disabled Input" disabled>
-  </label>
-</fieldset>
+<label>Error
+  <input type="text" placeholder="Wrong Input">
+</label>
+<label>Valid
+  <input type="text" placeholder="Valid Input">
+</label>
+<label>Disabled
+  <input type="text" placeholder="Disabled Input" disabled>
+</label>
 ```
 
 ### Fieldset
