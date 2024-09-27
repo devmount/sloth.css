@@ -231,8 +231,7 @@ button {
 /* Disabled form elements */
 input, select, textarea, button {
   &:disabled {
-    opacity: .75;
-    filter: grayscale(.75);
+    opacity: .95;
     cursor: not-allowed;
 
     &, &:hover, &:focus, &:focus-within, &:active {

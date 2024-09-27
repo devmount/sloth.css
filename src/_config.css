@@ -4,9 +4,9 @@
 
   /* Colors */
   --accent: #e5aa70;
-  --background-base: light-dark(#f4f4f4, #20232a);
-  --background-page: light-dark(#ffffff, #181a1b);
-  --border: light-dark(#d5d5d5, #30333a);
+  --background-base: light-dark(#f4f4f4, #202631);
+  --background-page: light-dark(#ffffff, #161a22);
+  --border: light-dark(#d5d5d5, #252b36);
   --button-base: #d0cfcf;
   --button-hover: #9b9b9b;
   --code: #000000;
@@ -20,7 +20,7 @@
   --text-muted: light-dark(#70777f, #90979f);
   --text-positive: #238636;
   --text-negative: #da3633;
-  --shadow: light-dark(var(--border), #000000aa);
+  --shadow: light-dark(#d5d5d5ee, #00000088);
   
   --text-link: light-dark(color-mix(in hsl, var(--accent) 70%, black), var(--accent));
   --text-link-hover: light-dark(color-mix(in hsl, var(--accent) 90%, black), color-mix(in hsl, var(--accent) 70%, white));

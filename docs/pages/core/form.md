@@ -37,12 +37,6 @@ To ensure that input fields are clearly recognized as such, they are styled as i
       </label>
     </div>
     <div class="flex flex-col gap-2">
-      <label>Color input
-        <input type="color" value="#e5aa70">
-      </label>
-      <label>Range input
-        <input type="range" value="10">
-      </label>
       <label>Date input
         <input type="date" value="1970-01-01">
       </label>
@@ -57,6 +51,12 @@ To ensure that input fields are clearly recognized as such, they are styled as i
       </label>
       <label>Datetime-local input
         <input type="datetime-local" value="1970-01-01T00:00">
+      </label>
+      <label>Color input
+        <input type="color" value="#e5aa70">
+      </label>
+      <label>Range input
+        <input type="range" value="10">
       </label>
     </div>
   </div>
@@ -84,12 +84,6 @@ To ensure that input fields are clearly recognized as such, they are styled as i
 <label>Number Input
   <input type="number" placeholder="Enter a Number">
 </label>
-<label>Color input
-  <input type="color" value="#e5aa70">
-</label>
-<label>Range input
-  <input type="range" value="10">
-</label>
 <label>Date input
   <input type="date" value="1970-01-01">
 </label>
@@ -104,6 +98,12 @@ To ensure that input fields are clearly recognized as such, they are styled as i
 </label>
 <label>Datetime-local input
   <input type="datetime-local" value="1970-01-01T00:00">
+</label>
+<label>Color input
+  <input type="color" value="#e5aa70">
+</label>
+<label>Range input
+  <input type="range" value="10">
 </label>
 ```
 
