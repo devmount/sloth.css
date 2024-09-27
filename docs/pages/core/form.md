@@ -5,11 +5,11 @@ description: Drop-in styles of Sloth.css for all kinds of input elements and but
 
 ## Form
 
-This page shows all kinds of input elements, form controls and buttons.
+The form category shows all kinds of form control elements like inputs, selects and buttons.
 
 ### Input types
 
-Classical input types are covered as well as all HTML5 input types.
+To ensure that input fields are clearly recognized as such, they are styled as inset into the page. Classical input types are covered as well as all HTML5 input types.
 
 <div class="demo">
   <div class="flex gap-4">
@@ -209,7 +209,17 @@ Input elements with predefined values.
 
 ### Buttons
 
-Buttons can be created with both, the `<input>` and the `<button` tag:
+Buttons used to be control elements, that could be pressed down to trigger a defined action. To distinguish buttons from other clickable elements, they are styled elevated from the page and are pressed in on click.
+
+<div class="demo">
+  <button>Click me</button>
+</div>
+
+```html
+<button>Click me</button>
+```
+
+Buttons can also be created with several `<input>` and `<button` types:
 
 <div class="demo">
   <div class="flex gap-8">

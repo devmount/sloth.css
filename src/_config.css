@@ -48,9 +48,9 @@
   --line-height: 1.4rem;
 
   /* Misc */
-  --shadow-border-accent: var(--accent) 0 0 0 1px;
-  --shadow-inset: var(--shadow) 0 2px .25rem 0 inset;
-  --shadow-float: black 0 .24rem 1rem -.4rem;
+  --shadow-border: 0 0 0 1px;
+  --shadow-inset: 0 2px .25rem 0 inset;
+  --shadow-float: 0 .25rem .75rem -.4rem;
 
 }
 

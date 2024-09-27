@@ -22,7 +22,7 @@ label {
 /* <input>, <textarea>, <select> */
 input, textarea, select {
   background-color: var(--background-base);
-  box-shadow: var(--shadow-inset);
+  box-shadow: var(--shadow) var(--shadow-inset);
   font-family: inherit;
   transition: var(--transition-outline), var(--transition-color);
   border: 0;
@@ -30,11 +30,11 @@ input, textarea, select {
   box-sizing: border-box;
 
   &:hover {
-    box-shadow: var(--shadow-border-accent);
+    box-shadow: var(--accent) var(--shadow-border);
   }
   &:focus, &:focus-within {
     outline: 4px solid var(--outline);
-    box-shadow: var(--shadow-border-accent);
+    box-shadow: var(--accent) var(--shadow-border);
   }
 }
 input[type="text"],
@@ -150,7 +150,7 @@ input[type="range"] {
     border: 0;
     background-color: var(--background-base);
     border-radius: .25rem;
-    box-shadow: var(--shadow-inset);
+    box-shadow: var(--shadow) var(--shadow-inset);
     height: .5rem;
     padding: 1px 0;
     width: 100%;
@@ -160,7 +160,7 @@ input[type="range"] {
   &:hover {
     &::-webkit-slider-runnable-track,
     &::-moz-range-track {
-      box-shadow: var(--shadow-border-accent);
+      box-shadow: var(--accent) var(--shadow-border);
     }
   }
   &:focus, &:focus-within {
@@ -169,7 +169,7 @@ input[type="range"] {
     &::-webkit-slider-runnable-track,
     &::-moz-range-track {
       outline: 4px solid var(--outline);
-      box-shadow: var(--shadow-border-accent), var(--outline) 0 0 0 4px;
+      box-shadow: var(--accent) var(--shadow-border), var(--outline) 0 0 0 4px;
     }
   }
   &:active {
@@ -206,7 +206,7 @@ button {
   border-radius: .25rem;
   padding: .5rem .75rem;
   font-size: .875rem;
-  box-shadow: var(--shadow-float);
+  box-shadow: black var(--shadow-float);
   font-family: inherit;
   box-sizing: border-box;
   transition: var(--transition-outline), var(--transition-color), var(--transition-transform);
@@ -215,7 +215,7 @@ button {
     background-color: var(--accent);
   }
   &:focus, &:focus-within, &:hover {
-    box-shadow: color-mix(in hsl, var(--accent) 90%, black) 0 0 0 1px, var(--shadow-float);
+    box-shadow: color-mix(in hsl, var(--accent) 90%, black) 0 0 0 1px, black var(--shadow-float);
   }
   &:focus, &:focus-within {
     outline: 4px solid var(--outline);
@@ -223,8 +223,8 @@ button {
   &:active {
     outline: 0;
     box-shadow:
-      color-mix(in hsl, var(--accent) 80%, black) 0 0 0 1px,
-      color-mix(in hsl, var(--accent) 80%, black) 2px 2px .125rem 0 inset;
+      color-mix(in hsl, var(--accent) 80%, black) var(--shadow-border),
+      color-mix(in hsl, var(--accent) 80%, black) var(--shadow-inset);
   }
 }
 

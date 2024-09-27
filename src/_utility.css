@@ -262,8 +262,8 @@
 
 /* Effects */
 .shadow-inset {
-  box-shadow: var(--shadow-inset);
+  box-shadow: var(--shadow) var(--shadow-inset);
 }
 .shadow-float {
-  box-shadow: var(--shadow-float);
+  box-shadow: black var(--shadow-float);
 }

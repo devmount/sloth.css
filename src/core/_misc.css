@@ -55,7 +55,7 @@ meter {
   background: var(--background-base);
   border-radius: .25rem;
   border: 0;
-  box-shadow: var(--shadow-inset);
+  box-shadow: var(--shadow) var(--shadow-inset);
   display: block;
   height: 1rem;
   padding: 1px 0;
@@ -94,7 +94,7 @@ progress {
   background: var(--background-base);
   border-radius: .5rem;
   border: 0;
-  box-shadow: var(--shadow-inset);
+  box-shadow: var(--shadow) var(--shadow-inset);
   color: var(--accent);
   height: .5rem;
   padding: 1px 0;
