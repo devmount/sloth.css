@@ -15,7 +15,19 @@ module.exports = function(eleventyConfig) {
     title: 'Sloth.css',
     version: '0.1.0',
     description: 'A drop-in utility component CSS library for lazy mammals.',
-    utilitySections: [],
+    utilitySections: [
+      'border',
+      'colors',
+      'dimensions',
+      'display',
+      'position',
+      'spacing',
+      'alignment',
+      'colors',
+      'cursors',
+      'text',
+      'effects',
+    ],
     components: [],
   });
 

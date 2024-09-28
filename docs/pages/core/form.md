@@ -12,7 +12,7 @@ The form category shows all kinds of form control elements like inputs, selects 
 To ensure that input fields are clearly recognized as such, they are styled as inset into the page. Classical input types are covered as well as all HTML5 input types.
 
 <div class="demo">
-  <div class="flex gap-4">
+  <div class="flex flex-wrap gap-4">
     <div class="flex flex-col gap-2">
       <label>Single line text
         <input type="text" placeholder="Song title">
@@ -222,7 +222,7 @@ Buttons used to be control elements, that could be pressed down to trigger a def
 Buttons can also be created with several `<input>` and `<button` types:
 
 <div class="demo">
-  <div class="flex gap-8">
+  <div class="flex flex-wrap gap-8">
     <div class="flex flex-col gap-2">
       <input type="submit" value="<input type=submit>">
       <input type="button" value="<input type=button>">
