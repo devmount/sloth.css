@@ -43,13 +43,13 @@ Inline SVGs can make use of CSS custom properties like defined colors.
 
 <div class="demo">
   <svg class="w-32 h-32">
-    <circle cx="128" cy="128" r="128" fill="var(--accent)"></circle>
+    <circle cx="128" cy="128" r="128" fill="var(--color-accent)"></circle>
   </svg>
 </div>
 
 ```html
 <svg class="w-32 h-32">
-  <circle cx="128" cy="128" r="128" fill="var(--accent)"></circle>
+  <circle cx="128" cy="128" r="128" fill="var(--color-accent)"></circle>
 </svg>
 ```
 

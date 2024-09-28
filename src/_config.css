@@ -3,23 +3,23 @@
   color-scheme: light dark;
 
   /* Colors */
-  --accent: #e5aa70;
-  --background-base: light-dark(#f4f4f4, #202631);
-  --background-page: light-dark(#ffffff, #161a22);
-  --border: light-dark(#d5d5d5, #252b36);
-  --selection: #9e9e9e;
-  --text-base: light-dark(#464646, #e8e8ec);
-  --text-emphasized: light-dark(#151515, #ffffff);
-  --text-muted: light-dark(#70777f, #90979f);
-  --text-positive: #238636;
-  --text-negative: #da3633;
-  --shadow: light-dark(#d5d5d5ee, #00000088);
+  --color-accent: #e5aa70;
+  --color-background-base: light-dark(#f4f4f4, #202631);
+  --color-background-page: light-dark(#ffffff, #161a22);
+  --color-border: light-dark(#d5d5d5, #252b36);
+  --color-selection: #9e9e9e;
+  --color-text-base: light-dark(#464646, #e8e8ec);
+  --color-text-emphasized: light-dark(#151515, #ffffff);
+  --color-text-muted: light-dark(#70777f, #90979f);
+  --color-text-positive: #238636;
+  --color-text-negative: #da3633;
+  --color-shadow: light-dark(#d5d5d5ee, #00000088);
   
-  --text-link: light-dark(color-mix(in hsl, var(--accent) 70%, black), var(--accent));
-  --text-link-hover: light-dark(color-mix(in hsl, var(--accent) 90%, black), color-mix(in hsl, var(--accent) 70%, white));
-  --outline: color-mix(in srgb, var(--accent) 35%, transparent);
-  --text-positive-background: color-mix(in srgb, var(--text-positive) 15%, transparent);
-  --text-negative-background: color-mix(in srgb, var(--text-negative) 15%, transparent);
+  --color-text-link: light-dark(color-mix(in hsl, var(--color-accent) 70%, black), var(--color-accent));
+  --color-text-link-hover: light-dark(color-mix(in hsl, var(--color-accent) 90%, black), color-mix(in hsl, var(--color-accent) 70%, white));
+  --color-outline: color-mix(in srgb, var(--color-accent) 35%, transparent);
+  --color-text-positive-background: color-mix(in srgb, var(--color-text-positive) 15%, transparent);
+  --color-text-negative-background: color-mix(in srgb, var(--color-text-negative) 15%, transparent);
 
   /* Screen dimensions */
   --screen-xs:  30rem; /*  480px */
@@ -36,13 +36,13 @@
   --transition-transform: transform .15s ease;
   --transition-spacing: padding .15s ease, margin .15s ease;
 
-  /* Fonts */
+  /* Fonts & text */
+  --font-size: 16px; /* defines 1rem */
   --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
   --font-mono: "SF Mono", "Segoe UI Mono", "Fira Code", "Fira Mono", "Roboto Mono", Menlo, Courier, monospace;
-  --font-size: 16px; /* 1rem */
   --line-height: 1.4rem;
 
-  /* Misc */
+  /* Shadows */
   --shadow-border: 0 0 0 1px;
   --shadow-inset: 0 2px .25rem 0 inset;
   --shadow-float: 0 .25rem .75rem -.4rem;

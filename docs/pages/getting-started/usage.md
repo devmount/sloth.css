@@ -63,8 +63,8 @@ Sloth.css uses CSS custom properties for core styles. You can customize and over
 
 ```css
 :root {
-  --accent: #e5aa70;
-  --background-base: #f4f4f4;
+  --color-accent: #e5aa70;
+  --color-background-base: #f4f4f4;
   --transition-underline: text-underline-offset .1s ease;
   --font-size: 16px;
 }

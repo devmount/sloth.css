@@ -187,28 +187,28 @@
 
 /* Colors */
 .text-accent {
-  color: var(--accent);
+  color: var(--color-accent);
 }
 .text-muted {
-  color: var(--text-muted);
+  color: var(--color-text-muted);
 }
 .text-positive {
-  color: var(--text-positive);
+  color: var(--color-text-positive);
 }
 .text-negative {
-  color: var(--text-negative);
+  color: var(--color-text-negative);
 }
 .bg-accent {
-  background-color: var(--accent);
+  background-color: var(--color-accent);
 }
 .bg-muted {
-  background-color: var(--text-muted);
+  background-color: var(--color-text-muted);
 }
 .bg-positive {
-  background-color: var(--text-positive);
+  background-color: var(--color-text-positive);
 }
 .bg-negative {
-  background-color: var(--text-negative);
+  background-color: var(--color-text-negative);
 }
 
 /* Cursors */
@@ -281,7 +281,7 @@
 
 /* Effects */
 .shadow-inset {
-  box-shadow: var(--shadow) var(--shadow-inset);
+  box-shadow: var(--color-shadow) var(--shadow-inset);
 }
 .shadow-float {
   box-shadow: black var(--shadow-float);
