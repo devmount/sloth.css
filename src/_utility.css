@@ -30,13 +30,13 @@
   background-color: var(--color-accent);
 }
 .bg-muted {
-  color: var(--color-background-muted);
+  background-color: var(--color-background-muted);
 }
 .bg-positive {
-  color: var(--color-background-positive);
+  background-color: var(--color-background-positive);
 }
 .bg-negative {
-  color: var(--color-background-negative);
+  background-color: var(--color-background-negative);
 }
 
 /* Dimensions */
@@ -216,32 +216,6 @@
 }
 .text-right {
   text-align: right;
-}
-
-/* Colors */
-.text-accent {
-  color: var(--color-accent);
-}
-.text-muted {
-  color: var(--color-text-muted);
-}
-.text-positive {
-  color: var(--color-text-positive);
-}
-.text-negative {
-  color: var(--color-text-negative);
-}
-.bg-accent {
-  background-color: var(--color-accent);
-}
-.bg-muted {
-  background-color: var(--color-text-muted);
-}
-.bg-positive {
-  background-color: var(--color-text-positive);
-}
-.bg-negative {
-  background-color: var(--color-text-negative);
 }
 
 /* Cursors */
