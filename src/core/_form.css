@@ -3,6 +3,9 @@ fieldset {
   border-radius: .25rem;
   border: 1px solid var(--border);
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
 
   legend {
     padding: 0 .25rem;
@@ -215,7 +218,7 @@ button {
     background-color: var(--accent);
   }
   &:focus, &:focus-within, &:hover {
-    box-shadow: color-mix(in hsl, var(--accent) 90%, black) 0 0 0 1px, black var(--shadow-float);
+    box-shadow: color-mix(in hsl, var(--accent) 90%, black) var(--shadow-border), black var(--shadow-float);
   }
   &:focus, &:focus-within {
     outline: 4px solid var(--outline);
@@ -231,7 +234,7 @@ button {
 /* Disabled form elements */
 input, select, textarea, button {
   &:disabled {
-    opacity: .95;
+    opacity: .5;
     cursor: not-allowed;
 
     &, &:hover, &:focus, &:focus-within, &:active {

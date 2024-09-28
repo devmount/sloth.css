@@ -108,7 +108,7 @@ To ensure that input fields are clearly recognized as such, they are styled as i
 ```
 
 <div class="demo">
-  <label class="w-full">Give us feedback
+  <label class="w-full max-w-screen-xs">Give us feedback
     <textarea rows="8" placeholder="Enter your message here"></textarea>
   </label>
 </div>
@@ -255,7 +255,7 @@ Buttons can also be created with several `<input>` and `<button` types:
 Input fields can be disabled or their value can be valid or invalid on form submit.
 
 <div class="demo">
-  <div class="flex flex-col gap-2">
+  <div class="flex flex-col gap-2 max-w-screen-xs">
     <label>Error
       <input type="text" placeholder="Wrong Input">
     </label>
@@ -263,7 +263,7 @@ Input fields can be disabled or their value can be valid or invalid on form subm
       <input type="text" placeholder="Valid Input">
     </label>
     <label>Disabled
-      <input type="text" placeholder="Disabled Input" disabled>
+      <input type="text" placeholder="Disabled Input" value="test" disabled>
     </label>
   </div>
 </div>
@@ -282,10 +282,10 @@ Input fields can be disabled or their value can be valid or invalid on form subm
 
 ### Fieldset
 
-Form inputs and controls can be grouped together within a fieldset.
+Form inputs and controls can be grouped together within a fieldset. To keep things organized, fieldsets group contained input elements underneath each other in one column per default.
 
 <div class="demo">
-  <fieldset>
+  <fieldset class="max-w-screen-xs">
     <legend>Authentication</legend>
     <input type="text" placeholder="Username">
     <input type="password" placeholder="Passcode">

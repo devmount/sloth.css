@@ -25,6 +25,25 @@
 .w-full {
   width: 100%;
 }
+.max-w-screen-xs {
+  max-width: var(--screen-xs);
+}
+.max-w-screen-sm {
+  max-width: var(--screen-sm);
+}
+.max-w-screen-md {
+  max-width: var(--screen-md);
+}
+.max-w-screen-lg {
+  max-width: var(--screen-lg);
+}
+.max-w-screen-xl {
+  max-width: var(--screen-xl);
+}
+.max-w-screen-2xl {
+  max-width: var(--screen-2xl);
+}
+
 .h-8 {
   height: 2rem;
 }

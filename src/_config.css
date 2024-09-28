@@ -7,13 +7,6 @@
   --background-base: light-dark(#f4f4f4, #202631);
   --background-page: light-dark(#ffffff, #161a22);
   --border: light-dark(#d5d5d5, #252b36);
-  --button-base: #d0cfcf;
-  --button-hover: #9b9b9b;
-  --code: #000000;
-  --focus: #0096bfab;
-  --highlight: #ffff00;
-  --label: #1d1d1d;
-  --placeholder: #949494;
   --selection: #9e9e9e;
   --text-base: light-dark(#464646, #e8e8ec);
   --text-emphasized: light-dark(#151515, #ffffff);
@@ -28,11 +21,13 @@
   --text-positive-background: color-mix(in srgb, var(--text-positive) 15%, transparent);
   --text-negative-background: color-mix(in srgb, var(--text-negative) 15%, transparent);
 
-  /* Dimensions */
-  --size-sm: 640px;
-  --size-md: 768px;
-  --size-lg: 1024px;
-  --size-xl: 1280px;
+  /* Screen dimensions */
+  --screen-xs:  30rem; /*  480px */
+  --screen-sm:  40rem; /*  640px */
+  --screen-md:  48rem; /*  768px */
+  --screen-lg:  64rem; /* 1024px */
+  --screen-xl:  80rem; /* 1280px */
+  --screen-2xl: 96rem; /* 1536px */
 
   /* Transitions */
   --transition-color: color .1s ease, border-color .1s ease, outline-color .1s ease, background-color .1s ease;
@@ -44,7 +39,7 @@
   /* Fonts */
   --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
   --font-mono: "SF Mono", "Segoe UI Mono", "Fira Code", "Fira Mono", "Roboto Mono", Menlo, Courier, monospace;
-  --font-size: 16px;
+  --font-size: 16px; /* 1rem */
   --line-height: 1.4rem;
 
   /* Misc */
