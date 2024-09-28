@@ -6,6 +6,39 @@
   border-radius: 9999px;
 }
 
+/* Colors */
+.text-accent {
+  color: var(--color-accent);
+}
+.text-muted {
+  color: var(--color-text-muted);
+}
+.text-positive {
+  color: var(--color-text-positive);
+}
+.text-negative {
+  color: var(--color-text-negative);
+}
+
+.bg-base {
+  background-color: var(--color-background-base);
+}
+.bg-page {
+  background-color: var(--color-background-page);
+}
+.bg-accent {
+  background-color: var(--color-accent);
+}
+.bg-muted {
+  color: var(--color-background-muted);
+}
+.bg-positive {
+  color: var(--color-background-positive);
+}
+.bg-negative {
+  color: var(--color-background-negative);
+}
+
 /* Dimensions */
 .w-8 {
   width: 2rem;

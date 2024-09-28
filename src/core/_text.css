@@ -109,7 +109,7 @@ u {
 /* <ins>, <del> */
 ins {
   color: var(--color-text-positive);
-  background-color: var(--color-text-positive-background);
+  background-color: var(--color-background-positive);
   text-decoration: none;
   padding: .125rem .25rem;
   border-radius: .125rem;
@@ -117,7 +117,7 @@ ins {
 del {
   text-decoration: line-through;
   color: var(--color-text-negative);
-  background-color: var(--color-text-negative-background);
+  background-color: var(--color-background-negative);
   padding: .125rem .25rem;
   border-radius: .125rem;
 }

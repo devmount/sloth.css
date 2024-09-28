@@ -263,7 +263,7 @@ Input fields can be disabled or their value can be valid or invalid on form subm
       <input type="text" placeholder="Valid Input">
     </label>
     <label>Disabled
-      <input type="text" placeholder="Disabled Input" value="test" disabled>
+      <input type="text" placeholder="Disabled Input" disabled>
     </label>
   </div>
 </div>
