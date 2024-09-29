@@ -23,7 +23,6 @@ module.exports = function(eleventyConfig) {
       'position',
       'spacing',
       'alignment',
-      'colors',
       'cursors',
       'text',
       'effects',

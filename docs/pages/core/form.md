@@ -128,41 +128,41 @@ Input elements with predefined values.
     <label for="select">Select</label>
     <select id="select">
       <optgroup label="Option Group">
-        <option>Option One</option>
-        <option>Option Two</option>
-        <option>Option Three</option>
-        <option disabled>Disabled Four</option>
+        <option>First option</option>
+        <option>Second option</option>
+        <option>Third option</option>
+        <option disabled>Disabled option</option>
       </optgroup>
     </select>
   </div>
   <div>
     <label>Checkboxes</label><br>
     <label class="flex gap-2 items-center">
-      <input name="checkbox" type="checkbox" checked> Choice A
+      <input name="checkbox" type="checkbox" checked> First choice
     </label>
     <label class="flex gap-2 items-center">
-      <input name="checkbox" type="checkbox" disabled> Disabled B
+      <input name="checkbox" type="checkbox"> Second choice
     </label>
     <label class="flex gap-2 items-center">
-      <input name="checkbox" type="checkbox"> Choice C
+      <input name="checkbox" type="checkbox"> Third choice
     </label>
     <label class="flex gap-2 items-center">
-      <input name="checkbox" type="checkbox"> Choice D
+      <input name="checkbox" type="checkbox" disabled> Disabled choice
     </label>
   </div>
   <div>
     <label>Radiobuttons</label><br>
     <label class="flex gap-2 items-center">
-      <input name="radio" type="radio" checked> Option 1
+      <input name="radio" type="radio" checked>First option
     </label>
     <label class="flex gap-2 items-center">
-      <input name="radio" type="radio"> Option 2
+      <input name="radio" type="radio">Second option
     </label>
     <label class="flex gap-2 items-center">
-      <input name="radio" type="radio" disabled> Disabled 3
+      <input name="radio" type="radio">Third option
     </label>
     <label class="flex gap-2 items-center">
-      <input name="radio" type="radio"> Option 4
+      <input name="radio" type="radio" disabled>Disabled option
     </label>
   </div>
 </div>
