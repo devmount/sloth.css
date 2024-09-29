@@ -52,6 +52,9 @@
 .w-32 {
   width: 8rem;
 }
+.w-64 {
+  width: 16rem;
+}
 .w-1\/2 {
   width: 50%;
 }
@@ -88,6 +91,9 @@
 }
 .h-32 {
   height: 8rem;
+}
+.h-64 {
+  height: 16rem;
 }
 .h-1\/2 {
   height: 50%;
@@ -284,6 +290,18 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+.text-nowrap {
+  text-wrap: nowrap;
+}
+.text-balance {
+  text-wrap: balance;
+}
+.text-pretty {
+  text-wrap: pretty;
 }
 
 /* Effects */
