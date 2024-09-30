@@ -29,6 +29,10 @@ Fixed or relative widths can be set for an element with the following classes.
     <code>.w-32</code>
   </div>
   <div class="flex gap-4 items-center">
+    <div class="bg-accent rounded h-8 w-48"></div>
+    <code>.w-48</code>
+  </div>
+  <div class="flex gap-4 items-center">
     <div class="bg-accent rounded h-8 w-64"></div>
     <code>.w-64</code>
   </div>
@@ -125,6 +129,10 @@ Fixed or relative heights can be set for an element with the following classes.
   <div>
     <code class="text-vertical">.h-32</code>
     <div class="bg-accent rounded w-8 h-32"></div>
+  </div>
+  <div>
+    <code class="text-vertical">.h-48</code>
+    <div class="bg-accent rounded w-8 h-48"></div>
   </div>
   <div>
     <code class="text-vertical">.h-64</code>
