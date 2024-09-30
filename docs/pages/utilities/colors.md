@@ -11,10 +11,10 @@ Utility classes for controlling colors of text and backgrounds.
 
 <div class="demo">
   <p>Default text</p>
-  <p class="text-accent">Accent color</p>
-  <p class="text-muted">Muted text</p>
-  <p class="text-positive">Positive message</p>
-  <p class="text-negative">Negative message</p>
+  <p class="text-accent">Accent color <code>.text-accent</code></p>
+  <p class="text-muted">Muted text <code>.text-muted</code></p>
+  <p class="text-positive">Positive message <code>.text-positive</code></p>
+  <p class="text-negative">Negative message <code>.text-negative</code></p>
 </div>
 
 ```html
@@ -38,21 +38,21 @@ Colors can be overwritten by the corresponding custom property:
 
 ### Background color
 
-<div class="demo flex gap-4">
-  <div class="bg-base w-32 h-32 flex-center text-center rounded">Accent color</div>
-  <div class="bg-page w-32 h-32 flex-center text-center rounded">Accent color</div>
-  <div class="bg-accent w-32 h-32 flex-center text-center rounded">Accent color</div>
-  <div class="bg-accent-variant w-32 h-32 flex-center text-center rounded">Accent variant color</div>
-  <div class="bg-muted w-32 h-32 flex-center text-center rounded">Muted background</div>
-  <div class="bg-positive w-32 h-32 flex-center text-center rounded">Positive background</div>
-  <div class="bg-negative w-32 h-32 flex-center text-center rounded">Negative background</div>
+<div class="demo flex-col gap-4">
+  <div class="bg-base p-4 rounded">Base background <code>.bg-base</code></div>
+  <div class="bg-page p-4 rounded">Page background <code>.bg-page</code></div>
+  <div class="bg-accent p-4 rounded">Accent <code>.bg-accent</code></div>
+  <div class="bg-accent-variant p-4 rounded">Accent variant <code>.bg-accent-variant</code></div>
+  <div class="bg-muted p-4 rounded">Muted background <code>.bg-muted</code></div>
+  <div class="bg-positive p-4 rounded">Positive background <code>.bg-positive</code></div>
+  <div class="bg-negative p-4 rounded">Negative background <code>.bg-negative</code></div>
 </div>
 
 ```html
-<div class="bg-base ...">Base color</div>
-<div class="bg-page ...">Page color</div>
-<div class="bg-accent ...">Accent color</div>
-<div class="bg-accent-variant ...">Accent variant color</div>
+<div class="bg-base ...">Base background</div>
+<div class="bg-page ...">Page background</div>
+<div class="bg-accent ...">Accent</div>
+<div class="bg-accent-variant ...">Accent variant</div>
 <div class="bg-muted ...">Muted background</div>
 <div class="bg-positive ...">Positive background</div>
 <div class="bg-negative ...">Negative background</div>
@@ -65,6 +65,7 @@ Colors can be overwritten by the corresponding custom property:
   --color-background-base: light-dark(#f4f4f4, #202631);
   --color-background-page: light-dark(#ffffff, #161a22);
   --color-accent: #e5aa70;
+  --color-background-accent: color-mix(in hsl, var(--color-accent) 80%, black);
   --color-background-muted: color-mix(in srgb, var(--color-background-base) 90%, black);
   --color-background-positive: color-mix(in srgb, var(--color-text-positive) 15%, transparent);
   --color-background-negative: color-mix(in srgb, var(--color-text-negative) 15%, transparent);

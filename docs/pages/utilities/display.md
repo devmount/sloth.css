@@ -40,7 +40,7 @@ Elements can also be position underneath each other (column direction) instead o
 </div>
 
 ```html
-<div class="flex ...">
+<div class="flex-col ...">
   <div>01</div>
   <div>02</div>
   <div>03</div>
@@ -53,6 +53,8 @@ Elements can also be position underneath each other (column direction) instead o
   flex-direction: column;
 }
 ```
+
+> Note that `.flex-col` is a display utility and already includes the `display: flex;` rule. So there's no need to use two classes like in Tailwind <del>`flex flex-column`</del>. Just use <ins>`flex-col`</ins>.
 
 User the `flex-wrap` class, if you want your flex items to break onto a new line when the container limit is reached.
 
@@ -114,10 +116,10 @@ Grid based layouts can be used if a more table-based layout is needed. Use the `
 
 Elements can be displayed as `block` (dedicated line with block properties), `inline-block` (flowing with the text but still mainainting block properties) or `inline` (maintaining text flow).
 
-<div class="demo flex gap-4">
-  <p>Lorem ipsum dolor sit amet, <span class="block bg-accent-variant p-2">consectetur</span> adipiscing elit. Nunc viverra viverra nisl, vel maximus turpis ornare a. Ut scelerisque lectus sed odio dictum scelerisque vitae quis nisi.</p>
-  <p>Lorem ipsum dolor sit amet, <span class="inline-block bg-accent-variant p-2">consectetur</span> adipiscing elit. Nunc viverra viverra nisl, vel maximus turpis ornare a. Ut scelerisque lectus sed odio dictum scelerisque vitae quis nisi.</p>
-  <p>Lorem ipsum dolor sit amet, <span class="inline bg-accent-variant p-2">consectetur</span> adipiscing elit. Nunc viverra viverra nisl, vel maximus turpis ornare a. Ut scelerisque lectus sed odio dictum scelerisque vitae quis nisi.</p>
+<div class="demo grid grid-cols-3 gap-8">
+  <p>Lorem ipsum dolor sit amet, <span class="block bg-accent-variant p-2">consectetur <code>.block</code></span> ad adipiscing elit. Nunc viverra viverra nisl, vel maximus turpis ornare a.</p>
+  <p>Lorem ipsum dolor sit amet, <span class="inline-block bg-accent-variant p-2">consectetur <code>.inline-block</code></span> ad adipiscing elit. Nunc viverra viverra nisl, vel maximus turpis ornare a.</p>
+  <p>Lorem ipsum dolor sit amet, <span class="inline bg-accent-variant p-2">consectetur <code>.inline</code></span> ad adipiscing elit. Nunc viverra viverra nisl, vel maximus turpis ornare a.</p>
 </div>
 
 ```html

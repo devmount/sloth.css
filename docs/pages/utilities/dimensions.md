@@ -32,13 +32,11 @@ Fixed or relative widths can be set for an element with the following classes.
     <div class="bg-accent rounded h-8 w-64"></div>
     <code>.w-64</code>
   </div>
-  <div class="flex gap-4 items-center text-nowrap">
-    <div class="bg-accent rounded h-8 w-1/2"></div>
-    <code>.w-1/2</code>
+  <div class="bg-accent rounded h-8 w-1/2 flex items-center">
+    <code class="m-1">.w-1/2</code>
   </div>
-  <div class="flex gap-4 items-center text-nowrap">
-    <div class="bg-accent rounded h-8 w-full"></div>
-    <code>.w-full</code>
+  <div class="bg-accent rounded h-8 w-full flex items-center">
+    <code class="m-1">.w-full</code>
   </div>
 </div>
 
@@ -65,12 +63,24 @@ Fixed or relative widths can be set for an element with the following classes.
 Maximum widths can be set depending on screen breaking points.
 
 <div class="demo flex-col gap-4">
-  <div class="bg-accent rounded h-8 max-w-screen-xs flex items-center"><code class="m-1">.max-w-screen-xs</code></div>
-  <div class="bg-accent rounded h-8 max-w-screen-sm flex items-center"><code class="m-1">.max-w-screen-sm</code></div>
-  <div class="bg-accent rounded h-8 max-w-screen-md flex items-center"><code class="m-1">.max-w-screen-md</code></div>
-  <div class="bg-accent rounded h-8 max-w-screen-lg flex items-center"><code class="m-1">.max-w-screen-lg</code></div>
-  <div class="bg-accent rounded h-8 max-w-screen-xl flex items-center"><code class="m-1">.max-w-screen-xl</code></div>
-  <div class="bg-accent rounded h-8 max-w-screen-2xl flex items-center"><code class="m-1">.max-w-screen-2xl</code></div>
+  <div class="bg-accent rounded h-8 max-w-screen-xs flex items-center">
+    <code class="m-1">.max-w-screen-xs</code>
+  </div>
+  <div class="bg-accent rounded h-8 max-w-screen-sm flex items-center">
+    <code class="m-1">.max-w-screen-sm</code>
+  </div>
+  <div class="bg-accent rounded h-8 max-w-screen-md flex items-center">
+    <code class="m-1">.max-w-screen-md</code>
+  </div>
+  <div class="bg-accent rounded h-8 max-w-screen-lg flex items-center">
+    <code class="m-1">.max-w-screen-lg</code>
+  </div>
+  <div class="bg-accent rounded h-8 max-w-screen-xl flex items-center">
+    <code class="m-1">.max-w-screen-xl</code>
+  </div>
+  <div class="bg-accent rounded h-8 max-w-screen-2xl flex items-center">
+    <code class="m-1">.max-w-screen-2xl</code>
+  </div>
 </div>
 
 ```html
@@ -99,14 +109,33 @@ Those can be overwritten by the corresponding custom property:
 
 Fixed or relative heights can be set for an element with the following classes.
 
-<div class="demo flex gap-4 h-64">
-  <div class="bg-accent rounded w-8 h-8"></div>
-  <div class="bg-accent rounded w-8 h-12"></div>
-  <div class="bg-accent rounded w-8 h-16"></div>
-  <div class="bg-accent rounded w-8 h-32"></div>
-  <div class="bg-accent rounded w-8 h-64"></div>
-  <div class="bg-accent rounded w-8 h-1/2"></div>
-  <div class="bg-accent rounded w-8 h-full"></div>
+<div class="demo flex items-end gap-4" style="height: 20rem;">
+  <div>
+    <code class="text-vertical">.h-8</code>
+    <div class="bg-accent rounded w-8 h-8"></div>
+  </div>
+  <div>
+    <code class="text-vertical">.h-12</code>
+    <div class="bg-accent rounded w-8 h-12"></div>
+  </div>
+  <div>
+    <code class="text-vertical">.h-16</code>
+    <div class="bg-accent rounded w-8 h-16"></div>
+  </div>
+  <div>
+    <code class="text-vertical">.h-32</code>
+    <div class="bg-accent rounded w-8 h-32"></div>
+  </div>
+  <div>
+    <code class="text-vertical">.h-64</code>
+    <div class="bg-accent rounded w-8 h-64"></div>
+  </div>
+  <div class="bg-accent rounded w-8 h-1/2 flex items-end justify-center">
+    <code class="text-vertical m-px">.h-1/2</code>
+  </div>
+  <div class="bg-accent rounded w-8 h-full flex items-end justify-center">
+    <code class="text-vertical m-px">.h-full</code>
+  </div>
 </div>
 
 ```html

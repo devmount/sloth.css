@@ -141,7 +141,7 @@ var {
 
 /* <code> */
 code {
-  background: var(--color-border);
+  background: color-mix(in srgb, var(--color-border) 60%, transparent);
   border-radius: .25rem;
   font-family: var(--font-mono);
   font-weight: 400;
