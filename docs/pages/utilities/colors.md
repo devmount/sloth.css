@@ -42,6 +42,7 @@ Colors can be overwritten by the corresponding custom property:
   <div class="bg-base w-32 h-32 flex-center text-center rounded">Accent color</div>
   <div class="bg-page w-32 h-32 flex-center text-center rounded">Accent color</div>
   <div class="bg-accent w-32 h-32 flex-center text-center rounded">Accent color</div>
+  <div class="bg-accent-variant w-32 h-32 flex-center text-center rounded">Accent variant color</div>
   <div class="bg-muted w-32 h-32 flex-center text-center rounded">Muted background</div>
   <div class="bg-positive w-32 h-32 flex-center text-center rounded">Positive background</div>
   <div class="bg-negative w-32 h-32 flex-center text-center rounded">Negative background</div>
@@ -51,6 +52,7 @@ Colors can be overwritten by the corresponding custom property:
 <div class="bg-base ...">Base color</div>
 <div class="bg-page ...">Page color</div>
 <div class="bg-accent ...">Accent color</div>
+<div class="bg-accent-variant ...">Accent variant color</div>
 <div class="bg-muted ...">Muted background</div>
 <div class="bg-positive ...">Positive background</div>
 <div class="bg-negative ...">Negative background</div>

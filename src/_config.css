@@ -18,6 +18,7 @@
   --color-text-link: light-dark(color-mix(in hsl, var(--color-accent) 70%, black), var(--color-accent));
   --color-text-link-hover: light-dark(color-mix(in hsl, var(--color-accent) 90%, black), color-mix(in hsl, var(--color-accent) 70%, white));
   --color-outline: color-mix(in srgb, var(--color-accent) 35%, transparent);
+  --color-background-accent: color-mix(in hsl, var(--color-accent) 80%, black);
   --color-background-muted: color-mix(in srgb, var(--color-background-base) 90%, black);
   --color-background-positive: color-mix(in srgb, var(--color-text-positive) 15%, transparent);
   --color-background-negative: color-mix(in srgb, var(--color-text-negative) 15%, transparent);

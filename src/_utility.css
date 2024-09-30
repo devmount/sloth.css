@@ -29,6 +29,9 @@
 .bg-accent {
   background-color: var(--color-accent);
 }
+.bg-accent-variant {
+  background-color: var(--color-background-accent);
+}
 .bg-muted {
   background-color: var(--color-background-muted);
 }
@@ -112,9 +115,6 @@
 }
 .flex-wrap {
   flex-wrap: wrap;
-}
-.visible {
-  visibility: visible;
 }
 .invisible {
   visibility: hidden;

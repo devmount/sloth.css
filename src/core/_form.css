@@ -202,7 +202,7 @@ input[type="button"],
 input[type="reset"],
 button {
   appearance: none;
-  background-color: color-mix(in hsl, var(--color-accent) 80%, black);
+  background-color: var(--color-background-accent);
   border: 0;
   color: white;
   display: inline-block;
@@ -233,8 +233,8 @@ button {
   &:active:not(:disabled) {
     outline: 0;
     box-shadow:
-      color-mix(in hsl, var(--color-accent) 80%, black) var(--shadow-border),
-      color-mix(in hsl, var(--color-accent) 80%, black) var(--shadow-inset);
+      var(--color-background-accent) var(--shadow-border),
+      var(--color-background-accent) var(--shadow-inset);
   }
   &:disabled {
     cursor: not-allowed;
