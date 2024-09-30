@@ -12,10 +12,10 @@ Utility classes for controlling the display type of elements.
 Flexbox is a powerful tool to create responsive layouts by positioning and aligning elements. Use the `flex` class to align items in row direction.
 
 <div class="demo">
-  <div class="flex gap-4 items-center">
-    <div class="bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">01</div>
-    <div class="bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">02</div>
-    <div class="bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">03</div>
+  <div class="flex gap-4 items-center bg-muted w-32 p-4 rounded">
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">01</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">02</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">03</div>
   </div>
 </div>
 
@@ -33,10 +33,12 @@ Flexbox is a powerful tool to create responsive layouts by positioning and align
 
 Elements can also be position underneath each other (column direction) instead of next to each other with the `flex-col` class.
 
-<div class="demo flex-col gap-4">
-  <div class="bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">01</div>
-  <div class="bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">02</div>
-  <div class="bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">03</div>
+<div class="demo">
+  <div class="flex-col gap-4 bg-muted w-32 p-4 rounded">
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">01</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">02</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">03</div>
+  </div>
 </div>
 
 ```html
@@ -59,14 +61,14 @@ Elements can also be position underneath each other (column direction) instead o
 User the `flex-wrap` class, if you want your flex items to break onto a new line when the container limit is reached.
 
 <div class="demo">
-  <div class="flex flex-wrap max-w-screen-xs gap-4 items-center">
-    <div class="bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">01</div>
-    <div class="bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">02</div>
-    <div class="bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">03</div>
-    <div class="bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">04</div>
-    <div class="bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">05</div>
-    <div class="bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">06</div>
-    <div class="bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">07</div>
+  <div class="flex flex-wrap max-w-screen-xs gap-4 items-center bg-muted p-4 rounded">
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">01</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">02</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">03</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">04</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">05</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">06</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">07</div>
   </div>
 </div>
 
@@ -87,13 +89,13 @@ User the `flex-wrap` class, if you want your flex items to break onto a new line
 Grid based layouts can be used if a more table-based layout is needed. Use the `grid` class in combination with the `grid-cols-{n}` classes to define a basic grid.
 
 <div class="demo">
-  <div class="grid grid-cols-3 gap-4 items-center">
-    <div class="bg-accent-variant flex-center rounded h-8 font-mono font-bold">01</div>
-    <div class="bg-accent-variant flex-center rounded h-8 font-mono font-bold">02</div>
-    <div class="bg-accent-variant flex-center rounded h-8 font-mono font-bold">03</div>
-    <div class="bg-accent-variant flex-center rounded h-8 font-mono font-bold">04</div>
-    <div class="bg-accent-variant flex-center rounded h-8 font-mono font-bold">05</div>
-    <div class="bg-accent-variant flex-center rounded h-8 font-mono font-bold">06</div>
+  <div class="grid grid-cols-3 gap-4 items-center bg-muted p-4 rounded">
+    <div class="text-light bg-accent-variant flex-center rounded h-8 font-mono font-bold">01</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 font-mono font-bold">02</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 font-mono font-bold">03</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 font-mono font-bold">04</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 font-mono font-bold">05</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 font-mono font-bold">06</div>
   </div>
 </div>
 
@@ -117,9 +119,9 @@ Grid based layouts can be used if a more table-based layout is needed. Use the `
 Elements can be displayed as `block` (dedicated line with block properties), `inline-block` (flowing with the text but still mainainting block properties) or `inline` (maintaining text flow).
 
 <div class="demo grid grid-cols-3 gap-8">
-  <p>Lorem ipsum dolor sit amet, <span class="block bg-accent-variant p-2">consectetur <code>.block</code></span> ad adipiscing elit. Nunc viverra viverra nisl, vel maximus turpis ornare a.</p>
-  <p>Lorem ipsum dolor sit amet, <span class="inline-block bg-accent-variant p-2">consectetur <code>.inline-block</code></span> ad adipiscing elit. Nunc viverra viverra nisl, vel maximus turpis ornare a.</p>
-  <p>Lorem ipsum dolor sit amet, <span class="inline bg-accent-variant p-2">consectetur <code>.inline</code></span> ad adipiscing elit. Nunc viverra viverra nisl, vel maximus turpis ornare a.</p>
+  <p>Lorem ipsum dolor sit amet, <span class="block bg-accent-variant rounded p-2">consectetur <code>.block</code></span> ad adipiscing elit. Nunc viverra viverra nisl, vel maximus turpis ornare a.</p>
+  <p>Lorem ipsum dolor sit amet, <span class="inline-block bg-accent-variant rounded p-2">consectetur <code>.inline-block</code></span> ad adipiscing elit. Nunc viverra viverra nisl, vel maximus turpis ornare a.</p>
+  <p>Lorem ipsum dolor sit amet, <span class="inline bg-accent-variant rounded p-2">consectetur <code>.inline</code></span> ad adipiscing elit. Nunc viverra viverra nisl, vel maximus turpis ornare a.</p>
 </div>
 
 ```html
@@ -139,15 +141,15 @@ Elements can be displayed as `block` (dedicated line with block properties), `in
 To hide an elements appearance or remove them from the dom entirely the corresponding classes `invisible` and `hidden` can be used.
 
 <div class="demo flex-col gap-4">
-  <div class="flex gap-4 items-center">
-    <div class="bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">01</div>
-    <div class="bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold invisible">02</div>
-    <div class="bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">03</div>
+  <div class="flex gap-4 items-center bg-muted w-32 p-4 rounded">
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">01</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold invisible">02</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">03</div>
   </div>
-  <div class="flex gap-4 items-center">
-    <div class="bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">01</div>
+  <div class="flex gap-4 items-center bg-muted w-32 p-4 rounded">
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">01</div>
     <div class="hidden">02</div>
-    <div class="bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">03</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">03</div>
   </div>
 </div>
 
