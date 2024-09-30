@@ -9,7 +9,7 @@ Utility classes for controlling colors of text and backgrounds.
 
 ### Text color
 
-Text is colored according to the color scheme per default. Use the `text-inverted` class if you want a dark text in dark mode or light text in light mode for some reason (please only use this with sufficient contrast to the background). In addition there are classes for giving text more importance (`text-accent`), less importance (`text-muted`) and two basic classes for sentiment coloring.
+Text is colored according to the color scheme per default. Use the `text-inverted` class if you want a dark text in dark mode or light text in light mode for some reason. In addition there are classes for giving text more importance (`text-accent`), less importance (`text-muted`) and two basic classes for sentiment coloring.
 
 <div class="demo">
   <p>Default text</p>
@@ -29,12 +29,14 @@ Text is colored according to the color scheme per default. Use the `text-inverte
 <p class="text-negative">Negative message</p>
 ```
 
+> Note that you can use `.text-light` and `.text-dark` to keep the text color despite the color scheme. But please only use this with sufficient contrast to the background.
+
 Colors can be overwritten by the corresponding custom property:
 
 ```css
 :root {
-  --color-text-base: light-dark(#464646, #e8e8ec);
-  --color-text-inverted: light-dark(#e8e8ec, #464646);
+  --color-text-light: #464646;
+  --color-text-dark: #e8e8ec;
   --color-accent: #e5aa70;
   --color-text-muted: light-dark(#70777f, #90979f);
   --color-text-positive: #238636;
