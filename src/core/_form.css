@@ -1,7 +1,11 @@
 /* <fieldset>, <legend> */
 fieldset {
   border-radius: .25rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--color-border);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
 
   legend {
     padding: 0 .25rem;
@@ -20,20 +24,24 @@ label {
 
 /* <input>, <textarea>, <select> */
 input, textarea, select {
-  background-color: var(--background-base);
-  box-shadow: var(--shadow-inset);
+  background-color: var(--color-background-base);
+  box-shadow: var(--color-shadow) var(--shadow-inset);
   font-family: inherit;
   transition: var(--transition-outline), var(--transition-color);
   border: 0;
   width: 100%;
   box-sizing: border-box;
 
-  &:hover {
-    box-shadow: var(--shadow-border-accent);
+  &:hover:not(:disabled) {
+    box-shadow: var(--color-accent) var(--shadow-border);
   }
-  &:focus, &:focus-within {
-    outline: 4px solid var(--outline);
-    box-shadow: var(--shadow-border-accent);
+  &:focus:not(:disabled), &:focus-within:not(:disabled) {
+    outline: 4px solid var(--color-outline);
+    box-shadow: var(--color-accent) var(--shadow-border);
+  }
+  &:disabled {
+    cursor: not-allowed;
+    background-color: var(--color-background-muted);
   }
 }
 input[type="text"],
@@ -52,8 +60,11 @@ input[type="datetime-local"],
 textarea,
 select {
   border-radius: .25rem;
-  padding: .5rem .75rem;
+  padding: .75rem 1rem;
   font-size: .875rem;
+}
+textarea {
+  width: 100%;
 }
 input[type="number"],
 input[type="date"],
@@ -61,22 +72,24 @@ input[type="datetime-local"] {
   padding-right: .5rem;
 }
 input[type="color"] {
-  padding: .25rem;
-  height: 2.25rem;
+  padding: .5rem;
+  height: 2.75rem;
 }
 input[type="checkbox"],
 input[type="radio"] {
   appearance: none;
   width: 1.25rem;
   height: 1.25rem;
-  cursor: pointer;
   margin: 0;
+  &:not(:disabled) {
+    cursor: pointer;
+  }
 }
 input[type="checkbox"] {
   border-radius: .25rem;
   position: relative;
   &::after {
-    border: 2px solid var(--background-page);
+    border: 2px solid var(--color-background-page);
     border-left: none;
     border-top: none;
     border-bottom-right-radius: 1px;
@@ -90,8 +103,8 @@ input[type="checkbox"] {
     transition: var(--transition-transform);
   }
   &:checked {
-    background-color: var(--accent);
-    color: var(--background-base);
+    background-color: var(--color-accent);
+    color: var(--color-background-base);
     box-shadow: none;
 
     &::after {
@@ -103,7 +116,7 @@ input[type="radio"] {
   border-radius: 9999px;
   position: relative;
   &::after {
-    background-color: var(--background-page);
+    background-color: var(--color-background-page);
     border-radius: inherit;
     content: '';
     position: absolute;
@@ -115,8 +128,8 @@ input[type="radio"] {
     transition: var(--transition-transform);
   }
   &:checked {
-    background-color: var(--accent);
-    color: var(--background-base);
+    background-color: var(--color-accent);
+    color: var(--color-background-base);
     box-shadow: none;
 
     &::after {
@@ -125,7 +138,7 @@ input[type="radio"] {
   }
 }
 input[type="range"] {
-  height: var(--line-height);
+  height: 2.25rem;
   padding: 0;
   appearance: none;
   background: transparent;
@@ -134,7 +147,7 @@ input[type="range"] {
 
   &::-webkit-slider-thumb,
   &::-moz-range-thumb {
-    background-color: var(--accent);
+    background-color: var(--color-accent);
     border: 0;
     border-radius: 9999px;
     height: 1.25rem;
@@ -144,9 +157,9 @@ input[type="range"] {
   &::-webkit-slider-runnable-track,
   &::-moz-range-track {
     border: 0;
-    background-color: var(--background-base);
+    background-color: var(--color-background-base);
     border-radius: .25rem;
-    box-shadow: var(--shadow-inset);
+    box-shadow: var(--color-shadow) var(--shadow-inset);
     height: .5rem;
     padding: 1px 0;
     width: 100%;
@@ -156,7 +169,7 @@ input[type="range"] {
   &:hover {
     &::-webkit-slider-runnable-track,
     &::-moz-range-track {
-      box-shadow: var(--shadow-border-accent);
+      box-shadow: var(--color-accent) var(--shadow-border);
     }
   }
   &:focus, &:focus-within {
@@ -164,8 +177,8 @@ input[type="range"] {
 
     &::-webkit-slider-runnable-track,
     &::-moz-range-track {
-      outline: 4px solid var(--outline);
-      box-shadow: var(--shadow-border-accent), var(--outline) 0 0 0 4px;
+      outline: 4px solid var(--color-outline);
+      box-shadow: var(--color-accent) var(--shadow-border), var(--color-outline) 0 0 0 4px;
     }
   }
   &:active {
@@ -189,50 +202,42 @@ input[type="button"],
 input[type="reset"],
 button {
   appearance: none;
-  background-color: color-mix(in hsl, var(--accent) 80%, black);
+  background-color: var(--color-background-accent);
   border: 0;
   color: white;
-  cursor: pointer;
   display: inline-block;
-  height: 2.25rem;
   text-align: center;
   text-decoration: none;
   user-select: none;
   white-space: nowrap;
   border-radius: .25rem;
-  padding: .5rem .75rem;
+  padding: .75rem 1rem;
   font-size: .875rem;
-  box-shadow: var(--shadow-float);
+  box-shadow: black var(--shadow-float);
   font-family: inherit;
   box-sizing: border-box;
   transition: var(--transition-outline), var(--transition-color), var(--transition-transform);
 
+  &:not(:disabled) {
+    cursor: pointer;
+  }
   &:hover:not(:disabled) {
-    background-color: var(--accent);
+    background-color: var(--color-accent);
   }
-  &:focus, &:focus-within, &:hover {
-    box-shadow: color-mix(in hsl, var(--accent) 90%, black) 0 0 0 1px, var(--shadow-float);
+  &:focus:not(:disabled), &:focus-within:not(:disabled), &:hover:not(:disabled) {
+    box-shadow: color-mix(in hsl, var(--color-accent) 90%, black) var(--shadow-border), black var(--shadow-float);
   }
-  &:focus, &:focus-within {
-    outline: 4px solid var(--outline);
+  &:focus:not(:disabled), &:focus-within:not(:disabled) {
+    outline: 4px solid var(--color-outline);
   }
-  &:active {
+  &:active:not(:disabled) {
     outline: 0;
     box-shadow:
-      color-mix(in hsl, var(--accent) 80%, black) 0 0 0 1px,
-      color-mix(in hsl, var(--accent) 80%, black) 2px 2px .125rem 0 inset;
+      var(--color-background-accent) var(--shadow-border),
+      var(--color-background-accent) var(--shadow-inset);
   }
-}
-
-/* Disabled form elements */
-input, select, textarea, button {
   &:disabled {
-    opacity: .75;
-    filter: grayscale(.75);
     cursor: not-allowed;
-
-    &, &:hover, &:focus, &:focus-within, &:active {
-      box-shadow: none;
-    }
+    opacity: .5;
   }
 }

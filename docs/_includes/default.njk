@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {# Meta #}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{ description }}" />
+    <title>{{ title }}</title>
+
+    {# Favicon #}
+    <link rel="icon" href="/assets/images/favicon.svg" type="image/x-icon" />
+
+    {# Stylesheets #}
+    <link rel="stylesheet" href="/assets/styles/prism-one-dark.css" />
+    <link rel="stylesheet" href="/assets/styles/sloth.css" />
+    <link rel="stylesheet" href="/assets/styles/docs.css" />
+
+    {# Open Graph #}
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ description }}" />
+
+    {# Firefox FOUC fix #}
+    <script>let FF_FOUC_FIX;</script>
+
+  </head>
+  <body>
+    {# Menu trigger #}
+    <a class="menu-trigger text-muted" href="#nav">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+        <path d="M4 6l16 0" />
+        <path d="M4 12l16 0" />
+        <path d="M4 18l16 0" />
+      </svg>
+    </a>
+
+    {# Global navigation #}
+    <aside id="nav">
+      <header>
+        <a href="/" class="flex">
+          <img src="/assets/images/logo.svg" alt="Sloth.css" class="w-12 h-12 rounded-full" />
+        </a>
+        <div>
+          <div class="text-xl font-semibold">Sloth.css</div>
+          <div class="text-sm text-muted font-sans flex gap-2">v{{ meta.version }}</div>
+        </div>
+      </header>
+
+      <nav>
+        {% include 'menu.njk' %}
+      </nav>
+    </aside>
+
+    {# Menu overlay #}
+    <a class="menu-overlay" href="#"></a>
+
+    {# Page content #}
+    <main>
+      <article id="content">
+        <div>
+          {% block content %}
+            {{ content | safe }}
+          {% endblock %}
+        </div>
+      </article>
+
+      <footer>
+        <hr />
+        Made in Germany by <a href="{{ authorUrl}}" target="_blank">devmount</a>.
+        Provided under the <a href="{{ repoUrl }}/blob/main/LICENSE" target="_blank">MIT License</a>.
+      </footer>
+    </main>
+  </body>
+</html>

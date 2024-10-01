@@ -6,56 +6,37 @@
 <a href="./LICENSE" target="_blank"><img src="https://img.shields.io/badge/license-MIT-e5aa70.svg?style=flat-square" alt="License MIT" /></a>
 <a href="./.github/CONTRIBUTING.md" target="_blank"><img src="https://img.shields.io/badge/contributions-welcome-e5aa70.svg?style=flat-square" alt="contributions welcome" /></a>
 </p>
-<p align="center">A drop-in utility component CSS library for lazy mammals like me.<br />Created by <a href="https://github.com/devmount" target="_blank">devmount</a>.</p>
+<p align="center">A drop-in utility component CSS library for lazy mammals.<br />Created by <a href="https://github.com/devmount" target="_blank">devmount</a>.</p>
 </p>
+
+> [!IMPORTANT]  
+> Sloth.css is still heavily work-in-progress. The package is not yet published.
 
 ## Installation
 
-Include the following CSS file in your HTML head to get the complete package:
+Include the following CSS file in your HTML head to get the complete package (drop-in core styles, utility classes and CSS components):
 
 ```html
-<!-- Sloth.css drop-in core styles, utility classes and components, 10kB -->
 <link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.min.css" />
 ```
 
-Read on below to find out about all available variants. Maybe one of them is more suitbale for your use case.
+If you just want to use the drop-in core styles or the utility classes, you can use one of these:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.core.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.util.min.css" />
+```
 
 ## Features
 
 Sloth.css can be used as drop-in CSS library, or additionally with curated utility classes or even with a set of handcrafted ready-to-copy components. Styles are opinionated (then again: which styles are not), and crafted to prioritize visual usability over trends such as flat design. For example: Elements where you type in (like input fields) are actually inset, elements that are clickable (like buttons) are actually outstanding, tabs are connected to the content they activate etc.
 
-### Variant 1: Drop-in core CSS library
+Also, Sloth.css aims to be:
 
-This is the smalles variant and the core of Sloth.css. It provides styles for all plain HTML elements without the use of a single class. If you have a page using semantic markup, just include the following CSS file and everything will get some nice basic styling:
-
-```html
-<!-- Sloth.css drop-in core styles, 1.5kB -->
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.core.css" />
-<!-- Or the minified version, 1kB -->
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.core.min.css" />
-```
-
-### Variant 2: Utility classes CSS library
-
-If you want more, you can use Sloth.css with utility classes included. Just take a look at the docs to see, which ones are available. Those utility classes are a curated subset of Tailwind CSS classes (with a few exceptions) and are meant to be extended and adapted by you for your project. I had several projects, where Tailwind was not necessary (or not possible or not wanted), so instead I used a convenient set of utility classes I curated myself and found, that those were mostly sufficient for those projects. So here they are. This variant includes the drop-in styles too:
-
-```html
-<!-- Sloth.css drop-in core styles and utility classes, 4kB -->
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.util.css" />
-<!-- Or the minified version, 3kB -->
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.util.min.css" />
-```
-
-### Variant 3: CSS components
-
-If you still haven't had enough and need some more advanced elements on your page, you can use Sloth.css with prestyled components included. Badges, Cards, Modals, Tooltips and more - take a look at the complete list in the docs. This is the whole packages, it contains the drop-in styles and the utility classes too:
-
-```html
-<!-- Sloth.css drop-in core styles, utility classes and components, 10kB -->
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.css" />
-<!-- Or the minified version, 7kB -->
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.min.css" />
-```
+- Lightweight (2kB gzipped)
+- Responsive and mobile-friendly
+- Beautiful but customisable
+- Working for all modern browsers
 
 ## License
 

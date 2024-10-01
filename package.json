@@ -1,0 +1,20 @@
+{
+  "name": "sloth.css",
+  "version": "0.1.0",
+  "description": "A drop-in utility component CSS library for lazy mammals like me.",
+  "scripts": {
+    "docs:serve": "npx @11ty/eleventy --serve",
+    "docs:build": "npx @11ty/eleventy"
+  },
+  "keywords": [
+    "css",
+    "dropin-ui",
+    "css-framework"
+  ],
+  "author": "Andreas Müller",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0-beta.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
+  }
+}
