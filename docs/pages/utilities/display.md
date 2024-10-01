@@ -13,17 +13,17 @@ Flexbox is a powerful tool to create responsive layouts by positioning and align
 
 <div class="demo">
   <div class="flex gap-4 items-center bg-muted w-32 p-4 rounded">
-    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">01</div>
-    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">02</div>
-    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">03</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#1</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#2</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#3</div>
   </div>
 </div>
 
 ```html
 <div class="flex ...">
-  <div>01</div>
-  <div>02</div>
-  <div>03</div>
+  <div>#1</div>
+  <div>#2</div>
+  <div>#3</div>
 </div>
 ```
 
@@ -35,17 +35,17 @@ Elements can also be position underneath each other (column direction) instead o
 
 <div class="demo">
   <div class="flex-col gap-4 bg-muted w-32 p-4 rounded">
-    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">01</div>
-    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">02</div>
-    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">03</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#1</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#2</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#3</div>
   </div>
 </div>
 
 ```html
 <div class="flex-col ...">
-  <div>01</div>
-  <div>02</div>
-  <div>03</div>
+  <div>#1</div>
+  <div>#2</div>
+  <div>#3</div>
 </div>
 ```
 
@@ -62,20 +62,20 @@ User the `flex-wrap` class, if you want your flex items to break onto a new line
 
 <div class="demo">
   <div class="flex flex-wrap max-w-screen-xs gap-4 items-center bg-muted p-4 rounded">
-    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">01</div>
-    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">02</div>
-    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">03</div>
-    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">04</div>
-    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">05</div>
-    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">06</div>
-    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">07</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">#1</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">#2</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">#3</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">#4</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">#5</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">#6</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-16 font-mono font-bold">#7</div>
   </div>
 </div>
 
 ```html
 <div class="flex flex-wrap ...">
-  <div>01</div>
-  <div>02</div>
+  <div>#1</div>
+  <div>#2</div>
   ...
 </div>
 ```
@@ -90,19 +90,19 @@ Grid based layouts can be used if a more table-based layout is needed. Use the `
 
 <div class="demo">
   <div class="grid grid-cols-3 gap-4 items-center bg-muted p-4 rounded">
-    <div class="text-light bg-accent-variant flex-center rounded h-8 font-mono font-bold">01</div>
-    <div class="text-light bg-accent-variant flex-center rounded h-8 font-mono font-bold">02</div>
-    <div class="text-light bg-accent-variant flex-center rounded h-8 font-mono font-bold">03</div>
-    <div class="text-light bg-accent-variant flex-center rounded h-8 font-mono font-bold">04</div>
-    <div class="text-light bg-accent-variant flex-center rounded h-8 font-mono font-bold">05</div>
-    <div class="text-light bg-accent-variant flex-center rounded h-8 font-mono font-bold">06</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 font-mono font-bold">#1</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 font-mono font-bold">#2</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 font-mono font-bold">#3</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 font-mono font-bold">#4</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 font-mono font-bold">#5</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 font-mono font-bold">#6</div>
   </div>
 </div>
 
 ```html
 <div class="grid grid-cols-3 ...">
-  <div>01</div>
-  <div>02</div>
+  <div>#1</div>
+  <div>#2</div>
   ...
 </div>
 ```
@@ -142,27 +142,27 @@ To hide an elements appearance or remove them from the dom entirely the correspo
 
 <div class="demo flex-col gap-4">
   <div class="flex gap-4 items-center bg-muted w-32 p-4 rounded">
-    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">01</div>
-    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold invisible">02</div>
-    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">03</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#1</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold invisible">#2</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#3</div>
   </div>
   <div class="flex gap-4 items-center bg-muted w-32 p-4 rounded">
-    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">01</div>
-    <div class="hidden">02</div>
-    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">03</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#1</div>
+    <div class="hidden">#2</div>
+    <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#3</div>
   </div>
 </div>
 
 ```html
 <div>
-  <div>01</div>
-  <div class="invisible">02</div>
-  <div>03</div>
+  <div>#1</div>
+  <div class="invisible">#2</div>
+  <div>#3</div>
 </div>
 <div>
-  <div>01</div>
-  <div class="hidden">02</div>
-  <div>03</div>
+  <div>#1</div>
+  <div class="hidden">#2</div>
+  <div>#3</div>
 </div>
 ```
 

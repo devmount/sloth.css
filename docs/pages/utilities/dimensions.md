@@ -55,11 +55,11 @@ Fixed or relative widths can be set for an element with the following classes.
 ```
 
 ```css
-.w-8    { width: 2rem;  }
-.w-12   { width: 3rem;  }
-.w-16   { width: 4rem;  }
-.w-32   { width: 8rem;  }
-.w-64   { width: 16rem; }
+.w-8    { width: 2rem;  } /*  32px */
+.w-12   { width: 3rem;  } /*  48px */
+.w-16   { width: 4rem;  } /*  64px */
+.w-32   { width: 8rem;  } /* 128px */
+.w-64   { width: 16rem; } /* 256px */
 .w-1\/2 { width: 50%;   }
 .w-full { width: 100%;  }
 ```
@@ -157,11 +157,11 @@ Fixed or relative heights can be set for an element with the following classes.
 ```
 
 ```css
-.h-8    { height: 2rem;  }
-.h-12   { height: 3rem;  }
-.h-16   { height: 4rem;  }
-.h-32   { height: 8rem;  }
-.h-64   { height: 16rem; }
+.h-8    { height: 2rem;  } /*  32px */
+.h-12   { height: 3rem;  } /*  48px */
+.h-16   { height: 4rem;  } /*  64px */
+.h-32   { height: 8rem;  } /* 128px */
+.h-64   { height: 16rem; } /* 256px */
 .h-1\/2 { height: 50%;   }
 .h-full { height: 100%;  }
 ```

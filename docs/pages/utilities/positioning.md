@@ -67,33 +67,33 @@ Flex and grid items can be aligned on the [cross axis](https://developer.mozilla
 <div class="demo flex flex-wrap gap-4">
   <div class="flex-col gap-4 bg-muted p-4 rounded">
     <div class="flex gap-1 items-start justify-center">
-      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">01</div>
-      <div class="text-light bg-accent-variant flex-center rounded h-16 w-8 font-mono font-bold">02</div>
-      <div class="text-light bg-accent-variant flex-center rounded w-8 font-mono font-bold">03</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#1</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-16 w-8 font-mono font-bold">#2</div>
+      <div class="text-light bg-accent-variant flex-center rounded w-8 font-mono font-bold">#3</div>
     </div>
     <div class="flex-center"><code>.items-start</code></div>
   </div>
   <div class="flex-col gap-4 bg-muted p-4 rounded">
     <div class="flex gap-1 items-center justify-center">
-      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">01</div>
-      <div class="text-light bg-accent-variant flex-center rounded h-16 w-8 font-mono font-bold">02</div>
-      <div class="text-light bg-accent-variant flex-center rounded w-8 font-mono font-bold">03</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#1</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-16 w-8 font-mono font-bold">#2</div>
+      <div class="text-light bg-accent-variant flex-center rounded w-8 font-mono font-bold">#3</div>
     </div>
     <div class="flex-center"><code>.items-center</code></div>
   </div>
   <div class="flex-col gap-4 bg-muted p-4 rounded">
     <div class="flex gap-1 items-end justify-center">
-      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">01</div>
-      <div class="text-light bg-accent-variant flex-center rounded h-16 w-8 font-mono font-bold">02</div>
-      <div class="text-light bg-accent-variant flex-center rounded w-8 font-mono font-bold">03</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#1</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-16 w-8 font-mono font-bold">#2</div>
+      <div class="text-light bg-accent-variant flex-center rounded w-8 font-mono font-bold">#3</div>
     </div>
     <div class="flex-center"><code>.items-end</code></div>
   </div>
   <div class="flex-col gap-4 bg-muted p-4 rounded">
     <div class="flex gap-1 items-stretch justify-center">
-      <div class="text-light bg-accent-variant flex-center rounded w-8 font-mono font-bold">01</div>
-      <div class="text-light bg-accent-variant flex-center rounded h-16 w-8 font-mono font-bold">02</div>
-      <div class="text-light bg-accent-variant flex-center rounded w-8 font-mono font-bold">03</div>
+      <div class="text-light bg-accent-variant flex-center rounded w-8 font-mono font-bold">#1</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-16 w-8 font-mono font-bold">#2</div>
+      <div class="text-light bg-accent-variant flex-center rounded w-8 font-mono font-bold">#3</div>
     </div>
     <div class="flex-center"><code>.items-stretch</code></div>
   </div>
@@ -118,25 +118,25 @@ Flex and grid items can be aligned on the [main axis](https://developer.mozilla.
 <div class="demo flex flex-wrap gap-4">
   <div class="flex-col gap-4 w-64 bg-muted p-4 rounded">
     <div class="flex gap-1 justify-center">
-      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">01</div>
-      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">02</div>
-      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">03</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#1</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#2</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#3</div>
     </div>
     <div class="flex-center"><code>.justify-center</code></div>
   </div>
   <div class="flex-col gap-4 w-64 bg-muted p-4 rounded">
     <div class="flex gap-1 justify-between">
-      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">01</div>
-      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">02</div>
-      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">03</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#1</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#2</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#3</div>
     </div>
     <div class="flex-center"><code>.justify-between</code></div>
   </div>
   <div class="flex-col gap-4 w-64 bg-muted p-4 rounded">
     <div class="flex gap-1 justify-around">
-      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">01</div>
-      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">02</div>
-      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">03</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#1</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#2</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#3</div>
     </div>
     <div class="flex-center"><code>.justify-around</code></div>
   </div>

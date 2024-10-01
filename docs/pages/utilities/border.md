@@ -31,6 +31,6 @@ Utility classes for controlling the border of elements.
 ```
 
 ```css
-.rounded      { border-radius: .25rem; }
+.rounded      { border-radius: .25rem; } /* 4px */
 .rounded-full { border-radius: 9999px; }
 ```

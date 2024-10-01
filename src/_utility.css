@@ -224,6 +224,7 @@
 .gap-8 {
   gap: 2rem;
 }
+
 .m-0 {
   margin: 0;
 }
@@ -242,6 +243,7 @@
 .m-8 {
   margin: 2rem;
 }
+
 .p-0 {
   padding: 0;
 }
@@ -260,6 +262,7 @@
 .p-8 {
   padding: 2rem;
 }
+
 .top-0 {
   top: 0;
 }
