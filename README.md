@@ -9,6 +9,9 @@
 <p align="center">A drop-in utility component CSS library for lazy mammals.<br />Created by <a href="https://github.com/devmount" target="_blank">devmount</a>.</p>
 </p>
 
+> [!IMPORTANT]  
+> Sloth.css is still heavily work-in-progress. The package is not yet published.
+
 ## Installation
 
 Include the following CSS file in your HTML head to get the complete package (drop-in core styles, utility classes and CSS components):
