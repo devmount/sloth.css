@@ -379,17 +379,11 @@
 .whitespace-nowrap {
   white-space: nowrap;
 }
-.text-nowrap {
-  text-wrap: nowrap;
-}
 .text-balance {
   text-wrap: balance;
 }
-.text-pretty {
-  text-wrap: pretty;
-}
 .text-vertical {
-  writing-mode: vertical-lr;
+  writing-mode: vertical-rl;
 }
 
 /* Effects */
