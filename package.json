@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "A drop-in utility component CSS library for lazy mammals like me.",
   "scripts": {
+    "build:default": "npx postcss src/sloth.css -u postcss-import -u cssnano -o dist/sloth.min.css --no-map",
+    "build:core": "npx postcss src/sloth.core.css -u postcss-import -u cssnano -o dist/sloth.core.min.css --no-map",
+    "build:util": "npx postcss src/sloth.util.css -u postcss-import -u cssnano -o dist/sloth.util.min.css --no-map",
+    "build": "npm run build:default && npm run build:core && npm run build:util",
     "docs:serve": "npx @11ty/eleventy --serve",
     "docs:build": "npx @11ty/eleventy"
   },
@@ -14,7 +18,13 @@
   "author": "Andreas Müller",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0-beta.1",
+    "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
+  },
+  "devDependencies": {
+    "cssnano": "^7.0.6",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0"
   }
 }
