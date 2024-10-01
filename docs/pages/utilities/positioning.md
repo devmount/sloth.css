@@ -1,11 +1,11 @@
 ---
 title: 'Utilities: Positioning - Sloth.css'
-description: Utility classes of Sloth.css for positions and alignment.
+description: Utility classes of Sloth.css for positions, alignment and overflow.
 ---
 
 ## Positioning
 
-Utility classes for controlling position and alignment of elements.
+Utility classes for controlling position, alignment and overflow of elements.
 
 ### Position
 
@@ -175,3 +175,56 @@ For centering content horizontally and vertically, the special utility class `fl
 ```
 
 > Note that `.flex-center` is a display utility and already includes the `display: flex;` rule. So there's no need to use three classes like in Tailwind <del>`flex justify-center items-center`</del>. Just use <ins>`flex-center`</ins>.
+
+### Overflow
+
+The `overflow-*` classes can be used to control content that is bigger than its container element.
+
+<div class="demo flex flex-wrap gap-4 relative">
+  <div class="overflow-hidden bg-muted w-48 h-32 p-4 rounded flex-col gap-4 items-start">
+    <code>.overflow-hidden</code>
+    <div class="bg-accent-variant rounded w-48 p-4">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    </div>
+  </div>
+  <div class="overflow-visible bg-muted w-48 h-32 p-4 rounded flex-col gap-4 items-start">
+    <code>.overflow-visible</code>
+    <div class="bg-accent-variant rounded w-48 p-4">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+    </div>
+  </div>
+  <div class="overflow-auto bg-muted w-48 h-32 p-4 rounded flex-col gap-4 items-start">
+    <code>.overflow-auto</code>
+    <div class="bg-accent-variant rounded w-48 p-4">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    </div>
+  </div>
+  <div class="overflow-x-auto bg-muted w-48 h-32 p-4 rounded flex-col gap-4 items-start">
+    <code>.overflow-x-auto</code>
+    <div class="bg-accent-variant rounded w-64 p-4">
+      Lorem ipsum dolor sit amet.
+    </div>
+  </div>
+  <div class="overflow-y-auto bg-muted w-48 h-32 p-4 rounded flex-col gap-4 items-start">
+    <code>.overflow-y-auto</code>
+    <div class="bg-accent-variant rounded p-4">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    </div>
+  </div>
+</div>
+
+```html
+<div class="overflow-hidden ..."></div>
+<div class="overflow-visible ..."></div>
+<div class="overflow-auto ..."></div>
+<div class="overflow-x-auto ..."></div>
+<div class="overflow-y-auto ..."></div>
+```
+
+```css
+.overflow-hidden  { overflow: hidden;  }
+.overflow-visible { overflow: visible; }
+.overflow-auto    { overflow: auto;    }
+.overflow-x-auto  { overflow-x: auto;  }
+.overflow-y-auto  { overflow-y: auto;  }
+```
