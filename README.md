@@ -1,4 +1,4 @@
-<p align="center"><img src="./assets/logo.png" alt="Logo showing a smiling sloth" width="128px" /></p>
+<p align="center"><img src="./docs/assets/logo.png" alt="Logo showing a smiling sloth" width="128px" /></p>
 <h1 align="center">Sloth.css</h1>
 <p align="center">
 <a href="https://github.com/devmount/sloth.css/releases" target="_blank"><img src="https://img.shields.io/github/v/tag/devmount/sloth.css.svg?label=version&colorB=e5aa70&style=flat-square" alt="release" /></a>
