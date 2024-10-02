@@ -183,6 +183,9 @@ pre[class^='language-'] {
   &[class*='-js']::before {
     content: 'js';
   }
+  &[class*='-bash']::before {
+    content: 'bash';
+  }
 }
 
 /* Icons */
