@@ -1,7 +1,8 @@
 ---
-name: Feature request
+name: Utility class request
 labels: ["enhancement", "utility"]
 about: Suggest a new utility class
+title: "New utility class: "
 
 ---
 
