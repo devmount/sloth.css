@@ -167,6 +167,8 @@ input[type="range"] {
   }
 
   &:hover {
+    box-shadow: none;
+
     &::-webkit-slider-runnable-track,
     &::-moz-range-track {
       box-shadow: var(--color-accent) var(--shadow-border);
