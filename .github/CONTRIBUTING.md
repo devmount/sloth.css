@@ -13,11 +13,11 @@ First off, I'm grateful for every single contributor out there! This is where th
 
 There are a lot of ways to help without the need to look into the code or even write code:
 
-- [Give Sloth.css a star]({{ repoUrl }}/stargazers) on GitHub ⭐
+- [Give Sloth.css a star](https://github.com/devmount/sloth.css/stargazers) on GitHub ⭐
 - Write a short review or recommendation on your favourite platform 📣
 - Tell your frontend dev friends and colleagues to try Sloth.css 🗣️
 - [Donate](https://paypal.me/devmount) or [sponsor](https://github.com/sponsors/devmount) this project to support further development 💸
-- Sharing your hands-on experience with this project and participate in [discussions]({{ repoUrl }}/discussions)💬
+- Sharing your hands-on experience with this project and participate in [discussions](https://github.com/devmount/sloth.css/discussions)💬
 - Find typos and improve documentation 📜
 
 ## Reporting Bugs
