@@ -1,7 +1,8 @@
 ---
-name: Feature request
-labels: ["enhancement", "core"]
-about: Suggest an idea for the core drop-in styling
+name: CSS component request
+labels: ["enhancement", "component"]
+about: Suggest a new CSS component
+title: "New CSS component: "
 
 ---
 
