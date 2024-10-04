@@ -30,11 +30,11 @@ This also works for button elements.
 <div class="demo flex gap-8">
   <button class="badge">Inbox</button>
   <button class="badge" data-badge="12">Inbox</button>
-  <button class="badge pulse" data-badge="12">Inbox</button>
+  <button class="badge pulse" data-badge="99+">Inbox</button>
 </div>
 
 ```html
 <button class="badge">Inbox</button>
 <button class="badge" data-badge="12">Inbox</button>
-<button class="badge pulse" data-badge="12">Inbox</button>
+<button class="badge pulse" data-badge="99+">Inbox</button>
 ```
