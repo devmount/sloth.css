@@ -43,17 +43,15 @@ body {
     }
 
     header {
-      position: fixed;
       width: 11rem;
-      padding: 1.5rem;
+      padding: 1.5rem 1.5rem .5rem 1.5rem;
       display: flex;
       align-items: center;
       gap: 1rem;
     }
     
     nav {
-      position: fixed;
-      padding: 1.5rem;
+      padding: 0 1.5rem 1.5rem 1.5rem;
       top: 3.5rem;
 
       ul {
