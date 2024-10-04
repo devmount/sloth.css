@@ -1,6 +1,3 @@
-/* Core */
+/* Drop-in core */
 @import '_config.css';
-@import 'core/_base.css';
-@import 'core/_text.css';
-@import 'core/_form.css';
-@import 'core/_misc.css';
+@import '_core.css';
