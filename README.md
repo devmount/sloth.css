@@ -12,6 +12,8 @@
 > [!IMPORTANT]  
 > Sloth.css is still heavily work-in-progress. The package is not yet published.
 
+Check [the documentation](https://slothcss.devmount.com) to see it in action.
+
 ## Installation
 
 Include the following CSS file in your HTML head to get the complete package (drop-in core styles, utility classes and CSS components):
