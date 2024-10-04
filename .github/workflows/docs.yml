@@ -1,5 +1,5 @@
 # Simple workflow for building and deploying documentation to GitHub Pages
-name: Build & deploy docs to Pages
+name: Build & deploy docs
 
 on:
   # Runs on pushes targeting the docs folder on the main branch
