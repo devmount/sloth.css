@@ -26,7 +26,9 @@ module.exports = function(eleventyConfig) {
       'text',
       'effects',
     ],
-    components: [],
+    components: [
+      'badge'
+    ],
   });
 
   // Layout aliases
