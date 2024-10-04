@@ -5,7 +5,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
 
   // Global data
-  eleventyConfig.addGlobalData('baseUrl', 'https://devmount.github.com/sloth.css');
+  eleventyConfig.addGlobalData('baseUrl', 'https://slothcss.devmount.com');
   eleventyConfig.addGlobalData('repoUrl', 'https://github.com/devmount/sloth.css');
   eleventyConfig.addGlobalData('cdnUrl', 'https://unpkg.com/@devmount/sloth.css@1');
   eleventyConfig.addGlobalData('creatorUrl', 'https://devmount.com');

@@ -1,0 +1,5 @@
+/* Drop-in core styles */
+@import 'core/_base.css';
+@import 'core/_text.css';
+@import 'core/_form.css';
+@import 'core/_misc.css';
