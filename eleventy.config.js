@@ -27,7 +27,8 @@ module.exports = function(eleventyConfig) {
       'effects',
     ],
     components: [
-      'badge'
+      'badge',
+      'separator',
     ],
   });
 
