@@ -11,8 +11,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  # Build docs
-  build:
+  # Build docs and deploy them to configured server
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,11 +22,6 @@ jobs:
           node-version: '20.x'
       - run: npm ci
       - run: npm run docs:build
-  # Now deploy them to configured server
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
       - uses: actions/checkout@v4
       - name: Push Build files to production environment
         uses: burnett01/rsync-deployments@7.0.1
