@@ -1,0 +1,26 @@
+.separator {
+  display: flex;
+  margin: 2rem 0;
+  align-items: center;
+  white-space: pre;
+  
+  &::before, &::after {
+    height: .0625rem;
+    width: 50%;
+    background-color: var(--color-border);
+    content: '';
+  }
+  
+  &.vertical {
+    flex-direction: column;
+    margin: 0 2rem;
+    line-height: 2.5;
+
+    &::before, &::after {
+      height: 50%;
+      width: .0625rem;
+      background-color: var(--color-border);
+      content: '';
+    }
+  }
+}
