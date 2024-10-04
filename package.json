@@ -21,18 +21,24 @@
   ],
   "author": {
     "name": "Andreas Müller",
-    "url": "https://devmount.de"
+    "url": "https://devmount.com"
   },
+  "homepage": "https://slothcss.devmount.com",
   "repository": {
     "type": "git",
     "url": "https://github.com/devmount/sloth.css"
   },
-  "license": "MIT",
-  "dependencies": {
-    "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
+  "bugs": {
+    "url": "https://github.com/devmount/sloth.css/issues"
   },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/devmount"
+  },
+  "license": "MIT",
   "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "cssnano": "^7.0.6",
     "postcss": "^8.4.47",
     "postcss-cli": "^11.0.0",
