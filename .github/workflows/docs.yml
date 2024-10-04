@@ -24,6 +24,7 @@ jobs:
       - run: npm run docs:build
   # Now deploy them to configured server
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -32,7 +33,7 @@ jobs:
         with:
           switches: -avzr --delete
           path: docs/public/
-          remote_path: ${{ secrets.DEPLOY_PATH_PROD }}
+          remote_path: ${{ secrets.DEPLOY_PATH }}
           remote_host: ${{ secrets.DEPLOY_HOST }}
           remote_port: ${{ secrets.DEPLOY_PORT }}
           remote_user: ${{ secrets.DEPLOY_USER }}
