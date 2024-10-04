@@ -22,13 +22,13 @@ The following 4 values of positions are supported.
       <code>.absolute</code>
     </div>
   </div>
-  <div class="bg-muted w-48 h-32 rounded overflow-y-scroll">
+  <div class="bg-muted w-48 h-32 rounded overflow-y-auto">
     <div class="absolute bg-accent-variant w-32 h-16 rounded p-1 m-4">
       <code>.fixed</code>
     </div>
     <div class="w-full h-64"></div>
   </div>
-  <div class="bg-muted w-48 h-32 rounded overflow-y-scroll">
+  <div class="bg-muted w-48 h-32 rounded overflow-y-auto">
     <div>
       <div class="sticky top-4 left-4 bg-accent-variant w-32 h-8 p-1 rounded"><code>.sticky</code></div>
       <div class="w-full h-32"></div>
