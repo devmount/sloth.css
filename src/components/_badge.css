@@ -1,0 +1,29 @@
+.badge {
+  position: relative;
+  white-space: nowrap;
+
+  &::after {
+    background: var(--color-accent);
+    border-radius: 9999rem;
+    content: attr(data-badge);
+    color: var(--color-text-inverted);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    display: block;
+    padding: .25rem;
+    line-height: .5rem;
+    font-size: .625rem;
+    font-weight: 700;
+    box-shadow:  color-mix(in srgb, var(--color-background-page) 50%, transparent) var(--shadow-border);
+  }
+
+  &:is(span)::after {
+    transform: translate(80%, -40%);
+  }
+
+  &.pulse::after {
+    animation: pulse 2s infinite ease-out;
+  }
+}

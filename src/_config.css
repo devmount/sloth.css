@@ -56,6 +56,10 @@
 
 /* Animations */
 @keyframes background-slide-x {
-  from { background-position:  200% 0; }
-  to   { background-position: -200% 0; }
+  0%   { background-position:  200% 0; }
+  100% { background-position: -200% 0; }
+}
+@keyframes pulse {
+  50%  { box-shadow: 0 0 0 0 var(--color-background-accent); }
+  100% { box-shadow: 0 0 0 .5rem rgba(0, 0, 0, 0);  }
 }
