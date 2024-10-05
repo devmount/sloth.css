@@ -2,12 +2,15 @@
   "name": "sloth.css",
   "version": "0.1.0",
   "description": "A drop-in utility component CSS-only library for lazy mammals.",
+  "exports": {
+    "./*.css": "./*.css"
+  },
   "scripts": {
-    "build": "npx postcss src/sloth.css -u postcss-import -u cssnano -o sloth.min.css --no-map",
+    "build:all": "npx postcss src/sloth.css -u postcss-import -u cssnano -o sloth.min.css --no-map",
     "build:core": "npx postcss src/sloth.core.css -u postcss-import -u cssnano -o sloth.core.min.css --no-map",
     "build:util": "npx postcss src/sloth.util.css -u postcss-import -u cssnano -o sloth.util.min.css --no-map",
     "build:comp": "npx postcss src/sloth.comp.css -u postcss-import -u cssnano -o sloth.comp.min.css --no-map",
-    "build:all": "npm run build && npm run build:core && npm run build:util && npm run build:comp",
+    "build": "npm run build:all && npm run build:core && npm run build:util && npm run build:comp",
     "docs:serve": "npx @11ty/eleventy --serve",
     "docs:build": "npx @11ty/eleventy"
   },
@@ -26,7 +29,7 @@
   "homepage": "https://slothcss.devmount.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/devmount/sloth.css"
+    "url": "git+https://github.com/devmount/sloth.css.git"
   },
   "bugs": {
     "url": "https://github.com/devmount/sloth.css/issues"

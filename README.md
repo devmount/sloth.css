@@ -22,11 +22,12 @@ Include the following CSS file in your HTML head to get the complete package (dr
 <link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.min.css" />
 ```
 
-If you just want to use the drop-in core styles or the utility classes, you can use one of these:
+If you just want to use the drop-in core styles, the utility classes or the CSS components only, you can use one of these:
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.core.min.css" />
 <link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.util.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.comp.min.css" />
 ```
 
 ## Features
@@ -35,9 +36,9 @@ Sloth.css can be used as drop-in CSS library, or additionally with curated utili
 
 Also, Sloth.css aims to be:
 
-- Lightweight (2kB gzipped)
+- Lightweight (3.8KB gzipped)
 - Responsive and mobile-friendly
-- Beautiful but customisable
+- Beautiful per default but customisable
 - Working for all modern browsers
 
 ## License
