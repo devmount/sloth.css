@@ -2,9 +2,11 @@
   "name": "@devmount/sloth.css",
   "version": "0.1.0",
   "description": "A drop-in utility component CSS-only library for lazy mammals.",
-  "exports": {
-    "./*.css": "./*.css"
-  },
+  "main": "sloth.min.css",
+  "files": [
+    "./*.css",
+    "LICENSE"
+  ],
   "scripts": {
     "build:all": "npx postcss src/sloth.css -u postcss-import -u cssnano -o sloth.min.css --no-map",
     "build:core": "npx postcss src/sloth.core.css -u postcss-import -u cssnano -o sloth.core.min.css --no-map",
