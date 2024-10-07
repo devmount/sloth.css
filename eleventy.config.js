@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
   // Global data
   eleventyConfig.addGlobalData('baseUrl', 'https://slothcss.devmount.com');
   eleventyConfig.addGlobalData('repoUrl', 'https://github.com/devmount/sloth.css');
-  eleventyConfig.addGlobalData('cdnUrl', 'https://unpkg.com/@devmount/sloth.css@1');
+  eleventyConfig.addGlobalData('cdnUrl', 'https://unpkg.com/@devmount/sloth.css@^0');
   eleventyConfig.addGlobalData('creatorUrl', 'https://devmount.com');
   eleventyConfig.addGlobalData('layout', 'default');
   eleventyConfig.addGlobalData('toc', true);

@@ -18,14 +18,15 @@ If you want the whole packages, just use `sloth.min.css` for convenience instead
 Include the following CSS file in your HTML head:
 
 ```html
-<link rel="stylesheet" href="{{ cdnUrl }}/sloth.min.css" />
+<link rel="stylesheet" href="{{ cdnUrl }}" />
 ```
 
-If you just want to use the drop-in styles or the utility classes, you can add one of the following accordingly:
+If you just want to use the drop-in styles or the utility classes or the CSS components separately, you can add one of the following accordingly:
 
 ```html
 <link rel="stylesheet" href="{{ cdnUrl }}/sloth.core.min.css" />
 <link rel="stylesheet" href="{{ cdnUrl }}/sloth.util.min.css" />
+<link rel="stylesheet" href="{{ cdnUrl }}/sloth.comp.min.css" />
 ```
 
 ### Install manually

@@ -19,15 +19,15 @@ Check [the documentation](https://slothcss.devmount.com) to see it in action.
 Include the following CSS file in your HTML head to get the complete package (drop-in core styles, utility classes and CSS components):
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@^0/sloth.min.css" />
 ```
 
 If you just want to use the drop-in core styles, the utility classes or the CSS components only, you can use one of these:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.core.min.css" />
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.util.min.css" />
-<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@1/sloth.comp.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@^0/sloth.core.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@^0/sloth.util.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@^0/sloth.comp.min.css" />
 ```
 
 ## Features
