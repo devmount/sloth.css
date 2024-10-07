@@ -28,6 +28,7 @@ module.exports = function(eleventyConfig) {
     ],
     components: [
       'badge',
+      'callout',
       'separator',
     ],
   });
