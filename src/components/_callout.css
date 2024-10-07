@@ -1,0 +1,51 @@
+.callout {
+  display: block;
+  position: relative;
+  padding: 1.5rem 2rem;
+  background-color: var(--color-background-muted);
+  border-left: .25rem solid var(--color-text-muted);
+  border-radius: .25rem;
+
+  &.accent {
+    color: var(--color-text-dark);
+    border-color: var(--color-accent);
+    background-color: color-mix(in hsl, var(--color-accent) 50%, black);
+    &[data-symbol]::before {
+      background-color: var(--color-accent);
+    }
+  }
+  &.positive {
+    color: var(--color-text-positive);
+    border-color: var(--color-text-positive);
+    background-color: var(--color-background-positive);
+    &[data-symbol]::before {
+      background-color: var(--color-text-positive);
+    }
+  }
+  &.negative {
+    color: var(--color-text-negative);
+    border-color: var(--color-text-negative);
+    background-color: var(--color-background-negative);
+    &[data-symbol]::before {
+      background-color: var(--color-text-negative);
+    }
+  }
+
+  &[data-symbol]::before {
+    content: attr(data-symbol);
+    position: absolute;
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -.125rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-text-light);
+    font-weight: 700;
+    background-color: var(--color-text-muted);
+  }
+}
