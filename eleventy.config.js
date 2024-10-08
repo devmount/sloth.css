@@ -13,7 +13,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addGlobalData('toc', true);
   eleventyConfig.addGlobalData('meta', {
     title: 'Sloth.css',
-    version: '0.1.0',
+    version: '0.1.1',
     description: 'A drop-in utility component CSS library for lazy mammals.',
     utilitySections: [
       'border',
@@ -28,6 +28,7 @@ module.exports = function(eleventyConfig) {
     ],
     components: [
       'badge',
+      'breadcrumb',
       'callout',
       'separator',
     ],
