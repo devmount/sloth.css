@@ -1,0 +1,29 @@
+.state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text-muted);
+    margin: .5rem 0 0 0;
+  }
+
+  &.empty {
+    background-color: var(--color-background-muted);
+    color: var(--color-text-muted);
+
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--color-text-muted);
+    }
+  }
+  &.highlighted {
+    background-color: color-mix(in hsl, var(--color-accent) 70%, black);
+    color: var(--color-text-dark);
+
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--color-text-dark);
+    }
+  }
+}
