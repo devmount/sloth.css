@@ -31,6 +31,7 @@ module.exports = function(eleventyConfig) {
       'breadcrumb',
       'callout',
       'separator',
+      'state',
     ],
   });
 
