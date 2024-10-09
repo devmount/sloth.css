@@ -39,6 +39,7 @@
   --transition-outline: outline-width .1s ease;
   --transition-underline: text-underline-offset .1s ease;
   --transition-transform: transform .15s ease;
+  --transition-opacity: opacity .15s ease;
   --transition-spacing: padding .15s ease, margin .15s ease;
 
   /* Fonts & text */

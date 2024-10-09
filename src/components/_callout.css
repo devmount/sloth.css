@@ -7,9 +7,8 @@
   border-radius: .25rem;
 
   &.accent {
-    color: var(--color-text-dark);
     border-color: var(--color-accent);
-    background-color: color-mix(in hsl, var(--color-accent) 50%, black);
+    background-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
     &[data-symbol]::before {
       background-color: var(--color-accent);
     }
@@ -44,7 +43,7 @@
     left: -.125rem;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: var(--color-text-light);
+    color: var(--color-text-inverted);
     font-weight: 700;
     background-color: var(--color-text-muted);
   }
