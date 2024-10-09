@@ -1,0 +1,36 @@
+.toast {
+  display: block;
+  opacity: 0;
+  position: fixed;
+  z-index: -99;
+  right: 1rem;
+  bottom: 1rem;
+  transition: var(--transition-transform), var(--transition-opacity);
+  transform: scale(.95);
+
+  &.active {
+    z-index: 99;
+    opacity: 1;
+    transform: scale(1);
+  }
+  &.br {
+    inset: initial;
+    right: 1rem;
+    bottom: 1rem;
+  }
+  &.tr {
+    inset: initial;
+    right: 1rem;
+    top: 1rem;
+  }
+  &.bl {
+    inset: initial;
+    left: 1rem;
+    bottom: 1rem;
+  }
+  &.tl {
+    inset: initial;
+    left: 1rem;
+    top: 1rem;
+  }
+}

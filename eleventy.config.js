@@ -32,6 +32,7 @@ module.exports = function(eleventyConfig) {
       'callout',
       'separator',
       'state',
+      'toast',
     ],
   });
 
