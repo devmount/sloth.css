@@ -6,7 +6,7 @@
     background: var(--color-accent);
     border-radius: 9999rem;
     content: attr(data-badge);
-    color: var(--color-text-inverted);
+    color: var(--color-text-emverted);
     position: absolute;
     top: 0;
     right: 0;

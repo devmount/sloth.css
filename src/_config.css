@@ -2,27 +2,29 @@
   /* Enable color schemes */
   color-scheme: light dark;
 
-  /* Colors */
-  --color-accent: #e5aa70;
+  /* Color definitions */
+  --color-accent:          #e5aa70;
   --color-background-base: light-dark(#f4f4f4, #202631);
   --color-background-page: light-dark(#ffffff, #161a22);
-  --color-border: light-dark(#d5d5d5, #252b36);
-  --color-selection: #9e9e9e;
-  --color-text-light: #464646;
-  --color-text-dark: #e8e8ec;
-  --color-text-base: light-dark(var(--color-text-light), var(--color-text-dark));
-  --color-text-inverted: light-dark(var(--color-text-dark), var(--color-text-light));
+  --color-border:          light-dark(#d5d5d5, #252b36);
+  --color-selection:       #9e9e9e;
+  --color-text-light:      #464646;
+  --color-text-dark:       #e8e8ec;
   --color-text-emphasized: light-dark(#151515, #ffffff);
-  --color-text-muted: light-dark(#70777f, #90979f);
-  --color-text-positive: #238636;
-  --color-text-negative: #da3633;
-  --color-shadow: light-dark(#d5d5d5ee, #00000088);
+  --color-text-emverted:   light-dark(#ffffff, #151515);
+  --color-text-muted:      light-dark(#70777f, #90979f);
+  --color-text-positive:   #238636;
+  --color-text-negative:   #da3633;
+  --color-shadow:          light-dark(#00000033, #00000088);
   
-  --color-text-link: light-dark(color-mix(in hsl, var(--color-accent) 70%, black), var(--color-accent));
-  --color-text-link-hover: light-dark(color-mix(in hsl, var(--color-accent) 90%, black), color-mix(in hsl, var(--color-accent) 70%, white));
-  --color-outline: color-mix(in srgb, var(--color-accent) 35%, transparent);
-  --color-background-accent: color-mix(in hsl, var(--color-accent) 80%, black);
-  --color-background-muted: color-mix(in srgb, var(--color-background-base) 90%, black);
+  /* Color derivations */
+  --color-text-base:           light-dark(var(--color-text-light), var(--color-text-dark));
+  --color-text-inverted:       light-dark(var(--color-text-dark), var(--color-text-light));
+  --color-text-link:           light-dark(color-mix(in hsl, var(--color-accent) 70%, black), var(--color-accent));
+  --color-text-link-hover:     light-dark(color-mix(in hsl, var(--color-accent) 90%, black), color-mix(in hsl, var(--color-accent) 70%, white));
+  --color-outline:             color-mix(in srgb, var(--color-accent) 35%, transparent);
+  --color-background-accent:   color-mix(in hsl, var(--color-accent) 80%, black);
+  --color-background-muted:    color-mix(in srgb, var(--color-background-base) 90%, black);
   --color-background-positive: color-mix(in srgb, var(--color-text-positive) 15%, transparent);
   --color-background-negative: color-mix(in srgb, var(--color-text-negative) 15%, transparent);
 
@@ -35,23 +37,23 @@
   --screen-2xl: 96rem; /* 1536px */
 
   /* Transitions */
-  --transition-color: color .1s ease, border-color .1s ease, outline-color .1s ease, background-color .1s ease;
-  --transition-outline: outline-width .1s ease;
+  --transition-color:     color .1s ease, border-color .1s ease, outline-color .1s ease, background-color .1s ease;
+  --transition-outline:   outline-width .1s ease;
   --transition-underline: text-underline-offset .1s ease;
   --transition-transform: transform .15s ease;
-  --transition-opacity: opacity .15s ease;
-  --transition-spacing: padding .15s ease, margin .15s ease;
+  --transition-opacity:   opacity .15s ease;
+  --transition-spacing:   padding .15s ease, margin .15s ease;
 
   /* Fonts & text */
-  --font-size: 16px; /* defines 1rem */
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
-  --font-mono: "SF Mono", "Segoe UI Mono", "Fira Code", "Fira Mono", "Roboto Mono", Menlo, Courier, monospace;
+  --font-size:   16px; /* defines 1rem */
+  --font-sans:   system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+  --font-mono:   "SF Mono", "Segoe UI Mono", "Fira Code", "Fira Mono", "Roboto Mono", Menlo, Courier, monospace;
   --line-height: 1.4rem;
 
   /* Shadows */
   --shadow-border: 0 0 0 1px;
-  --shadow-inset: 0 2px .25rem 0 inset;
-  --shadow-float: 0 .25rem .75rem -.4rem;
+  --shadow-inset:  0 2px .25rem 0 inset;
+  --shadow-float:  0 .25rem .75rem -.4rem;
 
 }
 
