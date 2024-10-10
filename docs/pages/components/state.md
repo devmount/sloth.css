@@ -10,7 +10,7 @@ that something is missing or needs to be done first to achieve a goal.
 
 ### Empty state
 
-Use the `.state.empty` classes for a placeholder section which awaits user input to show a result.
+Use the `state empty` classes for a placeholder section which awaits user input to show a result.
 
 <div class="demo">
   <div class="state empty">
@@ -32,7 +32,7 @@ Use the `.state.empty` classes for a placeholder section which awaits user input
 
 ### Highlighted state
 
-Use the `.state.highlighted` classes for an accentuated section e.g. which awaits a user action like a drag and drop target area.
+Use the `state highlighted` classes for an accentuated section e.g. which awaits a user action like a drag and drop target area.
 
 <div class="demo">
   <div class="state highlighted">

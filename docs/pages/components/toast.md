@@ -11,7 +11,7 @@ A toast notificataion is a dynamic message component, that is only visible after
 
 ### Basic toast
 
-Use the `.toast.callout` selector to create a toast notification. The toast element is hidden by default, use the `.active` class to show it.
+Use the `toast callout` classes to create a toast notification. The toast element is hidden by default, use the `active` class to show it.
 
 <div class="demo">
   <p>The demo can be seen directly on this page in the bottom right corner.</p>

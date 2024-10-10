@@ -9,7 +9,7 @@ Badges indicate the status of an element, the appearance of an event or counts o
 
 ### Basic text badges
 
-Use the `.badge` class to add a small bubble indicator at the top right corner of the enclosed element. Use the `data-badge` attribute to add content to that bubble. If you want to draw even more attention to the badge, you can use the `.pulse` class in addition.
+Use the `badge` class to add a small bubble indicator at the top right corner of the enclosed element. Use the `data-badge` attribute to add content to that bubble. If you want to draw even more attention to the badge, you can use the `pulse` class in addition.
 
 <div class="demo flex gap-8">
   <span class="badge">Inbox</span>

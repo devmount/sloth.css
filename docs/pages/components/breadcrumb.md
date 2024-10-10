@@ -11,7 +11,7 @@ a horizontal scrollbar appears.
 
 ### Basic breadcrumb path
 
-Use the `.breadcrumb` class on an ordered list to format the contained elements.
+Use the `breadcrumb` class on an ordered list to format the contained elements.
 
 <div class="demo">
   <ol class="breadcrumb">
@@ -43,7 +43,7 @@ Use the `.breadcrumb` class on an ordered list to format the contained elements.
 
 ### Change the separator symbol
 
-Per default, breadcrumbs are separated with a `/`.
+Per default, breadcrumbs are separated with a `/`
 Use the `--breadcrumb-symbol` custom property to change the symbol.
 
 <div class="demo">

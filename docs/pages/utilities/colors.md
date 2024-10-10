@@ -29,7 +29,7 @@ Text is colored according to the color scheme per default. Use the `text-inverte
 <p class="text-negative">Negative message</p>
 ```
 
-> Note that you can use `.text-light` and `.text-dark` to keep the text color despite the color scheme. But please only use this with sufficient contrast to the background.
+> Note that you can use `text-light` and `text-dark` to keep the text color despite the color scheme. But please only use this with sufficient contrast to the background.
 
 Colors can be overwritten by the corresponding custom property:
 

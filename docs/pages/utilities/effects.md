@@ -9,7 +9,7 @@ Utility classes for controlling elevation and transformation of elements.
 
 ### Elevation
 
-To make an element appear over or inside a surface, the `.shadow-*` classes can be used.
+To make an element appear over or inside a surface, the `shadow-*` classes can be used.
 
 <div class="demo flex items-start gap-4">
   <div class="flex-col gap-2 items-center justify-center bg-muted p-4 rounded relative">
@@ -38,7 +38,7 @@ To make an element appear over or inside a surface, the `.shadow-*` classes can 
 
 ### Transformation
 
-To rotate an element, the `.rotate-*` classes can be used.
+To rotate an element, the `rotate-*` classes can be used.
 
 <div class="demo flex items-start gap-4">
   <div class="flex-col gap-2 items-center justify-center bg-muted p-4 rounded relative">

@@ -9,7 +9,7 @@ A callout is a static message component, that is embedded and always visible wit
 
 ### Basic callout
 
-Use the `.callout` class to create a box that emphasizes its content.
+Use the `callout` class to create a box that emphasizes its content.
 
 <div class="demo">
   <div class="max-w-screen-sm">
@@ -28,7 +28,7 @@ Use the `.callout` class to create a box that emphasizes its content.
 
 ### Colored callout
 
-Use the `.accent`, `.positive` or `.negative` classes to give the callout more meaning.
+Use the `accent`, `positive` or `negative` classes to give the callout more meaning.
 
 <div class="demo">
   <div class="max-w-screen-sm">
