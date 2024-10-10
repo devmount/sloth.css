@@ -25,7 +25,7 @@ Use the `badge` class to add a small bubble indicator at the top right corner of
 
 ### Button badges
 
-This also works for button elements.
+The `badge` class also works on button elements.
 
 <div class="demo flex gap-8">
   <button class="badge">Inbox</button>

@@ -1,13 +1,13 @@
 ---
-title: 'Utilities: Cursors - Sloth.css'
+title: 'Utilities: Cursor - Sloth.css'
 description: Utility classes of Sloth.css for cursors.
 ---
 
-## Cursors
+## Cursor
 
 Utility classes for controlling cursor types.
 
-The following 4 types of cursors are supported. Hover over the colored fields on a device that supports cursors to see them in action.
+Use the `cursor-*` classes to control the mouse cursor appearance. Hover over the colored fields on a device that supports cursors to see them in action.
 
 <div class="demo flex flex-wrap gap-8">
   <div class="flex-col items-center gap-4">

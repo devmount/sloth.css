@@ -1,15 +1,15 @@
 ---
-title: 'Utilities: Dimensions - Sloth.css'
+title: 'Utilities: Dimension - Sloth.css'
 description: Utility classes of Sloth.css for size related styles.
 ---
 
-## Color
+## Dimension
 
 Utility classes for controlling the size of elements.
 
 ### Width
 
-Fixed or relative widths can be set for an element with the following classes.
+Fixed or relative widths can be set for an element with the `w-*` classes.
 
 <div class="demo flex-col gap-4">
   <div class="flex gap-4 items-center">
@@ -64,7 +64,7 @@ Fixed or relative widths can be set for an element with the following classes.
 .w-full { width: 100%;  }
 ```
 
-Maximum widths can be set depending on screen breaking points.
+Maximum widths can be set depending on screen breaking points using the `max-w-screen-*` classes.
 
 <div class="demo flex-col gap-4">
   <div class="bg-accent rounded h-8 max-w-screen-xs flex items-center">
@@ -111,7 +111,7 @@ Those can be overwritten by the corresponding custom property:
 
 ### Height
 
-Fixed or relative heights can be set for an element with the following classes.
+Fixed or relative heights can be set for an element with the `h-*` classes.
 
 <div class="demo flex items-end gap-4" style="height: 20rem;">
   <div>

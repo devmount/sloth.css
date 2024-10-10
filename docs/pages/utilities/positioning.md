@@ -153,7 +153,7 @@ For centering content horizontally and vertically, the special utility class `fl
 
 <div class="demo">
   <div class="flex-col gap-4 w-32 bg-muted p-4 rounded">
-    <div class="flex-center">
+    <div class="flex-center h-32">
       <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold"></div>
     </div>
     <div class="flex-center"><code>.flex-center</code></div>
