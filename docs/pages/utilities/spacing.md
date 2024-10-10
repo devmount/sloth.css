@@ -9,7 +9,7 @@ Utility classes for controlling margins, paddings and the space in between eleme
 
 ### Gap
 
-The space between flex or grid items can be set with the `.gap-*` classes.
+The space between flex or grid items can be set with the `gap-*` classes.
 
 <div class="demo flex-col gap-4">
   <div class="flex gap-1 items-center bg-muted w-64 p-4 rounded relative">
@@ -54,7 +54,7 @@ The space between flex or grid items can be set with the `.gap-*` classes.
 
 ### Margin
 
-The outer spacing (margin) for elements can be set with the `.m-*` classes.
+The outer spacing (margin) for elements can be set with the `m-*` classes.
 
 <div class="demo flex items-start gap-4">
   <div class="flex-col gap-2 items-center justify-center bg-muted p-4 rounded relative">
@@ -115,7 +115,7 @@ The outer spacing (margin) for elements can be set with the `.m-*` classes.
 
 ### Padding
 
-The inner spacing (padding) for elements can be set with the `.p-*` classes.
+The inner spacing (padding) for elements can be set with the `p-*` classes.
 
 <div class="demo flex items-start gap-4">
   <div class="flex-col gap-2 items-center justify-center bg-muted p-4 rounded relative">

@@ -9,6 +9,8 @@ Utility classes for controlling the border of elements.
 
 ### Rounded border
 
+Use the `rounded` and `rounded-full` classes to control the border radius.
+
 <div class="demo flex gap-8">
   <div class="flex-col items-center gap-4">
     <div class="w-16 h-16 bg-accent rounded"></div>

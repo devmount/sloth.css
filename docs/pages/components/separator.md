@@ -9,7 +9,7 @@ Separators divide content into different parts providing visual breaks for the u
 
 ### Horizontal separators
 
-Use the `.separator` class to add a horizontal line. Every content added to that element appears as its label, even single spaces. No content will result in a single horizontal line.
+Use the `separator` class to add a horizontal line. Every content added to that element appears as its label, even single spaces. No content will result in a single horizontal line.
 
 <div class="demo">
   <div class="max-w-screen-xs text-center">
@@ -31,9 +31,9 @@ Use the `.separator` class to add a horizontal line. Every content added to that
 
 ### Vertical separators
 
-Use the `.separator` and the `.vertical` class to add a vertical line. Every content added to that element appears as its label. No content will result in a single vertical line.
+Use the `separator` and the `vertical` class to add a vertical line. Every content added to that element appears as its label. No content will result in a single vertical line.
 
-> Note that vertical separators only work in a flex container with flex direction row. If you're using utility classes, you can just give it the `.flex` class or set `display: flex;` on it.
+> Note that vertical separators only work in a flex container with flex direction row. If you're using utility classes, you can just give it the `flex` class or set `display: flex;` on it.
 
 <div class="demo">
   <div class="max-w-screen-md flex">

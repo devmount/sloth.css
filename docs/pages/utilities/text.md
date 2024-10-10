@@ -115,7 +115,7 @@ The basic font size that defines all `rem` based properties (which are almost al
 
 ### Text wrapping and flow
 
-Text can be truncated with an ellipsis using the `.truncate` class, if the containing element has a defined width.
+Text can be truncated with an ellipsis using the `truncate` class, if the containing element has a defined width.
 
 <div class="demo">
   <div class="truncate w-32 p-2 rounded bg-muted">The Sloth is a lazy mammal.</div>

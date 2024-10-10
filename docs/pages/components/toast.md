@@ -11,7 +11,7 @@ A toast notificataion is a dynamic message component, that is only visible after
 
 ### Basic toast
 
-Use the `.toast.callout` selector to create a toast notification. The toast element is hidden by default, use the `.active` class to show it.
+Use the `toast callout` classes to create a toast notification. The toast element is hidden by default, use the `active` class to show it.
 
 <div class="demo">
   <p>The demo can be seen directly on this page in the bottom right corner.</p>
@@ -33,27 +33,27 @@ Use the `br`, `tr`, `tl` and `bl` classes to position the toast notification on 
 
 <div class="demo">
   <p>The demo can be seen directly on this page. Use the following controls to change it's position.</p>
-  <div class="control flex gap-2">
-    <button onclick="positionToast('br')">
-      <code>br</code> Bottom Right
+  <div class="control grid grid-cols-2 max-w-screen-xs gap-2">
+    <button class="muted" onclick="positionToast('tl')">
+      <code>tl</code> Top Left
     </button>
     <button onclick="positionToast('tr')">
       <code>tr</code> Top Right
     </button>
-    <button onclick="positionToast('tl')">
-      <code>tl</code> Top Left
-    </button>
-    <button onclick="positionToast('bl')">
+    <button class="positive" onclick="positionToast('bl')">
       <code>bl</code> Bottom Left
+    </button>
+    <button class="negative" onclick="positionToast('br')">
+      <code>br</code> Bottom Right
     </button>
   </div>
 </div>
 
 ```html
-<div class="toast callout br">...</div>
+<div class="toast callout tl">...</div>
 <div class="toast callout tr">...</div>
 <div class="toast callout bl">...</div>
-<div class="toast callout tl">...</div>
+<div class="toast callout br">...</div>
 ```
 
 ### Colored toasts

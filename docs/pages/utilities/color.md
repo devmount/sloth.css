@@ -1,5 +1,5 @@
 ---
-title: 'Utilities: Colors - Sloth.css'
+title: 'Utilities: Color - Sloth.css'
 description: Utility classes of Sloth.css for color related styles.
 ---
 
@@ -13,23 +13,23 @@ Text is colored according to the color scheme per default. Use the `text-inverte
 
 <div class="demo">
   <p>Default text</p>
-  <p class="text-inverted">Inverted color <code>.text-accent</code></p>
   <p class="text-accent">Accent color <code>.text-accent</code></p>
   <p class="text-muted">Muted text <code>.text-muted</code></p>
   <p class="text-positive">Positive message <code>.text-positive</code></p>
   <p class="text-negative">Negative message <code>.text-negative</code></p>
+  <p class="text-inverted">Inverted color <code>.text-accent</code></p>
 </div>
 
 ```html
 <p>Default text</p>
-<p class="text-inverted">Inverted color</p>
 <p class="text-accent">Accent color</p>
 <p class="text-muted">Muted text</p>
 <p class="text-positive">Positive message</p>
 <p class="text-negative">Negative message</p>
+<p class="text-inverted">Inverted color</p>
 ```
 
-> Note that you can use `.text-light` and `.text-dark` to keep the text color despite the color scheme. But please only use this with sufficient contrast to the background.
+> Note that you can use `text-light` and `text-dark` to keep the text color despite the color scheme. But please only use this with sufficient contrast to the background.
 
 Colors can be overwritten by the corresponding custom property:
 

@@ -145,6 +145,7 @@ var {
 /* <code> */
 code {
   background: color-mix(in srgb, var(--color-border) 60%, transparent);
+  color: var(--color-text-emphasized);
   border-radius: .25rem;
   font-family: var(--font-mono);
   font-weight: 400;
@@ -153,6 +154,10 @@ code {
 
   pre > & {
     padding: 0;
+  }
+  del > &, ins > & {
+    padding: 0 .25em;
+    color: inherit;
   }
 }
 
