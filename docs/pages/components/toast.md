@@ -34,17 +34,17 @@ Use the `br`, `tr`, `tl` and `bl` classes to position the toast notification on 
 <div class="demo">
   <p>The demo can be seen directly on this page. Use the following controls to change it's position.</p>
   <div class="control grid grid-cols-2 max-w-screen-xs gap-2">
-    <button class="muted" onclick="positionToast('tl')">
-      <code>tl</code> Top Left
+    <button class="neutral" onclick="positionToast('tl')">
+      Top Left <code>tl</code>
     </button>
-    <button onclick="positionToast('tr')">
-      <code>tr</code> Top Right
+    <button class="neutral" onclick="positionToast('tr')">
+      Top Right <code>tr</code>
     </button>
-    <button class="positive" onclick="positionToast('bl')">
-      <code>bl</code> Bottom Left
+    <button class="neutral" onclick="positionToast('bl')">
+      Bottom Left <code>bl</code>
     </button>
-    <button class="negative" onclick="positionToast('br')">
-      <code>br</code> Bottom Right
+    <button class="neutral" onclick="positionToast('br')">
+      Bottom Right <code>br</code>
     </button>
   </div>
 </div>
@@ -61,19 +61,19 @@ Use the `br`, `tr`, `tl` and `bl` classes to position the toast notification on 
 Use the `accent`, `positive` or `negative` classes to give the toast notification a different meaning.
 
 <div class="demo">
-  <p>The demo can be seen directly on this page. Use the following controls to change it's position.</p>
+  <p>The demo can be seen directly on this page. Use the following controls to change it's color.</p>
   <div class="control flex gap-2">
-    <button onclick="colorToast('neutral')">
-      Reset
+    <button class="neutral" onclick="colorToast('neutral')">
+      Neutral
     </button>
     <button onclick="colorToast('accent')">
-      <code>accent</code> Accent
+      Accent <code>accent</code>
     </button>
-    <button onclick="colorToast('positive')">
-      <code>positive</code> Positive
+    <button class="positive" onclick="colorToast('positive')">
+      Positive <code>positive</code>
     </button>
-    <button onclick="colorToast('negative')">
-      <code>negative</code> Negative
+    <button class="negative" onclick="colorToast('negative')">
+      Negative <code>negative</code>
     </button>
   </div>
 </div>
