@@ -29,6 +29,7 @@ module.exports = function(eleventyConfig) {
     components: [
       'badge',
       'breadcrumb',
+      'button',
       'callout',
       'separator',
       'state',
