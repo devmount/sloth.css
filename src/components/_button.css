@@ -2,7 +2,7 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"],
 button,
-.button {
+a.button {
   appearance: none;
   background-color: var(--color-background-accent);
   border-radius: .25rem;
