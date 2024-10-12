@@ -33,7 +33,7 @@ thead th, tfoot th {
   font-weight: 600;
 }
 tbody tr:nth-child(even) {
-  background-color: var(--color-background-base);
+  background-color: var(--color-bg-base);
 }
 tbody tr:hover td {
   background-color: var(--color-border);
@@ -52,7 +52,7 @@ figure {
 /* <meter> */
 meter {
   appearance: meter;
-  background: var(--color-background-base);
+  background: var(--color-bg-base);
   border-radius: .25rem;
   border: 0;
   box-shadow: var(--color-shadow) var(--shadow-inset);
@@ -76,7 +76,7 @@ meter {
   }
   &::-webkit-meter-optimum-value,
   &:-moz-meter-optimum::-moz-meter-bar {
-    background: var(--color-text-positive);
+    background: var(--color-positive);
   }
   &::-webkit-meter-suboptimum-value,
   &:-moz-meter-sub-optimum::-moz-meter-bar {
@@ -84,14 +84,14 @@ meter {
   }
   &::-webkit-meter-even-less-good-value,
   &:-moz-meter-sub-sub-optimum::-moz-meter-bar {
-    background: var(--color-text-negative);
+    background: var(--color-negative);
   }
 }
 
 /* <progress> */
 progress {
   appearance: none;
-  background: var(--color-background-base);
+  background: var(--color-bg-base);
   border-radius: .5rem;
   border: 0;
   box-shadow: var(--color-shadow) var(--shadow-inset);
@@ -113,7 +113,7 @@ progress {
 
   &:indeterminate {
     animation: background-slide-x 1.75s linear infinite;
-    background: var(--color-background-base) linear-gradient(to right, var(--color-accent) 20%, var(--color-background-base) 20%) top left / 150% 150% no-repeat;
+    background: var(--color-bg-base) linear-gradient(to right, var(--color-accent) 20%, var(--color-bg-base) 20%) top left / 150% 150% no-repeat;
 
     &::-moz-progress-bar {
       background: transparent;

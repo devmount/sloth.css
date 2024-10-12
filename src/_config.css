@@ -3,30 +3,30 @@
   color-scheme: light dark;
 
   /* Color definitions */
-  --color-accent:          #e5aa70;
-  --color-background-base: light-dark(#f4f4f4, #202631);
-  --color-background-page: light-dark(#ffffff, #161a22);
-  --color-border:          light-dark(#d5d5d5, #252b36);
-  --color-selection:       #9e9e9e;
-  --color-text-light:      #464646;
-  --color-text-dark:       #e8e8ec;
-  --color-text-emphasized: light-dark(#151515, #ffffff);
-  --color-text-emverted:   light-dark(#ffffff, #151515);
-  --color-text-muted:      light-dark(#70777f, #90979f);
-  --color-text-positive:   #238636;
-  --color-text-negative:   #da3633;
-  --color-shadow:          light-dark(#00000033, #00000088);
+  --color-accent:        #e5aa70;
+  --color-bg-base:       light-dark(#f4f4f4, #202631);
+  --color-bg-page:       light-dark(#ffffff, #161a22);
+  --color-border:        light-dark(#d5d5d5, #252b36);
+  --color-selection:     #9e9e9e;
+  --color-text-light:    #464646;
+  --color-text-dark:     #e8e8ec;
+  --color-text-em:       light-dark(#151515, #ffffff);
+  --color-text-emverted: light-dark(#ffffff, #151515);
+  --color-text-muted:    light-dark(#70777f, #90979f);
+  --color-positive:      #238636;
+  --color-negative:      #da3633;
+  --color-shadow:        light-dark(#00000033, #00000088);
   
   /* Color derivations */
-  --color-text-base:           light-dark(var(--color-text-light), var(--color-text-dark));
-  --color-text-inverted:       light-dark(var(--color-text-dark), var(--color-text-light));
-  --color-text-link:           light-dark(color-mix(in hsl, var(--color-accent) 70%, black), var(--color-accent));
-  --color-text-link-hover:     light-dark(color-mix(in hsl, var(--color-accent) 90%, black), color-mix(in hsl, var(--color-accent) 70%, white));
-  --color-outline:             color-mix(in srgb, var(--color-accent) 35%, transparent);
-  --color-background-accent:   color-mix(in hsl, var(--color-accent) 80%, black);
-  --color-background-muted:    color-mix(in srgb, var(--color-background-base) 90%, black);
-  --color-background-positive: color-mix(in srgb, var(--color-text-positive) 15%, transparent);
-  --color-background-negative: color-mix(in srgb, var(--color-text-negative) 15%, transparent);
+  --color-text-base:     light-dark(var(--color-text-light), var(--color-text-dark));
+  --color-text-inverted: light-dark(var(--color-text-dark), var(--color-text-light));
+  --color-link:          light-dark(color-mix(in hsl, var(--color-accent) 70%, black), var(--color-accent));
+  --color-link-hover:    light-dark(color-mix(in hsl, var(--color-accent) 90%, black), color-mix(in hsl, var(--color-accent) 70%, white));
+  --color-outline:       color-mix(in srgb, var(--color-accent) 35%, transparent);
+  --color-bg-accent:     color-mix(in hsl, var(--color-accent) 80%, black);
+  --color-bg-muted:      color-mix(in srgb, var(--color-bg-base) 90%, black);
+  --color-bg-positive:   color-mix(in srgb, var(--color-positive) 15%, transparent);
+  --color-bg-negative:   color-mix(in srgb, var(--color-negative) 15%, transparent);
 
   /* Screen dimensions */
   --screen-xs:  30rem; /*  480px */
@@ -63,6 +63,6 @@
   100% { background-position: -200% 0; }
 }
 @keyframes pulse {
-  50%  { box-shadow: 0 0 0 0 var(--color-background-accent); }
+  50%  { box-shadow: 0 0 0 0 var(--color-bg-accent); }
   100% { box-shadow: 0 0 0 .5rem rgba(0, 0, 0, 0);  }
 }

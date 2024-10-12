@@ -11,7 +11,7 @@
   }
 
   &.empty {
-    background-color: var(--color-background-muted);
+    background-color: var(--color-bg-muted);
     color: var(--color-text-muted);
 
     h1, h2, h3, h4, h5, h6 {

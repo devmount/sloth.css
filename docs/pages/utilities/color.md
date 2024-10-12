@@ -39,8 +39,8 @@ Colors can be overwritten by the corresponding custom property:
   --color-text-dark: #e8e8ec;
   --color-accent: #e5aa70;
   --color-text-muted: light-dark(#70777f, #90979f);
-  --color-text-positive: #238636;
-  --color-text-negative: #da3633;
+  --color-positive: #238636;
+  --color-negative: #da3633;
 }
 ```
 
@@ -70,12 +70,12 @@ Colors can be overwritten by the corresponding custom property:
 
 ```css
 :root {
-  --color-background-base: light-dark(#f4f4f4, #202631);
-  --color-background-page: light-dark(#ffffff, #161a22);
+  --color-bg-base: light-dark(#f4f4f4, #202631);
+  --color-bg-page: light-dark(#ffffff, #161a22);
   --color-accent: #e5aa70;
-  --color-background-accent: color-mix(in hsl, var(--color-accent) 80%, black);
-  --color-background-muted: color-mix(in srgb, var(--color-background-base) 90%, black);
-  --color-background-positive: color-mix(in srgb, var(--color-text-positive) 15%, transparent);
-  --color-background-negative: color-mix(in srgb, var(--color-text-negative) 15%, transparent);
+  --color-bg-accent: color-mix(in hsl, var(--color-accent) 80%, black);
+  --color-bg-muted: color-mix(in srgb, var(--color-bg-base) 90%, black);
+  --color-bg-positive: color-mix(in srgb, var(--color-positive) 15%, transparent);
+  --color-bg-negative: color-mix(in srgb, var(--color-negative) 15%, transparent);
 }
 ```

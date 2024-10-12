@@ -33,12 +33,12 @@
     top: 1rem;
   }
   &.callout.accent {
-    background-color: color-mix(in srgb, var(--color-accent) 40%, var(--color-background-page));
+    background-color: color-mix(in srgb, var(--color-accent) 40%, var(--color-bg-page));
   }
   &.callout.positive {
-    background-color: color-mix(in srgb, var(--color-text-positive) 15%, var(--color-background-page));
+    background-color: color-mix(in srgb, var(--color-positive) 15%, var(--color-bg-page));
   }
   &.callout.negative {
-    background-color: color-mix(in srgb, var(--color-text-negative) 15%, var(--color-background-page));
+    background-color: color-mix(in srgb, var(--color-negative) 15%, var(--color-bg-page));
   }
 }

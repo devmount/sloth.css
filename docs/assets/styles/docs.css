@@ -19,7 +19,7 @@ body {
   }
 
   & > aside {
-    background: var(--color-background-base);
+    background: var(--color-bg-base);
     position: fixed;
     width: 14rem;
     overflow-y: auto;

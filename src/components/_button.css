@@ -4,7 +4,7 @@ input[type="reset"],
 button,
 a.button {
   appearance: none;
-  background-color: var(--color-background-accent);
+  background-color: var(--color-bg-accent);
   border-radius: .25rem;
   border: 0;
   box-shadow: black var(--shadow-float);
@@ -24,10 +24,10 @@ a.button {
     background-color: var(--color-text-muted);
   }
   &.positive {
-    background-color: var(--color-text-positive);
+    background-color: var(--color-positive);
   }
   &.negative {
-    background-color: var(--color-text-negative);
+    background-color: var(--color-negative);
   }
 
   &:not(:disabled) {
@@ -39,10 +39,10 @@ a.button {
       background-color: color-mix(in hsl, var(--color-text-muted) 90%, black);
     }
     &.positive {
-      background-color: color-mix(in hsl, var(--color-text-positive) 90%, black);
+      background-color: color-mix(in hsl, var(--color-positive) 90%, black);
     }
     &.negative {
-      background-color: color-mix(in hsl, var(--color-text-negative) 90%, black);
+      background-color: color-mix(in hsl, var(--color-negative) 90%, black);
     }
   }
   &:focus:not(:disabled), &:focus-within:not(:disabled), &:hover:not(:disabled) {
@@ -56,12 +56,12 @@ a.button {
     }
     &.positive {
       box-shadow:
-        color-mix(in hsl, var(--color-text-positive) 90%, black) var(--shadow-border),
+        color-mix(in hsl, var(--color-positive) 90%, black) var(--shadow-border),
         black var(--shadow-float);
     }
     &.negative {
       box-shadow:
-        color-mix(in hsl, var(--color-text-negative) 90%, black) var(--shadow-border),
+        color-mix(in hsl, var(--color-negative) 90%, black) var(--shadow-border),
         black var(--shadow-float);
     }
   }
@@ -71,17 +71,17 @@ a.button {
       outline: 4px solid color-mix(in srgb, var(--color-text-muted) 35%, transparent);
     }
     &.positive {
-      outline: 4px solid color-mix(in srgb, var(--color-text-positive) 35%, transparent);
+      outline: 4px solid color-mix(in srgb, var(--color-positive) 35%, transparent);
     }
     &.negative {
-      outline: 4px solid color-mix(in srgb, var(--color-text-negative) 35%, transparent);
+      outline: 4px solid color-mix(in srgb, var(--color-negative) 35%, transparent);
     }
   }
   &:active:not(:disabled) {
     outline: 0;
     box-shadow:
-      var(--color-background-accent) var(--shadow-border),
-      var(--color-background-accent) var(--shadow-inset);
+      var(--color-bg-accent) var(--shadow-border),
+      var(--color-bg-accent) var(--shadow-inset);
     &.neutral {
       box-shadow:
         color-mix(in hsl, var(--color-text-muted) 80%, black) var(--shadow-border),
@@ -89,13 +89,13 @@ a.button {
     }
     &.positive {
       box-shadow:
-        color-mix(in hsl, var(--color-text-positive) 80%, black) var(--shadow-border),
-        color-mix(in hsl, var(--color-text-positive) 80%, black) var(--shadow-inset);
+        color-mix(in hsl, var(--color-positive) 80%, black) var(--shadow-border),
+        color-mix(in hsl, var(--color-positive) 80%, black) var(--shadow-inset);
     }
     &.negative {
       box-shadow:
-        color-mix(in hsl, var(--color-text-negative) 80%, black) var(--shadow-border),
-        color-mix(in hsl, var(--color-text-negative) 80%, black) var(--shadow-inset);
+        color-mix(in hsl, var(--color-negative) 80%, black) var(--shadow-border),
+        color-mix(in hsl, var(--color-negative) 80%, black) var(--shadow-inset);
     }
   }
   &:disabled {

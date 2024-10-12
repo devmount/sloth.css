@@ -16,7 +16,7 @@
     line-height: .5rem;
     font-size: .625rem;
     font-weight: 700;
-    box-shadow:  color-mix(in srgb, var(--color-background-page) 50%, transparent) var(--shadow-border);
+    box-shadow:  color-mix(in srgb, var(--color-bg-page) 50%, transparent) var(--shadow-border);
     text-transform: uppercase;
   }
 
