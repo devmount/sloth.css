@@ -36,7 +36,37 @@ The default button without any class is already utilizing accent coloring. In ad
 <button class="negative">Delete account</button>
 ```
 
-### Link buttons
+### Secondary button
+
+For less important buttons with outline and transparent backgrounds, the `hollow` class can be used. It can be combined with all other button related classes.
+
+<div class="demo flex flex-wrap gap-4">
+  <div class="flex-col gap-2 items-center">
+    <button class="hollow">Send post</button>
+    <code>.hollow</code>
+  </div>
+  <div class="flex-col gap-2 items-center">
+    <button class="neutral hollow">Return</button>
+    <code>.neutral.hollow</code>
+  </div>
+  <div class="flex-col gap-2 items-center">
+    <button class="positive hollow">Save profile</button>
+    <code>.positive.hollow</code>
+  </div>
+  <div class="flex-col gap-2 items-center">
+    <button class="negative hollow">Delete account</button>
+    <code>.negative.hollow</code>
+  </div>
+</div>
+
+```html
+<button>Send post</button>
+<button class="neutral">Return</button>
+<button class="positive">Save profile</button>
+<button class="negative">Delete account</button>
+```
+
+### Link button
 
 Use the `button` class to apply all button styles on `<a>` tags. That way you can create button links for navigation.
 
@@ -56,7 +86,7 @@ Use the `button` class to apply all button styles on `<a>` tags. That way you ca
 <a class="button neutral" href="#">Go back</a>
 ```
 
-### Pill buttons
+### Pill button
 
 Use the `rounded-full` utility class to give buttons a pill form.
 
