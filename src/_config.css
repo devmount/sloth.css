@@ -52,7 +52,7 @@
   --line-height: 1.4rem;
 
   /* Shadows */
-  --shadow-border: 0 0 0 1px;
+  --shadow-border: 0 0 0 1px inset;
   --shadow-inset:  0 2px .25rem 0 inset;
   --shadow-float:  0 .25rem .75rem -.4rem;
 

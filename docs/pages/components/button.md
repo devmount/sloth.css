@@ -46,24 +46,24 @@ For less important buttons with outline and transparent backgrounds, the `hollow
     <code>.hollow</code>
   </div>
   <div class="flex-col gap-2 items-center">
-    <button class="neutral hollow">Return</button>
-    <code>.neutral.hollow</code>
+    <button class="hollow neutral">Return</button>
+    <code>.hollow.neutral</code>
   </div>
   <div class="flex-col gap-2 items-center">
-    <button class="positive hollow">Save profile</button>
-    <code>.positive.hollow</code>
+    <button class="hollow positive">Save profile</button>
+    <code>.hollow.positive</code>
   </div>
   <div class="flex-col gap-2 items-center">
-    <button class="negative hollow">Delete account</button>
-    <code>.negative.hollow</code>
+    <button class="hollow negative">Delete account</button>
+    <code>.hollow.negative</code>
   </div>
 </div>
 
 ```html
-<button>Send post</button>
-<button class="neutral">Return</button>
-<button class="positive">Save profile</button>
-<button class="negative">Delete account</button>
+<button class="hollow">Send post</button>
+<button class="hollow neutral">Return</button>
+<button class="hollow positive">Save profile</button>
+<button class="hollow negative">Delete account</button>
 ```
 
 ### Link button
