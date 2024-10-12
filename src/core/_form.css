@@ -180,7 +180,9 @@ input[type="range"] {
     &::-webkit-slider-runnable-track,
     &::-moz-range-track {
       outline: 4px solid var(--color-outline);
-      box-shadow: var(--color-accent) var(--shadow-border), var(--color-outline) 0 0 0 4px;
+      box-shadow:
+        var(--color-accent) var(--shadow-border),
+        var(--color-outline) 0 0 0 4px;
     }
   }
   &:active {
@@ -218,7 +220,10 @@ button {
   box-shadow: black var(--shadow-float);
   font-family: inherit;
   box-sizing: border-box;
-  transition: var(--transition-outline), var(--transition-color), var(--transition-transform);
+  transition:
+    var(--transition-outline),
+    var(--transition-color),
+    var(--transition-transform);
 
   &:not(:disabled) {
     cursor: pointer;
@@ -227,7 +232,9 @@ button {
     background-color: var(--color-accent);
   }
   &:focus:not(:disabled), &:focus-within:not(:disabled), &:hover:not(:disabled) {
-    box-shadow: color-mix(in hsl, var(--color-accent) 90%, black) var(--shadow-border), black var(--shadow-float);
+    box-shadow:
+      color-mix(in hsl, var(--color-accent) 90%, black) var(--shadow-border),
+      black var(--shadow-float);
   }
   &:focus:not(:disabled), &:focus-within:not(:disabled) {
     outline: 4px solid var(--color-outline);

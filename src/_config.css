@@ -13,6 +13,7 @@
   --color-text-em:       light-dark(#151515, #ffffff);
   --color-text-emverted: light-dark(#ffffff, #151515);
   --color-text-muted:    light-dark(#70777f, #90979f);
+  --color-neutral:       #70777f;
   --color-positive:      #238636;
   --color-negative:      #da3633;
   --color-shadow:        light-dark(#00000033, #00000088);

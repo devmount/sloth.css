@@ -75,3 +75,49 @@ Use the `rounded-full` utility class to give buttons a pill form.
 <button class="rounded-full">Send post</button>
 <button class="neutral rounded-full">Return</button>
 ```
+
+### Button group
+
+Use the `button-group` class on an element containing buttons, to group buttons to a single logical unit.
+
+<div class="demo flex flex-wrap gap-4">
+  <div class="button-group font-mono">
+    <button><b>B</b></button>
+    <button><i>I</i></button>
+    <button class="underline">U</button>
+  </div>
+</div>
+
+```html
+<div class="button-group">
+  <button><b>B</b></button>
+  <button><i>I</i></button>
+  <button class="underline">U</button>
+</div>
+```
+
+Pill buttons are also supported in groups, even on one side only.
+
+<div class="demo flex flex-wrap gap-8">
+  <div class="button-group">
+    <button class="rounded-full">Left</button>
+    <button>Center</button>
+    <button class="rounded-full">Right</button>
+  </div>
+  <div class="button-group">
+    <button>Select</button>
+    <button class="rounded-full">Next</button>
+  </div>
+</div>
+
+```html
+<div class="button-group">
+  <button class="rounded-full">Left</button>
+  <button>Center</button>
+  <button class="rounded-full">Right</button>
+</div>
+<div class="button-group">
+  <button>Select</button>
+  <button class="rounded-full">Next</button>
+</div>
+```
