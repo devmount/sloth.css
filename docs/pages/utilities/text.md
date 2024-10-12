@@ -7,6 +7,29 @@ description: Utility classes of Sloth.css for text.
 
 Utility classes for controlling text and font appearance.
 
+### Text decoration
+
+<div class="demo">
+  <div class="flex gap-2 items-start">
+    <p class="underline">The Sloth is a lazy mammal.</p>
+    <code>.underline</code>
+  </div>
+  <div class="flex gap-2 items-start">
+    <p class="line-through">The Sloth is a lazy mammal.</p>
+    <code>.line-through</code>
+  </div>
+</div>
+
+```html
+<p class="underline">...</p>
+<p class="line-through">...</p>
+```
+
+```css
+.underline    { text-decoration-line: underline;    }
+.line-through { text-decoration-line: line-through; }
+```
+
 ### Text transform
 
 <div class="demo">
