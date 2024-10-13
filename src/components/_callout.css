@@ -2,7 +2,7 @@
   display: block;
   position: relative;
   padding: 1.5rem 2rem;
-  background-color: var(--color-background-muted);
+  background-color: var(--color-bg-muted);
   border-left: .25rem solid var(--color-text-muted);
   border-radius: .25rem;
 
@@ -14,19 +14,19 @@
     }
   }
   &.positive {
-    color: var(--color-text-positive);
-    border-color: var(--color-text-positive);
-    background-color: var(--color-background-positive);
+    color: var(--color-positive);
+    border-color: var(--color-positive);
+    background-color: var(--color-bg-positive);
     &[data-symbol]::before {
-      background-color: var(--color-text-positive);
+      background-color: var(--color-positive);
     }
   }
   &.negative {
-    color: var(--color-text-negative);
-    border-color: var(--color-text-negative);
-    background-color: var(--color-background-negative);
+    color: var(--color-negative);
+    border-color: var(--color-negative);
+    background-color: var(--color-bg-negative);
     &[data-symbol]::before {
-      background-color: var(--color-text-negative);
+      background-color: var(--color-negative);
     }
   }
 
@@ -43,7 +43,7 @@
     left: -.125rem;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: var(--color-text-inverted);
+    color: var(--color-bg-page);
     font-weight: 700;
     background-color: var(--color-text-muted);
   }

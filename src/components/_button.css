@@ -1,0 +1,194 @@
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+button,
+a.button {
+  appearance: none;
+  background-color: var(--color-bg-accent);
+  border-radius: .25rem;
+  border: 0;
+  box-shadow: black var(--shadow-float);
+  box-sizing: border-box;
+  color: white;
+  display: inline-block;
+  font-family: inherit;
+  font-size: .875rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    var(--transition-outline),
+    var(--transition-color),
+    var(--transition-transform);
+  user-select: none;
+  white-space: nowrap;
+
+  &.neutral {
+    background-color: var(--color-neutral);
+  }
+  &.positive {
+    background-color: var(--color-positive);
+  }
+  &.negative {
+    background-color: var(--color-negative);
+  }
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+  &:hover:not(:disabled) {
+    background-color: var(--color-accent);
+    &.neutral {
+      background-color: color-mix(in hsl, var(--color-neutral) 90%, white);
+    }
+    &.positive {
+      background-color: color-mix(in hsl, var(--color-positive) 90%, white);
+    }
+    &.negative {
+      background-color: color-mix(in hsl, var(--color-negative) 90%, white);
+    }
+  }
+  &:focus:not(:disabled), &:focus-within:not(:disabled), &:hover:not(:disabled) {
+    box-shadow:
+      color-mix(in hsl, var(--color-accent) 90%, black) var(--shadow-border),
+      black var(--shadow-float);
+    &.neutral {
+      box-shadow:
+        color-mix(in hsl, var(--color-neutral) 90%, black) var(--shadow-border),
+        black var(--shadow-float);
+    }
+    &.positive {
+      box-shadow:
+        color-mix(in hsl, var(--color-positive) 90%, black) var(--shadow-border),
+        black var(--shadow-float);
+    }
+    &.negative {
+      box-shadow:
+        color-mix(in hsl, var(--color-negative) 90%, black) var(--shadow-border),
+        black var(--shadow-float);
+    }
+  }
+  &:focus:not(:disabled), &:focus-within:not(:disabled) {
+    outline: 4px solid var(--color-outline);
+    &.neutral {
+      outline: 4px solid color-mix(in srgb, var(--color-neutral) 35%, transparent);
+    }
+    &.positive {
+      outline: 4px solid color-mix(in srgb, var(--color-positive) 35%, transparent);
+    }
+    &.negative {
+      outline: 4px solid color-mix(in srgb, var(--color-negative) 35%, transparent);
+    }
+  }
+  &:active:not(:disabled) {
+    outline: 0;
+    box-shadow:
+      var(--color-bg-accent) var(--shadow-border),
+      var(--color-bg-accent) var(--shadow-inset);
+    &.neutral {
+      box-shadow:
+        color-mix(in hsl, var(--color-neutral) 80%, black) var(--shadow-border),
+        color-mix(in hsl, var(--color-neutral) 80%, black) var(--shadow-inset);
+    }
+    &.positive {
+      box-shadow:
+        color-mix(in hsl, var(--color-positive) 80%, black) var(--shadow-border),
+        color-mix(in hsl, var(--color-positive) 80%, black) var(--shadow-inset);
+    }
+    &.negative {
+      box-shadow:
+        color-mix(in hsl, var(--color-negative) 80%, black) var(--shadow-border),
+        color-mix(in hsl, var(--color-negative) 80%, black) var(--shadow-inset);
+    }
+  }
+
+  &.hollow {
+    color: light-dark(var(--color-bg-accent), var(--color-accent));
+    background-color: color-mix(in srgb, var(--color-accent) 10%, transparent);
+    box-shadow:
+      var(--color-accent) var(--shadow-border),
+      black var(--shadow-float);
+
+    &.neutral {
+      color: var(--color-neutral);
+      background-color: var(--color-bg-muted);
+      box-shadow:
+        var(--color-neutral) var(--shadow-border),
+        black var(--shadow-float);
+    }
+    &.positive {
+      color: var(--color-positive);
+      background-color: var(--color-bg-positive);
+      box-shadow:
+        var(--color-positive) var(--shadow-border),
+        black var(--shadow-float);
+    }
+    &.negative {
+      color: var(--color-negative);
+      background-color: var(--color-bg-negative);
+      box-shadow:
+        var(--color-negative) var(--shadow-border),
+        black var(--shadow-float);
+    }
+
+    &:hover:not(:disabled) {
+      color: white;
+    }
+  }
+
+  &.ghost {
+    color: var(--color-link);
+    background-color: transparent;
+    box-shadow: none;
+    text-underline-offset: 0;
+    transition: var(--transition-color), var(--transition-underline);
+
+    &:hover, &:focus, &:focus-within, &:active {
+      color: var(--color-link-hover);
+      background-color: transparent;
+      box-shadow: none;
+      text-decoration: underline;
+      text-underline-offset: 15%;
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+  }
+}
+
+.button-group {
+  display: flex;
+  gap: 1px;
+  box-shadow: black var(--shadow-float);
+
+  input[type="submit"],
+  input[type="button"],
+  input[type="reset"],
+  button,
+  a.button {
+    box-shadow: none;
+
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+  }
+
+  &:has(.rounded-full:first-child) {
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+  &:has(.rounded-full:last-child) {
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+  }
+}

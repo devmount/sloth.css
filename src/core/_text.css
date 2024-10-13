@@ -1,7 +1,7 @@
 /* <h1>, ..., <h6> */
 h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 .5em 0;
-  color: var(--color-text-emphasized);
+  color: var(--color-text-em);
   line-height: 1.4;
   font-weight: 500;
 
@@ -35,13 +35,13 @@ h6 {
 /* <a> */
 a {
   text-decoration: none;
-  color: var(--color-text-link);
+  color: var(--color-link);
   text-underline-offset: 0;
   transition: var(--transition-color), var(--transition-underline);
   border-radius: .25rem;
 
   &:hover, &:focus, &:focus-within {
-    color: var(--color-text-link-hover);
+    color: var(--color-link-hover);
     text-decoration: underline;
     text-underline-offset: 10%;
   }
@@ -94,7 +94,7 @@ ul, ol {
 
 /* <strong> */
 strong {
-  color: var(--color-text-emphasized);
+  color: var(--color-text-em);
 }
 
 /* <em> */
@@ -104,23 +104,23 @@ em {
 
 /* <u> */
 u {
-  text-decoration: color-mix(in srgb, var(--color-text-negative) 85%, transparent) wavy underline;
+  text-decoration: color-mix(in srgb, var(--color-negative) 85%, transparent) wavy underline;
   text-underline-offset: 5%;
   text-decoration-skip-ink: none;
 }
 
 /* <ins>, <del> */
 ins {
-  color: var(--color-text-positive);
-  background-color: var(--color-background-positive);
+  color: var(--color-positive);
+  background-color: var(--color-bg-positive);
   text-decoration: none;
   padding: .125rem .25rem;
   border-radius: .125rem;
 }
 del {
   text-decoration: line-through;
-  color: var(--color-text-negative);
-  background-color: var(--color-background-negative);
+  color: var(--color-negative);
+  background-color: var(--color-bg-negative);
   padding: .125rem .25rem;
   border-radius: .125rem;
 }
@@ -145,7 +145,7 @@ var {
 /* <code> */
 code {
   background: color-mix(in srgb, var(--color-border) 60%, transparent);
-  color: var(--color-text-emphasized);
+  color: var(--color-text-em);
   border-radius: .25rem;
   font-family: var(--font-mono);
   font-weight: 400;
@@ -172,5 +172,5 @@ samp {
 /* Selected text */
 ::selection {
   background-color: var(--color-selection);
-  color: var(--color-text-emphasized);
+  color: var(--color-text-em);
 }

@@ -24,7 +24,7 @@ label {
 
 /* <input>, <textarea>, <select> */
 input, textarea, select {
-  background-color: var(--color-background-base);
+  background-color: var(--color-bg-base);
   box-shadow: var(--color-shadow) var(--shadow-inset);
   font-family: inherit;
   transition: var(--transition-outline), var(--transition-color);
@@ -41,7 +41,7 @@ input, textarea, select {
   }
   &:disabled {
     cursor: not-allowed;
-    background-color: var(--color-background-muted);
+    background-color: var(--color-bg-muted);
   }
 }
 input[type="text"],
@@ -89,7 +89,7 @@ input[type="checkbox"] {
   border-radius: .25rem;
   position: relative;
   &::after {
-    border: 2px solid var(--color-background-page);
+    border: 2px solid var(--color-bg-page);
     border-left: none;
     border-top: none;
     border-bottom-right-radius: 1px;
@@ -104,7 +104,7 @@ input[type="checkbox"] {
   }
   &:checked {
     background-color: var(--color-accent);
-    color: var(--color-background-base);
+    color: var(--color-bg-base);
     box-shadow: none;
 
     &::after {
@@ -116,7 +116,7 @@ input[type="radio"] {
   border-radius: 9999px;
   position: relative;
   &::after {
-    background-color: var(--color-background-page);
+    background-color: var(--color-bg-page);
     border-radius: inherit;
     content: '';
     position: absolute;
@@ -129,7 +129,7 @@ input[type="radio"] {
   }
   &:checked {
     background-color: var(--color-accent);
-    color: var(--color-background-base);
+    color: var(--color-bg-base);
     box-shadow: none;
 
     &::after {
@@ -157,7 +157,7 @@ input[type="range"] {
   &::-webkit-slider-runnable-track,
   &::-moz-range-track {
     border: 0;
-    background-color: var(--color-background-base);
+    background-color: var(--color-bg-base);
     border-radius: .25rem;
     box-shadow: var(--color-shadow) var(--shadow-inset);
     height: .5rem;
@@ -180,7 +180,9 @@ input[type="range"] {
     &::-webkit-slider-runnable-track,
     &::-moz-range-track {
       outline: 4px solid var(--color-outline);
-      box-shadow: var(--color-accent) var(--shadow-border), var(--color-outline) 0 0 0 4px;
+      box-shadow:
+        var(--color-accent) var(--shadow-border),
+        var(--color-outline) 0 0 0 4px;
     }
   }
   &:active {
@@ -204,7 +206,7 @@ input[type="button"],
 input[type="reset"],
 button {
   appearance: none;
-  background-color: var(--color-background-accent);
+  background-color: var(--color-bg-accent);
   border: 0;
   color: white;
   display: inline-block;
@@ -218,7 +220,10 @@ button {
   box-shadow: black var(--shadow-float);
   font-family: inherit;
   box-sizing: border-box;
-  transition: var(--transition-outline), var(--transition-color), var(--transition-transform);
+  transition:
+    var(--transition-outline),
+    var(--transition-color),
+    var(--transition-transform);
 
   &:not(:disabled) {
     cursor: pointer;
@@ -227,7 +232,9 @@ button {
     background-color: var(--color-accent);
   }
   &:focus:not(:disabled), &:focus-within:not(:disabled), &:hover:not(:disabled) {
-    box-shadow: color-mix(in hsl, var(--color-accent) 90%, black) var(--shadow-border), black var(--shadow-float);
+    box-shadow:
+      color-mix(in hsl, var(--color-accent) 90%, black) var(--shadow-border),
+      black var(--shadow-float);
   }
   &:focus:not(:disabled), &:focus-within:not(:disabled) {
     outline: 4px solid var(--color-outline);
@@ -235,8 +242,8 @@ button {
   &:active:not(:disabled) {
     outline: 0;
     box-shadow:
-      var(--color-background-accent) var(--shadow-border),
-      var(--color-background-accent) var(--shadow-inset);
+      var(--color-bg-accent) var(--shadow-border),
+      var(--color-bg-accent) var(--shadow-inset);
   }
   &:disabled {
     cursor: not-allowed;
