@@ -103,23 +103,23 @@ a.button {
   }
 
   &.hollow {
-    color: var(--color-accent);
-    background-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
+    color: light-dark(var(--color-bg-accent), var(--color-accent));
+    background-color: color-mix(in srgb, var(--color-accent) 10%, transparent);
     box-shadow:  var(--color-accent) var(--shadow-border);
 
     &.neutral {
       color: var(--color-neutral);
-      background-color: color-mix(in srgb, var(--color-neutral) 15%, transparent);
+      background-color: var(--color-bg-muted);
       box-shadow:  var(--color-neutral) var(--shadow-border);
     }
     &.positive {
       color: var(--color-positive);
-      background-color: color-mix(in srgb, var(--color-positive) 15%, transparent);
+      background-color: var(--color-bg-positive);
       box-shadow:  var(--color-positive) var(--shadow-border);
     }
     &.negative {
       color: var(--color-negative);
-      background-color: color-mix(in srgb, var(--color-negative) 15%, transparent);
+      background-color: var(--color-bg-negative);
       box-shadow:  var(--color-negative) var(--shadow-border);
     }
   }

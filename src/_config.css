@@ -25,7 +25,7 @@
   --color-link-hover:    light-dark(color-mix(in hsl, var(--color-accent) 90%, black), color-mix(in hsl, var(--color-accent) 70%, white));
   --color-outline:       color-mix(in srgb, var(--color-accent) 35%, transparent);
   --color-bg-accent:     color-mix(in hsl, var(--color-accent) 80%, black);
-  --color-bg-muted:      color-mix(in srgb, var(--color-bg-base) 90%, black);
+  --color-bg-muted:      color-mix(in srgb, var(--color-neutral) 15%, transparent);
   --color-bg-positive:   color-mix(in srgb, var(--color-positive) 15%, transparent);
   --color-bg-negative:   color-mix(in srgb, var(--color-negative) 15%, transparent);
 

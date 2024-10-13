@@ -43,7 +43,7 @@
     left: -.125rem;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: var(--color-text-inverted);
+    color: var(--color-bg-page);
     font-weight: 700;
     background-color: var(--color-text-muted);
   }

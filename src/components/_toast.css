@@ -32,8 +32,11 @@
     left: 1rem;
     top: 1rem;
   }
+  &.callout, &.callout.neutral {
+    background-color: color-mix(in srgb, var(--color-neutral) 15%, var(--color-bg-page));
+  }
   &.callout.accent {
-    background-color: color-mix(in srgb, var(--color-accent) 40%, var(--color-bg-page));
+    background-color: color-mix(in srgb, var(--color-accent) 30%, var(--color-bg-page));
   }
   &.callout.positive {
     background-color: color-mix(in srgb, var(--color-positive) 15%, var(--color-bg-page));
