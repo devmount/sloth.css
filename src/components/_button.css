@@ -105,22 +105,50 @@ a.button {
   &.hollow {
     color: light-dark(var(--color-bg-accent), var(--color-accent));
     background-color: color-mix(in srgb, var(--color-accent) 10%, transparent);
-    box-shadow:  var(--color-accent) var(--shadow-border);
+    box-shadow:
+      var(--color-accent) var(--shadow-border),
+      black var(--shadow-float);
 
     &.neutral {
       color: var(--color-neutral);
       background-color: var(--color-bg-muted);
-      box-shadow:  var(--color-neutral) var(--shadow-border);
+      box-shadow:
+        var(--color-neutral) var(--shadow-border),
+        black var(--shadow-float);
     }
     &.positive {
       color: var(--color-positive);
       background-color: var(--color-bg-positive);
-      box-shadow:  var(--color-positive) var(--shadow-border);
+      box-shadow:
+        var(--color-positive) var(--shadow-border),
+        black var(--shadow-float);
     }
     &.negative {
       color: var(--color-negative);
       background-color: var(--color-bg-negative);
-      box-shadow:  var(--color-negative) var(--shadow-border);
+      box-shadow:
+        var(--color-negative) var(--shadow-border),
+        black var(--shadow-float);
+    }
+
+    &:hover:not(:disabled) {
+      color: white;
+    }
+  }
+
+  &.ghost {
+    color: var(--color-link);
+    background-color: transparent;
+    box-shadow: none;
+    text-underline-offset: 0;
+    transition: var(--transition-color), var(--transition-underline);
+
+    &:hover, &:focus, &:focus-within, &:active {
+      color: var(--color-link-hover);
+      background-color: transparent;
+      box-shadow: none;
+      text-decoration: underline;
+      text-underline-offset: 15%;
     }
   }
 

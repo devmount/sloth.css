@@ -106,6 +106,21 @@ Use the `rounded-full` utility class to give buttons a pill form.
 <button class="neutral rounded-full">Return</button>
 ```
 
+### Ghost button
+
+Use the `ghost` class to keep button sizing without background color or border.
+
+<div class="demo flex flex-wrap gap-4">
+  <div class="flex-col gap-2 items-center">
+    <button class="ghost">GitHub</button>
+    <code>.ghost</code>
+  </div>
+</div>
+
+```html
+<button class="ghost">GitHub</button>
+```
+
 ### Button group
 
 Use the `button-group` class on an element containing buttons, to group buttons to a single logical unit.
