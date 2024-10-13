@@ -31,6 +31,7 @@ module.exports = function(eleventyConfig) {
       'breadcrumb',
       'button',
       'callout',
+      'loader',
       'separator',
       'state',
       'toast',
