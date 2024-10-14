@@ -207,43 +207,44 @@ input[type="reset"],
 button {
   appearance: none;
   background-color: var(--color-bg-accent);
+  border-radius: .25rem;
   border: 0;
+  box-shadow: black var(--shadow-float);
+  box-sizing: border-box;
   color: white;
   display: inline-block;
+  font-family: inherit;
+  font-size: .875rem;
+  padding: .75rem 1rem;
   text-align: center;
   text-decoration: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: .25rem;
-  padding: .75rem 1rem;
-  font-size: .875rem;
-  box-shadow: black var(--shadow-float);
-  font-family: inherit;
-  box-sizing: border-box;
   transition:
     var(--transition-outline),
     var(--transition-color),
     var(--transition-transform);
+  user-select: none;
+  white-space: nowrap;
 
-  &:not(:disabled) {
+  &:not(:disabled):not(.busy) {
     cursor: pointer;
-  }
-  &:hover:not(:disabled) {
-    background-color: var(--color-accent);
-  }
-  &:focus:not(:disabled), &:focus-within:not(:disabled), &:hover:not(:disabled) {
-    box-shadow:
-      color-mix(in hsl, var(--color-accent) 90%, black) var(--shadow-border),
-      black var(--shadow-float);
-  }
-  &:focus:not(:disabled), &:focus-within:not(:disabled) {
-    outline: 4px solid var(--color-outline);
-  }
-  &:active:not(:disabled) {
-    outline: 0;
-    box-shadow:
-      var(--color-bg-accent) var(--shadow-border),
-      var(--color-bg-accent) var(--shadow-inset);
+
+    &:hover {
+      background-color: var(--color-accent);
+    }
+    &:focus, &:focus-within, &:hover {
+      box-shadow:
+        color-mix(in hsl, var(--color-accent) 90%, black) var(--shadow-border),
+        black var(--shadow-float);
+    }
+    &:focus, &:focus-within {
+      outline: 4px solid var(--color-outline);
+    }
+    &:active {
+      outline: 0;
+      box-shadow:
+        var(--color-bg-accent) var(--shadow-border),
+        var(--color-bg-accent) var(--shadow-inset);
+    }
   }
   &:disabled {
     cursor: not-allowed;
