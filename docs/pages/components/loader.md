@@ -59,7 +59,7 @@ Use the `double` class to make the loading animation more emphasized. Double loa
 
 ### Button loader
 
-Loaders are also supported on button elements. Use the `busy` class to replace the text of a button with a loader while keeping the button size.
+Loaders are also supported on <a href="/components/button">button</a> elements. Use the `busy` class to replace the text of a button with a loader while keeping the button size.
 
 <div class="demo flex flex-wrap items-center gap-8">
   <button class="busy">Send post</button>
