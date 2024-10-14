@@ -79,6 +79,7 @@ Use the `accent`, `positive` or `negative` classes to give the toast notificatio
 </div>
 
 ```html
+<div class="toast callout">...</div>
 <div class="toast callout accent">...</div>
 <div class="toast callout positive">...</div>
 <div class="toast callout negative">...</div>

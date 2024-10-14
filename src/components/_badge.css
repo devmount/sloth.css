@@ -28,3 +28,9 @@
     animation: pulse 2s infinite ease-out;
   }
 }
+
+/* Animations */
+@keyframes pulse {
+  50%  { box-shadow: 0 0 0 0 var(--color-bg-accent); }
+  100% { box-shadow: 0 0 0 .5rem rgba(0, 0, 0, 0);   }
+}

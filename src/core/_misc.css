@@ -125,3 +125,9 @@ progress {
 iframe {
   border: 1px solid var(--color-border);
 }
+
+/* Animations */
+@keyframes background-slide-x {
+  0%   { background-position:  200% 0; }
+  100% { background-position: -200% 0; }
+}

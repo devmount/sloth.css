@@ -141,7 +141,6 @@ Use the `busy` class to replace the text of a button with a <a href="/components
 <button class="busy ghost">Load settings</button>
 ```
 
-
 ### Button group
 
 Use the `button-group` class on an element containing buttons, to group buttons to a single logical unit.
