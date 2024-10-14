@@ -65,8 +65,8 @@ Sloth.css uses CSS custom properties for core styles. You can customize and over
 :root {
   --color-accent: #e5aa70;
   --color-neutral: #70777f;
-  --color-positive: #238636;
-  --color-negative: #da3633;
+  --color-success: #238636;
+  --color-alert: #da3633;
   --transition-opacity: opacity .15s ease;
   --font-size: 16px;
 }

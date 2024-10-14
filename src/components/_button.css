@@ -26,11 +26,11 @@ a.button {
   &.neutral {
     background-color: var(--color-neutral);
   }
-  &.positive {
-    background-color: var(--color-positive);
+  &.success {
+    background-color: var(--color-success);
   }
-  &.negative {
-    background-color: var(--color-negative);
+  &.alert {
+    background-color: var(--color-alert);
   }
 
   &:not(:disabled):not(.busy):not(.ghost) {
@@ -39,11 +39,11 @@ a.button {
       &.neutral {
         background-color: color-mix(in hsl, var(--color-neutral) 90%, white);
       }
-      &.positive {
-        background-color: color-mix(in hsl, var(--color-positive) 90%, white);
+      &.success {
+        background-color: color-mix(in hsl, var(--color-success) 90%, white);
       }
-      &.negative {
-        background-color: color-mix(in hsl, var(--color-negative) 90%, white);
+      &.alert {
+        background-color: color-mix(in hsl, var(--color-alert) 90%, white);
       }
     }
     &:focus, &:focus-within, &:hover {
@@ -55,14 +55,14 @@ a.button {
           color-mix(in hsl, var(--color-neutral) 90%, black) var(--shadow-border),
           black var(--shadow-float);
       }
-      &.positive {
+      &.success {
         box-shadow:
-          color-mix(in hsl, var(--color-positive) 90%, black) var(--shadow-border),
+          color-mix(in hsl, var(--color-success) 90%, black) var(--shadow-border),
           black var(--shadow-float);
       }
-      &.negative {
+      &.alert {
         box-shadow:
-          color-mix(in hsl, var(--color-negative) 90%, black) var(--shadow-border),
+          color-mix(in hsl, var(--color-alert) 90%, black) var(--shadow-border),
           black var(--shadow-float);
       }
     }
@@ -76,15 +76,15 @@ a.button {
           color-mix(in hsl, var(--color-neutral) 80%, black) var(--shadow-border),
           color-mix(in hsl, var(--color-neutral) 80%, black) var(--shadow-inset);
       }
-      &.positive {
+      &.success {
         box-shadow:
-          color-mix(in hsl, var(--color-positive) 80%, black) var(--shadow-border),
-          color-mix(in hsl, var(--color-positive) 80%, black) var(--shadow-inset);
+          color-mix(in hsl, var(--color-success) 80%, black) var(--shadow-border),
+          color-mix(in hsl, var(--color-success) 80%, black) var(--shadow-inset);
       }
-      &.negative {
+      &.alert {
         box-shadow:
-          color-mix(in hsl, var(--color-negative) 80%, black) var(--shadow-border),
-          color-mix(in hsl, var(--color-negative) 80%, black) var(--shadow-inset);
+          color-mix(in hsl, var(--color-alert) 80%, black) var(--shadow-border),
+          color-mix(in hsl, var(--color-alert) 80%, black) var(--shadow-inset);
       }
     }
   }
@@ -96,11 +96,11 @@ a.button {
       &.neutral {
         outline: 4px solid color-mix(in srgb, var(--color-neutral) 35%, transparent);
       }
-      &.positive {
-        outline: 4px solid color-mix(in srgb, var(--color-positive) 35%, transparent);
+      &.success {
+        outline: 4px solid color-mix(in srgb, var(--color-success) 35%, transparent);
       }
-      &.negative {
-        outline: 4px solid color-mix(in srgb, var(--color-negative) 35%, transparent);
+      &.alert {
+        outline: 4px solid color-mix(in srgb, var(--color-alert) 35%, transparent);
       }
     }
   }
@@ -120,18 +120,18 @@ a.button {
         var(--color-neutral) var(--shadow-border),
         black var(--shadow-float);
     }
-    &.positive {
-      color: var(--color-positive);
-      background-color: var(--color-bg-positive);
+    &.success {
+      color: var(--color-success);
+      background-color: var(--color-bg-success);
       box-shadow:
-        var(--color-positive) var(--shadow-border),
+        var(--color-success) var(--shadow-border),
         black var(--shadow-float);
     }
-    &.negative {
-      color: var(--color-negative);
-      background-color: var(--color-bg-negative);
+    &.alert {
+      color: var(--color-alert);
+      background-color: var(--color-bg-alert);
       box-shadow:
-        var(--color-negative) var(--shadow-border),
+        var(--color-alert) var(--shadow-border),
         black var(--shadow-float);
     }
 

@@ -22,11 +22,11 @@
 .text-muted {
   color: var(--color-text-muted);
 }
-.text-positive {
-  color: var(--color-positive);
+.text-success {
+  color: var(--color-success);
 }
-.text-negative {
-  color: var(--color-negative);
+.text-alert {
+  color: var(--color-alert);
 }
 
 .bg-base {
@@ -44,11 +44,11 @@
 .bg-muted {
   background-color: var(--color-bg-muted);
 }
-.bg-positive {
-  background-color: var(--color-bg-positive);
+.bg-success {
+  background-color: var(--color-bg-success);
 }
-.bg-negative {
-  background-color: var(--color-bg-negative);
+.bg-alert {
+  background-color: var(--color-bg-alert);
 }
 
 /* Dimensions */

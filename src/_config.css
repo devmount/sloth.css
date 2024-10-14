@@ -14,8 +14,8 @@
   --color-text-emverted: light-dark(#ffffff, #161a22);
   --color-text-muted:    light-dark(#70777f, #90979f);
   --color-neutral:       #70777f;
-  --color-positive:      #238636;
-  --color-negative:      #da3633;
+  --color-success:       #238636;
+  --color-alert:         #da3633;
   --color-shadow:        light-dark(#00000033, #00000088);
   
   /* Color derivations */
@@ -26,8 +26,8 @@
   --color-outline:       color-mix(in srgb, var(--color-accent) 35%, transparent);
   --color-bg-accent:     color-mix(in hsl, var(--color-accent) 80%, black);
   --color-bg-muted:      color-mix(in srgb, var(--color-neutral) 15%, transparent);
-  --color-bg-positive:   color-mix(in srgb, var(--color-positive) 15%, transparent);
-  --color-bg-negative:   color-mix(in srgb, var(--color-negative) 15%, transparent);
+  --color-bg-success:    color-mix(in srgb, var(--color-success) 15%, transparent);
+  --color-bg-alert:      color-mix(in srgb, var(--color-alert) 15%, transparent);
 
   /* Screen dimensions */
   --screen-xs:  30rem; /*  480px */
