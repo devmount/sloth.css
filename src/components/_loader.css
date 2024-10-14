@@ -4,30 +4,99 @@
   width: 2rem;
   border: .25rem solid color-mix(in srgb, var(--color-accent) 10%, transparent);
   border-radius: 9999px;
-  border-top-color: var(--color-accent);
+  color: var(--color-accent);
+  border-top-color: currentColor;
   animation: rotate 1s 0s infinite linear normal;
+  box-sizing: border-box;
 
   &.neutral {
+    color: var(--color-neutral);
     border-color: var(--color-bg-muted);
-    border-top-color: var(--color-neutral);
+    border-top-color: currentColor;
   }
   &.positive {
+    color: var(--color-positive);
     border-color: var(--color-bg-positive);
-    border-top-color: var(--color-positive);
+    border-top-color: currentColor;
   }
   &.negative {
+    color: var(--color-negative);
     border-color: var(--color-bg-negative);
-    border-top-color: var(--color-negative);
+    border-top-color: currentColor;
+  }
+
+  &.sm {
+    height: 1rem;
+    width: 1rem;
+    border-width: .125rem;
+  }
+  &.lg {
+    height: 4rem;
+    width: 4rem;
+    border-width: .3125rem;
   }
 
   &.double::after {
     content: '';
     position: absolute;
-    inset: 1rem;
+    inset: .25rem;
     display: block;
     border: inherit;
     border-radius: inherit;
     border-top-color: inherit;
     animation: rotate .5s 0s infinite linear reverse;
+  }
+  &.double.sm::after {
+    border: none;
+    animation: none;
+    background: currentColor;
+  }
+  &.double.lg::after {
+    inset: .5rem;
+  }
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+button,
+a.button {
+  &.busy {
+    color: transparent;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 1.5rem;
+      width: 1.5rem;
+      top: calc(50% - .75rem);
+      left: calc(50% - .75rem);
+      border: .25rem solid #ffffff88;
+      border-radius: 9999px;
+      border-top-color: transparent;
+      animation: rotate 1s 0s infinite linear normal;
+      box-sizing: border-box;
+    }
+
+    &.hollow {
+      &, &:hover {
+        color: transparent;
+      }
+
+      &.neutral::before {
+        border-color: var(--color-neutral);
+        border-top-color: transparent;
+      }
+      &.positive::before {
+        border-color: var(--color-positive);
+        border-top-color: transparent;
+      }
+      &.negative::before {
+        border-color: var(--color-negative);
+        border-top-color: transparent;
+      }  
+    }
   }
 }

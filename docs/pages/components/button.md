@@ -12,21 +12,10 @@ Buttons indicate actions the user can trigger on click. Buttons already have a b
 The default button without any class is already utilizing accent coloring. In addition, you can use `neutral`, `positive` and `negative` classes for the corresponding colors.
 
 <div class="demo flex flex-wrap gap-4">
-  <div>
-    <button>Send post</button>
-  </div>
-  <div class="flex-col gap-2 items-center">
-    <button class="neutral">Return</button>
-    <code>.neutral</code>
-  </div>
-  <div class="flex-col gap-2 items-center">
-    <button class="positive">Save profile</button>
-    <code>.positive</code>
-  </div>
-  <div class="flex-col gap-2 items-center">
-    <button class="negative">Delete account</button>
-    <code>.negative</code>
-  </div>
+  <button>Send post</button>
+  <button class="neutral">Return</button>
+  <button class="positive">Save profile</button>
+  <button class="negative">Delete account</button>
 </div>
 
 ```html
@@ -36,27 +25,31 @@ The default button without any class is already utilizing accent coloring. In ad
 <button class="negative">Delete account</button>
 ```
 
+Using the `disabled` attribute deactivates buttons. If you're using `onclick` event handlers, make sure this case is handled.
+
+<div class="demo flex flex-wrap gap-4">
+  <button disabled>Send post</button>
+  <button class="neutral" disabled>Return</button>
+  <button class="positive" disabled>Save profile</button>
+  <button class="negative" disabled>Delete account</button>
+</div>
+
+```html
+<button disabled>Send post</button>
+<button class="neutral" disabled>Return</button>
+<button class="positive" disabled>Save profile</button>
+<button class="negative" disabled>Delete account</button>
+```
+
 ### Secondary button
 
 For less important buttons with outline and transparent backgrounds, the `hollow` class can be used. It can be combined with all other button related classes.
 
 <div class="demo flex flex-wrap gap-4">
-  <div class="flex-col gap-2 items-center">
-    <button class="hollow">Send post</button>
-    <code>.hollow</code>
-  </div>
-  <div class="flex-col gap-2 items-center">
-    <button class="hollow neutral">Return</button>
-    <code>.hollow.neutral</code>
-  </div>
-  <div class="flex-col gap-2 items-center">
-    <button class="hollow positive">Save profile</button>
-    <code>.hollow.positive</code>
-  </div>
-  <div class="flex-col gap-2 items-center">
-    <button class="hollow negative">Delete account</button>
-    <code>.hollow.negative</code>
-  </div>
+  <button class="hollow">Send post</button>
+  <button class="hollow neutral">Return</button>
+  <button class="hollow positive">Save profile</button>
+  <button class="hollow negative">Delete account</button>
 </div>
 
 ```html
@@ -66,19 +59,29 @@ For less important buttons with outline and transparent backgrounds, the `hollow
 <button class="hollow negative">Delete account</button>
 ```
 
+The `disabled` attribute can be set on secondary buttons too.
+
+<div class="demo flex flex-wrap gap-4">
+  <button class="hollow" disabled>Send post</button>
+  <button class="hollow neutral" disabled>Return</button>
+  <button class="hollow positive" disabled>Save profile</button>
+  <button class="hollow negative" disabled>Delete account</button>
+</div>
+
+```html
+<button class="hollow" disabled>Send post</button>
+<button class="hollow neutral" disabled>Return</button>
+<button class="hollow positive" disabled>Save profile</button>
+<button class="hollow negative" disabled>Delete account</button>
+```
+
 ### Link button
 
 Use the `button` class to apply all button styles on `<a>` tags. That way you can create button links for navigation.
 
 <div class="demo flex flex-wrap gap-4">
-  <div class="flex-col gap-2 items-center">
-    <a class="button" href="#">Go shopping</a>
-    <code>.button</code>
-  </div>
-  <div class="flex-col gap-2 items-center">
-    <a class="button neutral" href="#">Go back</a>
-    <code>.button.neutral</code>
-  </div>
+  <a class="button" href="#">Go shopping</a>
+  <a class="button neutral" href="#">Go back</a>
 </div>
 
 ```html
@@ -91,35 +94,53 @@ Use the `button` class to apply all button styles on `<a>` tags. That way you ca
 Use the `rounded-full` utility class to give buttons a pill form.
 
 <div class="demo flex flex-wrap gap-4">
-  <div class="flex-col gap-2 items-center">
-    <button class="rounded-full">Send post</button>
-    <code>.rounded-full</code>
-  </div>
-  <div class="flex-col gap-2 items-center">
-    <button class="neutral rounded-full">Return</button>
-    <code>.neutral.rounded-full</code>
-  </div>
+  <button class="rounded-full">Send post</button>
+  <button class="neutral rounded-full">Return</button>
+  <button class="positive hollow rounded-full">Save profile</button>
 </div>
 
 ```html
 <button class="rounded-full">Send post</button>
 <button class="neutral rounded-full">Return</button>
+<button class="positive hollow rounded-full">Save profile</button>
 ```
 
 ### Ghost button
 
-Use the `ghost` class to keep button sizing without background color or border.
+Use the `ghost` class to keep button sizing without background color or border. Works on link buttons too.
 
 <div class="demo flex flex-wrap gap-4">
-  <div class="flex-col gap-2 items-center">
-    <button class="ghost">GitHub</button>
-    <code>.ghost</code>
-  </div>
+  <button>Subscribe</button>
+  <button class="ghost">Docs</button>
+  <a class="ghost button" href="#">GitHub</a>
 </div>
 
 ```html
-<button class="ghost">GitHub</button>
+<button>Subscribe</button>
+<button class="ghost">Docs</button>
+<a class="ghost button" href="#">GitHub</a>
 ```
+
+### Busy button
+
+Use the `busy` class to replace the text of a button with a <a href="/components/loader">loader</a> while keeping the button size. Works with secondary buttons, link buttons and pill buttons. Busy buttons are disabled.
+
+<div class="demo flex flex-wrap items-center gap-8">
+  <button class="busy">Send post</button>
+  <button class="busy neutral rounded-full">Return</button>
+  <button class="busy positive hollow">Save profile</button>
+  <button class="busy negative hollow rounded-full">Delete account</button>
+  <button class="busy ghost">Load settings</button>
+</div>
+
+```html
+<button class="busy">Send post</button>
+<button class="busy neutral rounded-full">Return</button>
+<button class="busy positive hollow">Save profile</button>
+<button class="busy negative hollow rounded-full">Delete account</button>
+<button class="busy ghost">Load settings</button>
+```
+
 
 ### Button group
 
