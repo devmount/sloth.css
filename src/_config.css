@@ -4,7 +4,7 @@
 
   /* Color definitions */
   --color-accent:        #e5aa70;
-  --color-bg-base:       light-dark(#f0f7ff, #202631);
+  --color-bg-base:       light-dark(#f4f7fa, #202631);
   --color-bg-page:       light-dark(#ffffff, #161a22);
   --color-border:        light-dark(#d0d7df, #252b36);
   --color-selection:     #90979f;

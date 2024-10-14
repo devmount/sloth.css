@@ -16,7 +16,7 @@
     line-height: .5rem;
     font-size: .625rem;
     font-weight: 700;
-    box-shadow:  color-mix(in srgb, var(--color-bg-page) 50%, transparent) var(--shadow-border);
+    box-shadow: color-mix(in srgb, var(--color-bg-page) 50%, transparent) var(--shadow-border);
     text-transform: uppercase;
   }
 
@@ -31,6 +31,14 @@
 
 /* Animations */
 @keyframes pulse {
-  50%  { box-shadow: 0 0 0 0 var(--color-bg-accent); }
-  100% { box-shadow: 0 0 0 .5rem rgba(0, 0, 0, 0);   }
+  50%  {
+    box-shadow:
+      color-mix(in srgb, var(--color-bg-page) 50%, transparent) var(--shadow-border),
+      0 0 0 0 var(--color-bg-accent);
+  }
+  100% {
+    box-shadow:
+      color-mix(in srgb, var(--color-bg-page) 50%, transparent) var(--shadow-border),
+      0 0 0 .5rem rgba(0, 0, 0, 0);  
+  }
 }
