@@ -9,6 +9,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addGlobalData('repoUrl', 'https://github.com/devmount/sloth.css');
   eleventyConfig.addGlobalData('cdnUrl', 'https://unpkg.com/@devmount/sloth.css@^0');
   eleventyConfig.addGlobalData('creatorUrl', 'https://devmount.com');
+  eleventyConfig.addGlobalData('donationUrl', 'https://paypal.me/devmount');
   eleventyConfig.addGlobalData('layout', 'default');
   eleventyConfig.addGlobalData('toc', true);
   eleventyConfig.addGlobalData('meta', {
