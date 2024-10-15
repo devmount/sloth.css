@@ -137,6 +137,40 @@ Use the `ghost` class to keep button sizing without background color or border. 
 <a class="ghost button" href="#">GitHub</a>
 ```
 
+### Icon button
+
+Sloth.css doesn't ship any icons, since there are lots of icon libraries out there. However SVG icons are directly supported using the `icon` class. Buttons are set to _inline-flex_ per default, so multiple elements inside buttons are nicely aligned next to each other.
+
+The beautiful <a href="https://tabler.io/icons" target="_blank">Tabler Icons</a> work well with Sloth.css for example. You can also create icon buttons without any text. You might want to use the `rounded-full` utility for those.
+
+<div class="demo flex flex-wrap gap-4">
+  <button>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /></svg>
+    Settings
+  </button>
+  <button class="hollow alert">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+    Donations
+  </button>
+  <button class="hollow neutral rounded-full">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+  </button>
+</div>
+
+```html
+<button>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">...</svg>
+  Settings
+</button>
+<button class="hollow alert">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">...</svg>
+  Donations
+</button>
+<button class="hollow neutral rounded-full">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">...</svg>
+</button>
+```
+
 ### Busy button
 
 Use the `busy` class to replace the text of a button with a <a href="/components/loader">loader</a> while keeping the button size. Works with secondary buttons, link buttons and pill buttons. Busy buttons are disabled.

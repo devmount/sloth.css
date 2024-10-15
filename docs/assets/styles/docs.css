@@ -53,11 +53,14 @@ body {
         display: flex;
         align-items: center;
         gap: 1rem;
+        code {
+          font-size: .625rem;
+        }
       }
       .actions {
         display: flex;
         align-items: center;
-        gap: .5rem;
+        gap: .75rem;
       }
     }
     
