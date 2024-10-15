@@ -38,10 +38,10 @@
   &.callout.accent {
     background-color: color-mix(in srgb, var(--color-accent) 30%, var(--color-bg-page));
   }
-  &.callout.positive {
-    background-color: color-mix(in srgb, var(--color-positive) 15%, var(--color-bg-page));
+  &.callout.success {
+    background-color: color-mix(in srgb, var(--color-success) 15%, var(--color-bg-page));
   }
-  &.callout.negative {
-    background-color: color-mix(in srgb, var(--color-negative) 15%, var(--color-bg-page));
+  &.callout.alert {
+    background-color: color-mix(in srgb, var(--color-alert) 15%, var(--color-bg-page));
   }
 }

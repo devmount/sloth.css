@@ -15,8 +15,8 @@ Text is colored according to the color scheme per default. Use the `text-inverte
   <p>Default text</p>
   <p class="text-accent">Accent color <code>.text-accent</code></p>
   <p class="text-muted">Muted text <code>.text-muted</code></p>
-  <p class="text-positive">Positive message <code>.text-positive</code></p>
-  <p class="text-negative">Negative message <code>.text-negative</code></p>
+  <p class="text-success">success message <code>.text-success</code></p>
+  <p class="text-alert">alert message <code>.text-alert</code></p>
   <p class="text-inverted">Inverted color <code>.text-accent</code></p>
 </div>
 
@@ -24,8 +24,8 @@ Text is colored according to the color scheme per default. Use the `text-inverte
 <p>Default text</p>
 <p class="text-accent">Accent color</p>
 <p class="text-muted">Muted text</p>
-<p class="text-positive">Positive message</p>
-<p class="text-negative">Negative message</p>
+<p class="text-success">success message</p>
+<p class="text-alert">alert message</p>
 <p class="text-inverted">Inverted color</p>
 ```
 
@@ -35,12 +35,18 @@ Colors can be overwritten by the corresponding custom property:
 
 ```css
 :root {
-  --color-text-light: #464646;
-  --color-text-dark: #e8e8ec;
-  --color-accent: #e5aa70;
-  --color-text-muted: light-dark(#70777f, #90979f);
-  --color-positive: #238636;
-  --color-negative: #da3633;
+  --color-accent:        #e5aa70;
+  --color-border:        light-dark(#d0d7df, #252b36);
+  --color-selection:     #90979f;
+  --color-text-light:    #40474f;
+  --color-text-dark:     #e0e7ef;
+  --color-text-em:       light-dark(#161a22, #ffffff);
+  --color-text-emverted: light-dark(#ffffff, #161a22);
+  --color-text-muted:    light-dark(#70777f, #90979f);
+  --color-neutral:       #70777f;
+  --color-success:       #238636;
+  --color-alert:         #da3633;
+  --color-shadow:        light-dark(#00000033, #00000088);
 }
 ```
 
@@ -52,8 +58,8 @@ Colors can be overwritten by the corresponding custom property:
   <div class="bg-accent p-4 rounded">Accent <code>.bg-accent</code></div>
   <div class="bg-accent-variant p-4 rounded">Accent variant <code>.bg-accent-variant</code></div>
   <div class="bg-muted p-4 rounded">Muted background <code>.bg-muted</code></div>
-  <div class="bg-positive p-4 rounded">Positive background <code>.bg-positive</code></div>
-  <div class="bg-negative p-4 rounded">Negative background <code>.bg-negative</code></div>
+  <div class="bg-success p-4 rounded">success background <code>.bg-success</code></div>
+  <div class="bg-alert p-4 rounded">alert background <code>.bg-alert</code></div>
 </div>
 
 ```html
@@ -62,20 +68,15 @@ Colors can be overwritten by the corresponding custom property:
 <div class="bg-accent ...">Accent</div>
 <div class="bg-accent-variant ...">Accent variant</div>
 <div class="bg-muted ...">Muted background</div>
-<div class="bg-positive ...">Positive background</div>
-<div class="bg-negative ...">Negative background</div>
+<div class="bg-success ...">success background</div>
+<div class="bg-alert ...">alert background</div>
 ```
 
 Colors can be overwritten by the corresponding custom property:
 
 ```css
 :root {
-  --color-bg-base: light-dark(#f4f4f4, #202631);
+  --color-bg-base: light-dark(#f4f7fa, #202631);
   --color-bg-page: light-dark(#ffffff, #161a22);
-  --color-accent: #e5aa70;
-  --color-bg-accent: color-mix(in hsl, var(--color-accent) 80%, black);
-  --color-bg-muted: color-mix(in srgb, var(--color-bg-base) 90%, black);
-  --color-bg-positive: color-mix(in srgb, var(--color-positive) 15%, transparent);
-  --color-bg-negative: color-mix(in srgb, var(--color-negative) 15%, transparent);
 }
 ```

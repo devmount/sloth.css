@@ -13,20 +13,20 @@
       background-color: var(--color-accent);
     }
   }
-  &.positive {
-    color: var(--color-positive);
-    border-color: var(--color-positive);
-    background-color: var(--color-bg-positive);
+  &.success {
+    color: var(--color-success);
+    border-color: var(--color-success);
+    background-color: var(--color-bg-success);
     &[data-symbol]::before {
-      background-color: var(--color-positive);
+      background-color: var(--color-success);
     }
   }
-  &.negative {
-    color: var(--color-negative);
-    border-color: var(--color-negative);
-    background-color: var(--color-bg-negative);
+  &.alert {
+    color: var(--color-alert);
+    border-color: var(--color-alert);
+    background-color: var(--color-bg-alert);
     &[data-symbol]::before {
-      background-color: var(--color-negative);
+      background-color: var(--color-alert);
     }
   }
 

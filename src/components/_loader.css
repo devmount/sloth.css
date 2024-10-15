@@ -14,14 +14,14 @@
     border-color: var(--color-bg-muted);
     border-top-color: currentColor;
   }
-  &.positive {
-    color: var(--color-positive);
-    border-color: var(--color-bg-positive);
+  &.success {
+    color: var(--color-success);
+    border-color: var(--color-bg-success);
     border-top-color: currentColor;
   }
-  &.negative {
-    color: var(--color-negative);
-    border-color: var(--color-bg-negative);
+  &.alert {
+    color: var(--color-alert);
+    border-color: var(--color-bg-alert);
     border-top-color: currentColor;
   }
 
@@ -89,14 +89,20 @@ a.button {
         border-color: var(--color-neutral);
         border-top-color: transparent;
       }
-      &.positive::before {
-        border-color: var(--color-positive);
+      &.success::before {
+        border-color: var(--color-success);
         border-top-color: transparent;
       }
-      &.negative::before {
-        border-color: var(--color-negative);
+      &.alert::before {
+        border-color: var(--color-alert);
         border-top-color: transparent;
       }  
     }
   }
+}
+
+/* Animation */
+@keyframes rotate {
+  0%   { transform: rotate(0);      }
+  100% { transform: rotate(360deg); }
 }

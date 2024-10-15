@@ -58,7 +58,7 @@ Use the `br`, `tr`, `tl` and `bl` classes to position the toast notification on 
 
 ### Colored toasts
 
-Use the `accent`, `positive` or `negative` classes to give the toast notification a different meaning.
+Use the `accent`, `success` or `alert` classes to give the toast notification a different meaning.
 
 <div class="demo">
   <p>The demo can be seen directly on this page. Use the following controls to change it's color.</p>
@@ -69,17 +69,18 @@ Use the `accent`, `positive` or `negative` classes to give the toast notificatio
     <button onclick="colorToast('accent')">
       Accent <code>accent</code>
     </button>
-    <button class="positive" onclick="colorToast('positive')">
-      Positive <code>positive</code>
+    <button class="success" onclick="colorToast('success')">
+      success <code>success</code>
     </button>
-    <button class="negative" onclick="colorToast('negative')">
-      Negative <code>negative</code>
+    <button class="alert" onclick="colorToast('alert')">
+      alert <code>alert</code>
     </button>
   </div>
 </div>
 
 ```html
+<div class="toast callout">...</div>
 <div class="toast callout accent">...</div>
-<div class="toast callout positive">...</div>
-<div class="toast callout negative">...</div>
+<div class="toast callout success">...</div>
+<div class="toast callout alert">...</div>
 ```

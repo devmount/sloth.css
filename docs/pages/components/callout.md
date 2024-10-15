@@ -28,7 +28,7 @@ Use the `callout` class to create a box that emphasizes its content.
 
 ### Colored callout
 
-Use the `accent`, `positive` or `negative` classes to give the callout more meaning.
+Use the `accent`, `success` or `alert` classes to give the callout more meaning.
 
 <div class="demo">
   <div class="max-w-screen-sm">
@@ -36,11 +36,11 @@ Use the `accent`, `positive` or `negative` classes to give the callout more mean
       Noted for their slowness of movement, tree sloths spend most of their lives hanging upside
       down in the trees of the tropical rainforests of South America and Central America.
     </p>
-    <p class="callout positive">
+    <p class="callout success">
       Noted for their slowness of movement, tree sloths spend most of their lives hanging upside
       down in the trees of the tropical rainforests of South America and Central America.
     </p>
-    <p class="callout negative">
+    <p class="callout alert">
       Noted for their slowness of movement, tree sloths spend most of their lives hanging upside
       down in the trees of the tropical rainforests of South America and Central America.
     </p>
@@ -49,8 +49,8 @@ Use the `accent`, `positive` or `negative` classes to give the callout more mean
 
 ```html
 <p class="callout accent">...</p>
-<p class="callout positive">...</p>
-<p class="callout negative">...</p>
+<p class="callout success">...</p>
+<p class="callout alert">...</p>
 ```
 
 ### Callouts with symbols
@@ -67,7 +67,7 @@ Use the `data-symbol` attribute to provide a symbol for a callout.
       Noted for their slowness of movement, tree sloths spend most of their lives hanging upside
       down in the trees of the tropical rainforests of South America and Central America.
     </p>
-    <p class="callout negative" data-symbol="!!">
+    <p class="callout alert" data-symbol="!!">
       Noted for their slowness of movement, tree sloths spend most of their lives hanging upside
       down in the trees of the tropical rainforests of South America and Central America.
     </p>
@@ -77,5 +77,5 @@ Use the `data-symbol` attribute to provide a symbol for a callout.
 ```html
 <p class="callout" data-symbol="i">...</p>
 <p class="callout accent" data-symbol="!">...</p>
-<p class="callout negative" data-symbol="!!">...</p>
+<p class="callout alert" data-symbol="!!">...</p>
 ```

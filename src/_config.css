@@ -4,18 +4,18 @@
 
   /* Color definitions */
   --color-accent:        #e5aa70;
-  --color-bg-base:       light-dark(#f4f4f4, #202631);
+  --color-bg-base:       light-dark(#f4f7fa, #202631);
   --color-bg-page:       light-dark(#ffffff, #161a22);
-  --color-border:        light-dark(#d5d5d5, #252b36);
-  --color-selection:     #9e9e9e;
-  --color-text-light:    #464646;
-  --color-text-dark:     #e8e8ec;
-  --color-text-em:       light-dark(#151515, #ffffff);
-  --color-text-emverted: light-dark(#ffffff, #151515);
+  --color-border:        light-dark(#d0d7df, #252b36);
+  --color-selection:     #90979f;
+  --color-text-light:    #40474f;
+  --color-text-dark:     #e0e7ef;
+  --color-text-em:       light-dark(#161a22, #ffffff);
+  --color-text-emverted: light-dark(#ffffff, #161a22);
   --color-text-muted:    light-dark(#70777f, #90979f);
   --color-neutral:       #70777f;
-  --color-positive:      #238636;
-  --color-negative:      #da3633;
+  --color-success:       #238636;
+  --color-alert:         #da3633;
   --color-shadow:        light-dark(#00000033, #00000088);
   
   /* Color derivations */
@@ -26,8 +26,8 @@
   --color-outline:       color-mix(in srgb, var(--color-accent) 35%, transparent);
   --color-bg-accent:     color-mix(in hsl, var(--color-accent) 80%, black);
   --color-bg-muted:      color-mix(in srgb, var(--color-neutral) 15%, transparent);
-  --color-bg-positive:   color-mix(in srgb, var(--color-positive) 15%, transparent);
-  --color-bg-negative:   color-mix(in srgb, var(--color-negative) 15%, transparent);
+  --color-bg-success:    color-mix(in srgb, var(--color-success) 15%, transparent);
+  --color-bg-alert:      color-mix(in srgb, var(--color-alert) 15%, transparent);
 
   /* Screen dimensions */
   --screen-xs:  30rem; /*  480px */
@@ -56,18 +56,4 @@
   --shadow-inset:  0 2px .25rem 0 inset;
   --shadow-float:  0 .25rem .75rem -.4rem;
 
-}
-
-/* Animations */
-@keyframes background-slide-x {
-  0%   { background-position:  200% 0; }
-  100% { background-position: -200% 0; }
-}
-@keyframes pulse {
-  50%  { box-shadow: 0 0 0 0 var(--color-bg-accent); }
-  100% { box-shadow: 0 0 0 .5rem rgba(0, 0, 0, 0);   }
-}
-@keyframes rotate {
-  0%   { transform: rotate(0);      }
-  100% { transform: rotate(360deg); }
 }

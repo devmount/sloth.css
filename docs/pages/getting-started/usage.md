@@ -27,7 +27,7 @@ Here is an example of what a simple newsletter subscription form looks like:
 
 If you like classes though &mdash; utility classes in particluar, Sloth.css got you covered. You can take a look at the [utilities section](/utilities/border) to see the complete list of available utility classes. Those are a curated subset of Tailwind CSS classes (with a few additions) and are meant to be extended and adapted by you for your project. There are valid use cases and reasons, to _not_ use Tailwind CSS, an additional build step or preprocessors at all in a project and this is where Sloth.css provides the simplicity of a ready-to-include CSS file.
 
-This is what a possible card component built with utility classes and no additional CSS looks like:
+This is what a possible custom card component built solely with utility classes and no additional CSS looks like:
 
 <div class="demo flex-center">
   <section class="flex-col items-center gap-2 m-4 p-4 w-1/2 shadow-float rounded bg-base">
@@ -45,16 +45,16 @@ This is what a possible card component built with utility classes and no additio
 </section>
 ```
 
-For some more advanced UI elements on your page, you can use prestyled components like badges, cards, modals, tooltips and more &mdash; check out the complete list in the [components section](/components/badge). Each component has a single class starting with the `lazy-` prefix.
+For some more advanced UI elements on your page, you can use prestyled components like badges, buttons, modals, tooltips and more &mdash; check out the complete list in the [components section](/components/badge). Each component core is based on a single class, most of them providing a lot of variations.
 
-Here is an example of the badge component (_not yet implemented_):
+Here is an example of the badge component with a pulse variation:
 
 <div class="demo">
-  <span class="badge">deprecated</span>
+  <span class="badge pulse" data-badge="99+">Inbox</span>
 </div>
 
 ```html
-<span class="badge">deprecated</span>
+<span class="badge pulse" data-badge="99+">Inbox</span>
 ```
 
 ## Customizing
@@ -64,8 +64,10 @@ Sloth.css uses CSS custom properties for core styles. You can customize and over
 ```css
 :root {
   --color-accent: #e5aa70;
-  --color-bg-base: #f4f4f4;
-  --transition-underline: text-underline-offset .1s ease;
+  --color-neutral: #70777f;
+  --color-success: #238636;
+  --color-alert: #da3633;
+  --transition-opacity: opacity .15s ease;
   --font-size: 16px;
 }
 ```

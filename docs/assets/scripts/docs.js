@@ -6,7 +6,7 @@ const positionToast = (pos) => {
   toastPositions.forEach(p => toast.classList.remove(p));
   toast.classList.add(pos);
 }
-const toastColors = ['neutral', 'accent', 'positive', 'negative'];
+const toastColors = ['neutral', 'accent', 'success', 'alert'];
 const colorToast = (col) => {
   toastColors.forEach(c => toast.classList.remove(c));
   toast.classList.add(col);

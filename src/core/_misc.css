@@ -76,7 +76,7 @@ meter {
   }
   &::-webkit-meter-optimum-value,
   &:-moz-meter-optimum::-moz-meter-bar {
-    background: var(--color-positive);
+    background: var(--color-success);
   }
   &::-webkit-meter-suboptimum-value,
   &:-moz-meter-sub-optimum::-moz-meter-bar {
@@ -84,7 +84,7 @@ meter {
   }
   &::-webkit-meter-even-less-good-value,
   &:-moz-meter-sub-sub-optimum::-moz-meter-bar {
-    background: var(--color-negative);
+    background: var(--color-alert);
   }
 }
 
@@ -124,4 +124,10 @@ progress {
 /* <iframe> */
 iframe {
   border: 1px solid var(--color-border);
+}
+
+/* Animations */
+@keyframes background-slide-x {
+  0%   { background-position:  200% 0; }
+  100% { background-position: -200% 0; }
 }

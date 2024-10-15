@@ -104,23 +104,23 @@ em {
 
 /* <u> */
 u {
-  text-decoration: color-mix(in srgb, var(--color-negative) 85%, transparent) wavy underline;
+  text-decoration: color-mix(in srgb, var(--color-alert) 85%, transparent) wavy underline;
   text-underline-offset: 5%;
   text-decoration-skip-ink: none;
 }
 
 /* <ins>, <del> */
 ins {
-  color: var(--color-positive);
-  background-color: var(--color-bg-positive);
+  color: var(--color-success);
+  background-color: var(--color-bg-success);
   text-decoration: none;
   padding: .125rem .25rem;
   border-radius: .125rem;
 }
 del {
   text-decoration: line-through;
-  color: var(--color-negative);
-  background-color: var(--color-bg-negative);
+  color: var(--color-alert);
+  background-color: var(--color-bg-alert);
   padding: .125rem .25rem;
   border-radius: .125rem;
 }
