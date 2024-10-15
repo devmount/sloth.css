@@ -10,7 +10,9 @@ a.button {
   box-shadow: black var(--shadow-float);
   box-sizing: border-box;
   color: white;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
   font-family: inherit;
   font-size: .875rem;
   padding: .75rem 1rem;
@@ -22,6 +24,17 @@ a.button {
     var(--transition-transform);
   user-select: none;
   white-space: nowrap;
+
+  &.sm {
+    gap: .25rem;
+    font-size: .75rem;
+    padding: .25rem .5rem;
+  }
+  &.lg {
+    gap: .75rem;
+    font-size: 1rem;
+    padding: 1rem 1.25rem;
+  }
 
   &.neutral {
     background-color: var(--color-neutral);
@@ -161,6 +174,19 @@ a.button {
   &:disabled, &.busy {
     cursor: not-allowed;
     opacity: .5;
+  }
+
+  & > .icon {
+    width: 1.5em;
+    height: 1.5em;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  &.rounded-full:has(.icon:only-child) {
+    padding: .75rem;
   }
 }
 
