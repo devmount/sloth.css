@@ -36,12 +36,18 @@
     {# Global navigation #}
     <aside id="nav">
       <header>
-        <a href="/" class="flex">
-          <img src="/assets/images/logo.svg" alt="Sloth.css" class="w-12 h-12 rounded-full" />
-        </a>
-        <div>
-          <div class="text-xl font-semibold">Sloth.css</div>
-          <div class="text-sm text-muted font-sans flex gap-2">v{{ meta.version }}</div>
+        <div class="wordmark">
+          <a href="/" class="flex">
+            <img src="/assets/images/logo.svg" alt="Sloth.css" class="w-12 h-12 rounded-full" />
+          </a>
+          <div>
+            <div class="text-xl font-semibold">Sloth.css</div>
+            <div class="text-sm text-muted font-sans flex gap-2">v{{ meta.version }}</div>
+          </div>
+        </div>
+        <div class="actions">
+          <a href="{{ repoUrl }}" target="_blank" class="button hollow neutral sm">GitHub</a>
+          <a href="{{ donationUrl }}" target="_blank" class="button hollow sm">Support</a>
         </div>
       </header>
 
