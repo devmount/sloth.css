@@ -5,9 +5,9 @@ description: Button component of Sloth.css.
 
 ## Button
 
-Buttons indicate actions the user can trigger on click. Buttons already have a base styling via the drop-in core of Sloth.css. However, this CSS component extends those by several color variations and button groups.
+Buttons indicate actions the user can trigger on click. Buttons already have a base styling via the drop-in core of Sloth.css. However, this CSS component extends those by several variations, sizes, groups and more.
 
-### Color variants
+### Button variants
 
 The default button without any class is already utilizing accent coloring. In addition, you can use `neutral`, `success` and `alert` classes for the corresponding colors.
 
@@ -39,6 +39,22 @@ Using the `disabled` attribute deactivates buttons. If you're using `onclick` ev
 <button class="neutral" disabled>Return</button>
 <button class="success" disabled>Save profile</button>
 <button class="alert" disabled>Delete account</button>
+```
+
+### Button sizes
+
+Use the `sm` or `lg` classes to reduce or increase the font size and padding of a button. Note that the actual width and height are still depending on the buttons content (content won't overflow the button but stretch it).
+
+<div class="demo flex flex-wrap items-center gap-4">
+  <button class="sm">Click me!</button>
+  <button>No me!</button>
+  <button class="lg">NO ME!</button>
+</div>
+
+```html
+<button class="sm">Click me!</button>
+<button>No me!</button>
+<button class="lg">NO ME!</button>
 ```
 
 ### Secondary button
