@@ -1,3 +1,7 @@
+html {
+  scrollbar-width: thin;
+}
+
 /* Page layout with collapsible sidebar menu (CSS only) */
 body {
   position: relative;
@@ -8,14 +12,40 @@ body {
   margin: 0;
   padding: 0;
 
-  & > .menu-trigger {
+  & > header {
     display: flex;
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    padding: .5rem;
-    transition: none;
-    z-index: 1;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 15;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+    background-color: color-mix(in srgb, var(--color-bg-page) 75%, transparent);
+    backdrop-filter: blur(10px);
+
+    .menu-trigger {
+      display: flex;
+      top: 1rem;
+      left: 1rem;
+      padding: .5rem;
+      transition: none;
+      z-index: 1;
+    }
+
+    .controls {
+      background-color: transparent;
+      backdrop-filter: initial;
+      margin: -1rem 1rem 0 0;
+      padding: 1rem;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+
+      .search {
+        input {
+          max-width: 8rem;
+        }
+      }
+    }
   }
 
   & > aside {
@@ -23,6 +53,8 @@ body {
     position: fixed;
     width: 14rem;
     overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
     bottom: 0;
     top: 0;
     left: 0;
@@ -39,7 +71,7 @@ body {
     &:target ~ .menu-overlay,
     &.active ~ .menu-overlay {
       display: block;
-      z-index: 10;
+      z-index: 18;
     }
 
     header {
@@ -61,6 +93,10 @@ body {
         display: flex;
         align-items: center;
         gap: .75rem;
+
+        a {
+          flex-grow: 1;
+        }
       }
     }
     
@@ -116,6 +152,16 @@ body {
 
     &>aside {
       transform: none;
+    }
+
+    &>header {
+      background-color: transparent;
+      backdrop-filter: initial;
+
+      .controls {
+        background-color: color-mix(in srgb, var(--color-bg-page) 75%, transparent);
+        backdrop-filter: blur(10px);
+      }
     }
 
     &>main {
@@ -175,6 +221,7 @@ body {
 pre[class^='language-'] {
   position: relative;
   max-height: 20rem;
+  scrollbar-width: thin;
 
   &::before {
     content: 'code';

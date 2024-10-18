@@ -24,14 +24,22 @@
 
   </head>
   <body>
-    {# Menu trigger #}
-    <a class="menu-trigger text-muted" href="#nav">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
-        <path d="M4 6l16 0" />
-        <path d="M4 12l16 0" />
-        <path d="M4 18l16 0" />
-      </svg>
-    </a>
+    <header>
+      {# Menu trigger #}
+      <a class="menu-trigger text-muted" href="#nav">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+          <path d="M4 6l16 0" />
+          <path d="M4 12l16 0" />
+          <path d="M4 18l16 0" />
+        </svg>
+      </a>
+
+      <div class="controls">
+        <div class="search">
+          <input type="search" placeholder="Search" class="rounded-full" />
+        </div>
+      </div>
+    </header>
 
     {# Global navigation #}
     <aside id="nav">
