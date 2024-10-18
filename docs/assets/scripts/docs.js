@@ -1,3 +1,8 @@
+// Theming
+const setDark = () => {
+  // document.style.colorScheme = 'dark';
+};
+
 // Component: Toast
 const toast = document.querySelector('#toast');
 const toggleToast = () => toast.classList.toggle('active');

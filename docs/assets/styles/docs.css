@@ -37,12 +37,25 @@ body {
       backdrop-filter: initial;
       margin: -1rem 1rem 0 0;
       padding: 1rem;
-      border-bottom-left-radius: 1rem;
-      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: .75rem;
+      border-bottom-right-radius: .75rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
 
       .search {
         input {
           max-width: 8rem;
+        }
+      }
+      .theme-mode {
+        display: flex;
+        gap: .75rem;
+        align-items: center;
+
+        label {
+          display: flex;
+          padding-bottom: 0;
         }
       }
     }
