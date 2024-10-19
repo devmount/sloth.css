@@ -36,7 +36,7 @@ body {
       background-color: transparent;
       backdrop-filter: initial;
       margin: -1rem 1rem 0 0;
-      padding: 1rem;
+      padding: 1rem 0 0 0;
       border-bottom-left-radius: .75rem;
       border-bottom-right-radius: .75rem;
       display: flex;
@@ -50,12 +50,15 @@ body {
       }
       .theme-mode {
         display: flex;
-        gap: .75rem;
         align-items: center;
 
-        label {
-          display: flex;
-          padding-bottom: 0;
+        button:has(.icon:only-child) {
+          color: var(--color-neutral);
+          padding: .5rem;
+
+          &.text-accent {
+            color: var(--color-accent);
+          }
         }
       }
     }
@@ -172,6 +175,7 @@ body {
       backdrop-filter: initial;
 
       .controls {
+        padding: 1rem;
         background-color: color-mix(in srgb, var(--color-bg-page) 75%, transparent);
         backdrop-filter: blur(10px);
       }
