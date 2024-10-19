@@ -46,6 +46,11 @@ body {
       .search {
         input {
           max-width: 8rem;
+          transition: max-width .15s ease;
+
+          &:focus {
+            max-width: 12rem;
+          }
         }
       }
       .theme-mode {
@@ -62,6 +67,10 @@ body {
         }
       }
     }
+  }
+
+  &:has(#search:focus) #content {
+    opacity: 0;
   }
 
   & > aside {
@@ -140,6 +149,10 @@ body {
     width: 100%;
     box-sizing: border-box;
     transition: var(--transition-spacing);
+
+    #content {
+      transition: opacity .15s ease;;
+    }
 
     footer {
       margin: 4rem 0;

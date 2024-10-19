@@ -14,6 +14,12 @@ const setLight = () => {
   darkToggle.classList.remove(['text-accent']);
 };
 
+// Search
+const searchInput = document.querySelector('#search');
+searchInput.addEventListener('change', (event) => {
+  console.log(event.target.value);
+})
+
 // Component: Toast
 const toast = document.querySelector('#toast');
 const toggleToast = () => toast.classList.toggle('active');
