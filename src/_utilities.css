@@ -6,7 +6,7 @@
   border-radius: 9999px;
 }
 
-/* Colors */
+/* Color */
 .text-accent {
   color: var(--color-accent);
 }
@@ -51,7 +51,7 @@
   background-color: var(--color-bg-alert);
 }
 
-/* Dimensions */
+/* Dimension */
 .w-8 {
   width: 2rem;
 }
@@ -309,7 +309,7 @@
   inset: 1rem;
 }
 
-/* Cursors */
+/* Cursor */
 .cursor-default {
   cursor: default;
 }

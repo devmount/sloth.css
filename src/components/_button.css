@@ -187,6 +187,7 @@ a.button {
   }
   &.rounded-full:has(.icon:only-child) {
     padding: .75rem;
+    border-radius: 9999px;
   }
 }
 
