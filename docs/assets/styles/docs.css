@@ -37,22 +37,12 @@ body {
       backdrop-filter: initial;
       margin: -1rem 1rem 0 0;
       padding: 1rem 0 0 0;
-      border-bottom-left-radius: .75rem;
-      border-bottom-right-radius: .75rem;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
       display: flex;
       gap: 1rem;
       align-items: center;
 
-      .search {
-        input {
-          max-width: 8rem;
-          transition: max-width .15s ease;
-
-          &:focus {
-            max-width: 12rem;
-          }
-        }
-      }
       .theme-mode {
         display: flex;
         align-items: center;
@@ -87,6 +77,15 @@ body {
     overflow: visible;
     box-shadow: black 0 .5rem 1.5rem -.8rem;
 
+    input[type='search'] {
+      font-size: 1.5rem;
+      padding: 1.5rem;
+    }
+
+    hr {
+      margin: 0;
+    }
+
     & > #result {
       padding-top: 2rem;
       padding-bottom: 2rem;
@@ -106,14 +105,24 @@ body {
         white-space: nowrap;
         padding: .75rem 2rem;
         text-decoration: none;
-        display: block;
-
-        h4 {
-          margin-bottom: 0;
-        }
+        display: flex;
+        gap: 1rem;
+        align-items: center;
 
         &:hover {
           background-color: var(--color-border);
+        }
+
+        .icon {
+          width: 2.5rem;
+          height: 2.5rem;
+          stroke-width: 1;
+        }
+
+        div:nth-child(2) {
+          h5 {
+            margin-bottom: 0;
+          }
         }
       }
     }

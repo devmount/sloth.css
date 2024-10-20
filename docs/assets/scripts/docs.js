@@ -37,26 +37,42 @@ searchInput.addEventListener('input', (event) => {
       title: 'Home',
       url: '/',
       text: 'Hand-crafted core styles, utility classes and components for dropping in.',
-    },
-    {
+      cat: 'home'
+    }, {
       title: 'Installation',
       url: '/getting-started/installation',
       text: 'Getting started with Sloth.css, how to install it.',
-    },
-    {
+      cat: 'home'
+    }, {
       title: 'Usage',
       url: '/getting-started/usage',
       text: 'Getting started with Sloth.css, how to use it.',
-    },
-    {
+      cat: 'home'
+    }, {
       title: 'Contributing',
       url: '/getting-started/contributing',
       text: 'Getting started with Sloth.css, how to contribute.',
-    },
-    {
+      cat: 'home'
+    }, {
       title: 'Changelog',
       url: '/getting-started/changelog',
       text: 'Getting started with Sloth.css, see what\'s new.',
+      cat: 'home'
+    }, {
+      title: 'Form',
+      url: '/core/form',
+      text: 'Drop-in styles of Sloth.css for all kinds of input elements and buttons.',
+      cat: 'core'
+    }, {
+      title: 'Border',
+      url: '/utilities/border',
+      text: 'Utility classes of Sloth.css for border related styles.',
+      cat: 'util'
+    }, {
+      title: 'Button',
+      url: '/components/button',
+      text: 'Button component of Sloth.css.',
+      cat: 'comp'
     },
   ];
   const result = index.filter((e) => (e.title + e.text).toLowerCase().includes(query));
@@ -64,9 +80,18 @@ searchInput.addEventListener('input', (event) => {
   // Handle search results
   if (result.length) {
     searchResult.innerHTML = result.reduce((p, c) => {
+      const icon = {
+        home: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" /><path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" /><path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>',
+        core: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path d="M6 17.6l-2 -1.1v-2.5" /><path d="M4 10v-2.5l2 -1.1" /><path d="M10 4.1l2 -1.1l2 1.1" /><path d="M18 6.4l2 1.1v2.5" /><path d="M20 14v2.5l-2 1.12" /><path d="M14 19.9l-2 1.1l-2 -1.1" /><path d="M12 12l2 -1.1" /><path d="M18 8.6l2 -1.1" /><path d="M12 12l0 2.5" /><path d="M12 18.5l0 2.5" /><path d="M12 12l-2 -1.12" /><path d="M6 8.6l-2 -1.1" /></svg>',
+        util: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5" /></svg>',
+        comp: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304z" /><path d="M15 4h1a1 1 0 0 1 1 1v3.5" /><path d="M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374" /></svg>',
+      }[c.cat];
       return `${p}<a href="${c.url}" class="entry">
-        <h4>${c.title}</h4>
-        <div class="text-muted">${c.text}</div>
+        <div class="text-muted">${icon}</div>
+        <div>
+          <h5>${c.title}</h5>
+          <div class="text-muted">${c.text}</div>
+        </div>
       </a>`;
     }, '')
   } else {
