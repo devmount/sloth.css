@@ -101,7 +101,8 @@ searchInput.addEventListener('input', (event) => {
       <p class="text-muted">Please try changing the search term.</p>
     </div>`;
   }
-})
+});
+const focusSearch = () => setTimeout(() => searchInput.focus(), 50);
 
 // Component: Toast
 const toast = document.querySelector('#toast');
