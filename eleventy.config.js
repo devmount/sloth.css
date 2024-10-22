@@ -13,16 +13,29 @@ module.exports = function(eleventyConfig) {
   // Get components
   // Those can be retrieved by all files existing in the components/ directory
   const slothComponents = [];
-  fs.readdirSync('./src/components').forEach(file => {
+  fs.readdirSync('src/components').forEach(file => {
     slothComponents.push(file.slice(1, -4));
   });
 
   // Init plugins
   eleventyConfig.addPlugin(syntaxHighlight);
 
-  // TODO: build search index
-  // eleventyConfig.on('eleventy.after', ({ results }) => {
-  // });
+  // Build search index
+  const index = [];
+  const docsSrc = 'docs/pages/';
+  const dirs = fs.readdirSync(docsSrc, { withFileTypes: true }).filter((e) => e.isDirectory()).map((d) => d.name);
+  dirs.forEach((d) => {
+    fs.readdirSync(`${docsSrc}${d}`).forEach(file => {
+      const name = file.slice(0, -3);
+      const text = fs.readFileSync(`${docsSrc}${d}/${file}`).toString().split("\n", 4).filter((l) => l.startsWith('description:')).join().slice(12).trim();
+      index.push({
+        title: name,
+        url: `/${d}/${name}`,
+        text: text,
+        cat: d
+      });
+    });
+  });
 
   // Global data
   eleventyConfig.addGlobalData('baseUrl', 'https://slothcss.devmount.com');
