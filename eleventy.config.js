@@ -36,6 +36,8 @@ module.exports = function(eleventyConfig) {
       });
     });
   });
+  // localStorage.setItem('sloth.css/index', JSON.stringify(index));
+  fs.writeFileSync('docs/public/assets/scripts/searchIndex.json', JSON.stringify(index));
 
   // Global data
   eleventyConfig.addGlobalData('baseUrl', 'https://slothcss.devmount.com');

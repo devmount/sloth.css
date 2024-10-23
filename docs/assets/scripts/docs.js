@@ -15,6 +15,11 @@ const setLight = () => {
 };
 
 // Search
+let index = [];
+fetch('/assets/scripts/searchIndex.json')
+  .then((response) => response.json())
+  .then((data) => { index = data; });
+
 const search = document.querySelector('#search');
 const searchInput = search.querySelector('input');
 const searchResult = search.querySelector('#result');
@@ -31,50 +36,7 @@ searchInput.addEventListener('input', (event) => {
     return;
   }
 
-  // TODO: Get search index
-  const index = [
-    {
-      title: 'Home',
-      url: '/',
-      text: 'Hand-crafted core styles, utility classes and components for dropping in.',
-      cat: 'home'
-    }, {
-      title: 'Installation',
-      url: '/getting-started/installation',
-      text: 'Getting started with Sloth.css, how to install it.',
-      cat: 'home'
-    }, {
-      title: 'Usage',
-      url: '/getting-started/usage',
-      text: 'Getting started with Sloth.css, how to use it.',
-      cat: 'home'
-    }, {
-      title: 'Contributing',
-      url: '/getting-started/contributing',
-      text: 'Getting started with Sloth.css, how to contribute.',
-      cat: 'home'
-    }, {
-      title: 'Changelog',
-      url: '/getting-started/changelog',
-      text: 'Getting started with Sloth.css, see what\'s new.',
-      cat: 'home'
-    }, {
-      title: 'Form',
-      url: '/core/form',
-      text: 'Drop-in styles of Sloth.css for all kinds of input elements and buttons.',
-      cat: 'core'
-    }, {
-      title: 'Border',
-      url: '/utilities/border',
-      text: 'Utility classes of Sloth.css for border related styles.',
-      cat: 'util'
-    }, {
-      title: 'Button',
-      url: '/components/button',
-      text: 'Button component of Sloth.css.',
-      cat: 'comp'
-    },
-  ];
+  // Calculate search result
   const result = index.filter((e) => (`${e.title} ${e.text}`).toLowerCase().includes(query));
 
   // Handle search results
