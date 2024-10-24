@@ -36,7 +36,11 @@ module.exports = function(eleventyConfig) {
       });
     });
   });
-  // localStorage.setItem('sloth.css/index', JSON.stringify(index));
+
+  // Sort entries alphabetically by title
+  index.sort((a, b) => a.title.localeCompare(b.title));
+
+  // Write search index to file
   fs.writeFileSync('docs/public/assets/scripts/searchIndex.json', JSON.stringify(index));
 
   // Global data

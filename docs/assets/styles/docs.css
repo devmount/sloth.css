@@ -74,12 +74,14 @@ body {
     transform: translateX(-50%);
     border-radius: .25rem;
     box-sizing: border-box;
-    overflow: visible;
+    overflow-y: auto;
     box-shadow: black 0 .5rem 1.5rem -.8rem;
 
     input[type='search'] {
       font-size: 1.5rem;
       padding: 1.5rem;
+      position: sticky;
+      top: 0;
     }
 
     hr {
@@ -100,9 +102,6 @@ body {
       }
 
       & > .entry {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
         padding: .75rem 2rem;
         text-decoration: none;
         display: flex;
@@ -120,6 +119,10 @@ body {
         }
 
         div:nth-child(2) {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
           h5 {
             margin-bottom: 0;
             text-transform: capitalize;
