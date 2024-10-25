@@ -1,11 +1,12 @@
 ---
 title: 'Components: Callout - Sloth.css'
-description: Callout component of Sloth.css.
+description: Static and embedded message boxes
+tags: variants accent success alert neutral symbol
 ---
 
 ## Callout
 
-A callout is a static message component, that is embedded and always visible within its context.
+A callout is a static message box, that is embedded and always visible within its context.
 
 ### Basic callout
 
@@ -26,7 +27,7 @@ Use the `callout` class to create a box that emphasizes its content.
 <p class="callout">...</p>
 ```
 
-### Colored callout
+### Callout variants
 
 Use the `accent`, `success` or `alert` classes to give the callout more meaning.
 

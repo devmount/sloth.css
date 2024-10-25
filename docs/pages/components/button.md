@@ -1,6 +1,7 @@
 ---
 title: 'Components: Button - Sloth.css'
-description: Button component of Sloth.css.
+description: Buttons indicate actions the user can trigger on click
+tags: variants accent neutral success alert disabled size secondary outline link pill ghost icon busy loading group
 ---
 
 ## Button

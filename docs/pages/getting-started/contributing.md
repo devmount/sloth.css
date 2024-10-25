@@ -1,6 +1,7 @@
 ---
 title: 'Contributing - Sloth.css'
-description: Getting started with Sloth.css, how to contribute.
+description: Contribution guidelines
+tags: support report bug suggest enhancment issue git commit testing
 ---
 
 ## Contributing

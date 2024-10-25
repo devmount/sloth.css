@@ -27,11 +27,14 @@ module.exports = function(eleventyConfig) {
   dirs.forEach((d) => {
     fs.readdirSync(`${docsSrc}${d}`).forEach(file => {
       const name = file.slice(0, -3);
-      const text = fs.readFileSync(`${docsSrc}${d}/${file}`).toString().split("\n", 4).filter((l) => l.startsWith('description:')).join().slice(12).trim();
+      const meta = fs.readFileSync(`${docsSrc}${d}/${file}`).toString().split("\n", 5);
+      const title = meta.filter((l) => l.startsWith('title:')).join().slice(6).trim();
+      const text = meta.filter((l) => l.startsWith('description:')).join().slice(12).trim();
+      const tags = meta.filter((l) => l.startsWith('tags:')).join().slice(5).trim();
       index.push({
         title: name,
         url: `/${d}/${name}`,
-        text: text,
+        text: `${title} ${text} ${tags}`,
         cat: d
       });
     });

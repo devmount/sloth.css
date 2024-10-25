@@ -1,11 +1,12 @@
 ---
 title: 'Components: Badge - Sloth.css'
-description: Badge component of Sloth.css.
+description: Status, event or count indicators on text elements or buttons
+tags: text button notification pulse
 ---
 
 ## Badge
 
-Badges indicate the status of an element, the appearance of an event or counts on buttons or other elements.
+Badges indicate the status of an element, the appearance of an event or counts on text elements or buttons.
 
 ### Basic text badges
 

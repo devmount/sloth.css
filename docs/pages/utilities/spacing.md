@@ -1,6 +1,7 @@
 ---
 title: 'Utilities: Spacing - Sloth.css'
-description: Utility classes of Sloth.css for margins, paddings and the space in between positioned elements.
+description: Controlling margins, paddings and the space in between elements
+tags: gap placement inset left right bottom top
 ---
 
 ## Spacing

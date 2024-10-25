@@ -1,6 +1,7 @@
 ---
 title: 'Utilities: Color - Sloth.css'
-description: Utility classes of Sloth.css for color related styles.
+description: Controlling colors of text and backgrounds
+tags: colour accent muted neutral success alert inverted
 ---
 
 ## Color

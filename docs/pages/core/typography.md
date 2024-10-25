@@ -1,6 +1,7 @@
 ---
 title: 'Core: Typography - Sloth.css'
-description: Drop-in styles of Sloth.css for all typography related HTML tags.
+description: Consistent text presentation
+tags: heading paragraph blockquote list rule table code inline strong emphasized italic
 ---
 
 ## Typography

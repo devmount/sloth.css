@@ -1,6 +1,7 @@
 ---
 title: 'Utilities: Positioning - Sloth.css'
-description: Utility classes of Sloth.css for positions, alignment and overflow.
+description: Controlling position, alignment and overflow of elements
+tags: relative absolute fixed sticky center scroll
 ---
 
 ## Positioning

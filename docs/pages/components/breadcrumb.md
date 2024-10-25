@@ -1,13 +1,12 @@
 ---
 title: 'Components: Breadcrumb - Sloth.css'
-description: Breadcrumb component of Sloth.css.
+description: Lists of links for vertical (depth) navigation
+tags: menu navigate path
 ---
 
 ## Breadcrumb
 
-Breadcrumbs are a list of links to return from the depths of a website's page hierarchy
-to higher levels again. Wrapping is disabled for breadcrumbs. If the list overflows its container,
-a horizontal scrollbar appears.
+Breadcrumbs are lists of links to navigate from the depths of a website's page hierarchy back to higher levels again. Wrapping is disabled for breadcrumbs. If the list overflows its container, a horizontal scrollbar appears.
 
 ### Basic breadcrumb path
 

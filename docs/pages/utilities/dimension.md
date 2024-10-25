@@ -1,6 +1,7 @@
 ---
 title: 'Utilities: Dimension - Sloth.css'
-description: Utility classes of Sloth.css for size related styles.
+description: Controlling the size of elements
+tags: width height maximum screen
 ---
 
 ## Dimension

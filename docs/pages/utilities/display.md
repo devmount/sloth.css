@@ -1,6 +1,7 @@
 ---
 title: 'Utilities: Display - Sloth.css'
-description: Utility classes of Sloth.css for display types.
+description: Controlling the display type of elements
+tags: flex grid column wrap inline block visibility hidden
 ---
 
 ## Display
