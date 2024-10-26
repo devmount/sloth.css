@@ -253,15 +253,12 @@ Buttons can also be created with several `<input>` and `<button` types:
 
 ### Input states
 
-Input fields can be disabled or their value can be valid or invalid on form submit.
+Input fields can be disabled or their value can be invalid on form submit.
 
 <div class="demo">
   <div class="flex flex-col gap-2 max-w-screen-xs">
     <label>Error
-      <input type="text" placeholder="Wrong Input">
-    </label>
-    <label>Valid
-      <input type="text" placeholder="Valid Input">
+      <input type="text" placeholder="Wrong Input" id="invalid-input">
     </label>
     <label>Disabled
       <input type="text" placeholder="Disabled Input" disabled>
@@ -272,9 +269,6 @@ Input fields can be disabled or their value can be valid or invalid on form subm
 ```html
 <label>Error
   <input type="text" placeholder="Wrong Input">
-</label>
-<label>Valid
-  <input type="text" placeholder="Valid Input">
 </label>
 <label>Disabled
   <input type="text" placeholder="Disabled Input" disabled>
