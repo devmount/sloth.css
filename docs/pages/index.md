@@ -1,6 +1,6 @@
 ---
 title: 'Sloth.css: A drop-in utility component CSS library for lazy mammals.'
-description: Hand-crafted core styles, utility classes and components for dropping in.
+description: Hand-crafted core styles, utility classes and components for dropping in
 ---
 
 <header role="banner" class="text-center">

@@ -1,6 +1,7 @@
 ---
 title: 'Utilities: Cursor - Sloth.css'
-description: Utility classes of Sloth.css for cursors.
+description: Controlling cursor types
+tags: default pointer help not-allowed
 ---
 
 ## Cursor

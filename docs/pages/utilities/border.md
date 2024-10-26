@@ -1,6 +1,7 @@
 ---
 title: 'Utilities: Border - Sloth.css'
-description: Utility classes of Sloth.css for border related styles.
+description: Controlling the border of elements
+tags: rounded shape
 ---
 
 ## Border

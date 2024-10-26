@@ -1,3 +1,7 @@
+html {
+  scrollbar-width: thin;
+}
+
 /* Page layout with collapsible sidebar menu (CSS only) */
 body {
   position: relative;
@@ -8,14 +12,137 @@ body {
   margin: 0;
   padding: 0;
 
-  & > .menu-trigger {
+  & > header {
     display: flex;
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    padding: .5rem;
-    transition: none;
-    z-index: 1;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 15;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+    background-color: color-mix(in srgb, var(--color-bg-page) 75%, transparent);
+    backdrop-filter: blur(10px);
+
+    .menu-trigger {
+      display: flex;
+      top: 1rem;
+      left: 1rem;
+      padding: .5rem;
+      transition: none;
+      z-index: 1;
+    }
+
+    .controls {
+      background-color: transparent;
+      backdrop-filter: initial;
+      margin: -1rem 1rem 0 0;
+      padding: 1rem 0 0 0;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      .theme-mode {
+        display: flex;
+        align-items: center;
+
+        button:has(.icon:only-child) {
+          color: var(--color-neutral);
+          padding: .5rem;
+
+          &.text-accent {
+            color: var(--color-accent);
+          }
+        }
+      }
+    }
+  }
+
+  & > #search {
+    display: none;
+    position: fixed;
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    max-width: var(--screen-sm);
+    overflow: visible;
+    background-color: var(--color-bg-base);
+    z-index: 40;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    border-radius: .25rem;
+    box-shadow: black 0 .5rem 1.5rem -.8rem;
+
+    input[type='search'] {
+      font-size: 1.5rem;
+      padding: 1.5rem;
+      position: sticky;
+      z-index: 45;
+      top: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    hr {
+      margin: 0;
+    }
+
+    & > #result {
+      max-height: 50vh;
+      box-sizing: border-box;
+      overflow-y: auto;
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+
+      & > .state {
+        background-color: transparent;
+
+        .icon {
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+
+      & > .entry {
+        padding: .75rem 2rem;
+        text-decoration: none;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        &:hover {
+          background-color: var(--color-border);
+        }
+
+        .icon {
+          width: 2.5rem;
+          height: 2.5rem;
+          stroke-width: 1;
+        }
+
+        div:nth-child(2) {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          h5 {
+            margin-bottom: 0;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+
+    &:target,
+    &.active {
+      display: block;
+
+      & ~ aside ~ .menu-overlay {
+        display: block;
+        z-index: 25;
+      }
+    }
   }
 
   & > aside {
@@ -23,6 +150,8 @@ body {
     position: fixed;
     width: 14rem;
     overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
     bottom: 0;
     top: 0;
     left: 0;
@@ -34,12 +163,11 @@ body {
     &:target,
     &.active {
       transform: translateX(0);
-    }
 
-    &:target ~ .menu-overlay,
-    &.active ~ .menu-overlay {
-      display: block;
-      z-index: 10;
+      & ~ .menu-overlay {
+        display: block;
+        z-index: 18;
+      }
     }
 
     header {
@@ -61,6 +189,10 @@ body {
         display: flex;
         align-items: center;
         gap: .75rem;
+
+        a {
+          flex-grow: 1;
+        }
       }
     }
     
@@ -89,6 +221,10 @@ body {
     box-sizing: border-box;
     transition: var(--transition-spacing);
 
+    #content {
+      transition: opacity .15s ease;;
+    }
+
     footer {
       margin: 4rem 0;
     }
@@ -96,7 +232,7 @@ body {
 
   &>.menu-overlay {
     position: fixed;
-    background: #00000055;
+    background: #00000077;
     border: none;
     bottom: 0;
     display: none;
@@ -118,13 +254,24 @@ body {
       transform: none;
     }
 
+    &>header {
+      background-color: transparent;
+      backdrop-filter: initial;
+
+      .controls {
+        padding: 1rem;
+        background-color: color-mix(in srgb, var(--color-bg-page) 75%, transparent);
+        backdrop-filter: blur(10px);
+      }
+    }
+
     &>main {
       padding-top: 2rem;
       padding-left: 18rem;
     }
 
     &>.menu-overlay {
-      display: none !important;
+      display: none;
     }
   }
 }
@@ -175,6 +322,7 @@ body {
 pre[class^='language-'] {
   position: relative;
   max-height: 20rem;
+  scrollbar-width: thin;
 
   &::before {
     content: 'code';

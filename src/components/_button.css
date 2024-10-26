@@ -1,8 +1,9 @@
-input[type="submit"],
 input[type="button"],
 input[type="reset"],
+input[type="submit"],
 button,
 a.button {
+  align-items: center;
   appearance: none;
   background-color: var(--color-bg-accent);
   border-radius: .25rem;
@@ -11,12 +12,11 @@ a.button {
   box-sizing: border-box;
   color: white;
   display: inline-flex;
-  align-items: center;
-  gap: .5rem;
   font-family: inherit;
   font-size: .875rem;
+  gap: .5rem;
+  justify-content: center;
   padding: .75rem 1rem;
-  text-align: center;
   text-decoration: none;
   transition:
     var(--transition-outline),
@@ -187,6 +187,7 @@ a.button {
   }
   &.rounded-full:has(.icon:only-child) {
     padding: .75rem;
+    border-radius: 9999px;
   }
 }
 

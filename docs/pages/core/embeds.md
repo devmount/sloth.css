@@ -1,6 +1,7 @@
 ---
 title: 'Core: Embeds - Sloth.css'
-description: Drop-in styles of Sloth.css for media and other embedded elements.
+description: Media elements like images and figures and other embeddable elements
+tags: image meter progress
 ---
 
 ## Embeds

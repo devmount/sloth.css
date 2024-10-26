@@ -1,6 +1,7 @@
 ---
 title: 'Utilities: Text - Sloth.css'
-description: Utility classes of Sloth.css for text.
+description: Controlling text and font appearance
+tags: underline line-through transnform uppercase lowercase capitalize font-weight font-family size truncate balance whitespace-nowrap vertical
 ---
 
 ## Text

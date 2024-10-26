@@ -175,6 +175,7 @@ input[type="range"] {
     }
   }
   &:focus, &:focus-within {
+    box-shadow: none;
     outline: none;
 
     &::-webkit-slider-runnable-track,

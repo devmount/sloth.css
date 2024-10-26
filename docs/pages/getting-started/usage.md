@@ -1,6 +1,7 @@
 ---
 title: 'Usage - Sloth.css'
-description: Getting started with Sloth.css, how to use it.
+description: How to use Sloth.css
+tags: drop-in utility component customizing
 ---
 
 ## Usage

@@ -1,6 +1,7 @@
 ---
 title: 'Utilities: Effects - Sloth.css'
-description: Utility classes of Sloth.css for special effects.
+description: Controlling elevation and transformation of elements
+tags: shadow rotate
 ---
 
 ## Effects

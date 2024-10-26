@@ -1,6 +1,7 @@
 ---
 title: 'Installation - Sloth.css'
-description: Getting started with Sloth.css, how to install it.
+description: Installation instructions and how to get started
+tags: cdn npm drop-in
 ---
 
 ## Installation

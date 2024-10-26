@@ -1,6 +1,7 @@
 ---
 title: 'Components: Separator - Sloth.css'
-description: Separator component of Sloth.css.
+description: Separators divide content into different parts
+tags: horizontal vertical
 ---
 
 ## Separator

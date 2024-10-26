@@ -1,6 +1,7 @@
 ---
 title: 'Changelog - Sloth.css'
-description: Getting started with Sloth.css, see what's new.
+description: Overview of all versions and see what's new
+tags: release version changes
 ---
 
 ## Changelog

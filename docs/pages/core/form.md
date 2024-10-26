@@ -1,6 +1,7 @@
 ---
 title: 'Core: Form - Sloth.css'
-description: Drop-in styles of Sloth.css for all kinds of input elements and buttons.
+description: Form control elements like inputs, selects and buttons
+tags: input textarea picker choice checkbox radio button select state fieldset
 ---
 
 ## Form

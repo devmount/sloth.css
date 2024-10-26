@@ -1,6 +1,7 @@
 ---
 title: 'Components: Toast - Sloth.css'
-description: Toast notification component of Sloth.css.
+description: Dynamic notification callout extension
+tags: callout position variants neutral accent success alert
 ---
 
 ## Toast
@@ -56,7 +57,7 @@ Use the `br`, `tr`, `tl` and `bl` classes to position the toast notification on 
 <div class="toast callout br">...</div>
 ```
 
-### Colored toasts
+### Toast variants
 
 Use the `accent`, `success` or `alert` classes to give the toast notification a different meaning.
 

@@ -1,12 +1,12 @@
 ---
 title: 'Components: State - Sloth.css'
-description: State component of Sloth.css.
+description: Placeholder areas that indicate a empty or highlighted state
+tags: placeholder empty highlight
 ---
 
 ## State
 
-The state component can be used for areas that indicate a certain state for users to get information,
-that something is missing or needs to be done first to achieve a goal.
+The state component can be used for areas that indicate a certain state for users to get information, that something is missing or needs to be done first to achieve a goal.
 
 ### Empty state
 
