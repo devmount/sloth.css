@@ -46,6 +46,7 @@ module.exports = function(eleventyConfig) {
   index.sort((a, b) => a.title.localeCompare(b.title));
 
   // Write search index to file
+  fs.mkdirSync('docs/public/assets/scripts', { recursive: true })
   fs.writeFileSync('docs/public/assets/scripts/searchIndex.json', JSON.stringify(index));
 
   // Global data
