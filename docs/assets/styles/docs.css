@@ -62,26 +62,26 @@ body {
   & > #search {
     display: none;
     position: fixed;
-    width: 100%;
-    margin: 1rem;
-    max-width: var(--screen-md);
-    max-height: 80vh;
-    overflow-y: auto;
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    max-width: var(--screen-sm);
+    overflow: visible;
     background-color: var(--color-bg-base);
     z-index: 40;
     top: 10vh;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
     border-radius: .25rem;
-    box-sizing: border-box;
-    overflow-y: auto;
     box-shadow: black 0 .5rem 1.5rem -.8rem;
 
     input[type='search'] {
       font-size: 1.5rem;
       padding: 1.5rem;
       position: sticky;
+      z-index: 45;
       top: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
     }
 
     hr {
@@ -89,7 +89,10 @@ body {
     }
 
     & > #result {
-      padding-top: 2rem;
+      max-height: 50vh;
+      box-sizing: border-box;
+      overflow-y: auto;
+      padding-top: 1rem;
       padding-bottom: 2rem;
 
       & > .state {

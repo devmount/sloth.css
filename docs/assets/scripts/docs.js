@@ -37,7 +37,7 @@ searchInput.addEventListener('input', (event) => {
   }
 
   // Calculate search result
-  const result = index.filter((e) => (`${e.title} ${e.text}`).toLowerCase().includes(query));
+  const result = index.filter((e) => (`${e.title} ${e.text} ${e.tags}`).toLowerCase().includes(query));
 
   // Handle search results
   if (result.length) {
@@ -53,7 +53,7 @@ searchInput.addEventListener('input', (event) => {
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">${icon}</svg>
         </div>
         <div>
-          <h5>${c.title}</h5>
+          <h5>${c.name}</h5>
           <div class="text-muted">${c.text}</div>
         </div>
       </a>`;

@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
   // Every section is a single line CSS comment
   const slothUtilitySections = [];
   fs.readFileSync('src/_utilities.css').toString().split("\n").filter((l) => l.startsWith('/*')).forEach((section) => {
-    slothUtilitySections.push(section.slice(2, -2).trim().toLowerCase());
+    slothUtilitySections.push(section.trim().slice(2, -2).trim().toLowerCase());
   });
 
   // Get components
@@ -32,9 +32,11 @@ module.exports = function(eleventyConfig) {
       const text = meta.filter((l) => l.startsWith('description:')).join().slice(12).trim();
       const tags = meta.filter((l) => l.startsWith('tags:')).join().slice(5).trim();
       index.push({
-        title: name,
+        title: title,
+        name: name,
         url: `/${d}/${name}`,
-        text: `${title} ${text} ${tags}`,
+        text: text,
+        tags: tags,
         cat: d
       });
     });
