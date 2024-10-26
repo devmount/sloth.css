@@ -68,6 +68,10 @@ searchInput.addEventListener('input', (event) => {
 });
 const focusSearch = () => setTimeout(() => searchInput.focus(), 50);
 
+// Core: Form
+const invalidInput = document.querySelector('#invalid-input');
+invalidInput.setCustomValidity("Invalid field.");
+
 // Component: Toast
 const toast = document.querySelector('#toast');
 const toggleToast = () => toast.classList.toggle('active');

@@ -43,6 +43,9 @@ input, textarea, select {
     cursor: not-allowed;
     background-color: var(--color-bg-muted);
   }
+  &:invalid {
+    box-shadow: var(--color-alert) var(--shadow-border);
+  }
 }
 input[type="text"],
 input[type="password"],
