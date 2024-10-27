@@ -43,7 +43,7 @@ Extract the CSS files you need and include them in your markup or your bundler.
 If you don’t want to use the CDN or manual download, you can install Sloth.css via npm with the following command.
 
 ```bash
-npm install sloth.css
+npm install @devmount/sloth.css
 ```
 
-Now you need to make the static files under `node_modules/sloth.css/dist` available to your app or include them in your build step.
+Now you need to make one of the CSS files under `node_modules/sloth.css/` available to your app or include it in your build step.
