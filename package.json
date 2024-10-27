@@ -1,6 +1,6 @@
 {
   "name": "@devmount/sloth.css",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A drop-in utility component CSS-only library for lazy mammals.",
   "main": "sloth.min.css",
   "files": [

@@ -1,5 +1,6 @@
 const fs = require('fs');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const VERSION = '0.2.0';
 
 module.exports = function(eleventyConfig) {
   // Get utility sections
@@ -59,7 +60,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addGlobalData('toc', true);
   eleventyConfig.addGlobalData('meta', {
     title: 'Sloth.css',
-    version: '0.1.1',
+    version: VERSION,
     description: 'A drop-in utility component CSS library for lazy mammals.',
     utilitySections: slothUtilitySections,
     components: slothComponents,
