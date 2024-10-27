@@ -36,16 +36,16 @@ Use the `br`, `tr`, `tl` and `bl` classes to position the toast notification on 
   <p>The demo can be seen directly on this page. Use the following controls to change it's position.</p>
   <div class="control grid grid-cols-2 max-w-screen-xs gap-2">
     <button class="neutral" onclick="positionToast('tl')">
-      Top Left <code>tl</code>
+      Top Left <code>.tl</code>
     </button>
     <button class="neutral" onclick="positionToast('tr')">
-      Top Right <code>tr</code>
+      Top Right <code>.tr</code>
     </button>
     <button class="neutral" onclick="positionToast('bl')">
-      Bottom Left <code>bl</code>
+      Bottom Left <code>.bl</code>
     </button>
     <button class="neutral" onclick="positionToast('br')">
-      Bottom Right <code>br</code>
+      Bottom Right <code>.br</code>
     </button>
   </div>
 </div>
@@ -68,13 +68,13 @@ Use the `accent`, `success` or `alert` classes to give the toast notification a 
       Neutral
     </button>
     <button onclick="colorToast('accent')">
-      Accent <code>accent</code>
+      Accent <code>.accent</code>
     </button>
     <button class="success" onclick="colorToast('success')">
-      success <code>success</code>
+      Success <code>.success</code>
     </button>
     <button class="alert" onclick="colorToast('alert')">
-      alert <code>alert</code>
+      Alert <code>.alert</code>
     </button>
   </div>
 </div>

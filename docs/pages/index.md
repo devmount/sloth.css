@@ -25,7 +25,7 @@ Read on below to find out about all available variants. Maybe one of them is mor
 
 ## Features
 
-Sloth.css can be used as drop-in CSS library, as utility class library or even with a set of handcrafted ready-to-copy components. Or everything, all at once. Just pick the variant you need. Styles are opinionated (then again: which styles are not), and crafted to prioritize visual usability over trends such as flat design. For example: Elements where you type in (like input fields) are actually inset, elements that are clickable (like buttons) are actually outstanding, tabs are connected to the content they activate etc.
+Sloth.css can be used as drop-in CSS library, as utility class library or even with a set of handcrafted ready-to-copy components. Or everything, all at once. Just pick the variant you need. Styles are opinionated (then again: which styles are not), and crafted to prioritize visual usability over trends such as flat design. For example: Elements where you type in (like input fields) are actually inset, elements that are clickable (like buttons) are actually elevated, tabs are connected to the content they activate etc.
 
 ### Variant 1: Drop-in core CSS library
 
