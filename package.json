@@ -13,6 +13,7 @@
     "build:util": "npx postcss src/sloth.util.css -u postcss-import -u cssnano -o sloth.util.min.css --no-map",
     "build:comp": "npx postcss src/sloth.comp.css -u postcss-import -u cssnano -o sloth.comp.min.css --no-map",
     "build": "npm run build:complete && npm run build:core && npm run build:util && npm run build:comp",
+    "publish": "npm run build && npm publish",
     "docs:serve": "npx @11ty/eleventy --serve",
     "docs:build": "npx @11ty/eleventy"
   },
