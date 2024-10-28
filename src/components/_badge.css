@@ -1,8 +1,12 @@
-.badge {
+.badge,
+.badge-neutral,
+.badge-success,
+.badge-alert {
   position: relative;
   white-space: nowrap;
 
   &::after {
+    --pulse-color: var(--color-accent);
     background: var(--color-accent);
     border-radius: 9999rem;
     content: attr(data-badge);
@@ -20,6 +24,19 @@
     text-transform: uppercase;
   }
 
+  &:is(.badge-neutral)::after {
+    --pulse-color: var(--color-neutral);
+    background: var(--color-neutral);
+  }
+  &:is(.badge-success)::after {
+    --pulse-color: var(--color-success);
+    background: var(--color-success);
+  }
+  &:is(.badge-alert)::after {
+    --pulse-color: var(--color-alert);
+    background: var(--color-alert);
+  }
+
   &:is(span)::after {
     transform: translate(80%, -40%);
   }
@@ -34,7 +51,7 @@
   50%  {
     box-shadow:
       color-mix(in srgb, var(--color-bg-page) 50%, transparent) var(--shadow-border),
-      0 0 0 0 var(--color-bg-accent);
+      0 0 0 0 var(--pulse-color);
   }
   100% {
     box-shadow:
