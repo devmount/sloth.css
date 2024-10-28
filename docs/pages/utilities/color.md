@@ -30,7 +30,9 @@ Text is colored according to the color scheme per default. Use the `text-inverte
 <p class="text-inverted">Inverted color</p>
 ```
 
-> Note that you can use `text-light` and `text-dark` to keep the text color despite the color scheme. But please only use this with sufficient contrast to the background.
+<p class="callout accent">
+  Note that you can use <code>text-light</code> and <code>text-dark</code> to keep the text color despite the color scheme. But please only use this with sufficient contrast to the background.
+</p>
 
 Colors can be overwritten by the corresponding custom property:
 

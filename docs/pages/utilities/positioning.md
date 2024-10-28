@@ -59,7 +59,9 @@ The following 4 values of positions are supported.
 .sticky   { position: sticky;   }
 ```
 
-> Note that `sticky` always needs a value for the [top property](https://developer.mozilla.org/en-US/docs/Web/CSS/top), hence `top-0` or `top-4` need to be set too.
+<p class="callout accent">
+  Note that <code>sticky</code> always needs a value for the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/top" target="_blank">top property</a>, hence <code>top-0</code> or <code>top-4</code> need to be set too.
+</p>
 
 ### Alignment
 
@@ -175,7 +177,9 @@ For centering content horizontally and vertically, the special utility class `fl
 }
 ```
 
-> Note that `flex-center` is a display utility and already includes the `display: flex;` rule. So there's no need to use three classes like in Tailwind <del>`flex justify-center items-center`</del>. Just use <ins>`flex-center`</ins>.
+<p class="callout accent">
+  Note that <code>flex-center</code> is a display utility and already includes the <code>display: flex;</code> rule. So there's no need to use three classes like in Tailwind <del><code>flex justify-center items-center</code></del>. Just use <ins><code>flex-center</code></ins>.
+</p>
 
 ### Overflow
 

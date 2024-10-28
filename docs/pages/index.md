@@ -49,7 +49,9 @@ If you want to create quick mockups without leaving your markup, you can use Slo
 
 If you need more advanced elements on your page, you can use Sloth.css with prestyled components included. Badges, Cards, Modals, Tooltips and more - take a look at the complete list in the docs.
 
-> This is work-in-progress. There will be more components soon<sup><small>TM</small></sup>
+<p class="callout accent">
+  This is still work-in-progress. There will be more components coming soon<sup><small>TM</small></sup>
+</p>
 
 ## License
 

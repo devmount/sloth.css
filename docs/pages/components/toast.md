@@ -8,7 +8,9 @@ tags: callout position variants neutral accent success alert
 
 A toast notificataion is a dynamic message component, that is only visible after a certain action. For this use case, the <a href="/components/callout">Callout</a> component is used and extended to show up on a fixed position.
 
-> Sloth.css is a CSS only library and does not ship any JavaScript. To handle appearance, and manual or autmatic closing of toast messages, you'll need to implement that with JavaScript.
+<p class="callout accent">
+  Sloth.css is a CSS only library and does not ship any JavaScript. To handle appearance, and manual or autmatic closing of toast messages, you'll need to implement that with JavaScript.
+</p>
 
 ### Basic toast
 
