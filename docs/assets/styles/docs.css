@@ -222,7 +222,8 @@ body {
     transition: var(--transition-spacing);
 
     #content {
-      transition: opacity .15s ease;;
+      display: flex;
+      gap: 1rem;
     }
 
     footer {

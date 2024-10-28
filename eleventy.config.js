@@ -1,8 +1,10 @@
-const fs = require('fs');
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+import fs from 'fs';
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import { IdAttributePlugin } from "@11ty/eleventy";
+
 const VERSION = '0.2.0';
 
-module.exports = function(eleventyConfig) {
+export default function (eleventyConfig) {
   // Get utility sections
   // Those can be retrieved from the single _utilities.css file.
   // Every section is a single line CSS comment
@@ -20,6 +22,7 @@ module.exports = function(eleventyConfig) {
 
   // Init plugins
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(IdAttributePlugin);
 
   // Build search index
   const index = [];
@@ -50,6 +53,10 @@ module.exports = function(eleventyConfig) {
   fs.mkdirSync('docs/public/assets/scripts', { recursive: true })
   fs.writeFileSync('docs/public/assets/scripts/searchIndex.json', JSON.stringify(index));
 
+  eleventyConfig.addPreprocessor("test", "njk,md", (data, content) => {
+    console.log(data.page.fileSlug);
+	});
+
   // Global data
   eleventyConfig.addGlobalData('baseUrl', 'https://slothcss.devmount.com');
   eleventyConfig.addGlobalData('repoUrl', 'https://github.com/devmount/sloth.css');
@@ -57,7 +64,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addGlobalData('creatorUrl', 'https://devmount.com');
   eleventyConfig.addGlobalData('donationUrl', 'https://paypal.me/devmount');
   eleventyConfig.addGlobalData('layout', 'default');
-  eleventyConfig.addGlobalData('toc', true);
   eleventyConfig.addGlobalData('meta', {
     title: 'Sloth.css',
     version: VERSION,
