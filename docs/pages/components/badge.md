@@ -33,10 +33,10 @@ Use the `badge` class to add a small bubble indicator at the top right corner of
 The default badge without any additional class is already utilizing accent coloring. In addition, you can use `badge-neutral`, `badge-success` and `badge-alert` classes for the corresponding colors.
 
 <div class="demo flex flex-wrap gap-8">
-  <span class="badge pulse">Inbox</span>
-  <span class="badge-neutral pulse" data-badge="12">Inbox</span>
+  <span class="badge">Inbox</span>
+  <span class="badge-neutral" data-badge="12">Inbox</span>
   <span class="badge-success pulse" data-badge="99+">Inbox</span>
-  <span class="badge-alert pulse" data-badge="new">CSS4 now available!</span>
+  <span class="badge-alert" data-badge="new">CSS4 now available!</span>
 </div>
 
 ```html
