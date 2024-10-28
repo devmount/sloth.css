@@ -21,7 +21,7 @@ Use the `toast callout` classes to create a toast notification. The toast elemen
   <div class="flex gap-2">
     <button onclick="toggleToast()">Toggle</button>
   </div>
-  <div class="toast callout active" id="toast">
+  <div class="toast callout active" id="toast-demo">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   </div>
 </div>

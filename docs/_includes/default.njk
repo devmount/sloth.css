@@ -95,7 +95,7 @@
     </aside>
 
     {# Menu overlay #}
-    <a class="menu-overlay" href="#"></a>
+    <a class="menu-overlay" href="#close"></a>
 
     {# Page content #}
     <main>
@@ -103,9 +103,9 @@
         <div>
           {{ content | safe }}
         </div>
-        <nav>
-          
-        </nav>
+        {% if not notoc %}
+          {{ content | toc | safe }}
+        {% endif %}
       </article>
 
       <footer>

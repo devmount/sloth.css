@@ -1,6 +1,8 @@
 import fs from 'fs';
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
-import { IdAttributePlugin } from "@11ty/eleventy";
+import markdownit from "markdown-it";
+import anchor from "markdown-it-anchor";
+import tocPlugin from "eleventy-plugin-toc";
 
 const VERSION = '0.2.0';
 
@@ -22,7 +24,11 @@ export default function (eleventyConfig) {
 
   // Init plugins
   eleventyConfig.addPlugin(syntaxHighlight);
-  eleventyConfig.addPlugin(IdAttributePlugin);
+  eleventyConfig.setLibrary("md", markdownit().set({ html: true }).use(anchor));
+  eleventyConfig.addPlugin(tocPlugin, {
+    tags: ["h2", "h3"],
+    ul: true,
+  });
 
   // Build search index
   const index = [];
@@ -52,10 +58,6 @@ export default function (eleventyConfig) {
   // Write search index to file
   fs.mkdirSync('docs/public/assets/scripts', { recursive: true })
   fs.writeFileSync('docs/public/assets/scripts/searchIndex.json', JSON.stringify(index));
-
-  eleventyConfig.addPreprocessor("test", "njk,md", (data, content) => {
-    console.log(data.page.fileSlug);
-	});
 
   // Global data
   eleventyConfig.addGlobalData('baseUrl', 'https://slothcss.devmount.com');

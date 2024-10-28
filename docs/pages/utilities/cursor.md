@@ -2,6 +2,7 @@
 title: 'Utilities: Cursor - Sloth.css'
 description: Controlling cursor types
 tags: default pointer help not-allowed
+notoc: true
 ---
 
 ## Cursor

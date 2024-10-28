@@ -73,7 +73,7 @@ const invalidInput = document.querySelector('#invalid-input');
 invalidInput?.setCustomValidity("Invalid field.");
 
 // Component: Toast
-const toast = document.querySelector('#toast');
+const toast = document.querySelector('#toast-demo');
 const toggleToast = () => toast.classList.toggle('active');
 const toastPositions = ['br', 'tr', 'tl', 'bl'];
 const positionToast = (pos) => {
