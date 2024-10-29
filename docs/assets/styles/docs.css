@@ -215,7 +215,7 @@ body {
     } 
   }
 
-  &>main {
+  & > main {
     padding: 5rem 1rem 1rem 1rem;
     max-width: 1260px;
     width: 100%;
@@ -226,6 +226,7 @@ body {
       position: relative;
       
       .toc {
+        display: none;
         font-size: .875rem;
         position: absolute;
         top: 5rem;
@@ -248,7 +249,13 @@ body {
               padding: .125rem 0;
 
               a {
-                color: var(--color-text-muted);
+                &:not(:hover) {
+                  color: var(--color-text-muted);
+                }
+                
+                &:hover {
+                  text-decoration-style: dashed;
+                }
               }
             }
           }
@@ -261,7 +268,7 @@ body {
     }
   }
 
-  &>.menu-overlay {
+  & > .menu-overlay {
     position: fixed;
     background: #00000077;
     border: none;
@@ -275,17 +282,18 @@ body {
   }
 }
 
+/* Responsiveness */
 @media (min-width: 1024px) {
   body {
-    &>.menu-trigger {
+    & > .menu-trigger {
       display: none;
     }
 
-    &>aside {
+    & > aside {
       transform: none;
     }
 
-    &>header {
+    & > header {
       background-color: transparent;
       backdrop-filter: initial;
 
@@ -296,14 +304,19 @@ body {
       }
     }
 
-    &>main {
+    & > main {
       padding-top: 2rem;
       padding-left: 18rem;
     }
 
-    &>.menu-overlay {
+    & > .menu-overlay {
       display: none;
     }
+  }
+}
+@media (min-width: 1500px) {
+  body > main #content .toc {
+    display: block;
   }
 }
 

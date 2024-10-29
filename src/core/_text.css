@@ -43,7 +43,7 @@ a {
   &:hover, &:focus, &:focus-within {
     color: var(--color-link-hover);
     text-decoration: underline;
-    text-underline-offset: 10%;
+    text-underline-offset: .125rem;
   }
   &:focus, &:focus-within {
     outline: 4px solid var(--color-outline);
