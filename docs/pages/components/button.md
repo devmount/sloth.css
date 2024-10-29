@@ -140,7 +140,7 @@ Use the `ghost` class to keep button sizing without background color or border. 
 
 ### Icon button
 
-Sloth.css doesn't ship any icons, since there are lots of icon libraries out there. However SVG icons are directly supported using the `icon` class. Buttons are set to _inline-flex_ per default, so multiple elements inside buttons are nicely aligned next to each other.
+Sloth.css doesn't ship any icons, since there are lots of icon libraries out there. However SVG icons are directly supported using the `icon` class. Buttons are set to *inline-flex* per default, so multiple elements inside buttons are nicely aligned next to each other.
 
 The beautiful <a href="https://tabler.io/icons" target="_blank">Tabler Icons</a> work well with Sloth.css for example. You can also create icon buttons without any text. You might want to use the `rounded-full` utility for those.
 
