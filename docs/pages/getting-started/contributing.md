@@ -31,7 +31,7 @@ Enhancement suggestions are also tracked as [GitHub issues]({{ repoUrl }}/issues
 - [CSS component request]({{ repoUrl }}/issues/new?assignees=&labels=enhancement%2Ccomponent&projects=&template=css_component_request.md&title=New+CSS+component%3A+)
 - [Utility class request]({{ repoUrl }}/issues/new?assignees=&labels=enhancement%2Cutility&projects=&template=utility_class_request.md&title=New+utility+class%3A+)
 
-### Provide code changes via pull requests
+### Code changes via pull requests
 
 Complete the required template. Please do not include issue numbers in the PR title, but mention it in the PR body.
 
@@ -52,7 +52,7 @@ Complete the required template. Please do not include issue numbers in the PR ti
   - 👕 `:shirt:` when refactoring or removing linter warnings
   - ❌ `:x:` when removing code or files
 
-## Beta-Testing
+### Beta-Testing
 
 Testing the current state and reporting bugs is a great way to help! Here's how:
 

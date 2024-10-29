@@ -57,7 +57,9 @@ Elements can also be position underneath each other (column direction) instead o
 }
 ```
 
-> Note that `flex-col` is a display utility and already includes the `display: flex;` rule. So there's no need to use two classes like in Tailwind <del>`flex flex-column`</del>. Just use <ins>`flex-col`</ins>.
+<p class="callout accent">
+  Note that <code>flex-col</code> is a display utility and already includes the <code>display: flex;</code> rule. So there's no need to use two classes like in Tailwind <del><code>flex flex-column</code></del>. Just use <ins><code>flex-col</code></ins>.
+</p>
 
 User the `flex-wrap` class, if you want your flex items to break onto a new line when the container limit is reached.
 

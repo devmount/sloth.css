@@ -58,7 +58,7 @@ Here is an example of the badge component with a pulse variation:
 <span class="badge pulse" data-badge="99+">Inbox</span>
 ```
 
-## Customizing
+### Customizing
 
 Sloth.css uses CSS custom properties for core styles. You can customize and override them by using a `:root` selector, e.g.:
 

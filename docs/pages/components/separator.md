@@ -34,7 +34,9 @@ Use the `separator` class to add a horizontal line. Every content added to that 
 
 Use the `separator` and the `vertical` class to add a vertical line. Every content added to that element appears as its label. No content will result in a single vertical line.
 
-> Note that vertical separators only work in a flex container with flex direction row. If you're using utility classes, you can just give it the `flex` class or set `display: flex;` on it.
+<p class="callout accent">
+  Note that vertical separators only work in a flex container with flex direction row. If you're using utility classes, you can just give it the <code>flex</code> class or set <code>display: flex;</code> on it.
+</p>
 
 <div class="demo">
   <div class="max-w-screen-md flex">

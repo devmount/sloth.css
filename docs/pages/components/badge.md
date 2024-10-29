@@ -26,7 +26,9 @@ Use the `badge` class to add a small bubble indicator at the top right corner of
 <span class="badge" data-badge="new">CSS4 now available!</span>
 ```
 
-> Note that the badge element itself is by design not part of the text flow to keep spacing between elements consistent. Therefore long badge contents should be avoided or only used where appropriate.
+<p class="callout accent">
+  Note that the badge element itself is by design not part of the text flow to keep spacing between elements consistent. Therefore long badge contents should be avoided or only used where appropriate.
+</p>
 
 ### Badge variants
 
