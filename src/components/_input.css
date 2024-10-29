@@ -1,33 +1,33 @@
-.input {
-  position: relative;
+input:not([type="button"]):not([type="reset"]):not([type="submit"]),
+textarea,
+select {
+  /* Size */
+  &.sm {
+    font-size: .75rem;
 
-  & > input:not([type="button"]):not([type="reset"]):not([type="submit"]),
-  & > textarea,
-  & > select {
-    /* Size */
-    &.sm {
-      font-size: .75rem;
-  
-      &:not([type="checkbox"]):not([type="radio"]) {
-        padding: .5rem .75rem;
-      }
-      &[type="checkbox"], &[type="radio"] {
-        width: 1rem;
-        height: 1rem;
-      }
+    &:not([type="checkbox"]):not([type="radio"]) {
+      padding: .5rem .75rem;
     }
-    &.lg {
-      font-size: 1.125rem;
-  
-      &:not([type="checkbox"]):not([type="radio"]) {
-        padding: 1rem 1.25rem;
-      }
-      &[type="checkbox"], &[type="radio"] {
-        width: 1.625rem;
-        height: 1.625rem;
-      }
+    &[type="checkbox"], &[type="radio"] {
+      width: 1rem;
+      height: 1rem;
     }
   }
+  &.lg {
+    font-size: 1.125rem;
+
+    &:not([type="checkbox"]):not([type="radio"]) {
+      padding: 1rem 1.25rem;
+    }
+    &[type="checkbox"], &[type="radio"] {
+      width: 1.625rem;
+      height: 1.625rem;
+    }
+  }
+}
+
+.input {
+  position: relative;
 
   /* Help text */
   & > .help {
@@ -35,7 +35,7 @@
     font-size: 0.875rem;
     line-height: 1.25rem;
     color: var(--color-text-muted);
-    padding: .625rem;
+    padding: .25rem;
   }
 
   /* Affix icons */
