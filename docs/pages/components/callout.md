@@ -27,7 +27,7 @@ Use the `callout` class to create a box that emphasizes its content.
 <p class="callout">...</p>
 ```
 
-### Callout variants
+### Colors
 
 Use the `accent`, `success` or `alert` classes to give the callout more meaning.
 
@@ -54,7 +54,7 @@ Use the `accent`, `success` or `alert` classes to give the callout more meaning.
 <p class="callout alert">...</p>
 ```
 
-### Callouts with symbols
+### Symbol
 
 Use the `data-symbol` attribute to provide a symbol for a callout.
 

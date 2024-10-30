@@ -8,7 +8,7 @@ tags: variants accent neutral success alert disabled size secondary outline link
 
 Buttons indicate actions the user can trigger on click. Buttons already have a base styling via the drop-in core of Sloth.css. However, this CSS component extends those by several variations, sizes, groups and more.
 
-### Button variants
+### Colors
 
 The default button without any class is already utilizing accent coloring. In addition, you can use `neutral`, `success` and `alert` classes for the corresponding colors.
 
@@ -42,7 +42,7 @@ Using the `disabled` attribute deactivates buttons. If you're using `onclick` ev
 <button class="alert" disabled>Delete account</button>
 ```
 
-### Button sizes
+### Sizes
 
 Use the `sm` or `lg` classes to reduce or increase the font size and padding of a button. Note that the actual width and height are still depending on the buttons content (content won't overflow the button but stretch it).
 
@@ -108,7 +108,7 @@ Use the `button` class to apply all button styles on `<a>` tags. That way you ca
 
 ### Pill button
 
-Use the `pill` utility class to give buttons a fully rounded pill form.
+Use the `pill` class to give buttons a fully rounded pill form.
 
 <div class="demo flex flex-wrap gap-4">
   <button class="pill">Send post</button>
@@ -142,7 +142,7 @@ Use the `ghost` class to keep button sizing without background color or border. 
 
 Sloth.css doesn't ship any icons, since there are lots of icon libraries out there. However SVG icons are directly supported using the `icon` class. Buttons are set to *inline-flex* per default, so multiple elements inside buttons are nicely aligned next to each other.
 
-The beautiful <a href="https://tabler.io/icons" target="_blank">Tabler Icons</a> work well with Sloth.css for example. You can also create icon buttons without any text. You might want to use the `pill` utility for those.
+The beautiful <a href="https://tabler.io/icons" target="_blank">Tabler Icons</a> work well with Sloth.css for example. You can also create icon buttons without any text. You might want to use the `pill` class for those.
 
 <div class="demo flex flex-wrap gap-4">
   <button>

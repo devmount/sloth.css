@@ -8,7 +8,7 @@ tags: variants accent success alert neutral size double button
 
 A loader indicates a busy state, giving visual feedback for users that a process currently takes some time. This reassures the user, that an action got triggered in the first place and is still working or progressing.
 
-### Loader variants
+### Colors
 
 Use the `loader` class to add a loading indicator. The loadinng indicator is in accent colors per default. Use the `neutral`, `success` and `alert` classes to change the color accordingly.
 
@@ -26,7 +26,7 @@ Use the `loader` class to add a loading indicator. The loadinng indicator is in 
 <div class="loader alert"></div>
 ```
 
-### Loader sizes
+### Sizes
 
 Use the `sm` or `lg` classes to reduce or increase the size of a loader.
 

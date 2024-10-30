@@ -8,7 +8,7 @@ tags: text button notification pulse
 
 Badges indicate the status of an element, the appearance of an event or counts on text elements or buttons.
 
-### Basic text badges
+### Text badges
 
 Use the `badge` class to add a small bubble indicator at the top right corner of the enclosed element. Use the `data-badge` attribute to add content to that bubble. If you want to draw even more attention to the badge, you can use the `pulse` class in addition.
 
@@ -30,7 +30,7 @@ Use the `badge` class to add a small bubble indicator at the top right corner of
   Note that the badge element itself is by design not part of the text flow to keep spacing between elements consistent. Therefore long badge contents should be avoided or only used where appropriate.
 </p>
 
-### Badge variants
+### Colors
 
 The default badge without any additional class is already utilizing accent coloring. In addition, you can use `badge-neutral`, `badge-success` and `badge-alert` classes for the corresponding colors.
 
