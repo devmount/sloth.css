@@ -14,7 +14,8 @@ fieldset {
 
 /* <label> */
 label {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
   padding-bottom: 0.25rem;
 
   &:has(input), &:has(textarea), &:has(select), &[for] {
@@ -29,7 +30,6 @@ input, textarea, select {
   font-family: inherit;
   transition: var(--transition-outline), var(--transition-color);
   border: 0;
-  width: 100%;
   box-sizing: border-box;
 
   &:hover:not(:disabled) {
@@ -38,6 +38,7 @@ input, textarea, select {
   &:focus:not(:disabled), &:focus-within:not(:disabled) {
     outline: 4px solid var(--color-outline);
     box-shadow: var(--color-accent) var(--shadow-border);
+    z-index: 10;
   }
   &:disabled {
     cursor: not-allowed;
@@ -65,9 +66,6 @@ select {
   border-radius: .25rem;
   padding: .75rem 1rem;
   font-size: .875rem;
-}
-textarea {
-  width: 100%;
 }
 input[type="number"],
 input[type="date"],

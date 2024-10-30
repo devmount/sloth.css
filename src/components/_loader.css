@@ -60,7 +60,8 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"],
 button,
-a.button {
+a.button,
+.input {
   &.busy {
     color: transparent;
     position: relative;

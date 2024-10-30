@@ -29,6 +29,18 @@ select {
   &.pill {
     border-radius: 9999px;
   }
+
+  /* Ghost */
+  &.ghost {
+    background-color: transparent;
+    box-shadow: none;
+
+    &:not(:disabled):not(.busy) {
+      &:hover, &:focus, &:focus-within, &:active {
+        box-shadow: none;
+      }
+    }
+  }
 }
 
 .input {
@@ -72,34 +84,15 @@ select {
   }
 }
 
-
-  /* &.ghost {
-    color: var(--color-link);
-    background-color: transparent;
-    box-shadow: none;
-
-    &:not(:disabled):not(.busy) {
-      &:hover, &:focus, &:focus-within, &:active {
-        color: var(--color-link-hover);
-        background-color: transparent;
-        box-shadow: none;
-      }
-    }
-  }
-}
-
 .input-group {
   display: flex;
   gap: 1px;
-  box-shadow: black var(--shadow-float);
 
   input:not([type="button"]),
   input:not([type="reset"]),
   input:not([type="submit"]),
   textarea,
   select {
-    box-shadow: none;
-
     &:first-child {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
@@ -113,12 +106,12 @@ select {
     }
   }
 
-  &:has(.rounded-full:first-child) {
+  &:has(.pill:first-child) {
     border-top-left-radius: 9999px;
     border-bottom-left-radius: 9999px;
   }
-  &:has(.rounded-full:last-child) {
+  &:has(.pill:last-child) {
     border-top-right-radius: 9999px;
     border-bottom-right-radius: 9999px;
   }
-} */
+}

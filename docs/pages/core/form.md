@@ -126,44 +126,46 @@ Input elements with predefined values.
 
 <div class="demo flex flex-wrap gap-8">
   <div>
-    <label for="select">Select</label>
-    <select id="select">
-      <optgroup label="Option Group">
-        <option>First option</option>
-        <option>Second option</option>
-        <option>Third option</option>
-        <option disabled>Disabled option</option>
-      </optgroup>
-    </select>
+    <label>
+      Select
+      <select id="select">
+        <optgroup label="Option Group">
+          <option>First option</option>
+          <option>Second option</option>
+          <option>Third option</option>
+          <option disabled>Disabled option</option>
+        </optgroup>
+      </select>
+    </label>
   </div>
-  <div>
+  <div class="flex-col gap-1">
     <label>Checkboxes</label><br>
-    <label class="flex gap-2 items-center">
+    <label class="flex-row gap-2 items-center">
       <input name="checkbox" type="checkbox" checked /> First choice
     </label>
-    <label class="flex gap-2 items-center">
+    <label class="flex-row gap-2 items-center">
       <input name="checkbox" type="checkbox" /> Second choice
     </label>
-    <label class="flex gap-2 items-center">
+    <label class="flex-row gap-2 items-center">
       <input name="checkbox" type="checkbox" /> Third choice
     </label>
-    <label class="flex gap-2 items-center">
+    <label class="flex-row gap-2 items-center">
       <input name="checkbox" type="checkbox" disabled /> Disabled choice
     </label>
   </div>
-  <div>
+  <div class="flex-col gap-1">
     <label>Radiobuttons</label><br>
-    <label class="flex gap-2 items-center">
-      <input name="radio" type="radio" checked />First option
+    <label class="flex-row gap-2 items-center">
+      <input name="radio" type="radio" checked /> First option
     </label>
-    <label class="flex gap-2 items-center" />
-      <input name="radio" type="radio">Second option
+    <label class="flex-row gap-2 items-center">
+      <input name="radio" type="radio" /> Second option
     </label>
-    <label class="flex gap-2 items-center" />
-      <input name="radio" type="radio">Third option
+    <label class="flex-row gap-2 items-center">
+      <input name="radio" type="radio" /> Third option
     </label>
-    <label class="flex gap-2 items-center">
-      <input name="radio" type="radio" disabled />Disabled option
+    <label class="flex-row gap-2 items-center">
+      <input name="radio" type="radio" disabled /> Disabled option
     </label>
   </div>
 </div>
@@ -180,31 +182,31 @@ Input elements with predefined values.
 </select>
 
 <label>Checkboxes</label><br>
-<label class="flex gap-2 items-center">
+<label class="flex-row gap-2 items-center">
   <input name="checkbox" type="checkbox" checked /> First choice
 </label>
-<label class="flex gap-2 items-center">
+<label class="flex-row gap-2 items-center">
   <input name="checkbox" type="checkbox" /> Second choice
 </label>
-<label class="flex gap-2 items-center">
+<label class="flex-row gap-2 items-center">
   <input name="checkbox" type="checkbox" /> Third choice
 </label>
-<label class="flex gap-2 items-center">
+<label class="flex-row gap-2 items-center">
   <input name="checkbox" type="checkbox" disabled /> Disabled choice
 </label>
 
 <label>Radiobuttons</label><br>
-<label class="flex gap-2 items-center">
-  <input name="radio" type="radio" checked />First option
+<label class="flex-row gap-2 items-center">
+  <input name="radio" type="radio" checked /> First option
 </label>
-<label class="flex gap-2 items-center" />
-  <input name="radio" type="radio">Second option
+<label class="flex-row gap-2 items-center">
+  <input name="radio" type="radio" /> Second option
 </label>
-<label class="flex gap-2 items-center" />
-  <input name="radio" type="radio">Third option
+<label class="flex-row gap-2 items-center">
+  <input name="radio" type="radio" /> Third option
 </label>
-<label class="flex gap-2 items-center">
-  <input name="radio" type="radio" disabled />Disabled option
+<label class="flex-row gap-2 items-center">
+  <input name="radio" type="radio" disabled /> Disabled option
 </label>
 ```
 

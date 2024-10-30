@@ -13,12 +13,12 @@ Input and select elements enable users to provide text input or make choices. In
 Use the `sm` or `lg` classes to reduce or increase the font size and padding of an input or select element.
 
 <div class="demo flex items-center gap-4">
-  <div class="w-1/2 flex-col flex-wrap items-center gap-4">
+  <div class="w-1/2 flex-col flex-wrap items-start gap-4">
     <input type="text" class="sm" placeholder="Small input size" />
     <input type="text" placeholder="Default input size" />
     <input type="text" class="lg" placeholder="Large input size" />
   </div>
-  <div class="w-1/2 flex-col flex-wrap items-center gap-4">
+  <div class="w-1/2 flex-col flex-wrap items-start gap-4">
     <select class="sm">
       <option>Small option size</option>
     </select>
@@ -45,47 +45,47 @@ Those classes work on checkboxes and radio buttons too.
 
 <div class="demo flex items-center gap-4">
   <div class="w-1/2 flex-col flex-wrap gap-4">
-    <label class="flex gap-2 items-center">
+    <label class="flex-row gap-2 items-center">
       <input type="checkbox" class="sm" checked /> Small choice <code>.sm</code>
     </label>
-    <label class="flex gap-2 items-center">
+    <label class="flex-row gap-2 items-center">
       <input type="checkbox" /> Default choice
     </label>
-    <label class="flex gap-2 items-center">
+    <label class="flex-row gap-2 items-center">
       <input type="checkbox" class="lg" /> Large choice <code>.lg</code>
     </label>
   </div>
   <div class="w-1/2 flex-col flex-wrap gap-4">
-    <label class="flex gap-2 items-center">
+    <label class="flex-row gap-2 items-center">
       <input name="radio" type="radio" class="sm" checked /> Small option <code>.sm</code>
     </label>
-    <label class="flex gap-2 items-center">
+    <label class="flex-row gap-2 items-center">
       <input name="radio" type="radio" /> Default option
     </label>
-    <label class="flex gap-2 items-center">
+    <label class="flex-row gap-2 items-center">
       <input name="radio" type="radio" class="lg" /> Large option <code>.lg</code>
     </label>
   </div>
 </div>
 
 ```html
-<label class="flex gap-2 items-center">
+<label class="flex-row gap-2 items-center">
   <input type="checkbox" class="sm" checked /> Small choice
 </label>
-<label class="flex gap-2 items-center">
+<label class="flex-row gap-2 items-center">
   <input type="checkbox" /> Default choice
 </label>
-<label class="flex gap-2 items-center">
+<label class="flex-row gap-2 items-center">
   <input type="checkbox" class="lg" /> Large choice
 </label>
 
-<label class="flex gap-2 items-center">
+<label class="flex-row gap-2 items-center">
   <input name="radio" type="radio" class="sm" checked /> Small option
 </label>
-<label class="flex gap-2 items-center">
+<label class="flex-row gap-2 items-center">
   <input name="radio" type="radio" /> Default option
 </label>
-<label class="flex gap-2 items-center">
+<label class="flex-row gap-2 items-center">
   <input name="radio" type="radio" class="lg" /> Large option
 </label>
 ```
@@ -160,6 +160,7 @@ Use the `pill` class to give text inputs and selects a fully rounded pill form.
   <input type="text" class="pill" />
   <select class="pill">
     <option></option>
+    <option>Only one choice</option>
   </select>
 </div>
 
@@ -168,59 +169,86 @@ Use the `pill` class to give text inputs and selects a fully rounded pill form.
 <select class="pill">...</select>
 ```
 
-### Ghost button
+### Ghost input
 
-Use the `ghost` class to keep button sizing without background color or border. Works on link buttons too.
+In some cases, inputs need to be embedded into a styled context. Use the `ghost` class for an input field without background color or border.
 
-<div class="demo flex flex-wrap gap-4">
-  <button>Subscribe</button>
-  <button class="ghost">Docs</button>
-  <a class="ghost button" href="#">GitHub</a>
+<div class="demo flex gap-4">
+  <input type="text" class="ghost" placeholder="Type here" />
+  <select class="ghost">
+    <option>Select me</option>
+  </select>
 </div>
 
 ```html
-<button>Subscribe</button>
-<button class="ghost">Docs</button>
-<a class="ghost button" href="#">GitHub</a>
+<input type="text" class="ghost" placeholder="Type here" />
+<select class="ghost">
+  <option>Select me</option>
+</select>
 ```
 
-### Busy button
+### Busy input
 
-Use the `busy` class to replace the text of a button with a <a href="/components/loader">loader</a> while keeping the button size. Works with secondary buttons, link buttons and pill buttons. Busy buttons are disabled.
+Use the `input busy` classes to overlay the input with a <a href="/components/loader">loader</a>. Works with ghost inputs and pill inputs too. Busy inputs should be disabled.
 
 <div class="demo flex flex-wrap items-center gap-8">
-  <button class="busy">Send post</button>
-  <button class="busy neutral pill">Return</button>
-  <button class="busy success hollow">Save profile</button>
-  <button class="busy alert hollow pill">Delete account</button>
-  <button class="busy ghost">Load settings</button>
-</div>
-
-```html
-<button class="busy">Send post</button>
-<button class="busy neutral pill">Return</button>
-<button class="busy success hollow">Save profile</button>
-<button class="busy alert hollow pill">Delete account</button>
-<button class="busy ghost">Load settings</button>
-```
-
-### Button group
-
-Use the `button-group` class on an element containing buttons, to group buttons to a single logical unit.
-
-<div class="demo flex flex-wrap gap-4">
-  <div class="button-group font-mono">
-    <button><b>B</b></button>
-    <button><i>I</i></button>
-    <button class="underline">U</button>
+  <div class="input busy">
+    <input type="text" value="My fancy username" disabled />
+  </div>
+  <div class="input busy">
+    <input type="text" class="pill" value="My fancy username" disabled />
   </div>
 </div>
 
 ```html
-<div class="button-group">
-  <button><b>B</b></button>
-  <button><i>I</i></button>
-  <button class="underline">U</button>
+<div class="input busy">
+  <input type="text" value="My fancy username" disabled />
+</div>
+<div class="input busy">
+  <input type="text" class="pill" value="My fancy username" disabled />
+</div>
+```
+
+### Input group
+
+Use the `input-group` class on an element containing input elements or wrapper elements having the `input` class, to group inputs to a single logical unit.
+
+<div class="demo flex flex-wrap gap-4">
+  <div class="input-group">
+    <input type="number" placeholder="DD" />
+    <input type="number" placeholder="MM" />
+    <input type="number" placeholder="YYYY" />
+  </div>
+  <div class="input-group">
+    <select>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+    <select>
+      <option>January</option>
+      <option>February</option>
+      <option>March</option>
+    </select>
+    <select>
+      <option>2077</option>
+      <option>2078</option>
+      <option>2079</option>
+    </select>
+  </div>
+</div>
+
+```html
+<div class="input-group">
+  <input type="number" placeholder="DD" />
+  <input type="number" placeholder="MM" />
+  <input type="number" placeholder="YYYY" />
+</div>
+
+<div class="input-group">
+  <select>...</select>
+  <select>...</select>
+  <select>...</select>
 </div>
 ```
 
