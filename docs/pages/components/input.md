@@ -154,18 +154,18 @@ A visual indication of the input fields purpose can be given by using an SVG wit
 
 ### Pill button
 
-Use the `rounded-full` utility class to give buttons a pill form.
+Use the `pill` utility class to give buttons a pill form.
 
 <div class="demo flex flex-wrap gap-4">
-  <button class="rounded-full">Send post</button>
-  <button class="neutral rounded-full">Return</button>
-  <button class="success hollow rounded-full">Save profile</button>
+  <button class="pill">Send post</button>
+  <button class="neutral pill">Return</button>
+  <button class="success hollow pill">Save profile</button>
 </div>
 
 ```html
-<button class="rounded-full">Send post</button>
-<button class="neutral rounded-full">Return</button>
-<button class="success hollow rounded-full">Save profile</button>
+<button class="pill">Send post</button>
+<button class="neutral pill">Return</button>
+<button class="success hollow pill">Save profile</button>
 ```
 
 ### Ghost button
@@ -190,17 +190,17 @@ Use the `busy` class to replace the text of a button with a <a href="/components
 
 <div class="demo flex flex-wrap items-center gap-8">
   <button class="busy">Send post</button>
-  <button class="busy neutral rounded-full">Return</button>
+  <button class="busy neutral pill">Return</button>
   <button class="busy success hollow">Save profile</button>
-  <button class="busy alert hollow rounded-full">Delete account</button>
+  <button class="busy alert hollow pill">Delete account</button>
   <button class="busy ghost">Load settings</button>
 </div>
 
 ```html
 <button class="busy">Send post</button>
-<button class="busy neutral rounded-full">Return</button>
+<button class="busy neutral pill">Return</button>
 <button class="busy success hollow">Save profile</button>
-<button class="busy alert hollow rounded-full">Delete account</button>
+<button class="busy alert hollow pill">Delete account</button>
 <button class="busy ghost">Load settings</button>
 ```
 
@@ -228,24 +228,24 @@ Pill buttons are also supported in groups, even on one side only.
 
 <div class="demo flex flex-wrap gap-8">
   <div class="button-group">
-    <button class="rounded-full">Left</button>
+    <button class="pill">Left</button>
     <button>Center</button>
-    <button class="rounded-full">Right</button>
+    <button class="pill">Right</button>
   </div>
   <div class="button-group">
     <button>Select</button>
-    <button class="rounded-full">Next</button>
+    <button class="pill">Next</button>
   </div>
 </div>
 
 ```html
 <div class="button-group">
-  <button class="rounded-full">Left</button>
+  <button class="pill">Left</button>
   <button>Center</button>
-  <button class="rounded-full">Right</button>
+  <button class="pill">Right</button>
 </div>
 <div class="button-group">
   <button>Select</button>
-  <button class="rounded-full">Next</button>
+  <button class="pill">Next</button>
 </div>
 ```

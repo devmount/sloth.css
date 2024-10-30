@@ -91,9 +91,14 @@ select {
     stroke-linecap: round;
     stroke-linejoin: round;
   }
-  &.rounded-full:has(.icon:only-child) {
-    padding: .75rem;
+
+  &.pill {
     border-radius: 9999px;
+
+    &:has(.icon:only-child) {
+      padding: .75rem;
+      border-radius: 9999px;
+    }
   }
 }
 

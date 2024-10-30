@@ -185,9 +185,14 @@ a.button {
     stroke-linecap: round;
     stroke-linejoin: round;
   }
-  &.rounded-full:has(.icon:only-child) {
-    padding: .75rem;
+
+  &.pill {
     border-radius: 9999px;
+
+    &:has(.icon:only-child) {
+      padding: .75rem;
+      border-radius: 9999px;
+    }
   }
 }
 
@@ -216,11 +221,11 @@ a.button {
     }
   }
 
-  &:has(.rounded-full:first-child) {
+  &:has(.pill:first-child) {
     border-top-left-radius: 9999px;
     border-bottom-left-radius: 9999px;
   }
-  &:has(.rounded-full:last-child) {
+  &:has(.pill:last-child) {
     border-top-right-radius: 9999px;
     border-bottom-right-radius: 9999px;
   }
