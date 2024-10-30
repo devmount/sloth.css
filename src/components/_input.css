@@ -24,6 +24,11 @@ select {
       height: 1.625rem;
     }
   }
+
+  /* Pill */
+  &.pill {
+    border-radius: 9999px;
+  }
 }
 
 .input {
@@ -79,25 +84,6 @@ select {
         background-color: transparent;
         box-shadow: none;
       }
-    }
-  }
-
-  & > .icon {
-    width: 1.5em;
-    height: 1.5em;
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 1.5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
-
-  &.pill {
-    border-radius: 9999px;
-
-    &:has(.icon:only-child) {
-      padding: .75rem;
-      border-radius: 9999px;
     }
   }
 }

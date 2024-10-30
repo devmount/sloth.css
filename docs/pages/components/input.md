@@ -152,20 +152,20 @@ A visual indication of the input fields purpose can be given by using an SVG wit
 </div>
 ```
 
-### Pill button
+### Pill input
 
-Use the `pill` utility class to give buttons a pill form.
+Use the `pill` class to give text inputs and selects a fully rounded pill form.
 
-<div class="demo flex flex-wrap gap-4">
-  <button class="pill">Send post</button>
-  <button class="neutral pill">Return</button>
-  <button class="success hollow pill">Save profile</button>
+<div class="demo flex gap-4">
+  <input type="text" class="pill" />
+  <select class="pill">
+    <option></option>
+  </select>
 </div>
 
 ```html
-<button class="pill">Send post</button>
-<button class="neutral pill">Return</button>
-<button class="success hollow pill">Save profile</button>
+<input type="text" class="pill" />
+<select class="pill">...</select>
 ```
 
 ### Ghost button
