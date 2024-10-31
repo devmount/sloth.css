@@ -67,6 +67,13 @@ select {
   padding: .75rem 1rem;
   font-size: .875rem;
 }
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%2370777f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 9l4 -4l4 4' /%3E%3Cpath d='M16 15l-4 4l-4 -4' /%3E%3C/svg%3E");
+  background-position: right .25rem center;
+  background-repeat: no-repeat;
+  padding-right: 2rem;
+}
 input[type="number"],
 input[type="date"],
 input[type="datetime-local"] {

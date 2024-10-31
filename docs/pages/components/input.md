@@ -252,28 +252,49 @@ Use the `input-group` class on an element containing input elements or wrapper e
 </div>
 ```
 
-Pill buttons are also supported in groups, even on one side only.
+Pill inputs are also supported in groups, even on one side only.
 
 <div class="demo flex flex-wrap gap-8">
-  <div class="button-group">
-    <button class="pill">Left</button>
-    <button>Center</button>
-    <button class="pill">Right</button>
+  <div class="input-group">
+    <select class="pill">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+    <select>
+      <option>January</option>
+      <option>February</option>
+      <option>March</option>
+    </select>
+    <select class="pill">
+      <option>2077</option>
+      <option>2078</option>
+      <option>2079</option>
+    </select>
   </div>
-  <div class="button-group">
-    <button>Select</button>
-    <button class="pill">Next</button>
+  <div class="input-group">
+    <select>
+      <option>T-Shirt</option>
+      <option>Jacket</option>
+      <option>Pullover</option>
+    </select>
+    <select class="pill">
+      <option>XS</option>
+      <option>M</option>
+      <option>XL</option>
+    </select>
   </div>
 </div>
 
 ```html
-<div class="button-group">
-  <button class="pill">Left</button>
-  <button>Center</button>
-  <button class="pill">Right</button>
+<div class="input-group">
+  <select class="pill">...</select>
+  <select>...</select>
+  <select class="pill">...</select>
 </div>
-<div class="button-group">
-  <button>Select</button>
-  <button class="pill">Next</button>
+
+<div class="input-group">
+  <select>...</select>
+  <select class="pill">...</select>
 </div>
 ```
