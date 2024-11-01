@@ -10,7 +10,7 @@ The most lazy usage of Sloth.css is to do nothing. Sloth.css offers drop-in styl
 
 Here is an example of what a simple newsletter subscription form looks like:
 
-<div class="demo">
+<div class="demo flex items-end">
   <label>
     <span>Subscribe to our newsletter</span>
     <input type="email" placeholder="mail@example.org" />

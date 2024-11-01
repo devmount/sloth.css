@@ -60,7 +60,8 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"],
 button,
-a.button {
+a.button,
+.input {
   &.busy {
     color: transparent;
     position: relative;
@@ -78,6 +79,11 @@ a.button {
       border-top-color: transparent;
       animation: rotate 1s 0s infinite linear normal;
       box-sizing: border-box;
+    }
+
+    &:is(.input)::before {
+      border-color: var(--color-neutral);
+      border-top-color: transparent;
     }
 
     &.hollow {

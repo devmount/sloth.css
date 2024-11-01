@@ -40,10 +40,9 @@ Use the `breadcrumb` class on an ordered list to format the contained elements.
 </ol>
 ```
 
-### Change the separator symbol
+### Separator symbol
 
-Per default, breadcrumbs are separated with a `/`
-Use the `--breadcrumb-symbol` custom property to change the symbol.
+Per default, breadcrumbs are separated with a `/`. Use the `--breadcrumb-symbol` custom property on the list element to change the symbol.
 
 <div class="demo">
   <ol class="breadcrumb" style="--breadcrumb-symbol: '·'">

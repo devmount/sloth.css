@@ -8,7 +8,7 @@ tags: variants accent neutral success alert disabled size secondary outline link
 
 Buttons indicate actions the user can trigger on click. Buttons already have a base styling via the drop-in core of Sloth.css. However, this CSS component extends those by several variations, sizes, groups and more.
 
-### Button variants
+### Colors
 
 The default button without any class is already utilizing accent coloring. In addition, you can use `neutral`, `success` and `alert` classes for the corresponding colors.
 
@@ -42,7 +42,7 @@ Using the `disabled` attribute deactivates buttons. If you're using `onclick` ev
 <button class="alert" disabled>Delete account</button>
 ```
 
-### Button sizes
+### Sizes
 
 Use the `sm` or `lg` classes to reduce or increase the font size and padding of a button. Note that the actual width and height are still depending on the buttons content (content won't overflow the button but stretch it).
 
@@ -108,18 +108,18 @@ Use the `button` class to apply all button styles on `<a>` tags. That way you ca
 
 ### Pill button
 
-Use the `rounded-full` utility class to give buttons a pill form.
+Use the `pill` class to give buttons a fully rounded pill form.
 
 <div class="demo flex flex-wrap gap-4">
-  <button class="rounded-full">Send post</button>
-  <button class="neutral rounded-full">Return</button>
-  <button class="success hollow rounded-full">Save profile</button>
+  <button class="pill">Send post</button>
+  <button class="neutral pill">Return</button>
+  <button class="success hollow pill">Save profile</button>
 </div>
 
 ```html
-<button class="rounded-full">Send post</button>
-<button class="neutral rounded-full">Return</button>
-<button class="success hollow rounded-full">Save profile</button>
+<button class="pill">Send post</button>
+<button class="neutral pill">Return</button>
+<button class="success hollow pill">Save profile</button>
 ```
 
 ### Ghost button
@@ -140,9 +140,9 @@ Use the `ghost` class to keep button sizing without background color or border. 
 
 ### Icon button
 
-Sloth.css doesn't ship any icons, since there are lots of icon libraries out there. However SVG icons are directly supported using the `icon` class. Buttons are set to _inline-flex_ per default, so multiple elements inside buttons are nicely aligned next to each other.
+Sloth.css doesn't ship any icons, since there are lots of icon libraries out there. However SVG icons are directly supported using the `icon` class. Buttons are set to *inline-flex* per default, so multiple elements inside buttons are nicely aligned next to each other.
 
-The beautiful <a href="https://tabler.io/icons" target="_blank">Tabler Icons</a> work well with Sloth.css for example. You can also create icon buttons without any text. You might want to use the `rounded-full` utility for those.
+The beautiful <a href="https://tabler.io/icons" target="_blank">Tabler Icons</a> work well with Sloth.css for example. You can also create icon buttons without any text. You might want to use the `pill` class for those.
 
 <div class="demo flex flex-wrap gap-4">
   <button>
@@ -153,7 +153,7 @@ The beautiful <a href="https://tabler.io/icons" target="_blank">Tabler Icons</a>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
     Donations
   </button>
-  <button class="hollow neutral rounded-full">
+  <button class="hollow neutral pill">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
   </button>
 </div>
@@ -167,7 +167,7 @@ The beautiful <a href="https://tabler.io/icons" target="_blank">Tabler Icons</a>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">...</svg>
   Donations
 </button>
-<button class="hollow neutral rounded-full">
+<button class="hollow neutral pill">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">...</svg>
 </button>
 ```
@@ -178,17 +178,17 @@ Use the `busy` class to replace the text of a button with a <a href="/components
 
 <div class="demo flex flex-wrap items-center gap-8">
   <button class="busy">Send post</button>
-  <button class="busy neutral rounded-full">Return</button>
+  <button class="busy neutral pill">Return</button>
   <button class="busy success hollow">Save profile</button>
-  <button class="busy alert hollow rounded-full">Delete account</button>
+  <button class="busy alert hollow pill">Delete account</button>
   <button class="busy ghost">Load settings</button>
 </div>
 
 ```html
 <button class="busy">Send post</button>
-<button class="busy neutral rounded-full">Return</button>
+<button class="busy neutral pill">Return</button>
 <button class="busy success hollow">Save profile</button>
-<button class="busy alert hollow rounded-full">Delete account</button>
+<button class="busy alert hollow pill">Delete account</button>
 <button class="busy ghost">Load settings</button>
 ```
 
@@ -216,24 +216,24 @@ Pill buttons are also supported in groups, even on one side only.
 
 <div class="demo flex flex-wrap gap-8">
   <div class="button-group">
-    <button class="rounded-full">Left</button>
+    <button class="pill">Left</button>
     <button>Center</button>
-    <button class="rounded-full">Right</button>
+    <button class="pill">Right</button>
   </div>
   <div class="button-group">
     <button>Select</button>
-    <button class="rounded-full">Next</button>
+    <button class="pill">Next</button>
   </div>
 </div>
 
 ```html
 <div class="button-group">
-  <button class="rounded-full">Left</button>
+  <button class="pill">Left</button>
   <button>Center</button>
-  <button class="rounded-full">Right</button>
+  <button class="pill">Right</button>
 </div>
 <div class="button-group">
   <button>Select</button>
-  <button class="rounded-full">Next</button>
+  <button class="pill">Next</button>
 </div>
 ```

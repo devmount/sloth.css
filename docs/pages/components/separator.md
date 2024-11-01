@@ -8,7 +8,7 @@ tags: horizontal vertical
 
 Separators divide content into different parts providing visual breaks for the user. They can be used horizontally and vertically.
 
-### Horizontal separators
+### Horizontal separator
 
 Use the `separator` class to add a horizontal line. Every content added to that element appears as its label, even single spaces. No content will result in a single horizontal line.
 
@@ -30,7 +30,7 @@ Use the `separator` class to add a horizontal line. Every content added to that 
 <p>Ut scelerisque ...</p>
 ```
 
-### Vertical separators
+### Vertical separator
 
 Use the `separator` and the `vertical` class to add a vertical line. Every content added to that element appears as its label. No content will result in a single vertical line.
 

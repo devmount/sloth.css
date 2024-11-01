@@ -30,7 +30,7 @@ Use the `toast callout` classes to create a toast notification. The toast elemen
 <div class="toast callout active">...</div>
 ```
 
-### Position toasts
+### Position
 
 Use the `br`, `tr`, `tl` and `bl` classes to position the toast notification on one of the four screen corners. The bottom right corner is the default position.
 
@@ -59,7 +59,7 @@ Use the `br`, `tr`, `tl` and `bl` classes to position the toast notification on 
 <div class="toast callout br">...</div>
 ```
 
-### Toast variants
+### Colors
 
 Use the `accent`, `success` or `alert` classes to give the toast notification a different meaning.
 

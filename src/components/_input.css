@@ -1,0 +1,177 @@
+input:not([type="button"]):not([type="reset"]):not([type="submit"]),
+textarea,
+select,
+.affix {
+  /* Size */
+  &.sm {
+    font-size: .75rem;
+
+    &:is(select) {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2370777f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 9l4 -4l4 4' /%3E%3Cpath d='M16 15l-4 4l-4 -4' /%3E%3C/svg%3E");
+      padding: .5rem 1.75rem .5rem .75rem;
+    }
+    &:not([type="checkbox"]):not([type="radio"]):not(select) {
+      padding: .5rem .75rem;
+    }
+    &[type="checkbox"], &[type="radio"] {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+  &.lg {
+    font-size: 1.125rem;
+
+    &:is(select) {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2370777f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 9l4 -4l4 4' /%3E%3Cpath d='M16 15l-4 4l-4 -4' /%3E%3C/svg%3E");
+      padding: 1rem 2.25rem 1rem 1.25rem;
+    }
+    &:not([type="checkbox"]):not([type="radio"]):not(select) {
+      padding: 1rem 1.25rem;
+    }
+    &[type="checkbox"], &[type="radio"] {
+      width: 1.625rem;
+      height: 1.625rem;
+    }
+  }
+
+  /* Pill */
+  &.pill {
+    border-radius: 9999px;
+
+    &:is(select) {
+      background-position: right .5rem center;
+    }
+  }
+
+  /* Ghost */
+  &.ghost {
+    background-color: transparent;
+    box-shadow: none;
+
+    &:not(:disabled):not(.busy) {
+      &:hover, &:focus, &:focus-within, &:active {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.input {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+
+  input:not([type="button"]):not([type="reset"]):not([type="submit"]),
+  textarea,
+  select {
+    flex-grow: 1;
+  }
+
+  /* Help text */
+  & > .help {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: var(--color-text-muted);
+    padding: .25rem;
+  }
+
+  /* Affix icons */
+  & > .icon {
+    position: absolute;
+    top: .625rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    z-index: 15;
+
+    &.prefix {
+      left: .5rem;
+    }
+    &.suffix {
+      right: .5rem;
+    }
+  }
+  &:has(.sm) > .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    top: .425rem;
+  }
+  &:has(.lg) > .icon {
+    width: 2rem;
+    height: 2rem;
+    top: .825rem;
+  }
+  &:has(.icon.prefix) > input:not([type="button"]):not([type="reset"]):not([type="submit"]),
+  &:has(.icon.prefix) > select {
+    padding-left: 2.5rem;
+  }
+  &:has(.icon.prefix) > select.sm:is(select) {
+    padding-left: 2.125rem;
+  }
+  &:has(.icon.prefix) > select.lg:is(select) {
+    padding-left: 2.875rem;
+  }
+  &:has(.icon.suffix) > input:not([type="button"]):not([type="reset"]):not([type="submit"]) {
+    padding-right: 2.5rem;
+  }
+  &:has(.icon.suffix) > select {
+    background-position: right 2rem center;
+    padding-right: 3.5rem;
+  }
+  &:has(.icon.suffix) > select.sm:is(select) {
+    background-position: right 1.875rem center;
+    padding-right: 3rem;
+  }
+  &:has(.icon.suffix) > select.lg:is(select) {
+    background-position: right 2.5rem center;
+    padding-right: 4rem;
+  }
+}
+
+.input-group {
+  display: flex;
+  gap: 1px;
+
+  input:not([type="button"]):not([type="reset"]):not([type="submit"]),
+  textarea,
+  select,
+  .affix {
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+  }
+
+  &:has(.pill:first-child) {
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+  &:has(.pill:last-child) {
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+  }
+
+  .affix {
+    display: inline-block;
+    border-radius: .25rem;
+    padding: .75rem 1rem;
+    font-size: .875rem;
+
+    &:not(.ghost) {
+      background-color: var(--color-bg-base);
+      box-shadow: var(--color-bg-muted) var(--shadow-border);
+    }
+  }
+}
