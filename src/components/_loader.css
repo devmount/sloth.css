@@ -81,6 +81,11 @@ a.button,
       box-sizing: border-box;
     }
 
+    &:is(.input)::before {
+      border-color: var(--color-neutral);
+      border-top-color: transparent;
+    }
+
     &.hollow {
       &, &:hover {
         color: transparent;

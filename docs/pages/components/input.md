@@ -405,7 +405,7 @@ The `ghost` class works on affixes too if you just want to create spaces contain
 
 <div class="demo flex flex-wrap gap-8">
   <div class="input-group">
-    <span class="affix ghost">Filter</span>
+    <span class="affix ghost">From</span>
     <input type="number" placeholder="Min" />
     <span class="affix ghost">to</span>
     <input type="number" placeholder="Max" />
@@ -414,7 +414,7 @@ The `ghost` class works on affixes too if you just want to create spaces contain
 
 ```html
 <div class="input-group">
-  <span class="affix ghost">Filter</span>
+  <span class="affix ghost">From</span>
   <input type="number" placeholder="Min" />
   <span class="affix ghost">to</span>
   <input type="number" placeholder="Max" />
