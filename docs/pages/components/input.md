@@ -98,7 +98,7 @@ To provide a longer description on inputs as guide for users, you can wrap the i
   <label for="user">Username</label>
   <div class="input">
     <input type="text" id="user" />
-    <span class="help">Can be either your handle or your email address</span>
+    <span class="help">Might be your email address</span>
   </div>
 </div>
 
@@ -106,7 +106,7 @@ To provide a longer description on inputs as guide for users, you can wrap the i
 <label for="user">Username</label>
 <div class="input">
   <input type="text" id="user" />
-  <span class="help">Can be either your handle or your email address</span>
+  <span class="help">Might be your email address</span>
 </div>
 ```
 
@@ -213,11 +213,11 @@ Use the `input busy` classes to overlay the input with a <a href="/components/lo
 
 Use the `input-group` class on an element containing input elements or wrapper elements having the `input` class, to group inputs to a single logical unit.
 
-<div class="demo flex flex-wrap gap-4">
-  <div class="input-group">
-    <input type="number" placeholder="DD" />
-    <input type="number" placeholder="MM" />
-    <input type="number" placeholder="YYYY" />
+<div class="demo flex-col gap-4">
+  <div class="input-group sm">
+    <input type="text" placeholder="DD" />
+    <input type="text" placeholder="MM" />
+    <input type="text" placeholder="YYYY" />
   </div>
   <div class="input-group">
     <select>
@@ -240,9 +240,9 @@ Use the `input-group` class on an element containing input elements or wrapper e
 
 ```html
 <div class="input-group">
-  <input type="number" placeholder="DD" />
-  <input type="number" placeholder="MM" />
-  <input type="number" placeholder="YYYY" />
+  <input type="text" placeholder="DD" />
+  <input type="text" placeholder="MM" />
+  <input type="text" placeholder="YYYY" />
 </div>
 
 <div class="input-group">
@@ -296,5 +296,123 @@ Pill inputs are also supported in groups, even on one side only.
 <div class="input-group">
   <select>...</select>
   <select class="pill">...</select>
+</div>
+```
+
+### Affixes
+
+Input groups can contain non-input elements, called affixes. Use the `affix` class inside a `input-group` container to create a group element for additional text labelling like units or other input related data.
+
+<div class="demo flex flex-wrap gap-8">
+  <div class="input-group">
+    <span class="affix">https://</span>
+    <input type="text" placeholder="your-website.com" />
+  </div>
+</div>
+
+```html
+<div class="input-group">
+  <span class="affix">https://</span>
+  <input type="text" placeholder="your-website.com" />
+</div>
+```
+
+Like with inputs, you can use `sm` and `lg` on affixes to make them smaller or larger.
+
+<div class="demo flex flex-wrap items-start gap-8">
+  <div class="input-group">
+    <select class="sm">
+      <option selected>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+    <span class="affix sm">&mdash;</span>
+    <select class="sm">
+      <option>1</option>
+      <option>2</option>
+      <option selected>3</option>
+    </select>
+  </div>
+  <div class="input-group">
+    <select>
+      <option selected>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+    <span class="affix">&mdash;</span>
+    <select>
+      <option>1</option>
+      <option>2</option>
+      <option selected>3</option>
+    </select>
+  </div>
+  <div class="input-group">
+    <select class="lg">
+      <option selected>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+    <span class="affix lg">&mdash;</span>
+    <select class="lg">
+      <option>1</option>
+      <option>2</option>
+      <option selected>3</option>
+    </select>
+  </div>
+</div>
+
+```html
+<div class="input-group">
+  <select class="sm">...</select>
+  <span class="affix sm">&mdash;</span>
+  <select class="sm">...</select>
+</div>
+
+<div class="input-group">
+  <select>...</select>
+  <span class="affix">&mdash;</span>
+  <select>...</select>
+</div>
+
+<div class="input-group">
+  <select class="lg">...</select>
+  <span class="affix lg">&mdash;</span>
+  <select class="lg">...</select>
+</div>
+```
+
+The `pill` class can be used on affixes too, to create visually show the start and end of the group even more.
+
+<div class="demo flex flex-wrap gap-8">
+  <div class="input-group">
+    <span class="affix pill">github.com/</span>
+    <input class="pill" type="text" placeholder="your-handle" />
+  </div>
+</div>
+
+```html
+<div class="input-group">
+  <span class="affix pill">github.com/</span>
+  <input class="pill" type="text" placeholder="your-handle" />
+</div>
+```
+
+The `ghost` class works on affixes too if you just want to create spaces containing text.
+
+<div class="demo flex flex-wrap gap-8">
+  <div class="input-group">
+    <span class="affix ghost">Filter</span>
+    <input type="number" placeholder="Min" />
+    <span class="affix ghost">to</span>
+    <input type="number" placeholder="Max" />
+  </div>
+</div>
+
+```html
+<div class="input-group">
+  <span class="affix ghost">Filter</span>
+  <input type="number" placeholder="Min" />
+  <span class="affix ghost">to</span>
+  <input type="number" placeholder="Max" />
 </div>
 ```
