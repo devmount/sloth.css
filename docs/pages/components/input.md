@@ -129,25 +129,7 @@ A visual indication of the input fields purpose can be given by using an SVG wit
   </div>
   <div class="input w-1/2">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon prefix"><path d="M9.5 3h5a1.5 1.5 0 0 1 1.5 1.5a3.5 3.5 0 0 1 -3.5 3.5h-1a3.5 3.5 0 0 1 -3.5 -3.5a1.5 1.5 0 0 1 1.5 -1.5z" /><path d="M4 17v-1a8 8 0 1 1 16 0v1a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /></svg>
-    <select class="sm">
-      <option>1.000</option>
-      <option>25.000</option>
-      <option>50.000</option>
-    </select>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon suffix"><path d="M17.2 7a6 7 0 1 0 0 10" /><path d="M13 10h-8m0 4h8" /></svg>
-  </div>
-  <div class="input w-1/2">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon prefix"><path d="M9.5 3h5a1.5 1.5 0 0 1 1.5 1.5a3.5 3.5 0 0 1 -3.5 3.5h-1a3.5 3.5 0 0 1 -3.5 -3.5a1.5 1.5 0 0 1 1.5 -1.5z" /><path d="M4 17v-1a8 8 0 1 1 16 0v1a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /></svg>
     <select>
-      <option>1.000</option>
-      <option>25.000</option>
-      <option>50.000</option>
-    </select>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon suffix"><path d="M17.2 7a6 7 0 1 0 0 10" /><path d="M13 10h-8m0 4h8" /></svg>
-  </div>
-  <div class="input w-1/2">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon prefix"><path d="M9.5 3h5a1.5 1.5 0 0 1 1.5 1.5a3.5 3.5 0 0 1 -3.5 3.5h-1a3.5 3.5 0 0 1 -3.5 -3.5a1.5 1.5 0 0 1 1.5 -1.5z" /><path d="M4 17v-1a8 8 0 1 1 16 0v1a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /></svg>
-    <select class="lg">
       <option>1.000</option>
       <option>25.000</option>
       <option>50.000</option>
