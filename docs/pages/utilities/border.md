@@ -34,6 +34,14 @@ Use the `rounded` and `rounded-full` classes to control the border radius.
 ```
 
 ```css
-.rounded      { border-radius: .25rem; } /* 4px */
-.rounded-full { border-radius: 9999px; }
+.rounded      { border-radius: var(--border-radius); }
+.rounded-full { border-radius: 9999px;               }
+```
+
+The border radius can be adjusted or even removed (setting it to `0`) by the corresponding custom property:
+
+```css
+:root {
+  --border-radius: .25rem; /* 4px */
+}
 ```

@@ -56,4 +56,6 @@
   --shadow-inset:  0 2px .25rem 0 inset;
   --shadow-float:  0 .25rem .75rem -.4rem;
 
+  /* Borders */
+  --border-radius: .25rem;
 }

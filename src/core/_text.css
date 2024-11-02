@@ -38,7 +38,7 @@ a {
   color: var(--color-link);
   text-underline-offset: 0;
   transition: var(--transition-color), var(--transition-underline);
-  border-radius: .25rem;
+  border-radius: var(--border-radius);
 
   &:hover, &:focus, &:focus-within {
     color: var(--color-link-hover);
@@ -146,7 +146,7 @@ var {
 code {
   background: color-mix(in srgb, var(--color-border) 60%, transparent);
   color: var(--color-text-em);
-  border-radius: .25rem;
+  border-radius: var(--border-radius);
   font-family: var(--font-mono);
   font-weight: 400;
   font-size: .875em;

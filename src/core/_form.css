@@ -1,6 +1,6 @@
 /* <fieldset>, <legend> */
 fieldset {
-  border-radius: .25rem;
+  border-radius: var(--border-radius);
   border: 1px solid var(--color-border);
   padding: 1rem;
   display: flex;
@@ -63,7 +63,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 textarea,
 select {
-  border-radius: .25rem;
+  border-radius: var(--border-radius);
   padding: .75rem 1rem;
   font-size: .875rem;
 }
@@ -94,7 +94,7 @@ input[type="radio"] {
   }
 }
 input[type="checkbox"] {
-  border-radius: .25rem;
+  border-radius: var(--border-radius);
   position: relative;
   &::after {
     border: 2px solid var(--color-bg-page);
@@ -166,7 +166,7 @@ input[type="range"] {
   &::-moz-range-track {
     border: 0;
     background-color: var(--color-bg-base);
-    border-radius: .25rem;
+    border-radius: var(--border-radius);
     box-shadow: var(--color-shadow) var(--shadow-inset);
     height: .5rem;
     padding: 1px 0;
@@ -216,7 +216,7 @@ input[type="reset"],
 button {
   appearance: none;
   background-color: var(--color-bg-accent);
-  border-radius: .25rem;
+  border-radius: var(--border-radius);
   border: 0;
   box-shadow: black var(--shadow-float);
   box-sizing: border-box;

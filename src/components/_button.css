@@ -6,7 +6,7 @@ a.button {
   align-items: center;
   appearance: none;
   background-color: var(--color-bg-accent);
-  border-radius: .25rem;
+  border-radius: var(--border-radius);
   border: 0;
   box-shadow: black var(--shadow-float);
   box-sizing: border-box;

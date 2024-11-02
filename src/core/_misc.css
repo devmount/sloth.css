@@ -53,7 +53,7 @@ figure {
 meter {
   appearance: meter;
   background: var(--color-bg-base);
-  border-radius: .25rem;
+  border-radius: var(--border-radius);
   border: 0;
   box-shadow: var(--color-shadow) var(--shadow-inset);
   display: block;
@@ -71,7 +71,7 @@ meter {
   &::-webkit-meter-bar,
   &::-moz-meter-bar {
     background: var(--color-accent);
-    border-radius: .25rem;
+    border-radius: var(--border-radius);
     box-shadow: rgba(0, 0, 0, 0.30) 0 1px 1px 0;
   }
   &::-webkit-meter-optimum-value,
