@@ -1,7 +1,7 @@
 ---
 title: 'Components: Tag - Sloth.css'
 description: Labels for entities or list of selected entries
-tags: variants accent neutral success alert size secondary outline link pill
+tags: variants accent neutral success alert size outline pill
 ---
 
 ## Tag
@@ -20,7 +20,7 @@ Use the `tag` class to created a neutral label element. In addition, you can use
 </div>
 
 ```html
-<span class="tag">Nneutral</span>
+<span class="tag">Neutral</span>
 <span class="tag accent">Accent</span>
 <span class="tag success">Success</span>
 <span class="tag alert">Alert</span>

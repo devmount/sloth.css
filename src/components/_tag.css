@@ -1,4 +1,4 @@
-.tag {
+.tag:not(pre .tag, code .tag) {
   align-items: center;
   color: var(--color-neutral);
   background-color: var(--color-bg-muted);
