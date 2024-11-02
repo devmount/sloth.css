@@ -1,6 +1,6 @@
 /* Border */
 .rounded {
-  border-radius: .25rem;
+  border-radius: var(--border-radius);
 }
 .rounded-full {
   border-radius: 9999px;
