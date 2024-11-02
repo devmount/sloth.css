@@ -1,7 +1,7 @@
 ---
 title: 'Components: Card - Sloth.css'
-description: Static and embedded message boxes
-tags: variants accent success alert neutral symbol
+description: Content container for overview or dashboard pages
+tags: header image footer cta
 ---
 
 ## Card
