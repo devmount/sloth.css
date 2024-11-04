@@ -8,11 +8,21 @@
 
   .step {
     position: relative;
-    display: flex;
-    gap: 1rem;
+    padding-left: 2rem;
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 0;
+
+      & + p {
+        margin-top: 0;
+      }
+    }
 
     &::before {
       content: '';
+      position: absolute;
+      top: .125rem;
+      left: 0;
       width: 1rem;
       height: 1rem;
       border: 2px solid var(--color-neutral);
@@ -24,7 +34,7 @@
       position: absolute;
       height: calc(100%);
       width: 2px;
-      top: 1.125rem;
+      top: 1.25rem;
       left: calc(.5rem + 1px);
       background-color: var(--color-neutral);
     }
