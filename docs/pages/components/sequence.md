@@ -28,7 +28,7 @@ Use the `sequence` class on a container holding child elements with the `step` c
 </ol>
 ```
 
-The `step` elements can contain headings, paragraphs and other elements.
+The `step` elements in vertical sequences can contain headings, paragraphs and other elements.
 
 <div class="demo">
   <ol class="sequence">
@@ -123,7 +123,7 @@ The default sequence steps are neutral. That can be changed by using `accent`, `
 
 ### Horizontal
 
-Use the `sequence horizontal` classes to change the orientation of the sequence to be inline. Horizontal sequences cannot break and long sequences will get a horizontal scrollbar.
+Use the `sequence horizontal` classes to change the orientation of the sequence to be inline. Horizontal sequences cannot break and long sequences will get a horizontal scrollbar. Also only text is supported as step content.
 
 <div class="demo">
   <ol class="sequence horizontal">
