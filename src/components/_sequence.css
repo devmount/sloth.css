@@ -33,7 +33,7 @@
     &:not(:last-child)::after {
       content: '';
       position: absolute;
-      height: calc(100%);
+      height: 100%;
       width: 2px;
       top: 1.125rem;
       left: calc(.25rem + 1px);
@@ -75,6 +75,33 @@
       }
       &:has(~ .step.alert)::after {
         background-color: color-mix(in srgb, var(--color-alert) 60%, transparent);
+      }
+    }
+  }
+
+  &.horizontal {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: thin;
+
+    .step {
+      padding-left: 0;
+      padding-bottom: 1.75rem;
+      text-wrap: nowrap;
+
+      &::before {
+        top: auto;
+        bottom: .25rem;
+        left: .5rem;
+      }
+
+      &:not(:last-child)::after {
+        height: 2px;
+        width: 100%;
+        top: auto;
+        bottom: calc(.5rem + 1px);
+        left: 1.375rem;
       }
     }
   }

@@ -120,3 +120,27 @@ The default sequence steps are neutral. That can be changed by using `accent`, `
   <li class="step alert"><code>-8.19%</code></li>
 </ol>
 ```
+
+### Horizontal
+
+Use the `sequence horizontal` classes to change the orientation of the sequence to be inline. Horizontal sequences cannot break and long sequences will get a horizontal scrollbar.
+
+<div class="demo">
+  <ol class="sequence horizontal">
+    <li class="step accent filled">Initiation</li>
+    <li class="step accent filled">Planning</li>
+    <li class="step accent">Execution</li>
+    <li class="step">Monitoring and Control</li>
+    <li class="step">Closure</li>
+  </ol>
+</div>
+
+```html
+<ol class="sequence horizontal">
+  <li class="step accent filled">Initiation</li>
+  <li class="step accent filled">Planning</li>
+  <li class="step accent">Execution</li>
+  <li class="step">Monitoring and Control</li>
+  <li class="step">Closure</li>
+</ol>
+```
