@@ -21,12 +21,13 @@
     &::before {
       content: '';
       position: absolute;
-      top: .125rem;
+      top: .25rem;
       left: 0;
-      width: 1rem;
-      height: 1rem;
+      width: .75rem;
+      height: .75rem;
       border: 2px solid var(--color-neutral);
       border-radius: 1rem;
+      box-sizing: border-box;
     }
 
     &:not(:last-child)::after {
@@ -34,9 +35,47 @@
       position: absolute;
       height: calc(100%);
       width: 2px;
-      top: 1.25rem;
-      left: calc(.5rem + 1px);
+      top: 1.125rem;
+      left: calc(.25rem + 1px);
+      background-color: color-mix(in srgb, var(--color-neutral) 40%, transparent);
+    }
+
+    &.filled::before {
       background-color: var(--color-neutral);
+    }
+
+    &.accent {
+      &::before {
+        border-color: var(--color-accent);
+      }
+      &.filled::before {
+        background-color: var(--color-accent);
+      }
+      &:has(~ .step.accent)::after {
+        background-color: color-mix(in srgb, var(--color-accent) 60%, transparent);
+      }
+    }
+    &.success {
+      &::before {
+        border-color: var(--color-success);
+      }
+      &.filled::before {
+        background-color: var(--color-success);
+      }
+      &:has(~ .step.success)::after {
+        background-color: color-mix(in srgb, var(--color-success) 60%, transparent);
+      }
+    }
+    &.alert {
+      &::before {
+        border-color: var(--color-alert);
+      }
+      &.filled::before {
+        background-color: var(--color-alert);
+      }
+      &:has(~ .step.alert)::after {
+        background-color: color-mix(in srgb, var(--color-alert) 60%, transparent);
+      }
     }
   }
 }
