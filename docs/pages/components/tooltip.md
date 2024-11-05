@@ -1,146 +1,51 @@
 ---
 title: 'Components: Tooltip - Sloth.css'
 description: Additional information for elements on hover or focus
-tags: hover information details description top left right bottom
+tags: hover information details description top left right bottom neutral accent success alert
 ---
 
 ## Tooltip
 
 A tooltip provides additional information for an element on hover or focus.
 
-### Vertical
+### Position
 
-Use the `sequence` class on a container holding child elements with the `step` class to create a vertical sequence.
+Use the `data-tooltip` attribute on any element to attach a tooltip that appears above the element on hover or focus. Linebreaks can be used too.
 
 <div class="demo">
-  <ol class="sequence">
-    <li class="step">2077</li>
-    <li class="step">2078</li>
-    <li class="step">2079</li>
-  </ol>
+  <button data-tooltip="Initiate self-destruction">I'm harmless</button>
 </div>
 
 ```html
-<ol class="sequence">
-  <li class="step">2077</li>
-  <li class="step">2078</li>
-  <li class="step">2079</li>
-</ol>
+<button data-tooltip="Initiate self-destruction">I'm harmless</button>
 ```
 
-The `step` elements in vertical sequences can contain headings, paragraphs and other elements.
+To change position, use the `tooltip-left`, `tooltip-bottom` or `tooltip-right` classes accordingly.
 
 <div class="demo">
-  <ol class="sequence">
-    <li class="step">
-      <h6>v1.0.0</h6>
-      <p>First stable release</p>
-    </li>
-    <li class="step">
-      <h6>v0.2.0</h6>
-      <p>Further features entering beta</p>
-    </li>
-    <li class="step">
-      <h6>v0.1.0</h6>
-      <p>Initial release</p>
-    </li>
-  </ol>
+  <button class="tooltip-left" data-tooltip="I'm over here!">Left</button>
+  <button class="tooltip-bottom" data-tooltip="I'm over here!">Bottom</button>
+  <button class="tooltip-right" data-tooltip="I'm over here!">Right</button>
 </div>
 
 ```html
-<ol class="sequence">
-  <li class="step">
-    <h6>v1.0.0</h6>
-    <p>First stable release</p>
-  </li>
-  <li class="step">
-    <h6>v0.2.0</h6>
-    <p>Further features entering beta</p>
-  </li>
-  <li class="step">
-    <h6>v0.1.0</h6>
-    <p>Initial release</p>
-  </li>
-</ol>
-```
-
-### Filled
-
-To make one or more steps stand out, the `filled` class can be used to fill the bullet point.
-
-<div class="demo">
-  <ol class="sequence">
-    <li class="step">2077</li>
-    <li class="step">2078</li>
-    <li class="step filled">2079</li>
-  </ol>
-</div>
-
-```html
-<ol class="sequence">
-  <li class="step">2077</li>
-  <li class="step">2078</li>
-  <li class="step filled">2079</li>
-</ol>
+<button class="tooltip-left" data-tooltip="I'm over here!">Left</button>
+<button class="tooltip-bottom" data-tooltip="I'm over here!">Bottom</button>
+<button class="tooltip-right" data-tooltip="I'm over here!">Right</button>
 ```
 
 ### Colors
 
-The default sequence steps are neutral. That can be changed by using `accent`, `success` and `alert` classes for the corresponding colors. The connection line color adapts to siblings sharing the same color.
-
-<div class="demo flex flex-wrap gap-8">
-  <ol class="sequence">
-    <li class="step accent filled">2079</li>
-    <li class="step accent">2078</li>
-    <li class="step">2077</li>
-    <li class="step">2076</li>
-  </ol>
-  <ol class="sequence">
-    <li class="step success filled"><code>+9.76%</code></li>
-    <li class="step success"><code>+5.13%</code></li>
-    <li class="step"><code>+0.01%</code></li>
-    <li class="step alert"><code>-2.77%</code></li>
-    <li class="step alert"><code>-8.19%</code></li>
-  </ol>
-</div>
-
-```html
-<ol class="sequence">
-  <li class="step accent filled">2079</li>
-  <li class="step accent">2078</li>
-  <li class="step">2077</li>
-  <li class="step">2076</li>
-</ol>
-
-<ol class="sequence">
-  <li class="step success filled"><code>+9.76%</code></li>
-  <li class="step success"><code>+5.13%</code></li>
-  <li class="step"><code>+0.01%</code></li>
-  <li class="step alert"><code>-2.77%</code></li>
-  <li class="step alert"><code>-8.19%</code></li>
-</ol>
-```
-
-### Horizontal
-
-Use the `sequence horizontal` classes to change the orientation of the sequence to be inline. Horizontal sequences cannot break and long sequences will get a horizontal scrollbar. Also only text is supported as step content.
+Tooltips are neutral by default, but can have a different color using the `tooltip-accent`, `tooltip-success` or `tooltip-alert` classes.
 
 <div class="demo">
-  <ol class="sequence horizontal">
-    <li class="step accent filled">Initiation</li>
-    <li class="step accent filled">Planning</li>
-    <li class="step accent">Execution</li>
-    <li class="step">Monitoring and Control</li>
-    <li class="step">Closure</li>
-  </ol>
+  <button class="accent tooltip-accent" data-tooltip="I'm important!">Accent</button>
+  <button class="success tooltip-success" data-tooltip="I'm successful!">Success</button>
+  <button class="alert tooltip-alert" data-tooltip="I'm alarming!">Alert</button>
 </div>
 
 ```html
-<ol class="sequence horizontal">
-  <li class="step accent filled">Initiation</li>
-  <li class="step accent filled">Planning</li>
-  <li class="step accent">Execution</li>
-  <li class="step">Monitoring and Control</li>
-  <li class="step">Closure</li>
-</ol>
+<button class="accent tooltip-accent" data-tooltip="I'm important!">Accent</button>
+<button class="success tooltip-success" data-tooltip="I'm successful!">Success</button>
+<button class="alert tooltip-alert" data-tooltip="I'm alarming!">Alert</button>
 ```

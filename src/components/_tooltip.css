@@ -1,3 +1,76 @@
-.tooltip {
+[data-tooltip] {
   position: relative;
+
+  &::after {
+    background-color: color-mix(in srgb, var(--color-text-base) 75%, transparent);
+    border-radius: var(--border-radius);
+    bottom: 100%;
+    color: var(--color-text-inverted);
+    content: attr(data-tooltip);
+    display: block;
+    left: 50%;
+    max-width: 12rem;
+    opacity: 0;
+    overflow: hidden;
+    padding: .5rem;
+    position: absolute;
+    text-overflow: ellipsis;
+    transform: translate(-50%, .25rem);
+    transition: var(--transition-transform), var(--transition-opacity);
+    white-space: pre;
+    z-index: 50;
+  }
+  &:focus::after,
+  &:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -.25rem);
+  }
+
+  &.tooltip-right {
+    &::after {
+      bottom: 50%;
+      left: 100%;
+      transform: translate(-.25rem, 50%);
+    }
+    &:focus::after,
+    &:hover::after {
+      transform: translate(.25rem, 50%);
+    }
+  }
+  &.tooltip-bottom {
+    &::after {
+      bottom: auto;
+      top: 100%;
+      transform: translate(-50%, -.25rem);
+    }
+    &:focus::after,
+    &:hover::after {
+      transform: translate(-50%, .25rem);
+    }
+  }
+  &.tooltip-left {
+    &::after {
+      bottom: 50%;
+      left: auto;
+      right: 100%;
+      transform: translate(.25rem, 50%);
+    }
+    &:focus::after,
+    &:hover::after {
+      transform: translate(-.25rem, 50%);
+    }
+  }
+
+  &.tooltip-accent::after {
+    background-color: color-mix(in srgb, var(--color-accent) 50%, transparent);
+    color: var(--color-text-dark);
+  }
+  &.tooltip-success::after {
+    background-color: color-mix(in srgb, var(--color-success) 50%, transparent);
+    color: var(--color-text-dark);
+  }
+  &.tooltip-alert::after {
+    background-color: color-mix(in srgb, var(--color-alert) 50%, transparent);
+    color: var(--color-text-dark);
+  }
 }
