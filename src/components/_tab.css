@@ -1,10 +1,44 @@
 .tab-group {
   background-color: var(--color-bg-base);
-  align-items: center;
-  display: flex;
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
-  border: 1px solid var(--color-neutral);
-  gap: .25rem;
-  padding: .125rem;
+  padding: .5rem .5rem 0 .5rem;
+  
+  & > ol {
+    gap: .5rem;
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    & > li {
+      padding: .5rem .75rem;
+      cursor: default;
+      border-top-left-radius: var(--border-radius);
+      border-top-right-radius: var(--border-radius);
+      border-top: 2px solid transparent;
+      opacity: .75;
+      transition: var(--transition-color), var(--transition-opacity);
+
+      &:not(.active) {
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+          border-top-color: var(--color-neutral);
+        }
+      }
+
+      &.active {
+        opacity: 1;
+        border-top-color: var(--color-accent);
+        background-color: var(--color-bg-page);
+      }
+    }
+  }
+}
+
+.tab-panel {
+  padding: 1rem .5rem 0 .5rem;
 }
