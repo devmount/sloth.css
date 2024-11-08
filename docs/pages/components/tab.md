@@ -8,9 +8,9 @@ tags: variants accent neutral success alert size outline pill
 
 A tab navigation lets users quickly switch between content sections.
 
-### Colors
+### Position
 
-Use the `tag` class to created a neutral label element. In addition, you can use `accent`, `success` and `alert` classes for the corresponding colors.
+Use the `tab-group` class containing an ordered list for the tab bar and the `tab-panel` class on the actual section content. The `disabled` calls can be used to style a tab inactive.
 
 <div class="demo">
   <nav class="tab-group">
@@ -28,3 +28,5 @@ Use the `tag` class to created a neutral label element. In addition, you can use
 
 ```html
 ```
+
+### Badge
