@@ -65,3 +65,31 @@ The `badge` class also works on button elements.
 <button class="badge neutral pulse" data-badge="99+">Inbox</button>
 <button class="badge" data-badge="new">CSS4 Spec</button>
 ```
+
+### Tab badges
+
+The `badge` class also works on tab navigation list elements.
+
+<div class="demo">
+  <div class="tab-group">
+    <nav>
+      <ol>
+        <li class="active badge" data-badge="11k">Sales</li>
+        <li class="badge-neutral" data-badge="23">Quotes</li>
+        <li>Invoices</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+```html
+<div class="tab-group">
+  <nav>
+    <ol>
+      <li class="active badge" data-badge="11k">Sales</li>
+      <li class="badge-neutral" data-badge="23">Quotes</li>
+      <li>Invoices</li>
+    </ol>
+  </nav>
+</div>
+```

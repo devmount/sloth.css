@@ -192,6 +192,24 @@ Use the `busy` class to replace the text of a button with a <a href="/components
 <button class="busy ghost">Load settings</button>
 ```
 
+### Button badges
+
+The `badge` class can be used to show [badges](/components/badge) on buttons.
+
+<div class="demo flex flex-wrap gap-8">
+  <button class="badge hollow neutral">Inbox</button>
+  <button class="badge hollow" data-badge="12">Inbox</button>
+  <button class="badge neutral pulse" data-badge="99+">Inbox</button>
+  <button class="badge" data-badge="new">CSS4 Spec</button>
+</div>
+
+```html
+<button class="badge hollow neutral">Inbox</button>
+<button class="badge hollow" data-badge="12">Inbox</button>
+<button class="badge neutral pulse" data-badge="99+">Inbox</button>
+<button class="badge" data-badge="new">CSS4 Spec</button>
+```
+
 ### Button group
 
 Use the `button-group` class on an element containing buttons, to group buttons to a single logical unit.

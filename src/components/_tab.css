@@ -1,0 +1,179 @@
+.tab-group {
+  display: flex;
+  flex-direction: column;
+
+  & > nav {
+    background-color: var(--color-bg-base);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    padding: .75rem .75rem 0 .75rem;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    
+    & > ol {
+      gap: .75rem;
+      align-items: center;
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+  
+      & > li {
+        padding: .5rem .75rem;
+        cursor: default;
+        border-top-left-radius: var(--border-radius);
+        border-top-right-radius: var(--border-radius);
+        border-top: 2px solid transparent;
+        opacity: .7;
+        transition: var(--transition-color), var(--transition-opacity);
+        user-select: none;
+  
+        &:not(.active):not(.disabled) {
+          cursor: pointer;
+  
+          &:hover {
+            opacity: 1;
+            border-top-color: var(--color-neutral);
+          }
+        }
+  
+        &.active {
+          opacity: 1;
+          border-top-color: var(--color-accent);
+          background-color: var(--color-bg-page);
+        }
+
+        &.disabled {
+          opacity: .4;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+
+  & > section > div {
+    display: none;
+    padding: 1rem .75rem 0 .75rem;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &:has(nav.bottom) {
+    flex-direction: column-reverse;
+
+    & > nav {
+      border-bottom-left-radius: var(--border-radius);
+      border-bottom-right-radius: var(--border-radius);
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      padding: 0 .75rem .75rem .75rem;
+
+      & > ol {
+        & > li {
+          border-bottom-left-radius: var(--border-radius);
+          border-bottom-right-radius: var(--border-radius);
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          border-bottom: 2px solid transparent;
+          border-top: none;
+
+          &:not(.active):not(.disabled) {
+            &:hover {
+              border-bottom-color: var(--color-neutral);
+            }
+          }
+
+          &.active {
+            border-bottom-color: var(--color-accent);
+          }
+        }
+      }
+    }
+
+    & > section > div {
+      padding: 0 .75rem 1rem .75rem;
+    }
+  }
+
+  &:has(nav.left) {
+    flex-direction: row;
+
+    & > nav {
+      border-bottom-left-radius: var(--border-radius);
+      border-top-left-radius: var(--border-radius);
+      border-top-right-radius: 0;
+      padding: .75rem 0 .75rem .75rem;
+      overflow-x: unset;
+
+      & > ol {
+        flex-direction: column;
+        align-items: stretch;
+
+        & > li {
+          border-bottom-left-radius: var(--border-radius);
+          border-top-left-radius:var(--border-radius);
+          border-top-right-radius: 0;
+          border-left: 2px solid transparent;
+          border-top: none;
+          text-align: right;
+
+          &:not(.active):not(.disabled) {
+            &:hover {
+              border-left-color: var(--color-neutral);
+            }
+          }
+
+          &.active {
+            border-left-color: var(--color-accent);
+          }
+        }
+      }
+    }
+
+    & > section > div {
+      padding: 0 0 .75rem 1rem;
+    }
+  }
+
+  &:has(nav.right) {
+    flex-direction: row-reverse;
+
+    & > nav {
+      border-bottom-right-radius: var(--border-radius);
+      border-top-right-radius: var(--border-radius);
+      border-top-left-radius: 0;
+      padding: .75rem .75rem .75rem 0;
+      overflow-x: unset;
+
+      & > ol {
+        flex-direction: column;
+        align-items: stretch;
+
+        & > li {
+          border-bottom-right-radius: var(--border-radius);
+          border-top-right-radius:var(--border-radius);
+          border-top-left-radius: 0;
+          border-right: 2px solid transparent;
+          border-top: none;
+          text-align: left;
+
+          &:not(.active):not(.disabled) {
+            &:hover {
+              border-right-color: var(--color-neutral);
+            }
+          }
+
+          &.active {
+            border-right-color: var(--color-accent);
+          }
+        }
+      }
+    }
+
+    & > section > div {
+      padding: 0 1rem .75rem 0;
+    }
+  }
+}
