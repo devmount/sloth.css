@@ -88,7 +88,7 @@ const colorToast = (col) => {
 
 // Component: Tab
 const tabList = document.querySelector('#tab-demo > nav > ol');
-const tabPanels = document.querySelectorAll('#tab-demo > section');
+const tabPanels = document.querySelectorAll('#tab-demo > section > div');
 const tabs = tabList
   ? [...tabList.querySelectorAll('li')].filter(t => !t.classList.contains('disabled'))
   : [];
