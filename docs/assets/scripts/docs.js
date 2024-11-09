@@ -86,6 +86,21 @@ const colorToast = (col) => {
   toast.classList.add(col);
 }
 
+// Component: Tab
+const tabList = document.querySelector('#tab-demo > nav > ol');
+const tabPanels = document.querySelectorAll('#tab-demo > section');
+const tabs = tabList.querySelectorAll('li');
+tabs.forEach((tab, i) => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'))
+    tabPanels.forEach(p => p.style.display = 'none');
+    const panel = [...tabPanels][i];
+    panel.style.display = 'block';
+    tab.classList.add('active');
+  });
+});
+
+
 // Ready? Let's go!
 (() => {
   // Handle initial theme mode
