@@ -3,10 +3,10 @@
     background-color: var(--color-bg-base);
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
-    padding: .5rem .5rem 0 .5rem;
+    padding: .75rem .75rem 0 .75rem;
     
     & > ol {
-      gap: .5rem;
+      gap: .75rem;
       align-items: center;
       display: flex;
       list-style-type: none;
@@ -23,7 +23,7 @@
         transition: var(--transition-color), var(--transition-opacity);
         user-select: none;
   
-        &:not(.active) {
+        &:not(.active):not(.disabled) {
           cursor: pointer;
   
           &:hover {
@@ -37,12 +37,21 @@
           border-top-color: var(--color-accent);
           background-color: var(--color-bg-page);
         }
+
+        &.disabled {
+          opacity: .4;
+          cursor: not-allowed;
+        }
       }
     }
   }
 
   & > section {
     display: none;
-    padding: 1rem .5rem 0 .5rem;
+    padding: 1rem .75rem 0 .75rem;
+
+    &.active {
+      display: block;
+    }
   }
 }
