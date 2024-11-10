@@ -1,0 +1,8 @@
+.modal {
+  display: none;
+
+  &:target,
+  &.active {
+    display: block;
+  }
+}
