@@ -16,7 +16,17 @@ Use the `modal` class on a parent element containing a `<nav>` with an ordered l
   <a class="button" href="#modal-demo">Open Modal</a>
 
   <div class="modal" id="modal-demo">
-    test
+    <header>
+      <a href="#close">X</a>
+    </header>
+    <footer>
+      <a class="button hollow neutral" href="#close">
+        Cancel
+      </a>
+      <button class="accent">
+        Save
+      </button>
+    </footer>
   </div>
 </div>
 

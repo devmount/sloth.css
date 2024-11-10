@@ -264,7 +264,7 @@ body {
       }
     }
 
-    footer {
+    & > footer {
       margin: 4rem 0;
     }
   }

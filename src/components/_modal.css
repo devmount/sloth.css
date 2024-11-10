@@ -1,5 +1,15 @@
 .modal {
   display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-bg-base);
+  border-radius: var(--border-radius);
+  width: 100%;
+  max-width: var(--screen-md);
+  z-index: 50;
+  box-shadow: var(--color-shadow) var(--shadow-float);
 
   &:target,
   &.active {
