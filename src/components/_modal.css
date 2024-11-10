@@ -1,18 +1,38 @@
 .modal {
-  display: none;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   background: var(--color-bg-base);
   border-radius: var(--border-radius);
-  width: 100%;
+  box-shadow:
+    var(--color-shadow) 0 .5rem 2rem -.75rem,
+    var(--color-shadow) 0 0 0 9999rem;
+  box-sizing: border-box;
+  display: none;
+  opacity: 0;
+  left: 50%;
   max-width: var(--screen-md);
+  padding: 1rem;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 2rem);
   z-index: 50;
-  box-shadow: var(--color-shadow) var(--shadow-float);
+  transition: var(--transition-color), var(--transition-opacity);
+
+  header {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: .25rem;
+  }
 
   &:target,
   &.active {
     display: block;
+    opacity: 1;
   }
 }
