@@ -1,38 +1,63 @@
 .modal {
-  background: var(--color-bg-base);
-  border-radius: var(--border-radius);
-  box-shadow:
-    var(--color-shadow) 0 .5rem 2rem -.75rem,
-    var(--color-shadow) 0 0 0 9999rem;
-  box-sizing: border-box;
   display: none;
-  opacity: 0;
-  left: 50%;
-  max-width: var(--screen-md);
-  padding: 1rem;
-  position: fixed;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: calc(100% - 2rem);
-  z-index: 50;
-  transition: var(--transition-color), var(--transition-opacity);
 
-  header {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
+  & > .overlay {
+    animation: appear .15s ease-in-out 1;
+    background: var(--color-shadow);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 45;
   }
 
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
-    gap: .25rem;
+  & > section {
+    animation: scale-appear .15s ease-in-out 1;
+    background: var(--color-bg-base);
+    border-radius: var(--border-radius);
+    box-shadow: var(--color-shadow) 0 .5rem 2rem -.75rem;
+    box-sizing: border-box;
+    left: 50%;
+    max-width: var(--screen-md);
+    padding: 1rem 1rem 1rem 1.5rem;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 2rem);
+    z-index: 50;
+  
+    header {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+    }
+  
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: end;
+      gap: .25rem;
+    }
   }
 
   &:target,
   &.active {
     display: block;
+  }
+}
+
+@keyframes appear {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes scale-appear {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+  to {
     opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
