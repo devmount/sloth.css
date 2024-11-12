@@ -26,11 +26,23 @@
     transform: translate(-50%, -50%);
     width: calc(100% - 2rem);
     z-index: 50;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   
     header {
       display: flex;
       align-items: start;
       justify-content: space-between;
+
+      h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 0;
+      }
+    }
+
+    main {
+      max-height: 75vh;
+      overflow-y: auto;
     }
   
     footer {
@@ -44,6 +56,13 @@
   &:target,
   &.active {
     display: block;
+  }
+
+  &.sm > section {
+    max-width: var(--screen-xs);
+  }
+  &.lg > section {
+    max-width: var(--screen-xl);
   }
 }
 
