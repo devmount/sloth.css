@@ -6,7 +6,7 @@
 @import 'components/_card.css';
 @import 'components/_input.css';
 @import 'components/_loader.css';
-/* @import 'components/_modal.css'; */
+@import 'components/_modal.css';
 @import 'components/_separator.css';
 @import 'components/_sequence.css';
 @import 'components/_state.css';

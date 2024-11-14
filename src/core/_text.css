@@ -144,7 +144,7 @@ var {
 
 /* <code> */
 code {
-  background: color-mix(in srgb, var(--color-border) 60%, transparent);
+  background: color-mix(in srgb, var(--color-bg-page) 60%, transparent);
   color: var(--color-text-em);
   border-radius: var(--border-radius);
   font-family: var(--font-mono);
