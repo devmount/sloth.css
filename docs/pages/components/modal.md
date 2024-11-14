@@ -1,7 +1,7 @@
 ---
 title: 'Components: Modal - Sloth.css'
 description: Dialog that needs to be solved
-tags: variants accent neutral success alert size outline pill
+tags: overlay size fullscreen
 ---
 
 ## Modal
