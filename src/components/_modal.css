@@ -43,6 +43,7 @@
     main {
       max-height: 75vh;
       overflow-y: auto;
+      flex-grow: 1;
     }
   
     footer {
@@ -63,6 +64,16 @@
   }
   &.lg > section {
     max-width: var(--screen-xl);
+  }
+  &.fullscreen {
+    & > .overlay {
+      background: var(--color-bg-base);
+    }
+    & > section {
+      max-width: var(--screen-2xl);
+      box-shadow: none;
+      height: 99vh;
+    }
   }
 }
 
