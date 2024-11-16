@@ -65,7 +65,7 @@ Use the `accent`, `success` or `alert` classes to give the toast notification a 
 
 <div class="demo">
   <p>The demo can be seen directly on this page. Use the following controls to change it's color.</p>
-  <div class="control flex gap-2">
+  <div class="control flex flex-wrap gap-2">
     <button class="neutral" onclick="colorToast('neutral')">
       Neutral
     </button>

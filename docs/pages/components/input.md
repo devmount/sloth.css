@@ -12,13 +12,13 @@ Input and select elements enable users to provide text input or make choices. In
 
 Use the `sm` or `lg` classes to reduce or increase the font size and padding of an input or select element.
 
-<div class="demo flex items-center gap-4">
-  <div class="w-1/2 flex-col flex-wrap items-start gap-4">
+<div class="demo flex items-center flex-wrap gap-4">
+  <div class="flex-col items-start gap-4">
     <input type="text" class="sm" placeholder="Small input size" />
     <input type="text" placeholder="Default input size" />
     <input type="text" class="lg" placeholder="Large input size" />
   </div>
-  <div class="w-1/2 flex-col flex-wrap items-start gap-4">
+  <div class="flex-col items-start gap-4">
     <select class="sm">
       <option>Small option size</option>
     </select>
@@ -43,8 +43,8 @@ Use the `sm` or `lg` classes to reduce or increase the font size and padding of 
 
 Those classes work on checkboxes and radio buttons too.
 
-<div class="demo flex items-center gap-4">
-  <div class="w-1/2 flex-col flex-wrap gap-4">
+<div class="demo flex items-center flex-wrap gap-8">
+  <div class="flex-col gap-4">
     <label class="flex-row gap-2 items-center">
       <input type="checkbox" class="sm" checked /> Small choice <code>.sm</code>
     </label>
@@ -55,7 +55,7 @@ Those classes work on checkboxes and radio buttons too.
       <input type="checkbox" class="lg" /> Large choice <code>.lg</code>
     </label>
   </div>
-  <div class="w-1/2 flex-col flex-wrap gap-4">
+  <div class="flex-col gap-4">
     <label class="flex-row gap-2 items-center">
       <input name="radio" type="radio" class="sm" checked /> Small option <code>.sm</code>
     </label>
@@ -218,10 +218,10 @@ Use the `input busy` classes to overlay the input with a <a href="/components/lo
 Use the `input-group` class on an element containing input elements or wrapper elements having the `input` class, to group inputs to a single logical unit.
 
 <div class="demo flex-col gap-4">
-  <div class="input-group sm">
-    <input type="text" placeholder="DD" />
-    <input type="text" placeholder="MM" />
-    <input type="text" placeholder="YYYY" />
+  <div class="input-group">
+    <input class="w-32" type="text" placeholder="DD" />
+    <input class="w-32" type="text" placeholder="MM" />
+    <input class="w-32" type="text" placeholder="YYYY" />
   </div>
   <div class="input-group">
     <select>
@@ -406,9 +406,9 @@ The `ghost` class works on affixes too if you just want to create spaces contain
 <div class="demo flex flex-wrap gap-8">
   <div class="input-group">
     <span class="affix ghost">From</span>
-    <input type="number" placeholder="Min" />
+    <input class="w-32" type="number" placeholder="Min" />
     <span class="affix ghost">to</span>
-    <input type="number" placeholder="Max" />
+    <input class="w-32" type="number" placeholder="Max" />
   </div>
 </div>
 
