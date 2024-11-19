@@ -173,6 +173,9 @@ body {
     }
 
     header {
+      position: sticky;
+      top: 0;
+      background: inherit;
       width: 11rem;
       padding: 1.5rem 1.5rem .5rem 1.5rem;
       display: flex;
