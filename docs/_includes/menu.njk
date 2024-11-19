@@ -72,12 +72,11 @@
     <ul>
       {% for component in meta.components %}
         <li>
-          <a href="/components/{{ component }}">
-            {{ component | capitalize }}
+          <a href="/components/{{ component.slug }}" {{ "class=badge data-badge=JS" if component.js }}>
+            {{ component.slug | capitalize }}
           </a>
         </li>
       {% endfor %}
-      <li class="text-muted">More coming soon</li>
     </ul>
   </li>
 </ul>
