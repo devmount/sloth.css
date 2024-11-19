@@ -19,7 +19,11 @@ export default function (eleventyConfig) {
   // Those can be retrieved by all files existing in the components/ directory
   const slothComponents = [];
   fs.readdirSync('src/components').forEach(file => {
-    slothComponents.push(file.slice(1, -4));
+    const slug = file.slice(1, -4);
+    slothComponents.push({
+      slug: slug,
+      js: ['tab', 'toast'].includes(slug),
+    });
   });
 
   // Init plugins
