@@ -9,20 +9,28 @@
 <p align="center">A drop-in utility component CSS library for lazy mammals.<br />Created by <a href="https://github.com/devmount" target="_blank">devmount</a>.</p>
 </p>
 
-> [!IMPORTANT]  
-> Sloth.css is still heavily work-in-progress. The package is not yet published.
+Check [the documentation](https://slothcss.devmount.com) to see it live in action. Sloth.css aims to be:
 
-Check [the documentation](https://slothcss.devmount.com) to see it in action.
+- Lightweight (7.3KB gzipped)
+- Responsive and mobile-friendly
+- Beautiful per default but heavily customisable
+- Working for all modern browsers
 
 ## Installation
 
-Include the following CSS file in your HTML head to get the complete package (drop-in core styles, utility classes and CSS components):
+See the [installation instructions](https://slothcss.devmount.com/getting-started/installation) for different setup options. Add it to your project's dependencies:
+
+```bash
+npm i @devmount/sloth.css
+```
+
+Or for a quick start include the following CSS file in your HTML head to get the complete package (drop-in core styles, utility classes and CSS components):
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@^0/sloth.min.css" />
 ```
 
-If you just want to use the drop-in core styles, the utility classes or the CSS components only, you can use one of these:
+If you just want to use the drop-in core styles, the utility classes or the CSS components separately, you can use one of these:
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@devmount/sloth.css@^0/sloth.core.min.css" />
@@ -32,14 +40,7 @@ If you just want to use the drop-in core styles, the utility classes or the CSS 
 
 ## Features
 
-Sloth.css can be used as drop-in CSS library, or additionally with curated utility classes or even with a set of handcrafted ready-to-copy components. Styles are opinionated (then again: which styles are not), and crafted to prioritize visual usability over trends such as flat design. For example: Elements where you type in (like input fields) are actually inset, elements that are clickable (like buttons) are actually outstanding, tabs are connected to the content they activate etc.
-
-Also, Sloth.css aims to be:
-
-- Lightweight (3.8KB gzipped)
-- Responsive and mobile-friendly
-- Beautiful per default but customisable
-- Working for all modern browsers
+Sloth.css can be used as drop-in CSS library, or with a curated set of utility classes or even with a collection of handcrafted ready-to-copy-paste components. Styles are opinionated (then again: which styles are not), and crafted to prioritize visual usability over trends such as flat design. For example: Elements where you type in (like input fields) are actually inset, elements that are clickable (like buttons) are actually outstanding, tabs are connected to the content they activate etc.
 
 ## License
 
