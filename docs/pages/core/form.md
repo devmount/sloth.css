@@ -255,12 +255,12 @@ Buttons can also be created with several `<input>` and `<button` types:
 
 ### Input states
 
-Input fields can be disabled or their value can be invalid on form submit.
+Input fields can be disabled with the corresponding attribute. Also their value can be invalid on input interaction and will be indicated with an alert border color.
 
 <div class="demo">
   <div class="flex flex-col gap-2 max-w-screen-xs">
     <label>Error
-      <input type="text" placeholder="Wrong Input" id="invalid-input" />
+      <input type="text" placeholder="Type something..." id="invalid-input" />
     </label>
     <label>Disabled
       <input type="text" placeholder="Disabled Input" disabled />

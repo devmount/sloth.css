@@ -29,7 +29,7 @@ searchInput.addEventListener('input', (event) => {
   // Handle empty input
   if (!query.length) {
     searchResult.innerHTML = `<div class="state empty">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path d="M12 3a3 3 0 0 0 -3 3v12a3 3 0 0 0 3 3" /><path d="M6 3a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3" /><path d="M13 7h7a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-7" /><path d="M5 7h-1a1 1 0 0 0 -1 1v8a1 1 0 0 0 1 1h1" /><path d="M17 12h.01" /><path d="M13 12h.01" /></svg>
+      <svg viewBox="0 0 24 24" class="icon"><path d="M12 3a3 3 0 0 0 -3 3v12a3 3 0 0 0 3 3" /><path d="M6 3a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3" /><path d="M13 7h7a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-7" /><path d="M5 7h-1a1 1 0 0 0 -1 1v8a1 1 0 0 0 1 1h1" /><path d="M17 12h.01" /><path d="M13 12h.01" /></svg>
       <h4>Waiting for search input</h4>
       <p class="text-muted">Please type something into the search field.</p>
     </div>`;
@@ -50,7 +50,7 @@ searchInput.addEventListener('input', (event) => {
       }[c.cat];
       return `${p}<a href="${c.url}" class="entry">
         <div class="text-muted">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">${icon}</svg>
+          <svg viewBox="0 0 24 24" class="icon">${icon}</svg>
         </div>
         <div>
           <h5>${c.name}</h5>
@@ -60,7 +60,7 @@ searchInput.addEventListener('input', (event) => {
     }, '')
   } else {
     searchResult.innerHTML = `<div class="state empty">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path d="M3 7v4a1 1 0 0 0 1 1h3" /><path d="M7 7v10" /><path d="M10 8v8a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-8a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1z" /><path d="M17 7v4a1 1 0 0 0 1 1h3" /><path d="M21 7v10" /></svg>
+      <svg viewBox="0 0 24 24" class="icon"><path d="M3 7v4a1 1 0 0 0 1 1h3" /><path d="M7 7v10" /><path d="M10 8v8a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-8a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1z" /><path d="M17 7v4a1 1 0 0 0 1 1h3" /><path d="M21 7v10" /></svg>
       <h4>Sorry, no matching pages found</h4>
       <p class="text-muted">Please try changing the search term.</p>
     </div>`;
