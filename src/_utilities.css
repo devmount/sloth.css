@@ -135,6 +135,18 @@
 .flex-wrap {
   flex-wrap: wrap;
 }
+.grow {
+  flex-grow: 1;
+}
+.shrink {
+  flex-shrink: 1;
+}
+.grow-0 {
+  flex-grow: 0;
+}
+.shrink-0 {
+  flex-shrink: 0;
+}
 .invisible {
   visibility: hidden;
 }
@@ -191,14 +203,23 @@
 .items-stretch {
   align-items: stretch;
 }
+.justify-start {
+  justify-content: start;
+}
 .justify-center {
   justify-content: center;
+}
+.justify-end {
+  justify-content: end;
 }
 .justify-between {
   justify-content: space-between;
 }
 .justify-around {
   justify-content: space-around;
+}
+.justify-evenly {
+  justify-content: space-evenly;
 }
 .flex-center {
   display: flex;
@@ -374,12 +395,16 @@
   line-height: 1.5rem;
 }
 .text-lg {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 .text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+.text-2xl {
+  font-size: 2rem;
+  line-height: 2.25rem;
 }
 .truncate {
   overflow: hidden;

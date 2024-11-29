@@ -1,7 +1,7 @@
 ---
 title: 'Utilities: Positioning - Sloth.css'
 description: Controlling position, alignment and overflow of elements
-tags: relative absolute fixed sticky items-center items-start items-end items-stretch flex-center scroll overflow-hidden overflow-visible overflow-auto overflow-x-auto overflow-y-auto
+tags: relative absolute fixed sticky items-center items-start items-end items-stretch flex-center scroll overflow-hidden overflow-visible overflow-auto overflow-x-auto overflow-y-auto justify-start justify-center justify-end justify-between justify-around justify-evenly
 ---
 
 ## Positioning
@@ -120,12 +120,28 @@ Flex and grid items can be aligned on the [main axis](https://developer.mozilla.
 
 <div class="demo flex flex-wrap gap-4">
   <div class="flex-col gap-4 w-64 bg-muted p-4 rounded">
+    <div class="flex gap-1 justify-start">
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#1</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#2</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#3</div>
+    </div>
+    <div class="flex-center"><code>.justify-start</code></div>
+  </div>
+  <div class="flex-col gap-4 w-64 bg-muted p-4 rounded">
     <div class="flex gap-1 justify-center">
       <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#1</div>
       <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#2</div>
       <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#3</div>
     </div>
     <div class="flex-center"><code>.justify-center</code></div>
+  </div>
+  <div class="flex-col gap-4 w-64 bg-muted p-4 rounded">
+    <div class="flex gap-1 justify-end">
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#1</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#2</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#3</div>
+    </div>
+    <div class="flex-center"><code>.justify-end</code></div>
   </div>
   <div class="flex-col gap-4 w-64 bg-muted p-4 rounded">
     <div class="flex gap-1 justify-between">
@@ -143,13 +159,23 @@ Flex and grid items can be aligned on the [main axis](https://developer.mozilla.
     </div>
     <div class="flex-center"><code>.justify-around</code></div>
   </div>
+  <div class="flex-col gap-4 w-64 bg-muted p-4 rounded">
+    <div class="flex gap-1 justify-evenly">
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#1</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#2</div>
+      <div class="text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#3</div>
+    </div>
+    <div class="flex-center"><code>.justify-evenly</code></div>
+  </div>
 </div>
 
 ```html
-<div class="flex items-start ...">...</div>
-<div class="flex items-center ...">...</div>
-<div class="flex items-end ...">...</div>
-<div class="flex items-stretch ...">...</div>
+<div class="flex justify-start ...">...</div>
+<div class="flex justify-center ...">...</div>
+<div class="flex justify-end ...">...</div>
+<div class="flex justify-between ...">...</div>
+<div class="flex justify-around ...">...</div>
+<div class="flex justify-evenly ...">...</div>
 ```
 
 For centering content horizontally and vertically, the special utility class `flex-center` is provided.

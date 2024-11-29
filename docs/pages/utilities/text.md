@@ -142,6 +142,7 @@ Font stacks can be overwritten by the corresponding custom property:
   <p class="text-base">The Sloth is a lazy mammal. <code class="text-sm">.text-base</code></p>
   <p class="text-lg">The Sloth is a lazy mammal. <code class="text-sm">.text-lg</code></p>
   <p class="text-xl">The Sloth is a lazy mammal. <code class="text-sm">.text-xl</code></p>
+  <p class="text-2xl">The Sloth is a lazy mammal. <code class="text-sm">.text-2xl</code></p>
 </div>
 
 ```html
@@ -150,14 +151,16 @@ Font stacks can be overwritten by the corresponding custom property:
 <p class="text-base">...</p>
 <p class="text-lg">...</p>
 <p class="text-xl">...</p>
+<p class="text-2xl">...</p>
 ```
 
 ```css
-.text-xs   { font-size: 0.75rem;  line-height: 1rem;    }
-.text-sm   { font-size: 0.875rem; line-height: 1.25rem; }
-.text-base { font-size: 1rem;     line-height: 1.5rem;  }
-.text-lg   { font-size: 1.125rem; line-height: 1.75rem; }
-.text-xl   { font-size: 1.25rem;  line-height: 1.75rem; }
+.text-xs   { font-size: 0.75rem;  line-height: 1rem;     }
+.text-sm   { font-size: 0.875rem; line-height: 1.25rem;  }
+.text-base { font-size: 1rem;     line-height: 1.5rem;   }
+.text-lg   { font-size: 1.25rem;  line-height: 1.75rem;  }
+.text-xl   { font-size: 1.5rem;   line-height: 1.875rem; }
+.text-2xl  { font-size: 2rem;     line-height: 2.25rem;  }
 ```
 
 The basic font size that defines all `rem` based properties (which are almost all size based properties) can be overwritten by the corresponding custom property. Only adjust this if necessary for your use case (it might make everything too big or too small).
