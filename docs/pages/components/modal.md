@@ -79,7 +79,8 @@ Use the `sm` or `lg` classes to reduce or increase the maximum width of the moda
           <svg viewBox="0 0 24 24" class="icon"><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
         </a>
       </header>
-      <fieldset>
+      <fieldset class="bg-page p-8">
+        <label>Login</label>
         <input class="lg" type="email" placeholder="Email" />
         <input class="lg" type="password" placeholder="Password" />
       </fieldset>
