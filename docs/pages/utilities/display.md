@@ -61,7 +61,7 @@ Elements can also be position underneath each other (column direction) instead o
   Note that <code>flex-col</code> is a display utility and already includes the <code>display: flex;</code> rule. So there's no need to use two classes like in Tailwind <del><code>flex flex-column</code></del>. Just use <ins><code>flex-col</code></ins>.
 </p>
 
-User the `flex-wrap` class, if you want your flex items to break onto a new line when the container limit is reached.
+Use the `flex-wrap` class, if you want your flex items to break onto a new line when the container limit is reached.
 
 <div class="demo">
   <div class="flex flex-wrap max-w-screen-xs gap-4 items-center bg-muted p-4 rounded">
@@ -85,6 +85,15 @@ User the `flex-wrap` class, if you want your flex items to break onto a new line
 
 ```css
 .flex-wrap { flex-wrap: wrap; }
+```
+
+If you need single items to grow or shrink, use the `grow` and `shrink` classes. If you want to prevent them from growing or shrinking, use `grow-0` or `shrink-0` respectively.
+
+```css
+.grow     { flex-grow: 1;   }
+.shrink   { flex-shrink: 1; }
+.grow-0   { flex-grow: 0;   }
+.shrink-0 { flex-shrink: 0; }
 ```
 
 ### Grid
