@@ -205,15 +205,6 @@
   align-items: center;
   justify-content: center;
 }
-.text-start {
-  text-align: start;
-}
-.text-center {
-  text-align: center;
-}
-.text-end {
-  text-align: end;
-}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -328,6 +319,15 @@
 }
 
 /* Text */
+.text-start {
+  text-align: start;
+}
+.text-center {
+  text-align: center;
+}
+.text-end {
+  text-align: end;
+}
 .underline {
   text-decoration-line: underline;
 }

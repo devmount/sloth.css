@@ -40,7 +40,7 @@ Extract the CSS files you need and include them in your markup or your bundler.
 
 ### Install via NPM
 
-If you don’t want to use the CDN or manual download, you can install Sloth.css via npm with the following command.
+If you don't want to use the CDN or manual download, you can install Sloth.css via npm with the following command.
 
 ```bash
 npm i @devmount/sloth.css
