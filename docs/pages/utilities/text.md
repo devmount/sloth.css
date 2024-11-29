@@ -8,6 +8,37 @@ tags: underline line-through transnform uppercase lowercase capitalize font-weig
 
 Utility classes for controlling text and font appearance.
 
+### Text alignment
+
+Sloth.css prefers start/end alignment over left/right to respect both, rtl and ltr text flows.
+
+<div class="demo">
+  <p class="text-start">
+    The Sloth is a lazy mammal.<br />
+    <code>.text-start</code>
+  </p>
+  <p class="text-center">
+    The Sloth is a lazy mammal.<br />
+    <code>.text-center</code>
+  </p>
+  <p class="text-end">
+    The Sloth is a lazy mammal.<br />
+    <code>.text-end</code>
+  </p>
+</div>
+
+```html
+<p class="text-start">...</p>
+<p class="text-center">...</p>
+<p class="text-end">...</p>
+```
+
+```css
+.text-start  { text-align: start;  }
+.text-center { text-align: center; }
+.text-end    { text-align: end;    }
+```
+
 ### Text decoration
 
 <div class="demo">
