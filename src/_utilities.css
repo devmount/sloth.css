@@ -374,12 +374,16 @@
   line-height: 1.5rem;
 }
 .text-lg {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 .text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+.text-2xl {
+  font-size: 2rem;
+  line-height: 2.25rem;
 }
 .truncate {
   overflow: hidden;
