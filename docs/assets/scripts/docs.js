@@ -68,6 +68,19 @@ searchInput.addEventListener('input', (event) => {
 });
 const focusSearch = () => setTimeout(() => searchInput.focus(), 50);
 
+document.addEventListener('keydown', (event) => {
+  // Open Search modal on CTRL+F
+  if (event.ctrlKey && event.key === 'f') {
+    event.preventDefault();
+    window.location.hash = 'search';
+    focusSearch();
+  }
+  // Hide modals on ESC
+  if (event.key === 'Escape') {
+    window.location.hash = 'close';
+  }
+});
+
 // Core: Form
 const invalidInput = document.querySelector('#invalid-input');
 invalidInput?.setCustomValidity("Invalid field.");
