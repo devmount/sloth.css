@@ -8,6 +8,15 @@ tags: release version changes
 
 Sloth.css uses [semantic versioning](https://semver.org/) to indicate breaking changes, major changes with downward compatibility or minor changes.
 
+### v0.4.0 <span class="text-muted text-lg">β</span>
+
+- ➕ Component: Icon ([#57](https://github.com/devmount/sloth.css/pull/57))
+- 🔨 Utilities: Added text alignment ([#58](https://github.com/devmount/sloth.css/pull/58))
+- 📜 Docs: Improved search ([#59](https://github.com/devmount/sloth.css/pull/59))
+- 🔨 Utilities: More flex justify classes grow/shrink classes ([#60](https://github.com/devmount/sloth.css/pull/60))
+- 🔨 Utilities: More font sizes ([#60](https://github.com/devmount/sloth.css/pull/60))
+- 💚 Core: Improved input fields appearances ([#60](https://github.com/devmount/sloth.css/pull/60))
+
 ### v0.3.0 <span class="text-muted text-lg">β</span>
 
 - ➕ Component: Badge variants ([#46](https://github.com/devmount/sloth.css/pull/46))

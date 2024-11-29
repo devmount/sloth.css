@@ -4,7 +4,7 @@ import markdownit from "markdown-it";
 import anchor from "markdown-it-anchor";
 import tocPlugin from "eleventy-plugin-toc";
 
-const VERSION = '0.3.0';
+const VERSION = '0.4.0';
 
 export default function (eleventyConfig) {
   // Get utility sections
