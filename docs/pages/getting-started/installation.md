@@ -46,4 +46,8 @@ If you don't want to use the CDN or manual download, you can install Sloth.css v
 npm i @devmount/sloth.css
 ```
 
-Now you need to make one of the CSS files under `node_modules/@devmount/sloth.css/` you want available to your app or include it in your build step or bundler.
+Now you need to make one of the CSS files under `node_modules/@devmount/sloth.css/` you want available to your app or include it in your build step or bundler. Since Sloth.css already serves minified styles, the simplest way would be to just include the file you want in your CSS, e.g.:
+
+```css
+@import '@devmount/sloth.css/sloth.min.css';
+```
