@@ -1,7 +1,7 @@
 ---
 title: 'Utilities: Effects - Sloth.css'
 description: Controlling elevation and transformation of elements
-tags: shadow rotate
+tags: shadow shadow-float shadow-inset rotate rotate-90
 ---
 
 ## Effects

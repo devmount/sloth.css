@@ -1,7 +1,7 @@
 ---
 title: 'Utilities: Positioning - Sloth.css'
 description: Controlling position, alignment and overflow of elements
-tags: relative absolute fixed sticky center scroll
+tags: relative absolute fixed sticky items-center items-start items-end items-stretch flex-center scroll overflow-hidden overflow-visible overflow-auto overflow-x-auto overflow-y-auto
 ---
 
 ## Positioning
