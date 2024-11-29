@@ -1,7 +1,7 @@
 ---
 title: 'Utilities: Dimension - Sloth.css'
 description: Controlling the size of elements
-tags: width height maximum screen
+tags: width height maximum screen w-8 w-12 w-16 w-32 w-64 w-1/2 w-full max-w-screen-xs max-w-screen-sm max-w-screen-md max-w-screen-lg max-w-screen-xl max-w-screen-2xl h-8 h-12 h-16 h-32 h-64 h-1/2 h-full
 ---
 
 ## Dimension

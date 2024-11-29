@@ -1,7 +1,7 @@
 ---
 title: 'Utilities: Text - Sloth.css'
 description: Controlling text and font appearance
-tags: underline line-through transnform uppercase lowercase capitalize font-weight font-family size truncate balance whitespace-nowrap vertical
+tags: underline line-through transnform uppercase lowercase capitalize font-weight font-family size truncate balance whitespace-nowrap vertical text-start text-center text-end text-left text-right font-light font-normal font-semibold font-bold font-mono font-sans text-xs text-sm text-base text-lg text-xl whitespace-nowrap text-balance text-vertical
 ---
 
 ## Text

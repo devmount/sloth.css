@@ -1,7 +1,7 @@
 ---
 title: 'Utilities: Cursor - Sloth.css'
 description: Controlling cursor types
-tags: default pointer help not-allowed
+tags: cursor-default cursor-pointer cursor-help cursor-not-allowed
 notoc: true
 ---
 

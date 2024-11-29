@@ -1,7 +1,7 @@
 ---
 title: 'Utilities: Border - Sloth.css'
 description: Controlling the border of elements
-tags: rounded shape
+tags: rounded shape rounded-full
 ---
 
 ## Border

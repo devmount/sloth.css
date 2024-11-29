@@ -1,7 +1,7 @@
 ---
 title: 'Utilities: Display - Sloth.css'
 description: Controlling the display type of elements
-tags: flex grid column wrap inline block visibility hidden
+tags: flex flex-col grid column grid-cols-1 grid-cols-2 grid-cols-3 flex-wrap inline block inline-block visibility invisible hidden
 ---
 
 ## Display
