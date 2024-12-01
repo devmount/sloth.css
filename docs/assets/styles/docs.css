@@ -150,7 +150,7 @@ body {
   & > aside {
     background: var(--color-bg-base);
     position: fixed;
-    width: 14rem;
+    width: 15rem;
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-width: thin;
