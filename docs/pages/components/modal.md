@@ -21,7 +21,7 @@ Use the `modal` class on a parent element containing an anchor element having th
       <header>
         <h3>The sloth</h3>
         <a class="button ghost pill" href="#close">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+          <svg viewBox="0 0 24 24" class="icon"><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
         </a>
       </header>
       <main>
@@ -47,7 +47,7 @@ Use the `modal` class on a parent element containing an anchor element having th
     <header>
       <h3>The sloth</h3>
       <a class="button ghost pill" href="#close">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
       </a>
     </header>
     <main>
@@ -76,10 +76,11 @@ Use the `sm` or `lg` classes to reduce or increase the maximum width of the moda
       <header>
         <h3>Members Area</h3>
         <a class="button ghost pill" href="#close">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+          <svg viewBox="0 0 24 24" class="icon"><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
         </a>
       </header>
-      <fieldset>
+      <fieldset class="bg-page p-8">
+        <label>Login</label>
         <input class="lg" type="email" placeholder="Email" />
         <input class="lg" type="password" placeholder="Password" />
       </fieldset>
@@ -96,7 +97,7 @@ Use the `sm` or `lg` classes to reduce or increase the maximum width of the moda
       <header>
         <h3>Learn latin</h3>
         <a class="button ghost pill" href="#close">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+          <svg viewBox="0 0 24 24" class="icon"><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
         </a>
       </header>
       <main class="flex gap-8">
@@ -123,7 +124,7 @@ Use the `sm` or `lg` classes to reduce or increase the maximum width of the moda
       <header>
         <h3>Cupcake ipsum</h3>
         <a class="button ghost pill" href="#close">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+          <svg viewBox="0 0 24 24" class="icon"><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
         </a>
       </header>
       <main class="flex gap-8">

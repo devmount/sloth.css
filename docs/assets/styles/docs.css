@@ -173,6 +173,9 @@ body {
     }
 
     header {
+      position: sticky;
+      top: 0;
+      background: inherit;
       width: 11rem;
       padding: 1.5rem 1.5rem .5rem 1.5rem;
       display: flex;
@@ -391,15 +394,4 @@ pre[class^='language-'] {
   &[class*='-bash']::before {
     content: 'bash';
   }
-}
-
-/* Icons */
-.icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
 }

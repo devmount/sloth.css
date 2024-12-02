@@ -1,7 +1,7 @@
 ---
 title: 'Utilities: Spacing - Sloth.css'
 description: Controlling margins, paddings and the space in between elements
-tags: gap placement inset left right bottom top
+tags: gap placement inset left right bottom top margin m-0 m-px m-1 m-2 m-4 m-8 padding p-0 p-px p-1 p-2 p-4 p-8 top-0 top-4 left-0 left-4 bottom-0 bottom-4 right-0 right-4 inset-0 inset-4
 ---
 
 ## Spacing

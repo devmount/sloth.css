@@ -1,12 +1,43 @@
 ---
 title: 'Utilities: Text - Sloth.css'
 description: Controlling text and font appearance
-tags: underline line-through transnform uppercase lowercase capitalize font-weight font-family size truncate balance whitespace-nowrap vertical
+tags: underline line-through transnform uppercase lowercase capitalize font-weight font-family size truncate balance whitespace-nowrap vertical text-start text-center text-end text-left text-right font-light font-normal font-semibold font-bold font-mono font-sans text-xs text-sm text-base text-lg text-xl whitespace-nowrap text-balance text-vertical
 ---
 
 ## Text
 
 Utility classes for controlling text and font appearance.
+
+### Text alignment
+
+Sloth.css prefers start/end alignment over left/right to respect both, rtl and ltr text flows.
+
+<div class="demo">
+  <p class="text-start">
+    The Sloth is a lazy mammal.<br />
+    <code>.text-start</code>
+  </p>
+  <p class="text-center">
+    The Sloth is a lazy mammal.<br />
+    <code>.text-center</code>
+  </p>
+  <p class="text-end">
+    The Sloth is a lazy mammal.<br />
+    <code>.text-end</code>
+  </p>
+</div>
+
+```html
+<p class="text-start">...</p>
+<p class="text-center">...</p>
+<p class="text-end">...</p>
+```
+
+```css
+.text-start  { text-align: start;  }
+.text-center { text-align: center; }
+.text-end    { text-align: end;    }
+```
 
 ### Text decoration
 
@@ -111,6 +142,7 @@ Font stacks can be overwritten by the corresponding custom property:
   <p class="text-base">The Sloth is a lazy mammal. <code class="text-sm">.text-base</code></p>
   <p class="text-lg">The Sloth is a lazy mammal. <code class="text-sm">.text-lg</code></p>
   <p class="text-xl">The Sloth is a lazy mammal. <code class="text-sm">.text-xl</code></p>
+  <p class="text-2xl">The Sloth is a lazy mammal. <code class="text-sm">.text-2xl</code></p>
 </div>
 
 ```html
@@ -119,14 +151,16 @@ Font stacks can be overwritten by the corresponding custom property:
 <p class="text-base">...</p>
 <p class="text-lg">...</p>
 <p class="text-xl">...</p>
+<p class="text-2xl">...</p>
 ```
 
 ```css
-.text-xs   { font-size: 0.75rem;  line-height: 1rem;    }
-.text-sm   { font-size: 0.875rem; line-height: 1.25rem; }
-.text-base { font-size: 1rem;     line-height: 1.5rem;  }
-.text-lg   { font-size: 1.125rem; line-height: 1.75rem; }
-.text-xl   { font-size: 1.25rem;  line-height: 1.75rem; }
+.text-xs   { font-size: 0.75rem;  line-height: 1rem;     }
+.text-sm   { font-size: 0.875rem; line-height: 1.25rem;  }
+.text-base { font-size: 1rem;     line-height: 1.5rem;   }
+.text-lg   { font-size: 1.25rem;  line-height: 1.75rem;  }
+.text-xl   { font-size: 1.5rem;   line-height: 1.875rem; }
+.text-2xl  { font-size: 2rem;     line-height: 2.25rem;  }
 ```
 
 The basic font size that defines all `rem` based properties (which are almost all size based properties) can be overwritten by the corresponding custom property. Only adjust this if necessary for your use case (it might make everything too big or too small).

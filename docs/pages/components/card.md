@@ -74,11 +74,11 @@ A `<footer>` element at the bottom of a `card` container provides space for link
       Noted for their slowness of movement, tree sloths spend most of their lives hanging upside down in the trees of the tropical rainforests of South America and Central America.
       <footer>
         <button class="hollow accent pill">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+          <svg viewBox="0 0 24 24" class="icon"><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
         </button>
         <button class="ghost">
           Source
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>
+          <svg viewBox="0 0 24 24" class="icon"><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>
         </button>
       </footer>
     </article>
@@ -88,7 +88,7 @@ A `<footer>` element at the bottom of a `card` container provides space for link
       <footer>
         <button class="hollow neutral">
           Read more
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+          <svg viewBox="0 0 24 24" class="icon"><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
         </button>
       </footer>
     </article>

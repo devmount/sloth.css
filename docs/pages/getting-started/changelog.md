@@ -8,7 +8,29 @@ tags: release version changes
 
 Sloth.css uses [semantic versioning](https://semver.org/) to indicate breaking changes, major changes with downward compatibility or minor changes.
 
-### 0.2.0-beta
+### v0.4.0 <span class="text-muted text-lg">β</span>
+
+- ➕ Component: Icon ([#57](https://github.com/devmount/sloth.css/pull/57))
+- 🔨 Utilities: Added text alignment ([#58](https://github.com/devmount/sloth.css/pull/58))
+- 📜 Docs: Improved search ([#59](https://github.com/devmount/sloth.css/pull/59))
+- 🔨 Utilities: More flex justify classes grow/shrink classes ([#60](https://github.com/devmount/sloth.css/pull/60))
+- 🔨 Utilities: More font sizes ([#60](https://github.com/devmount/sloth.css/pull/60))
+- 💚 Core: Improved input fields appearances ([#60](https://github.com/devmount/sloth.css/pull/60))
+
+### v0.3.0 <span class="text-muted text-lg">β</span>
+
+- ➕ Component: Badge variants ([#46](https://github.com/devmount/sloth.css/pull/46))
+- 📜 Docs: Secondary menu ([#47](https://github.com/devmount/sloth.css/pull/47))
+- ➕ Component: Input ([#48](https://github.com/devmount/sloth.css/pull/48))
+- 🔨 Border radius config ([#49](https://github.com/devmount/sloth.css/pull/49))
+- ➕ Component: Tag ([#50](https://github.com/devmount/sloth.css/pull/50))
+- ➕ Component: Sequence ([#51](https://github.com/devmount/sloth.css/pull/51))
+- ➕ Component: Tooltip ([#52](https://github.com/devmount/sloth.css/pull/52))
+- ➕ Component: Tab ([#53](https://github.com/devmount/sloth.css/pull/53))
+- ➕ Component: Modal ([#54](https://github.com/devmount/sloth.css/pull/54))
+- 🔨 Docs: Sidebar enhancement ([#55](https://github.com/devmount/sloth.css/pull/55))
+
+### v0.2.0 <span class="text-muted text-lg">β</span>
 
 - 📜 Add documentation ([#1](https://github.com/devmount/sloth.css/pull/1), [#32](https://github.com/devmount/sloth.css/pull/32), [#38](https://github.com/devmount/sloth.css/pull/38))
 - 🚀 Build tool ([#2](https://github.com/devmount/sloth.css/pull/2), [#15](https://github.com/devmount/sloth.css/pull/15))
@@ -28,6 +50,6 @@ Sloth.css uses [semantic versioning](https://semver.org/) to indicate breaking c
 - ⚡️ Performance optimizations ([#33](https://github.com/devmount/sloth.css/pull/33))
 - ➕ Input invalid state ([#39](https://github.com/devmount/sloth.css/pull/39))
 
-### 0.1.0-beta
+### v0.1.0 <span class="text-muted text-lg">β</span>
 
 - 🚀 Initial release

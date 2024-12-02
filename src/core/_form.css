@@ -26,14 +26,18 @@ label {
 /* <input>, <textarea>, <select> */
 input, textarea, select {
   background-color: var(--color-bg-base);
-  box-shadow: var(--color-shadow) var(--shadow-inset);
+  box-shadow:
+    var(--color-border) var(--shadow-border),
+    var(--color-shadow) var(--shadow-inset);
   font-family: inherit;
   transition: var(--transition-outline), var(--transition-color);
   border: 0;
   box-sizing: border-box;
 
   &:hover:not(:disabled) {
-    box-shadow: var(--color-accent) var(--shadow-border);
+    box-shadow:
+      var(--color-accent) var(--shadow-border),
+      var(--color-shadow) var(--shadow-inset);
   }
   &:focus:not(:disabled), &:focus-within:not(:disabled) {
     outline: 4px solid var(--color-outline);
@@ -44,7 +48,7 @@ input, textarea, select {
     cursor: not-allowed;
     background-color: var(--color-bg-muted);
   }
-  &:invalid {
+  &:user-invalid {
     box-shadow: var(--color-alert) var(--shadow-border);
   }
 }

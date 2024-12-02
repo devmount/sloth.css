@@ -1,7 +1,7 @@
 ---
 title: 'Utilities: Color - Sloth.css'
 description: Controlling colors of text and backgrounds
-tags: colour accent muted neutral success alert inverted
+tags: colour text-accent text-muted text-success text-alert text-inverted bg-base bg-page bg-accent bg-accent-variant bg-muted bg-success bg-alert
 ---
 
 ## Color
