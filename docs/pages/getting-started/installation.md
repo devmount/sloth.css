@@ -32,7 +32,7 @@ If you just want to use the drop-in styles or the utility classes or the CSS com
 
 ### Install manually
 
-Download the latest [Sloth.css release]({{ repoUrl }}/releases) (7.3KB):
+Download the latest [Sloth.css release]({{ repoUrl }}/releases) (7.5KB):
 
 <button onclick="window.location.href='{{ repoUrl }}/releases'">Download Sloth.css</button>
 

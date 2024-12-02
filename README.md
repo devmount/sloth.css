@@ -11,7 +11,7 @@
 
 Check [the documentation](https://slothcss.devmount.com) to see it live in action. Sloth.css aims to be:
 
-- Lightweight (7.3KB gzipped)
+- Lightweight (7.5KB gzipped)
 - Responsive and mobile-friendly
 - Beautiful per default but heavily customisable
 - Working for all modern browsers

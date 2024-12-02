@@ -1,7 +1,7 @@
 {
   "name": "@devmount/sloth.css",
   "version": "0.4.0",
-  "description": "A drop-in utility component CSS-only library for lazy mammals.",
+  "description": "A drop-in utility component CSS library for lazy mammals.",
   "main": "sloth.min.css",
   "files": [
     "./*.css",
@@ -15,7 +15,8 @@
     "build": "npm run build:complete && npm run build:core && npm run build:util && npm run build:comp",
     "publish": "npm run build && npm publish",
     "docs:serve": "npx @11ty/eleventy --serve",
-    "docs:build": "npx @11ty/eleventy"
+    "docs:build": "npx @11ty/eleventy",
+    "check:size": "gzip -c sloth.min.css | wc -c"
   },
   "keywords": [
     "css",
