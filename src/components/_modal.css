@@ -73,6 +73,7 @@
       max-width: var(--screen-2xl);
       box-shadow: none;
       height: 99vh;
+      padding-top: 1.5rem;
     }
   }
 }

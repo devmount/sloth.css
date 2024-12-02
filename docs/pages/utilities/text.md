@@ -194,7 +194,7 @@ Text can be truncated with an ellipsis using the `truncate` class, if the contai
 Also there are 3 utilities to control wrapping and writing mode.
 
 <div class="demo flex flex-wrap gap-4">
-  <div class="flex gap-2 items-center">
+  <div class="flex gap-2 items-center overflow-x-auto">
     <div class="whitespace-nowrap max-w-screen-xs p-4 rounded bg-muted overflow-x-auto">
       <h4>Sloths are a Neotropical group of xenarthran mammals</h4>
       <p>Noted for their slowness of movement, tree sloths spend most of their lives hanging upside down in the trees of the tropical rainforests of South America and Central America.</p>

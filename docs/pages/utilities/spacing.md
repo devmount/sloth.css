@@ -57,7 +57,7 @@ The space between flex or grid items can be set with the `gap-*` classes.
 
 The outer spacing (margin) for elements can be set with the `m-*` classes.
 
-<div class="demo flex items-start gap-4">
+<div class="demo flex items-start flex-wrap gap-4">
   <div class="flex-col gap-2 items-center justify-center bg-muted p-4 rounded relative">
     <div class="bg-accent rounded">
       <div class="m-0 text-light bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">#3</div>
@@ -118,7 +118,7 @@ The outer spacing (margin) for elements can be set with the `m-*` classes.
 
 The inner spacing (padding) for elements can be set with the `p-*` classes.
 
-<div class="demo flex items-start gap-4">
+<div class="demo flex items-start flex-wrap gap-4">
   <div class="flex-col gap-2 items-center justify-center bg-muted p-4 rounded relative">
     <div class="p-0 text-light bg-accent-variant flex-center rounded font-mono font-bold">#3</div>
     <code>.p-0</code>

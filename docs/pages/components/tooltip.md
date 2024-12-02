@@ -22,7 +22,7 @@ Use the `data-tooltip` attribute on any element to attach a tooltip that appears
 
 To change position, use the `tooltip-left`, `tooltip-bottom` or `tooltip-right` classes accordingly.
 
-<div class="demo">
+<div class="demo flex-center gap-2">
   <button class="tooltip-left" data-tooltip="I'm over here!">Left</button>
   <button class="tooltip-bottom" data-tooltip="I'm over here!">Bottom</button>
   <button class="tooltip-right" data-tooltip="I'm over here!">Right</button>

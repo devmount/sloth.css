@@ -41,7 +41,7 @@ To make an element appear over or inside a surface, the `shadow-*` classes can b
 
 To rotate an element, the `rotate-*` classes can be used.
 
-<div class="demo flex items-start gap-4">
+<div class="demo flex items-start flex-wrap gap-4">
   <div class="flex-col gap-2 items-center justify-center bg-muted p-4 rounded relative">
     <div class="bg-accent rounded">
       <div class="-rotate-90 text-light m-8 bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">A</div>
