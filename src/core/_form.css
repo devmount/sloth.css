@@ -16,7 +16,7 @@ fieldset {
 label {
   display: inline-flex;
   flex-direction: column;
-  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
 
   &:has(input), &:has(textarea), &:has(select), &[for] {
     cursor: pointer;

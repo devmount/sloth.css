@@ -19,7 +19,7 @@ Sloth.css is a drop-in utility component CSS library, that aims to be:
 
 - Lightweight (7.5KB gzipped)
 - Responsive and mobile-friendly
-- Beautiful per default but heavily customisable
+- Beautiful per default but easy to customize
 - Working for all modern browsers
 
 ## Installation
@@ -33,7 +33,7 @@ Include the following CSS file in your HTML head to get the complete package:
 
 Read on below to find out about all available variants. Maybe one of them is more suitable for your use case.
 
-## Features
+## Variants
 
 Sloth.css can be used as drop-in CSS library, as utility class library or even with a set of handcrafted ready-to-copy components. Or everything, all at once. Just pick the variant you need. Styles are opinionated (then again: which styles are not), and crafted to prioritize visual usability over trends such as flat design. For example: Elements where you type in (like input fields) are actually inset, elements that are clickable (like buttons) are actually elevated, tabs are connected to the content they activate etc.
 

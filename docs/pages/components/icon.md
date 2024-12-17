@@ -44,7 +44,7 @@ Use the `sm`, `lg` and `xl` classes to make the icon smaller or bigger.
 
 ### Stroke width
 
-Use the `stroke-1` or `stroke-2` classes to reduce or increase the icon stroke width.
+The stroke width is 1.5 per default. Use the `stroke-1` or `stroke-2` classes to reduce or increase the icon stroke width.
 
 <div class="demo">
   <svg viewBox="0 0 24 24" class="icon stroke-1"><path d="M12 6m-8 0a8 3 0 1 0 16 0a8 3 0 1 0 -16 0" /><path d="M4 6v6a8 3 0 0 0 16 0v-6" /><path d="M4 12v6a8 3 0 0 0 16 0v-6" /></svg>

@@ -12,8 +12,8 @@ Here is how Sloth.css maintains a consistent representation of text in different
 ### Headings
 
 <div class="demo">
-  <h1>Level 1 heading <small><code>42px</code></small></h1>
-  <h2>Level 2 heading <small><code>36px</code></small></h2>
+  <h1>Level 1 heading <small><code>52px</code></small></h1>
+  <h2>Level 2 heading <small><code>40px</code></small></h2>
   <h3>Level 3 heading <small><code>32px</code></small></h3>
   <h4>Level 4 heading <small><code>26px</code></small></h4>
   <h5>Level 5 heading <small><code>20px</code></small></h5>
@@ -21,12 +21,12 @@ Here is how Sloth.css maintains a consistent representation of text in different
 </div>
 
 ```html
-<h1>Level 1 heading <small><code>42px</code></small></h1>
-<h2>Level 2 heading <small><code>36px</code></small></h2>
-<h3>Level 3 heading <small><code>32px</code></small></h3>
-<h4>Level 4 heading <small><code>26px</code></small></h4>
-<h5>Level 5 heading <small><code>20px</code></small></h5>
-<h6>Level 6 heading <small><code>16px</code></small></h6>
+<h1>Level 1 heading</h1>
+<h2>Level 2 heading</h2>
+<h3>Level 3 heading</h3>
+<h4>Level 4 heading</h4>
+<h5>Level 5 heading</h5>
+<h6>Level 6 heading</h6>
 ```
 
 ### Paragraphs
