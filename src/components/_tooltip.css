@@ -13,6 +13,7 @@
     opacity: 0;
     overflow: hidden;
     padding: .5rem;
+    pointer-events: none;
     position: absolute;
     text-overflow: ellipsis;
     transform: translate(-50%, .25rem);
