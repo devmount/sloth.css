@@ -59,15 +59,23 @@ To rotate an element, the `rotate-*` classes can be used.
     </div>
     <code>.rotate-90</code>
   </div>
+  <div class="flex-col gap-2 items-center justify-center bg-muted p-4 rounded relative">
+    <div class="bg-accent rounded">
+      <div class="rotate-180 text-light m-8 bg-accent-variant flex-center rounded h-8 w-8 font-mono font-bold">A</div>
+    </div>
+    <code>.rotate-180</code>
+  </div>
 </div>
 
 ```html
 <div class="-rotate-90 ..."></div>
 <div class="..."></div>
 <div class="rotate-90 ..."></div>
+<div class="rotate-180 ..."></div>
 ```
 
 ```css
-.rotate-90  { transform: rotate(90deg);  }
 .-rotate-90 { transform: rotate(-90deg); }
+.rotate-90  { transform: rotate(90deg);  }
+.rotate-180 { transform: rotate(180deg); }
 ```
