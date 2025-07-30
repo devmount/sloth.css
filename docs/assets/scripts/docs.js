@@ -100,18 +100,21 @@ const colorToast = (col) => {
 }
 
 // Component: Tab
-const tabList = document.querySelector('#tab-demo > nav > ol');
-const tabPanels = document.querySelectorAll('#tab-demo > section > div');
-const tabs = tabList
-  ? [...tabList.querySelectorAll('li')].filter(t => !t.classList.contains('disabled'))
-  : [];
-tabs.forEach((tab, i) => {
-  tab.addEventListener('click', () => {
-    tabs.forEach(t => t.classList.remove('active'))
-    tabPanels.forEach(p => p.classList.remove('active'));
-    const panel = [...tabPanels][i];
-    panel.classList.add('active');
-    tab.classList.add('active');
+const tabGroup = document.querySelectorAll('.tab-group');
+tabGroup.forEach((group) => {
+  const tabList = group.querySelector('nav > ol');
+  const tabPanels = group.querySelectorAll('section > div');
+  const tabs = tabList
+    ? [...tabList.querySelectorAll('li')].filter(t => !t.classList.contains('disabled'))
+    : [];
+  tabs.forEach((tab, i) => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'))
+      tabPanels.forEach(p => p.classList.remove('active'));
+      const panel = [...tabPanels][i];
+      panel?.classList.add('active');
+      tab.classList.add('active');
+    });
   });
 });
 
