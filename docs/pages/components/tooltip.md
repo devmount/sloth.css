@@ -10,14 +10,16 @@ A tooltip provides additional information for an element on hover or focus.
 
 ### Position
 
-Use the `data-tooltip` attribute on any element to attach a tooltip that appears above the element on hover or focus. Linebreaks can be used too.
+Use the `data-tooltip` attribute on any element to attach a tooltip that appears above the element on hover or focus. Linebreaks can be inserted too using the `&#10;` line break entity (or another line break character suitable for your use case).
 
 <div class="demo">
   <button data-tooltip="Initiate self-destruction">I'm harmless</button>
+  <button class="alert" data-tooltip="On second thought&#10;I won't do anything">I'm dangerous</button>
 </div>
 
 ```html
 <button data-tooltip="Initiate self-destruction">I'm harmless</button>
+<button class="alert" data-tooltip="On second thought&#10;I won't do anything">I'm dangerous</button>
 ```
 
 To change position, use the `tooltip-left`, `tooltip-bottom` or `tooltip-right` classes accordingly.

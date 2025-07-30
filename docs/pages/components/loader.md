@@ -75,3 +75,25 @@ Loaders are also supported on <a href="/components/button">button</a> elements. 
 <button class="busy success">Save profile</button>
 <button class="busy alert">Delete account</button>
 ```
+
+### Input loader
+
+Similar to buttons, loaders are also supported on <a href="/components/input">input</a> elements. Use the `busy` class to replace the contents of an input element with a loader while keeping the input size.
+
+<div class="demo flex flex-wrap items-center gap-8">
+  <div class="input busy">
+    <input type="text" value="My fancy username" disabled />
+  </div>
+  <div class="input busy">
+    <input type="text" class="pill" value="My fancy username" disabled />
+  </div>
+</div>
+
+```html
+<div class="input busy">
+  <input type="text" value="My fancy username" disabled />
+</div>
+<div class="input busy">
+  <input type="text" class="pill" value="My fancy username" disabled />
+</div>
+```
