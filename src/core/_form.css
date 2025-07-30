@@ -47,6 +47,7 @@ input, textarea, select {
   &:disabled {
     cursor: not-allowed;
     background-color: var(--color-bg-muted);
+    box-shadow: none;
   }
   &:user-invalid {
     box-shadow: var(--color-alert) var(--shadow-border);
