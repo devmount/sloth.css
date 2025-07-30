@@ -8,6 +8,14 @@ tags: release version changes
 
 Sloth.css uses [semantic versioning](https://semver.org/) to indicate breaking changes, major changes with downward compatibility or minor changes.
 
+### v0.4.1 <span class="text-muted text-lg">β</span>
+
+- 📜 Docs: Several fixes and improvements ([#61](https://github.com/devmount/sloth.css/pull/61), [#62](https://github.com/devmount/sloth.css/pull/62), [#71](https://github.com/devmount/sloth.css/pull/71))
+- 💚 Core: Typography improvements ([#63](https://github.com/devmount/sloth.css/pull/63))
+- 📦 Dependency updates ([#64](https://github.com/devmount/sloth.css/pull/64), [#67](https://github.com/devmount/sloth.css/pull/67), [#68](https://github.com/devmount/sloth.css/pull/68), [#69](https://github.com/devmount/sloth.css/pull/69))
+- 🔨 Component: Fix tooltip not properly triggering ([#66](https://github.com/devmount/sloth.css/pull/66))
+- ➕ Utilities: Add `.rotate-180` utility by @devmount ([#70](https://github.com/devmount/sloth.css/pull/70))
+
 ### v0.4.0 <span class="text-muted text-lg">β</span>
 
 - ➕ Component: Icon ([#57](https://github.com/devmount/sloth.css/pull/57))
