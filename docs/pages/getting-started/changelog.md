@@ -8,6 +8,11 @@ tags: release version changes
 
 Sloth.css uses [semantic versioning](https://semver.org/) to indicate breaking changes, major changes with downward compatibility or minor changes.
 
+### v0.4.2 <span class="text-muted text-lg">β</span>
+
+- 📦 Dependency updates ([#72](https://github.com/devmount/sloth.css/pull/72), [#73](https://github.com/devmount/sloth.css/pull/73), [#74](https://github.com/devmount/sloth.css/pull/74), [#75](https://github.com/devmount/sloth.css/pull/75), [#76](https://github.com/devmount/sloth.css/pull/76), [#77](https://github.com/devmount/sloth.css/pull/77), [#78](https://github.com/devmount/sloth.css/pull/78), [#79](https://github.com/devmount/sloth.css/pull/79), [#80](https://github.com/devmount/sloth.css/pull/80), [#81](https://github.com/devmount/sloth.css/pull/81), [#82](https://github.com/devmount/sloth.css/pull/82), [#83](https://github.com/devmount/sloth.css/pull/83))
+- 📦 Switch to pnpm ([#84](https://github.com/devmount/sloth.css/pull/84))
+
 ### v0.4.1 <span class="text-muted text-lg">β</span>
 
 - 📜 Docs: Several fixes and improvements ([#61](https://github.com/devmount/sloth.css/pull/61), [#62](https://github.com/devmount/sloth.css/pull/62), [#71](https://github.com/devmount/sloth.css/pull/71))
