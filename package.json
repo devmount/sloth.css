@@ -43,6 +43,7 @@
     "url": "https://github.com/sponsors/devmount"
   },
   "license": "MIT",
+  "packageManager": "pnpm@11.9.0",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
