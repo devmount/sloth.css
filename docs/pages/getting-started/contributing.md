@@ -59,8 +59,8 @@ Testing the current state and reporting bugs is a great way to help! Here's how:
 ```bash
 git clone {{ repoUrl }}/sloth.css
 cd sloth.css
-npm i
-npm run docs:serve
+pnpm install
+pnpm docs:serve
 ```
 
 Now you can check <http://localhost:8080> (or the next available free port) to have the documentation pages served right from the latest repository state. If you run into any problems or find any issues, create a [bug report]({{ repoUrl }}/sloth.css/issues/new?assignees=&labels=bug&projects=&template=bug_report.md) or start [a discussion thread]({{ repoUrl }}/sloth.css/discussions).

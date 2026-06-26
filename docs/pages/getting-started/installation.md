@@ -1,12 +1,12 @@
 ---
 title: 'Installation - Sloth.css'
 description: Installation instructions and how to get started
-tags: cdn npm drop-in setup download
+tags: cdn npm pnpm drop-in setup download
 ---
 
 ## Installation
 
-You can load Sloth.css directly via CDN or by installing it manually or via NPM. You can choose between 3 different variants according to your needs:
+You can load Sloth.css directly via CDN, install it manually or use a package manager. You can choose between 3 different variants according to your needs:
 
 1. `sloth.core.min.css`: Drop-in styling for semantic markup
 2. `sloth.util.min.css`: Utility classes for quick prototyping
@@ -38,15 +38,15 @@ Download the latest [Sloth.css release]({{ repoUrl }}/releases) (7.5KB):
 
 Extract the CSS files you need and include them in your markup or your bundler.
 
-### Install via NPM
+### Install via package manager
 
-If you don't want to use the CDN or manual download, you can install Sloth.css via npm with the following command.
+If you don't want to use the CDN or manual download, you can add Sloth.css via the package manager of your choice, e.g.:
 
 ```bash
-npm i @devmount/sloth.css
+pnpm add @devmount/sloth.css
 ```
 
-Now you need to make one of the CSS files under `node_modules/@devmount/sloth.css/` you want available to your app or include it in your build step or bundler. Since Sloth.css already serves minified styles, the simplest way would be to just include the file you want in your CSS, e.g.:
+Now you need to make one of the CSS files under `node_modules/@devmount/sloth.css/` available to your app or include it in your build step or bundler. Since Sloth.css already serves minified styles, the simplest way would be to just include the file you want in your CSS, e.g.:
 
 ```css
 @import '@devmount/sloth.css/sloth.min.css';

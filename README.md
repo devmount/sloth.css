@@ -18,10 +18,10 @@ Check [the documentation](https://slothcss.devmount.com) to see it live in actio
 
 ## Installation
 
-See the [installation instructions](https://slothcss.devmount.com/getting-started/installation) for different setup options. Add it to your project's dependencies:
+See the [installation instructions](https://slothcss.devmount.com/getting-started/installation) for different setup options. Add it to your project's dependencies, e.g.:
 
 ```bash
-npm i @devmount/sloth.css
+pnpm add @devmount/sloth.css
 ```
 
 Or for a quick start include the following CSS file in your HTML head to get the complete package (drop-in core styles, utility classes and CSS components):
