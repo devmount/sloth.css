@@ -45,15 +45,15 @@
   "license": "MIT",
   "packageManager": "pnpm@11.9.0",
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "cssnano": "^8.0.2",
     "eleventy-plugin-toc": "^1.1.5",
-    "markdown-it": "^14.1.0",
-    "markdown-it-anchor": "^9.2.0",
-    "postcss": "^8.4.47",
-    "postcss-cli": "^11.0.0",
-    "postcss-import": "^16.1.0"
+    "markdown-it": "^14.3.0",
+    "markdown-it-anchor": "^9.2.1",
+    "postcss": "^8.5.19",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.1"
   },
   "type": "module"
 }
