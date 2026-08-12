@@ -2,7 +2,6 @@ import fs from 'fs';
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import markdownit from "markdown-it";
 import anchor from "markdown-it-anchor";
-import tocPlugin from "eleventy-plugin-toc";
 
 const VERSION = '0.4.2';
 
@@ -29,9 +28,47 @@ export default function (eleventyConfig) {
   // Init plugins
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.setLibrary("md", markdownit().set({ html: true }).use(anchor));
-  eleventyConfig.addPlugin(tocPlugin, {
-    tags: ["h2", "h3"],
-    ul: true,
+
+  // Build a table of contents from h2/h3 headings with ids (set by markdown-it-anchor)
+  eleventyConfig.addFilter('toc', (content) => {
+    const headings = [];
+    const headingRegex = /<(h2|h3)([^>]*)>([\s\S]*?)<\/\1>/g;
+    let match;
+    while ((match = headingRegex.exec(content))) {
+      const [, tag, attrs, inner] = match;
+      const idMatch = attrs.match(/\sid="([^"]*)"/);
+      if (!idMatch) continue;
+      headings.push({
+        tag,
+        id: idMatch[1],
+        text: inner.replace(/<[^>]+>/g, ''),
+        children: [],
+      });
+    }
+    if (headings.length === 0) return '';
+
+    const tree = [];
+    let currentH2 = null;
+    headings.forEach((heading) => {
+      if (heading.tag === 'h2') {
+        tree.push(heading);
+        currentH2 = heading;
+      } else if (currentH2) {
+        currentH2.children.push(heading);
+      } else {
+        tree.push(heading);
+      }
+    });
+
+    const renderList = (items) => {
+      if (items.length === 0) return '';
+      const listItems = items.map((heading) =>
+        `<li><a href="#${heading.id}">${heading.text}</a>${renderList(heading.children)}</li>`
+      );
+      return `<ul>${listItems.join('')}</ul>`;
+    };
+
+    return `<nav class="toc">${renderList(tree)}</nav>`;
   });
 
   // Build search index
